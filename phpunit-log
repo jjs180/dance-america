@@ -1,0 +1,4 @@
+# change working directory to that of this file
+PROJECT_DIR=$(dirname $0)
+$PROJECT_DIR/phpunit -l
+exit 0

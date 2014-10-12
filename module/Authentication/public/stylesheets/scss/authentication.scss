@@ -1,0 +1,33 @@
+// ================================================== LOGIN ================================================
+#login-container {
+	text-align:	center;
+	#loginForm-container {
+		@include column-desktop(5);
+		form { @include form-type-horizontal-fullWidth; }
+	}
+	#registerButton-container {
+		@include		column-desktop(7);
+		padding-top:	$padding*2;
+		button	{ @include btn-size-large; }
+	}
+	#loginButton-wrapper {
+		position:	relative;
+		top:		40px;
+	}
+	#forgotPassword-wrapper {
+		position:	relative;
+		right:		14px;
+		bottom:		50px;
+	}
+}
+
+// ================================================== REGISTRATION ================================================
+form div#advice-validate-required-check-registrationForm-terms { left: 525px!important; }
+
+
+// ================================================== DETERMINE-USER-STATUS ================================================
+#registrationReasons-list {
+	margin-left:		$margin-large*2;
+	margin-bottom:		$margin-large*2;
+	list-style-type:	disc;
+}

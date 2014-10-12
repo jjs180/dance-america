@@ -1,0 +1,121 @@
+// ===================================================== ADD-VENUE ============================================================
+#addVenueForm, #editVenueForm {
+	@extend #addEventForm;
+}
+
+
+// ===================================================== REVIEW ============================================================
+ul#venueInformation-list, ul#eventInformation-list {
+	@include	column-desktop(5);
+	list-style:	none;
+	> li {
+		margin-bottom:	$margin;
+		> div, ul {
+			display:	inline-block;
+			max-width:	65%;
+		 	overflow-x:	scroll;
+		 	> ul { display: block; }
+		}
+		> label { vertical-align: top; }
+	}
+}
+
+#mapAndButton-wrapper {
+	@include	column-desktop(7);
+	text-align: center;
+	img { width: 100%; }
+	> div#button-wrapper {
+		margin-top: $margin-large;
+		#editVenue-button { @include btn-style-negative; }
+	}
+}
+
+
+// ===================================================== SEARCH-VENUES ============================================================
+#searchVenuesForm {
+	> div > label:first-child { @include column-desktop(3); }
+	> div > input:last-child { @include column-desktop(8); }
+	> div > button { @include column-desktop-offset(3); }
+	
+	#searchParamInput-wrapper {
+		width: 58.33333%;
+		float: left;
+		#searchVenuesForm-searchParam {
+			float: none;
+			width: 100%;
+		}
+	}
+}
+
+
+// ======================================================= RESULTS ================================================================
+div#resultsHeader-wrapper {
+	h1 { display: inline-block; }
+	a { vertical-align: top; }
+	a#addNewVenue-button {
+		float:				right;
+		background-color:	$bgColor-inverse;
+		color:				$color-inverse;
+		&:hover { background-color:	darken($bgColor-positive, 50); }
+	}
+	a.neutral {
+		position:	relative;
+		left:		10px;
+	}
+}
+
+#resultsList-wrapper {
+	@include	column-desktop(3);
+	@include	well;
+	padding:	0px;
+	ul {
+		@include listStyle-none;
+		> li {
+			border-bottom:	$border;
+			padding:		$padding;
+			&:last-of-type {
+				border-bottom:	none;
+			}
+			div > img {
+				border:	none;
+				&:hover { cursor: pointer; }
+			}
+			> div:first-of-type {
+				img {
+					vertical-align: top;
+					width:			23px;
+					height:			36px;
+				}
+				h2 {
+					display:		inline-block;
+					vertical-align: top;
+					margin:			0px;
+					margin-left:	10px;
+					font-size:		18px;
+				}
+			}
+			div.description-container {
+				width:		91%;
+			}
+			a.btn, div.description-container {
+				position:	relative;
+				left:		38px;
+			}
+		}
+	}
+}
+
+#resultsMap-wrapper {
+	padding-top:	0px;
+	padding-bottom:	0px;
+	z-index:		5;
+	display:		inline-block;
+	vertical-align:	top;
+	width:			70%;
+	#map {
+		min-height:	625px;
+		div.gm-style-iw {
+			.longText-wrapper { max-width: 49%; }
+		}
+	}
+}

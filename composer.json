@@ -1,0 +1,19 @@
+{
+	"name": "Zend Basic 2",
+	"description": "A Basic Setup for Zend with NovumWare libraries",
+	"license": "BSD-3-Clause",
+	"repositories": [
+		{
+			"type": "vcs",
+			"url": "https://github.com/markisacat/novumware-module"
+		}
+	],
+	"require": {
+		"php": ">=5.3.3",
+		"zendframework/zendframework": "2.*",
+		"mockery/mockery": "dev-master",
+		"maxnuf/maxnuf-smarty": "dev-master",
+		"markisacat/novumware-module": "dev-master",
+		"raveren/kint": "dev-master"
+	}
+}

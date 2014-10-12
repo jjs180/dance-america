@@ -1,0 +1,12 @@
+// =========================================================== MANAGE-VENUES/EVENTS ==================================================
+#eventInfoTable, #venueInfoTable {
+	@extend #myVenues-table;
+	> tbody > tr > td > .approvalDropdown > ul, > tbody > tr > td > .approvalDropdown > div { min-width:inherit; }
+}
+
+.dropdown > ul > li > div, .dropdown > ul > li > ul {
+	display: inline-block;
+	vertical-align: top;
+}
+
+

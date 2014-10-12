@@ -1,0 +1,33 @@
+# options
+LOG=
+while getopts ":l" opt; do
+	case $opt in
+		l)
+			LOG=1
+	esac
+done
+
+# change working directory to that of this file
+PROJECT_DIR=$(dirname $0)/
+cd $PROJECT_DIR
+
+# get a list of test directories
+while IFS= read -r -d $'\0' file; do
+  testDirectories[i++]="$file"
+done < <(find ./ -type d -name test -print0)
+
+# loop through the test directories and run phpunit
+for testDirectory in ${testDirectories[@]}
+do
+	cd $testDirectory
+	echo TESTING: $(pwd)...
+	if [ "$LOG" ]; then
+		phpunit
+		open -a 'Google Chrome' log/report/index.html
+	else
+		phpunit
+	fi
+	cd $PROJECT_DIR
+done
+
+exit 0

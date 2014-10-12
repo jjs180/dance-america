@@ -1,0 +1,115 @@
+// ========================================================== ADD/EDIT EVENT ==============================================================
+#searchForVenue-button {
+	position:	absolute;
+	left:		17.6666%;
+}
+
+#changeVenue-button {
+	position:	absolute;
+	left:		61.6666%;
+}
+
+//#eventWillRepeat-wrapper, .repetitionDetails-wrapper { display: none; }
+
+form#addEventForm, #editEventForm {
+	#addEventForm-contactEmail, #editEventForm-contactEmail,  #addVenueForm-contactEmail, #editVenueForm-contactEmail {
+		float:	none;
+		width:	58.33333%;;
+	}
+	button, a.btn { @include column-desktop-offset(2); }
+	#repetitionDetails-container {
+		position:	relative;
+		> label { position: absolute; }
+		> label.required:after {
+			position:relative;
+			top: -2px;
+			right: -3px;
+		}
+		> a.addRepetitionButton {
+			bottom:		15px;
+			display:	none;
+			margin:		0px;
+			position:	absolute;
+			right:		30%;
+		}
+		.repetitionDetail-wrapper {
+			@include		column-desktop-offset(2);
+			margin-bottom:	$margin-large;
+			position:		relative;
+			> div { display: inline-block; }
+			> div:first-of-type {
+				display: block;
+				> select {
+					float:			none;
+					margin-bottom:	0px;
+				}
+			}
+			> div.repetitionSpacing-wrapper {
+				> input {
+					width: 30px;
+					float: none;
+					display: inline-block;
+				}
+			}
+			> div:last-of-type {
+				select, div {
+					float:		none;
+					display: 	inline-block;
+				}
+				> a.deleteRepetitionButton {
+					bottom:		0px;
+					display:	none;
+					margin:		0px;
+					position:	absolute;
+					right:		39%;
+					width:		30px;
+				}
+			}
+			select { width: auto; }
+		}
+//		#eventWillStop-wrapper { margin-top: $margin; }
+	}
+
+	#costDetails-container {
+		display: none;
+		> div#costDetails-rhsWrapper {
+			display:	inline-block;
+			width:		75%;
+			> div {
+				padding-top:	$padding-small;
+				padding-bottom:	$padding-small;
+				&:first-of-type { padding-top: 0px; }
+				> input {
+					float:		none;
+					display:	inline-block;
+				}
+			}
+		}
+		> div > input:first-of-type { width: 300px; }
+		> div > input:last-of-type { width: 125px; }
+	}
+}
+
+form#addEventForm {
+	#eventWillRepeat-wrapper{ display: none; }
+	#repetitionDetails-container {
+		> .repetitionDetail-wrapper {
+			.repetitionSpacing-wrapper { display: none; }
+			> div:last-of-type {
+				.daysOfMonth-selector, .daysOfWeek-selector, #monthsOfYear-wrapper-0 { display: none; }
+			}
+			.repetitionParameter { margin-bottom:$margin; }
+		}
+	}
+	#eventWillStop-wrapper, #eventEndDate-wrapper { display: none; }
+	#costDetails-container { display: none; }
+}
+
+#archiveEvent-button {
+	bottom:		46px;
+	left:		53%;
+	position:	relative;
+}
+
+// ========================================================== EDIT EVENT ==============================================================
+#editEventForm > #repetitionDetails-container { display: block; }

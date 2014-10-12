@@ -1,0 +1,11 @@
+@import '../../../vendor/markisacat/novumware-module/public/stylesheets/scss/nwMain.scss'; // NOVUMWARE STYLES
+
+
+// ============================================== MODULE STYLES ===============================================
+@import './../../../module/Admin/public/stylesheets/scss/admin.scss';
+@import './../../../module/Application/public/stylesheets/scss/application.scss';
+@import './../../../module/Authentication/public/stylesheets/scss/authentication.scss';
+@import './../../../module/Authentication/public/stylesheets/scss/account.scss';
+@import '../../../module/Venues/public/stylesheets/scss/venues.scss';
+@import '../../../module/Events/public/stylesheets/scss/events.scss';
+@import '../../../module/Scraps/public/stylesheets/scss/scraps.scss';
