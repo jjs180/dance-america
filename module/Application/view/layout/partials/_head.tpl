@@ -7,7 +7,7 @@
 	<link rel='stylesheet' href='/stylesheets/css/styles.css' type='text/css' media='screen, projection, print' />
     <script src='/js/min/javascript.min.js' type='text/javascript'></script>
 	
-	<title>The Westie Site</title>
+	<title>Dance America</title>
 	
 	<!--[if lt IE 9]>
 	    <script src="/novumWarePublic/js/plugins/html5/html5shiv.js"></script>

@@ -1,5 +1,6 @@
 @import '../../../vendor/markisacat/novumware-module/public/stylesheets/scss/nwMain.scss'; // NOVUMWARE STYLES
-
+@import './nwVariableOverrides/_dropdowns.scss';
+@import './nwVariableOverrides/_forms.scss';
 
 // ============================================== MODULE STYLES ===============================================
 @import './../../../module/Admin/public/stylesheets/scss/admin.scss';
@@ -8,4 +9,3 @@
 @import './../../../module/Authentication/public/stylesheets/scss/account.scss';
 @import '../../../module/Venues/public/stylesheets/scss/venues.scss';
 @import '../../../module/Events/public/stylesheets/scss/events.scss';
-@import '../../../module/Scraps/public/stylesheets/scss/scraps.scss';

@@ -8,8 +8,8 @@ return array(
 		'Authentication',
 		'Venues',
 		'Events',
-		'Scraps',
-		'Admin'
+		'Admin',
+		'People'
     ),
 
     // These are various options for the listeners attached to the ModuleManager

@@ -3911,79 +3911,6 @@ small .btn, small button {
     background-color: #4863AE;
     border-color: #cccccc; }
 
-form {
-  text-align: left; }
-  form > div {
-    margin-bottom: 15px; }
-  form label {
-    position: relative;
-    display: inline-block;
-    font-weight: bold;
-    width: auto; }
-    form label.required:after {
-      content: '*';
-      font-size: 16px;
-      color: #d9534f;
-      position: absolute;
-      top: 2px;
-      right: 3px; }
-  form textarea,
-  form input:not([type=checkbox]), form select {
-    display: block;
-    width: 100%;
-    height: 32px;
-    padding: 5px;
-    font-size: 14px;
-    line-height: 20px;
-    color: #333333;
-    vertical-align: middle;
-    background: #f7e5d0;
-    border: 1px solid #f0cda4;
-    border-radius: 4px; }
-    form textarea::-webkit-input-placeholder,
-    form input:not([type=checkbox])::-webkit-input-placeholder, form select::-webkit-input-placeholder {
-      color: gray; }
-    form textarea:-moz-placeholder,
-    form input:not([type=checkbox]):-moz-placeholder, form select:-moz-placeholder {
-      color: gray; }
-    form textarea::-moz-placeholder,
-    form input:not([type=checkbox])::-moz-placeholder, form select::-moz-placeholder {
-      color: gray; }
-    form textarea:-ms-input-placeholder,
-    form input:not([type=checkbox]):-ms-input-placeholder, form select:-ms-input-placeholder {
-      color: gray; }
-  form textarea {
-    height: auto; }
-  form input:not([type=checkbox]) {
-    -webkit-transition: all 0.15s ease-out 0s;
-    -moz-transition: all 0.15s ease-out 0s;
-    transition: all 0.15s ease-out 0s; }
-  form input[type=checkbox] {
-    position: relative;
-    top: -1px; }
-  form input[type=submit],
-  form button[type=submit] {
-    color: white;
-    background: #5cb85c;
-    border-color: #4cae4c; }
-    form input[type=submit]:hover, form input[type=submit]:focus
-    form input[type=submit]:active,
-    form button[type=submit]:hover,
-    form button[type=submit]:focus
-    form button[type=submit]:active {
-      color: white;
-      background-color: #47a447;
-      border-color: #398439; }
-    form input[type=submit][disabled], form input[type=submit][disabled]:hover, form input[type=submit][disabled]:focus, form input[type=submit][disabled]:active,
-    form button[type=submit][disabled],
-    form button[type=submit][disabled]:hover,
-    form button[type=submit][disabled]:focus,
-    form button[type=submit][disabled]:active {
-      background-color: #5cb85c;
-      border-color: #4cae4c; }
-  form input[type=file] {
-    padding-top: 5px; }
-
 table {
   width: 100%; }
   table tr.positive {
@@ -4064,6 +3991,79 @@ ol .spacer {
   margin: 0px;
   padding: 0px;
   height: 20px; }
+
+form {
+  text-align: left; }
+  form > div {
+    margin-bottom: 15px; }
+  form label {
+    position: relative;
+    display: inline-block;
+    font-weight: bold;
+    width: auto; }
+    form label.required:after {
+      content: '*';
+      font-size: 16px;
+      color: #d9534f;
+      position: absolute;
+      top: 2px;
+      right: 3px; }
+  form textarea,
+  form input:not([type=checkbox]), form select {
+    display: block;
+    width: 100%;
+    height: 32px;
+    padding: 5px;
+    font-size: 14px;
+    line-height: 20px;
+    color: #333333;
+    vertical-align: middle;
+    background: #f7e5d0;
+    border: 1px solid #f0cda4;
+    border-radius: 4px; }
+    form textarea::-webkit-input-placeholder,
+    form input:not([type=checkbox])::-webkit-input-placeholder, form select::-webkit-input-placeholder {
+      color: gray; }
+    form textarea:-moz-placeholder,
+    form input:not([type=checkbox]):-moz-placeholder, form select:-moz-placeholder {
+      color: gray; }
+    form textarea::-moz-placeholder,
+    form input:not([type=checkbox])::-moz-placeholder, form select::-moz-placeholder {
+      color: gray; }
+    form textarea:-ms-input-placeholder,
+    form input:not([type=checkbox]):-ms-input-placeholder, form select:-ms-input-placeholder {
+      color: gray; }
+  form textarea {
+    height: auto; }
+  form input:not([type=checkbox]) {
+    -webkit-transition: all 0.15s ease-out 0s;
+    -moz-transition: all 0.15s ease-out 0s;
+    transition: all 0.15s ease-out 0s; }
+  form input[type=checkbox] {
+    position: relative;
+    top: -1px; }
+  form input[type=submit],
+  form button[type=submit] {
+    color: white;
+    background: #5cb85c;
+    border-color: #4cae4c; }
+    form input[type=submit]:hover, form input[type=submit]:focus
+    form input[type=submit]:active,
+    form button[type=submit]:hover,
+    form button[type=submit]:focus
+    form button[type=submit]:active {
+      color: white;
+      background-color: #47a447;
+      border-color: #398439; }
+    form input[type=submit][disabled], form input[type=submit][disabled]:hover, form input[type=submit][disabled]:focus, form input[type=submit][disabled]:active,
+    form button[type=submit][disabled],
+    form button[type=submit][disabled]:hover,
+    form button[type=submit][disabled]:focus,
+    form button[type=submit][disabled]:active {
+      background-color: #5cb85c;
+      border-color: #4cae4c; }
+  form input[type=file] {
+    padding-top: 5px; }
 
 button {
   color: #333333;
@@ -4996,6 +4996,144 @@ textarea.NWWysiwyg {
 @import '../../../js/mootools/classes/rialto/RialtoStars/stylesheets/scss/rialtoStars.scss'; // RIALTO STARS
 @import '../../../js/mootools/classes/rialto/RialtoScrollable/stylesheets/scss/rialtoScrollable.scss'; // RIALTO SCROLLABLE
 */
+table > tbody > tr > td > .dropdown > div {
+  min-width: 200px; }
+
+form > div label:first-child {
+  position: relative;
+  display: block;
+  min-height: 1px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px; }
+  @media (min-width: 1025px) {
+    form > div label:first-child {
+      float: left;
+      width: 33.33333%; } }
+  @media (min-width: 1025px) {
+    form > div label:first-child {
+      margin-left: 0%; } }
+form > div select,
+form > div textarea,
+form > div input:not([type=checkbox]) {
+  position: relative;
+  display: block;
+  min-height: 1px; }
+  @media (min-width: 1025px) {
+    form > div select,
+    form > div textarea,
+    form > div input:not([type=checkbox]) {
+      float: left;
+      width: 66.66667%; } }
+  @media (min-width: 1025px) {
+    form > div select,
+    form > div textarea,
+    form > div input:not([type=checkbox]) {
+      margin-left: 0%; } }
+  form > div select:only-child,
+  form > div textarea:only-child,
+  form > div input:not([type=checkbox]):only-child {
+    position: relative;
+    display: block;
+    min-height: 1px; }
+    @media (min-width: 1025px) {
+      form > div select:only-child,
+      form > div textarea:only-child,
+      form > div input:not([type=checkbox]):only-child {
+        float: left;
+        width: 100%; } }
+    @media (min-width: 1025px) {
+      form > div select:only-child,
+      form > div textarea:only-child,
+      form > div input:not([type=checkbox]):only-child {
+        margin-left: 0%; } }
+@media (min-width: 1025px) {
+  form > div input[type=submit],
+  form > div button[type=submit],
+  form > div input[type=checkbox] {
+    margin-left: 33.33333%; } }
+form > div input[type=file] {
+  position: relative;
+  display: block;
+  min-height: 1px; }
+  @media (min-width: 1025px) {
+    form > div input[type=file] {
+      float: left;
+      width: 100%; } }
+  @media (min-width: 1025px) {
+    form > div input[type=file] {
+      margin-left: 0%; } }
+@media (min-width: 1025px) {
+  form > div p {
+    margin-left: 33.33333%; } }
+@media (max-width: 1024px) {
+  form > div label:first-child {
+    position: relative;
+    display: block;
+    min-height: 1px;
+    text-align: left;
+    margin-bottom: 5px; }
+  form > div textarea,
+  form > div input:not([type=checkbox]) {
+    position: relative;
+    display: block;
+    min-height: 1px; } }
+  @media (max-width: 1024px) and (min-width: 1025px) {
+    form > div label:first-child {
+      float: left;
+      width: 50%; } }
+  @media (max-width: 1024px) and (min-width: 1025px) {
+    form > div label:first-child {
+      margin-left: 0%; } }
+  @media (max-width: 1024px) and (min-width: 1025px) {
+    form > div textarea,
+    form > div input:not([type=checkbox]) {
+      float: left;
+      width: 50%; } }
+  @media (max-width: 1024px) and (min-width: 1025px) {
+    form > div textarea,
+    form > div input:not([type=checkbox]) {
+      margin-left: 0%; } }
+@media (max-width: 759px) {
+  form > div label:first-child {
+    position: relative;
+    display: block;
+    min-height: 1px;
+    text-align: left;
+    margin-bottom: 5px; }
+  form > div textarea,
+  form > div input:not([type=checkbox]) {
+    position: relative;
+    display: block;
+    min-height: 1px; } }
+  @media (max-width: 759px) and (min-width: 1025px) {
+    form > div label:first-child {
+      float: left;
+      width: 100%; } }
+  @media (max-width: 759px) and (min-width: 1025px) {
+    form > div label:first-child {
+      margin-left: 0%; } }
+  @media (max-width: 759px) and (min-width: 1025px) {
+    form > div textarea,
+    form > div input:not([type=checkbox]) {
+      float: left;
+      width: 100%; } }
+  @media (max-width: 759px) and (min-width: 1025px) {
+    form > div textarea,
+    form > div input:not([type=checkbox]) {
+      margin-left: 0%; } }
+@media (max-width: 759px) and (min-width: 1025px) {
+  form > div input[type=checkbox] {
+    margin-left: 0%; } }
+@media (max-width: 759px) and (min-width: 1025px) {
+  form > div input[type=submit],
+  form > div button[type=submit] {
+    margin-left: 0%; } }
+@media (max-width: 759px) and (min-width: 1025px) {
+  form > div p {
+    margin-left: 0%; } }
+
 #eventInfoTable > tbody > tr > td > .approvalDropdown > ul, #eventInfoTable > tbody > tr > td > .approvalDropdown > div, #venueInfoTable > tbody > tr > td > .approvalDropdown > ul, #venueInfoTable > tbody > tr > td > .approvalDropdown > div {
   min-width: inherit; }
 
@@ -5035,144 +5173,8 @@ header {
   margin-top: 50px;
   height: 100%; }
 
-form > div > textarea, form > div select, form > div input {
-  position: relative;
-  display: block;
-  min-height: 1px;
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-top: 10px;
-  padding-bottom: 10px; }
-  @media (min-width: 1025px) {
-    form > div > textarea, form > div select, form > div input {
-      float: left;
-      width: 58.33333%; } }
-  @media (min-width: 1025px) {
-    form > div > textarea, form > div select, form > div input {
-      margin-left: 0%; } }
-form > div > input {
-  width: 58.33333% !important; }
-form > div > p {
-  margin: 0px;
-  padding: 10px;
-  padding-top: 7px; }
-
-@media (min-width: 1025px) {
-  #addWebLink-button {
-    margin-left: 16.66667%; } }
-
-.webLink-wrapper {
-  position: relative;
-  display: block;
-  min-height: 1px;
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  border: 1px solid #f0cda4;
-  margin-top: 10px; }
-  @media (min-width: 1025px) {
-    .webLink-wrapper {
-      float: left;
-      width: 58.33333%; } }
-  @media (min-width: 1025px) {
-    .webLink-wrapper {
-      margin-left: 16.66667%; } }
-  .webLink-wrapper:first-of-type {
-    margin-top: 0px; }
-    @media (min-width: 1025px) {
-      .webLink-wrapper:first-of-type {
-        margin-left: 0%; } }
-  .webLink-wrapper > div {
-    padding: 0px; }
-    .webLink-wrapper > div > label {
-      width: 15% !important; }
-    .webLink-wrapper > div > input {
-      width: 80% !important; }
-
-ul {
-  list-style-type: none;
-  margin: 0px;
-  padding: 0px; }
-
-body {
-  height: 100%; }
-
-.eventInformation-list > li, .venueInformation-list > li {
-  display: block; }
-  .eventInformation-list > li > label, .venueInformation-list > li > label {
-    vertical-align: top; }
-  .eventInformation-list > li > div, .eventInformation-list > li ul, .eventInformation-list > li .longText-wrapper, .venueInformation-list > li > div, .venueInformation-list > li ul, .venueInformation-list > li .longText-wrapper {
-    display: inline-block; }
-  .eventInformation-list > li > ul, .eventInformation-list > li div, .venueInformation-list > li > ul, .venueInformation-list > li div {
-    max-width: 54%;
-    overflow-x: scroll; }
-  .eventInformation-list > li .longText-wrapper, .venueInformation-list > li .longText-wrapper {
-    max-width: 57%;
-    vertical-align: top; }
-
-table > tbody > tr td > .dropdown > div, table > tbody > tr td > .dropdown > ul {
-  min-width: 300px; }
-
-.eventInformation-list, .venueInformation-list {
-  display: inline-block;
-  vertical-align: top;
-  width: 100%; }
-  .eventInformation-list label, .venueInformation-list label {
-    vertical-align: top; }
-  .eventInformation-list > ul, .eventInformation-list > div, .venueInformation-list > ul, .venueInformation-list > div {
-    max-width: 49%;
-    display: inline-block; }
-
-#eventsVenues-list {
-  display: inline-block;
-  margin-top: 0px;
-  margin-bottom: 0px;
-  padding: 0px;
-  min-height: 625px;
-  height: 100%;
-  overflow: scroll;
-  vertical-align: top;
-  width: 0%; }
-  #eventsVenues-list #eventsList-container > div, #eventsVenues-list #venuesList-container > div {
-    border-bottom: 1px solid #f0cda4;
-    margin-bottom: 0px;
-    padding: 15px 0px; }
-    #eventsVenues-list #eventsList-container > div > img, #eventsVenues-list #venuesList-container > div > img {
-      border: none;
-      vertical-align: top;
-      width: 17px; }
-      #eventsVenues-list #eventsList-container > div > img:hover, #eventsVenues-list #venuesList-container > div > img:hover {
-        cursor: pointer; }
-  #eventsVenues-list .eventInformation-list, #eventsVenues-list .venueInformation-list {
-    width: 93%; }
-    #eventsVenues-list .eventInformation-list > li > ul, #eventsVenues-list .eventInformation-list div, #eventsVenues-list .venueInformation-list > li > ul, #eventsVenues-list .venueInformation-list div {
-      max-width: 46%;
-      overflow-x: scroll; }
-  #eventsVenues-list #venuesList-container {
-    display: none; }
-
-#displayAdjustment-container {
-  position: absolute;
-  display: block;
-  right: 20px;
-  top: 20px;
-  z-index: 10; }
-  #displayAdjustment-container #eventVenues-toggle {
-    margin-right: 30px; }
-
-#map-wrapper {
-  padding-top: 0px;
-  padding-bottom: 0px;
-  z-index: 5;
-  display: inline-block;
-  vertical-align: top;
-  width: 99%;
-  height: 100%; }
-  #map-wrapper #map {
-    min-height: 100%; }
-    #map-wrapper #map div.gm-style-iw .longText-wrapper {
-      max-width: 54%; }
+.hidden {
+  display: none; }
 
 #login-container {
   text-align: center; }
@@ -5191,7 +5193,7 @@ table > tbody > tr td > .dropdown > div, table > tbody > tr td > .dropdown > ul 
     @media (min-width: 1025px) {
       #login-container #loginForm-container {
         margin-left: 0%; } }
-    #login-container #loginForm-container form label:first-child {
+    #login-container #loginForm-container form > div label:first-child {
       position: relative;
       display: block;
       min-height: 1px;
@@ -5200,64 +5202,64 @@ table > tbody > tr td > .dropdown > div, table > tbody > tr td > .dropdown > ul 
       padding-top: 10px;
       padding-bottom: 10px; }
       @media (min-width: 1025px) {
-        #login-container #loginForm-container form label:first-child {
+        #login-container #loginForm-container form > div label:first-child {
           float: left;
           width: 33.33333%; } }
       @media (min-width: 1025px) {
-        #login-container #loginForm-container form label:first-child {
+        #login-container #loginForm-container form > div label:first-child {
           margin-left: 0%; } }
-    #login-container #loginForm-container form select,
-    #login-container #loginForm-container form textarea,
-    #login-container #loginForm-container form input:not([type=checkbox]) {
+    #login-container #loginForm-container form > div select,
+    #login-container #loginForm-container form > div textarea,
+    #login-container #loginForm-container form > div input:not([type=checkbox]) {
       position: relative;
       display: block;
       min-height: 1px; }
       @media (min-width: 1025px) {
-        #login-container #loginForm-container form select,
-        #login-container #loginForm-container form textarea,
-        #login-container #loginForm-container form input:not([type=checkbox]) {
+        #login-container #loginForm-container form > div select,
+        #login-container #loginForm-container form > div textarea,
+        #login-container #loginForm-container form > div input:not([type=checkbox]) {
           float: left;
           width: 66.66667%; } }
       @media (min-width: 1025px) {
-        #login-container #loginForm-container form select,
-        #login-container #loginForm-container form textarea,
-        #login-container #loginForm-container form input:not([type=checkbox]) {
+        #login-container #loginForm-container form > div select,
+        #login-container #loginForm-container form > div textarea,
+        #login-container #loginForm-container form > div input:not([type=checkbox]) {
           margin-left: 0%; } }
-      #login-container #loginForm-container form select:only-child,
-      #login-container #loginForm-container form textarea:only-child,
-      #login-container #loginForm-container form input:not([type=checkbox]):only-child {
+      #login-container #loginForm-container form > div select:only-child,
+      #login-container #loginForm-container form > div textarea:only-child,
+      #login-container #loginForm-container form > div input:not([type=checkbox]):only-child {
         position: relative;
         display: block;
         min-height: 1px; }
         @media (min-width: 1025px) {
-          #login-container #loginForm-container form select:only-child,
-          #login-container #loginForm-container form textarea:only-child,
-          #login-container #loginForm-container form input:not([type=checkbox]):only-child {
+          #login-container #loginForm-container form > div select:only-child,
+          #login-container #loginForm-container form > div textarea:only-child,
+          #login-container #loginForm-container form > div input:not([type=checkbox]):only-child {
             float: left;
             width: 100%; } }
         @media (min-width: 1025px) {
-          #login-container #loginForm-container form select:only-child,
-          #login-container #loginForm-container form textarea:only-child,
-          #login-container #loginForm-container form input:not([type=checkbox]):only-child {
+          #login-container #loginForm-container form > div select:only-child,
+          #login-container #loginForm-container form > div textarea:only-child,
+          #login-container #loginForm-container form > div input:not([type=checkbox]):only-child {
             margin-left: 0%; } }
     @media (min-width: 1025px) {
-      #login-container #loginForm-container form input[type=submit],
-      #login-container #loginForm-container form button[type=submit],
-      #login-container #loginForm-container form input[type=checkbox] {
+      #login-container #loginForm-container form > div input[type=submit],
+      #login-container #loginForm-container form > div button[type=submit],
+      #login-container #loginForm-container form > div input[type=checkbox] {
         margin-left: 33.33333%; } }
-    #login-container #loginForm-container form input[type=file] {
+    #login-container #loginForm-container form > div input[type=file] {
       position: relative;
       display: block;
       min-height: 1px; }
       @media (min-width: 1025px) {
-        #login-container #loginForm-container form input[type=file] {
+        #login-container #loginForm-container form > div input[type=file] {
           float: left;
           width: 100%; } }
       @media (min-width: 1025px) {
-        #login-container #loginForm-container form input[type=file] {
+        #login-container #loginForm-container form > div input[type=file] {
           margin-left: 0%; } }
     @media (min-width: 1025px) {
-      #login-container #loginForm-container form p {
+      #login-container #loginForm-container form > div p {
         margin-left: 33.33333%; } }
   #login-container #registerButton-container {
     position: relative;
@@ -5611,25 +5613,3 @@ form#addEventForm #costDetails-container, form#addVenueForm #costDetails-contain
 
 #editEventForm > #repetitionDetails-container {
   display: block; }
-
-#manageScraps-table {
-  margin-top: 15px; }
-  #manageScraps-table .scrapIcon-cell {
-    text-align: center; }
-
-#scrapVenueEvent-wrapper {
-  width: 50%; }
-  #scrapVenueEvent-wrapper > ul {
-    list-style-type: none;
-    margin: 0px;
-    padding: 0px; }
-    #scrapVenueEvent-wrapper > ul > li {
-      display: block; }
-      #scrapVenueEvent-wrapper > ul > li > label {
-        width: 33%;
-        vertical-align: top; }
-      #scrapVenueEvent-wrapper > ul > li > div {
-        display: inline-block; }
-
-#backButton {
-  float: right; }

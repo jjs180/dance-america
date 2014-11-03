@@ -1,17 +1,31 @@
 <?php
 namespace Application\Controller;
+use Application\Constants\SiteSearchParamConstants;
 
 class IndexController extends \NovumWare\Zend\Mvc\Controller\AbstractActionController
 {
 	// ========================================================================= ACTIONS =========================================================================
     public function indexAction() {
-		$venueModelsArray = $this->getVenuesMapper()->fetchAll();
-		$eventModelsArray = $this->getEventsMapper()->fetchAll();
+		if ($this->getRequest()->isPost()) {
+			$data = $this->getRequest()->getPost('siteSearchForm');
 
-		return array(
-			'venueModelsArray'	=>	$venueModelsArray,
-			'eventModelsArray'	=>	$eventModelsArray
-		);
+			if (!$data['searchParam']) return;
+			$searchParam = $data['searchParam'];
+
+			if ($searchParam == SiteSearchParamConstants::instructors) {
+
+				$this->getPeopleMapper()->fetchAll($selectOptions);
+			}
+			$this->setReturnParams(array(
+//				'data' =>
+			));
+		} else {
+			$this->setReturnParams(array(
+				'siteSearchParams'		=>	array(SiteSearchParamConstants::classes, SiteSearchParamConstants::events, SiteSearchParamConstants::instructors, SiteSearchParamConstants::socialDances)
+			));
+
+			return $this->getReturnParams();
+		}
 	}
 
 	public function aboutAction() {}
@@ -36,4 +50,25 @@ class IndexController extends \NovumWare\Zend\Mvc\Controller\AbstractActionContr
 		return $this->_eventsMapper;
 	}
 
+	/**
+	 * @return \People\Mapper\PeopleMapper
+	 */
+	private function getPeopleMapper() {
+		if (!isset($this->_peopleMapper)) $this->_peopleMapper = $this->getServiceLocator()->get('\People\Mapper\PeopleMapper');
+		return $this->_peopleMapper;
+	}
+
+	/*
+	 * @param int $postalCode
+	 */
+	private function getGeoForPostalCode($postalCode) {
+
+	}
+
+	/*
+	 * @param string $city
+	 */
+	private function getGeoForCity($city) {
+
+	}
 }

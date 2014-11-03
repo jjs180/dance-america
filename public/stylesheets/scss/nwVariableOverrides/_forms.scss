@@ -1,0 +1,18 @@
+form {
+	@include form-type-horizontal-fullWidth;
+	@include tablet-andSmaller {
+		> div {
+			label:first-child {
+				@include		column-desktop(6, $gutter:false);
+				text-align:		left;
+				margin-bottom:	$margin-small;
+			}
+			textarea,
+			input:not([type=checkbox]) { @include column-desktop(6, $gutter:false); }
+		}
+	}
+	@include phone-andSmaller {
+		@include form-type-vertical;
+	}
+}
+

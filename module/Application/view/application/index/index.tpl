@@ -1,90 +1,65 @@
-<div id='displayAdjustment-container'>
-	<button class='new' id='eventVenues-toggle'>Show Venues</button>
-	<button class='neutral' id='list-toggle'>Show List</button>
-	<button class='neutral' id='map-toggle'>Hide Map</button>
-</div>
-<div id='eventsVenues-list'>
-	<div id='venuesList-container'>
-		<h1>Venues List</h1>
-		{if $venueModelsArray}
-			{$count = 0}
-			{foreach $venueModelsArray venueModel}
-				<div>
-					<img onclick="displayInfoWindow({$count})" src="https://chart.googleapis.com/chart?chst=d_map_pin_letter&chld={$count+1}|55D7D7|000000">
-					<ul class='venueInformation-list'>
-						<li>
-							<label>Name of the Venue:</label>
-							<div>{$venueModel.name}</div>
-						</li>
-						<li>
-							<label>Websites:</label>
-							{if $venueModel.web_links}
-								{assign var= websites value=';'|explode:$venueModel.web_links}
-								<ul>
-									{foreach $websites website}
-										<li>{$website}</li>
-									{/foreach}
-								</ul>
-							{else}<div>None listed</li>
-							{/if}
-						</li>
-						<li><label>Address:</label>
-							<div class='address-wrapper'>
-								{$venueModel.address_1}<br />
-								{if $venueModel.address_2 !=''}{$venueModel.address_2}<br />{/if}
-								{$venueModel.city}, {$venueModel.state} {$venueModel.postal_code}<br />
-								{$venueModel.country}
-							</div>
-						</li>
-						<li>
-							<label>Venue Type:</label>
-							<div>{$venueModel.type}</div>
-						</li>
-						<li>
-							<label>Minimum Age:</label>
-							<div>{$venueModel.minimum_age}</div>
-						</li>
-						{if $venueModel.description}
-							<li>
-								<label>Description:</label>
-								<div class='longText-wrapper'>{$venueModel.description|nl2br}</div>
-							</li>
-						{/if}
-						{if $venueModel.special_notes}
-							<li>
-								<label>Special Notes:</label>
-								<div class='longText-wrapper'>{$venueModel.special_notes|nl2br}</div>
-							</li>
-						{/if}
-						<li>
-							<label>Status:</label>
-							<div>{$venueModel.status}</div>
-						</li>
-					</ul>
+{if !$smarty.post}
+	<form action="/" class="NWForm" method='post'>
+		<div>
+			<label for="siteSearchForm-searchParam">What are you looking for?&nbsp;<span class="required">*</span></label>
+			<select type="text" name="siteSearchForm[searchParam]" data-validators="required" required>
+				{foreach $siteSearchParams as $param}
+					<option value="{$param}">{ucWords($param)}</option>
+				{/foreach}
+	 		</select>
+		</div>
+		<div>
+			<label for="siteSearchForm-locationType">Search for location by</label>
+			<select name="siteSearchForm[location][type]" size="1" data-display=''>
+				<option value="">--</option>
+				<option value="city/state" data-display='siteSearchForm-locationCity'>City , State</option>
+				<option value="postal code" data-display='locationPostalCode'>Postal Code</option>
+			</select>
+		</div>
+		<div class='hidden'>
+			<label for="siteSearchForm-locationCity">City</label>
+			<input id="siteSearchForm-locationCity" type="text" name="siteSearchForm[location][city]" placeholder="City" />
+			<label for="siteSearchForm-locationState">State</label>
+			{include '../partials/_state-options.tpl'}
+		</div>
+		<div class='hidden'>
+			<label for="siteSearchForm-locationPostalCode">Postal Code</label>
+			<input id="siteSearchForm-locationPostalCode" type="text" name="siteSearchForm[location][postal_code]" placeholder="Postal Code" />
+		</div>
+		
+		<div>
+			<label for="siteSearchForm-radius">Radius</label>
+			<select name="siteSearchForm[radius]" size="1">
+				<option value="">--</option>
+				<option value="5">5 miles</option>
+				<option value="15">15 miles</option>
+				<option value="25">25 miles</option>
+				<option value="50">50 miles</option>
+				<option value="100">100 miles</option>
+			</select>
+		</div>
+		<div>
+			<label for="siteSearchForm-dance_style">Dance Style</label>
+			<input id="siteSearchForm-dance_style" type="text" name="siteSearchForm[dance_style]" placeholder="Dance Style" />
+		</div>
+		<div>
+			<button type="submit">Search</button>
+		</div>
+	</form>
+{else}
+<div>
+	<div class="col-desktop-12">
+		{if $results}
+			{foreach $results as $key=>$result}
+				<div class='row'>
+					<div class="col-desktop-1">{$key+1}</div>
+					<div class="col-desktop-11">
+						{$result.name}
+					</div>
 				</div>
-				{$count=$count+1}
 			{/foreach}
-		{else}<p>No venues currently listed</p>
-		{/if}
-	</div>
-	<div id='eventsList-container'>
-		<h1>Events List</h1>
-		{if $eventModelsArray}
-			{$count=0}
-			{foreach $eventModelsArray eventModel}
-				<div>
-					<img onclick="displayInfoWindow({$count})" src="https://chart.googleapis.com/chart?chst=d_map_pin_letter&chld={$count+1}|FC6355|000000">
-					<ul class='eventInformation-list'>
-						{include './../../../../Events/view/events/partials/_eventInformation.tpl'}
-					</ul>
-				</div>
-			{$count=$count+1}
-			{/foreach}
-		{else}<p>None listed</p>
+		{else}
 		{/if}
 	</div>
 </div>
-{include './../partials/_indexScript.tpl'}
-<div id='map-wrapper'>
-	<div id="map"></div>
-</div>
+{/if}
