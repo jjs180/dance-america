@@ -135,7 +135,7 @@ $j('#map-toggle').click(function() {
 	if (showIcons == 'Show Events') {
 		var locations = [
 		{foreach $venueModelsArray venueModel}
-		["<ul class='venueInformation-list'><li><label>Name of the Venue:</label><div>{$venueModel.name}</div></li>{if $venueModel.web_links}<li><label>Websites:</label>{assign var= websites value=';'|explode:$venueModel.web_links}<ul>{foreach $websites website}<li>{$website}</li>{/foreach}</ul></li>{/if}<li><label>Address:</label><div class='address-wrapper'>{$venueModel.address_1}<br />{if $venueModel.address_2 !=''}{$venueModel.address_2}<br />{/if}{$venueModel.city}, {$venueModel.state} {$venueModel.postal_code}<br />{$venueModel.country}</div></li><li><label>Venue Type:</label><div>{$venueModel.type}</div></li><li><label>Minimum Age:</label><div>{$venueModel.minimum_age}</div></li><li><label>Status:</label><div>{$venueModel.status}</div></li></ul>", {$venueModel.latitude}, {$venueModel.longitude}],
+		["<ul class='venueInformation-list'><li><label>Name of the Venue:</label><div>{$venueModel.name}</div></li>{if $venueModel.web_links}<li><label>Websites:</label>{assign var= websites value=';'|explode:$venueModel.web_links}<ul>{foreach $websites website}<li>{$website}</li>{/foreach}</ul></li>{/if}<li><label>Address:</label><div class='address-wrapper'>{$venueModel.address_1}<br />{if $venueModel.address_2 !=''}{$venueModel.address_2}<br />{/if}{$venueModel.city}, {$venueModel.state} {$venueModel.postal_code}<br /></div></li><li><label>Venue Type:</label><div>{$venueModel.type}</div></li><li><label>Minimum Age:</label><div>{$venueModel.minimum_age}</div></li><li><label>Status:</label><div>{$venueModel.status}</div></li></ul>", {$venueModel.latitude}, {$venueModel.longitude}],
 		{/foreach}
 		];
 		icons = [
@@ -268,7 +268,7 @@ $j('#eventVenues-toggle').click(function() {
 
 		var locations = [
 			{foreach $venueModelsArray venueModel}
-			["<ul class='venueInformation-list'><li><label>Name of the Venue:</label><div>{$venueModel.name}</div></li>{if $venueModel.web_links}<li><label>Websites:</label>{assign var= websites value=';'|explode:$venueModel.web_links}<ul>{foreach $websites website}<li>{$website}</li>{/foreach}</ul></li>{/if}<li><label>Address:</label><div class='address-wrapper'>{$venueModel.address_1}<br />{if $venueModel.address_2 !=''}{$venueModel.address_2}<br />{/if}{$venueModel.city}, {$venueModel.state} {$venueModel.postal_code}<br />{$venueModel.country}</div></li><li><label>Venue Type:</label><div>{$venueModel.type}</div></li><li><label>Minimum Age:</label><div>{$venueModel.minimum_age}</div></li><li><label>Status:</label><div>{$venueModel.status}</div></li></ul>", {$venueModel.latitude}, {$venueModel.longitude}],
+			["<ul class='venueInformation-list'><li><label>Name of the Venue:</label><div>{$venueModel.name}</div></li>{if $venueModel.web_links}<li><label>Websites:</label>{assign var= websites value=';'|explode:$venueModel.web_links}<ul>{foreach $websites website}<li>{$website}</li>{/foreach}</ul></li>{/if}<li><label>Address:</label><div class='address-wrapper'>{$venueModel.address_1}<br />{if $venueModel.address_2 !=''}{$venueModel.address_2}<br />{/if}{$venueModel.city}, {$venueModel.state} {$venueModel.postal_code}</div></li><li><label>Venue Type:</label><div>{$venueModel.type}</div></li><li><label>Minimum Age:</label><div>{$venueModel.minimum_age}</div></li><li><label>Status:</label><div>{$venueModel.status}</div></li></ul>", {$venueModel.latitude}, {$venueModel.longitude}],
 			{/foreach}
 		];
 

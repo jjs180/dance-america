@@ -10,9 +10,9 @@
 		</div>
 		<div>
 			<label for="siteSearchForm-locationType">Search for location by</label>
-			<select name="siteSearchForm[location][type]" size="1" data-display=''>
+			<select name="siteSearchForm[location][type]" size="1" data-toggle-display='true'>
 				<option value="">--</option>
-				<option value="city/state" data-display='siteSearchForm-locationCity'>City , State</option>
+				<option value="city/state" data-display='siteSearchForm-locationCity'>City, State</option>
 				<option value="postal code" data-display='locationPostalCode'>Postal Code</option>
 			</select>
 		</div>

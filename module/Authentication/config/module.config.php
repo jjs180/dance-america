@@ -168,6 +168,15 @@ return array(
 								'action'		=> 'my-venues'
 							)
 						)
+					),
+					'my-people'	=> array(
+						'type'		=> 'literal',
+						'options'	=> array(
+							'route'		=> '/my-people',
+							'defaults'	=> array(
+								'action'		=> 'my-people'
+							)
+						)
 					)
 				)
 			),

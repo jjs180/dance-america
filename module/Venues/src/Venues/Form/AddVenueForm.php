@@ -16,11 +16,9 @@ class AddVenueForm extends \NovumWare\Zend\Form\Form
 		$country = new Element\Text('country');
 		$postalCode = new Element\Text('postal_code');
 		$url = new Element\Url('url');
-		$specialNotes = new Element\Text('special_notes');
 		$description = new Element\Text('description');
 		$contactEmail = new Element\Email('contact_email');
 		$type = new Element\Text('type');
-		$minimumAge = new Element\Text('minimum_age');
 
 		$this
 				->add($name)
@@ -31,11 +29,9 @@ class AddVenueForm extends \NovumWare\Zend\Form\Form
 				->add($country)
 				->add($postalCode)
 				->add($url)
-				->add($specialNotes)
 				->add($description)
 				->add($contactEmail)
-				->add($type)
-				->add($minimumAge);
+				->add($type);
 	}
 
 	/**
@@ -72,10 +68,6 @@ class AddVenueForm extends \NovumWare\Zend\Form\Form
 			$url	->setAllowEmpty(true);
 			$url	->setRequired(false);
 
-			$specialNotes = new Input('special_notes');
-			$specialNotes	->setAllowEmpty(true);
-			$specialNotes	->setRequired(false);
-
 			$description = new Input('description');
 			$description	->setAllowEmpty(true);
 			$description	->setRequired(false);
@@ -89,9 +81,6 @@ class AddVenueForm extends \NovumWare\Zend\Form\Form
 			$type = new Input('type');
 			$type	->setRequired(true);
 
-			$minimumAge = new Input('minimum_age');
-			$minimumAge	->setRequired(true);
-
 			$inputFilter = new InputFilter();
 			$inputFilter->add($name)
 						->add($address1)
@@ -101,11 +90,9 @@ class AddVenueForm extends \NovumWare\Zend\Form\Form
 						->add($country)
 						->add($postalCode)
 						->add($url)
-						->add($specialNotes)
 						->add($description)
 						->add($contactEmail)
-						->add($type)
-						->add($minimumAge);
+						->add($type);
 
 			$this->inputFilter = $inputFilter;
 		}

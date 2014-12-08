@@ -3,16 +3,7 @@ body { position: relative; }
 
 header {
 	@include	navbar('fixed-top');
-	.nav-auth {
-		@extend		.nav;
-		position:	absolute;
-		top:		0px;
-		right:		0px;
-	}
-	.nav-type-horizontal {
-		position:	relative;
-		right:		150px;
-	}
+	
 	#member-mainNavBar { right: 100px; }
 }
 
@@ -23,5 +14,5 @@ header {
 }
 
 .hidden {
-	display: none;
+	display: none!important;
 }

@@ -7,7 +7,6 @@ class VenueModel extends \NovumWare\Model\AbstractModel
 {
 	public $id;
 	public $name;
-	public $minimum_age;
 	public $address_1;
 	public $address_2;
 	public $city;
@@ -16,7 +15,6 @@ class VenueModel extends \NovumWare\Model\AbstractModel
 	public $country;
 	public $web_links;
 	public $description;
-	public $special_notes;
 	public $type;
 	public $status = EventVenueStatusConstants::PENDING_APPROVAL;
 	public $member_id;

@@ -1,12 +1,14 @@
 // ========================================================== ADD/EDIT EVENT ==============================================================
 #searchForVenue-button {
-	position:	absolute;
-	left:		17.6666%;
+	@include 	column-desktop-offset(4);
+	position: 	absolute;
+	left: 		5px;
 }
 
 #changeVenue-button {
+	@include 	column-desktop-offset(4);
 	position:	absolute;
-	left:		61.6666%;
+	left: 		5px;
 }
 
 //#eventWillRepeat-wrapper, .repetitionDetails-wrapper { display: none; }
@@ -16,7 +18,7 @@ form#addEventForm, #editEventForm {
 		float:	none;
 		width:	58.33333%;;
 	}
-	button, a.btn { @include column-desktop-offset(2); }
+	button, a.btn { @include column-desktop-offset(4); }
 	#repetitionDetails-container {
 		position:	relative;
 		> label { position: absolute; }
@@ -33,7 +35,7 @@ form#addEventForm, #editEventForm {
 			right:		30%;
 		}
 		.repetitionDetail-wrapper {
-			@include		column-desktop-offset(2);
+			@include		column-desktop-offset(4);
 			margin-bottom:	$margin-large;
 			position:		relative;
 			> div { display: inline-block; }
@@ -91,18 +93,18 @@ form#addEventForm, #editEventForm {
 }
 
 form#addEventForm {
-	#eventWillRepeat-wrapper{ display: none; }
+//	#eventWillRepeat-wrapper{ display: none; }
 	#repetitionDetails-container {
 		> .repetitionDetail-wrapper {
-			.repetitionSpacing-wrapper { display: none; }
-			> div:last-of-type {
-				.daysOfMonth-selector, .daysOfWeek-selector, #monthsOfYear-wrapper-0 { display: none; }
-			}
+//			.repetitionSpacing-wrapper { display: none; }
+			//> div:last-of-type {
+//				.daysOfMonth-selector, .daysOfWeek-selector, #monthsOfYear-wrapper-0 { display: none; }
+//			}
 			.repetitionParameter { margin-bottom:$margin; }
 		}
 	}
-	#eventWillStop-wrapper, #eventEndDate-wrapper { display: none; }
-	#costDetails-container { display: none; }
+//	#eventWillStop-wrapper, #eventEndDate-wrapper { display: none; }
+//	#costDetails-container { display: none; }
 }
 
 #archiveEvent-button {

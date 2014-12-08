@@ -8,7 +8,7 @@
 			<option value="one time event">One time event</option>
 		</select>
 	</div>
-	<div id='repetitionSpacing-wrapper-{$index}' class='repetitionSpacing-wrapper'>
+	<div id='repetitionSpacing-wrapper-{$index}' class='hidden'>
 		<span>The event will repeat every</span>
 		<input id="editEventForm-repetitionSpacing-{$index}" type="text" name="editEventForm[repetitions][{$index}][repetition_spacing]" value="{$repetition.repetition_spacing}" data-validators="required" />
 		<span id='repetitionFactor-wrapper-{$index}'>{$repetition.repetition_parameter} on</span>

@@ -3,7 +3,7 @@ namespace People\Model;
 
 use \Application\Constants\EventVenueStatusConstants;
 
-class EventModel extends \NovumWare\Model\AbstractModel
+class PersonModel extends \NovumWare\Model\AbstractModel
 {
 	public $id;
 	public $venue_id;

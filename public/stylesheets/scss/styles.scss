@@ -1,6 +1,8 @@
 @import '../../../vendor/markisacat/novumware-module/public/stylesheets/scss/nwMain.scss'; // NOVUMWARE STYLES
 @import './nwVariableOverrides/_dropdowns.scss';
 @import './nwVariableOverrides/_forms.scss';
+@import './nwVariableOverrides/_navs.scss';
+//@import './nwVariableOverrides/_colors.scss';
 
 // ============================================== MODULE STYLES ===============================================
 @import './../../../module/Admin/public/stylesheets/scss/admin.scss';

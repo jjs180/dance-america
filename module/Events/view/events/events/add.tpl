@@ -41,19 +41,20 @@
 					<option value="years">Yearly</option>
 				</select>
 			</div>
-			<div id='repetitionSpacing-wrapper-0' class='repetitionSpacing-wrapper'>
+			<!-- <div id='repetitionSpacing-wrapper-0' class='repetitionSpacing-wrapper'> -->
+			<div id='repetitionSpacing-wrapper-0' class='hidden'>
 				<span>The event will repeat every</span>
 				<input id="addEventForm-repetitionSpacing-0" type="text" name="addEventForm[repetitions][0][repetition_spacing]" data-validators="required" />
 				<span id='repetitionFactor-wrapper-0'>weeks on</span>&nbsp;
 			</div>
 			<div>
-				<select class='daysOfMonth-selector' name="addEventForm[repetitions][0][day_of_month]" id="daysOfMonth-select-0" onchange='changeDayOfMonth(0)'>
+				<select class='daysOfMonth-selector hidden' name="addEventForm[repetitions][0][day_of_month]" id="daysOfMonth-select-0" onchange='changeDayOfMonth(0)'>
 					{include './../partials/_days-of-month.tpl'}
 				</select>
-				<select class='daysOfWeek-selector' name="addEventForm[repetitions][0][day_of_week]" id="daysOfWeek-select-0" onchange='changeDayOfWeek(0)'>
+				<select class='daysOfWeek-selector  hidden' name="addEventForm[repetitions][0][day_of_week]" id="daysOfWeek-select-0" onchange='changeDayOfWeek(0)'>
 					{include './../partials/_days-of-week.tpl'}	
 				</select>
-				<div id="monthsOfYear-wrapper-0">
+				<div id="monthsOfYear-wrapper-0" class='hidden'>
 					in <select name="addEventForm[repetitions][0][month_of_year]" id="monthsOfYear-select-0" onchange='changeMonthOfYear(0)'>
 						{include './../partials/_months-of-year.tpl'}	
 					</select>
@@ -63,18 +64,18 @@
 		</div>
 		<a id='addRepetitionButton-0' class='addRepetitionButton btn new'>+</a>
 	</div>
-	<div id='eventWillStop-wrapper'>
+	<div class='hidden'>
 		<label for="addEventForm-willStop" class='required'>When will the event stop repeating?</label>
 		<select name="addEventForm[will_stop]" id="addEventForm-willStop" data-validators='required'>
 			<option value="0">Never</option>
 			<option value="1">On date</option>
 		</select>
 	</div>
-	<div id='eventEndDate-wrapper'>
+	<div class='hidden'>
 		<label for="addEventForm-endDate" class='required'>End Date</label>
 		<input type='datetime' class='NWDatePicker' id="addEventForm-endDate" name="addEventForm[end_date]" data-nwDatePicker-options="{ format:'%Y-%m-%d', startView:'years' }" data-validators='required'/>
 	</div>
-	<div id='costDetails-container'>
+	<div class='hidden'>
 		<label for="addEventForm-cost">Cost of Event</label>
 		<div id='costDetails-rhsWrapper'>
 			<div>
@@ -110,13 +111,9 @@
 		<textarea id="addEventForm-description" type="text" name="addEventForm[description]" placeholder="Description" ></textarea>
 	</div>
 	<div>
-		<label for="addEventForm-specialNotes">Special Notes</label>
-		<textarea id="addEventForm-specialNotes" type="text" name="addEventForm[special_notes]" placeholder="Special Notes" ></textarea>
-	</div>
-	<div>
 		<label for="addEventForm-contactEmail">Your Email</label>
 		<div>
-			<input id="addEventForm-contactEmail" type="text" name="addEventForm[contact_email]" placeholder="Email" data-validators="validate-email" {if $loggedInMember}value="{$loggedInMember.email}"{/if} />
+			<input id="addEventForm-contactEmail" type="email" name="addEventForm[contact_email]" placeholder="Email" data-validators="validate-email" {if $loggedInMember}value="{$loggedInMember.email}"{/if} />
 		</div>
 		<div>If you leave this blank and we have questions about your event, it will not be approved</div>
 	</div>

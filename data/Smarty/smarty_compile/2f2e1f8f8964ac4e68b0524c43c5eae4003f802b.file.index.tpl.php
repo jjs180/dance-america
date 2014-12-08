@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1-DEV, created on 2014-11-02 21:21:32
+<?php /* Smarty version Smarty-3.1-DEV, created on 2014-11-07 06:12:34
          compiled from "/Users/cara/Sites/dance_america/module/Application/view/application/index/index.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:1230976164544a6d85b56296-69825588%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '2f2e1f8f8964ac4e68b0524c43c5eae4003f802b' => 
     array (
       0 => '/Users/cara/Sites/dance_america/module/Application/view/application/index/index.tpl',
-      1 => 1414959500,
+      1 => 1415336810,
       2 => 'file',
     ),
   ),
@@ -45,9 +45,9 @@ $_smarty_tpl->tpl_vars['param']->_loop = true;
 		</div>
 		<div>
 			<label for="siteSearchForm-locationType">Search for location by</label>
-			<select name="siteSearchForm[location][type]" size="1" data-display=''>
+			<select name="siteSearchForm[location][type]" size="1" data-toggle-display='true'>
 				<option value="">--</option>
-				<option value="city/state" data-display='siteSearchForm-locationCity'>City , State</option>
+				<option value="city/state" data-display='siteSearchForm-locationCity'>City, State</option>
 				<option value="postal code" data-display='locationPostalCode'>Postal Code</option>
 			</select>
 		</div>

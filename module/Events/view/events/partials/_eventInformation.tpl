@@ -47,18 +47,9 @@
 		</ul>
 	</li>
 {/if}
-<li>
-	<label>Minimum Age:</label> {$eventModel.minimum_age}
-</li>
 {if $eventModel.description}
 	<li>
 		<label>Description:</label>
 		<div>{$eventModel.description|nl2br}</div>
-	</li>
-{/if}
-{if $eventModel.special_notes}
-	<li>
-		<label>Special Notes:</label>
-		<div>{$eventModel.special_notes|nl2br}</div>
 	</li>
 {/if}

@@ -14,8 +14,6 @@ class EventModel extends \NovumWare\Model\AbstractModel
 	public $end_date;
 	public $web_links;
 	public $description;
-	public $special_notes;
-	public $minimum_age;
 	public $status = EventVenueStatusConstants::PENDING_APPROVAL;
 	public $member_id;
 	public $will_stop;

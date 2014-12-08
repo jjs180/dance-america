@@ -1,4 +1,6 @@
 form {
+	
+	
 	@include form-type-horizontal-fullWidth;
 	@include tablet-andSmaller {
 		> div {
@@ -13,6 +15,11 @@ form {
 	}
 	@include phone-andSmaller {
 		@include form-type-vertical;
+	}
+	> div {
+		label:first-child {
+			padding: 		$padding-small $padding-large;
+		}
 	}
 }
 

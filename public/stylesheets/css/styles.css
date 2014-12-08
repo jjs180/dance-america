@@ -2818,13 +2818,13 @@ body .ui-tooltip {
       display: block !important; } }
 
 @media (max-width: 1024px) {
-  .desktop-visible {
+  .desktop-visible, .nav.nav-type-horizontal, .nav-type-horizontal#navTag-phone, .nav-type-horizontal.nav-auth, .nav-auth {
     display: none !important; } }
 
-.desktop-invisible {
+.desktop-invisible, #navTag-phone {
   display: none !important; }
   @media (max-width: 1024px) {
-    .desktop-invisible {
+    .desktop-invisible, #navTag-phone {
       display: block !important; } }
 
 @-webkit-keyframes iconSpinningAnimation {
@@ -3345,9 +3345,9 @@ pre.xdebug-var-dump {
 a:not(:hover) > .badge {
   opacity: 0.5; }
 
-.dropdown {
+.dropdown, #navTag-phone > li {
   position: relative; }
-  .dropdown > :not(a):not([class^='dropdown-trigger']) {
+  .dropdown > :not(a):not([class^='dropdown-trigger']), #navTag-phone > li > :not(a):not([class^='dropdown-trigger']) {
     box-shadow: 1px 2px 2px 0px rgba(0, 0, 0, 0.075);
     background: #f7e5d0;
     border: 1px solid #f0cda4;
@@ -3356,18 +3356,19 @@ a:not(:hover) > .badge {
     z-index: 1100;
     position: absolute;
     margin: 0px; }
-  .dropdown:not(:hover) > :not(a):not([class^='dropdown-trigger']) {
+  .dropdown:not(:hover) > :not(a):not([class^='dropdown-trigger']), #navTag-phone > li:not(:hover) > :not(a):not([class^='dropdown-trigger']) {
     display: none; }
-  .dropdown > :not(a):not([class^='dropdown-trigger']) {
+  .dropdown > :not(a):not([class^='dropdown-trigger']), #navTag-phone > li > :not(a):not([class^='dropdown-trigger']) {
     right: auto;
     left: 0px;
     text-align: left; }
-  .dropdown > :not(a):not([class^='dropdown-trigger']) {
+  .dropdown > :not(a):not([class^='dropdown-trigger']), #navTag-phone > li > :not(a):not([class^='dropdown-trigger']) {
     top: 100%; }
-  .dropdown > a,
-  .dropdown > .dropdown-trigger {
+  .dropdown > a, #navTag-phone > li > a,
+  .dropdown > .dropdown-trigger,
+  #navTag-phone > li > .dropdown-trigger {
     margin-bottom: 0px; }
-  .dropdown > a:after {
+  .dropdown > a:after, #navTag-phone > li > a:after {
     font-size: 16px;
     font-family: 'Icons';
     speak: none;
@@ -3385,10 +3386,10 @@ a:not(:hover) > .badge {
     position: relative;
     margin-left: 8px;
     right: 0px; }
-  .dropdown .dropdown-trigger-noIcon:after {
+  .dropdown .dropdown-trigger-noIcon:after, #navTag-phone > li .dropdown-trigger-noIcon:after {
     content: ''; }
 
-ul.nav, [class*=NWPlaylist] ul#nwPlaylist-songs, header ul.nav-auth {
+ul.nav, [class*=NWPlaylist] ul#nwPlaylist-songs, ul#navTag-phone, ul.nav-auth {
   list-style-type: none;
   margin: 0px;
   padding: 0px;
@@ -3397,51 +3398,51 @@ ul.nav, [class*=NWPlaylist] ul#nwPlaylist-songs, header ul.nav-auth {
   list-style-type: none;
   margin: 0px;
   padding: 0px; }
-  ul.nav:after, [class*=NWPlaylist] ul#nwPlaylist-songs:after, header ul.nav-auth:after {
+  ul.nav:after, [class*=NWPlaylist] ul#nwPlaylist-songs:after, ul#navTag-phone:after, ul.nav-auth:after {
     content: "";
     display: table;
     clear: both; }
-  ul.nav > li, [class*=NWPlaylist] ul#nwPlaylist-songs > li, header ul.nav-auth > li {
+  ul.nav > li, [class*=NWPlaylist] ul#nwPlaylist-songs > li, ul#navTag-phone > li, ul.nav-auth > li {
     line-height: 20px;
     font-size: 14px; }
-    ul.nav > li > a, [class*=NWPlaylist] ul#nwPlaylist-songs > li > a, header ul.nav-auth > li > a {
+    ul.nav > li > a, [class*=NWPlaylist] ul#nwPlaylist-songs > li > a, ul#navTag-phone > li > a, ul.nav-auth > li > a {
       padding: 5px 10px;
       position: relative;
       display: block;
       border-radius: 4px; }
-      ul.nav > li > a:hover, [class*=NWPlaylist] ul#nwPlaylist-songs > li > a:hover, header ul.nav-auth > li > a:hover {
+      ul.nav > li > a:hover, [class*=NWPlaylist] ul#nwPlaylist-songs > li > a:hover, ul#navTag-phone > li > a:hover, ul.nav-auth > li > a:hover {
         color: #333333;
         background: #e4caab; }
-    ul.nav > li.active > a, [class*=NWPlaylist] ul#nwPlaylist-songs > li.active > a, header ul.nav-auth > li.active > a {
+    ul.nav > li.active > a, [class*=NWPlaylist] ul#nwPlaylist-songs > li.active > a, ul#navTag-phone > li.active > a, ul.nav-auth > li.active > a {
       background: #47331d;
       color: white;
       cursor: default; }
-      ul.nav > li.active > a:hover, [class*=NWPlaylist] ul#nwPlaylist-songs > li.active > a:hover, header ul.nav-auth > li.active > a:hover {
+      ul.nav > li.active > a:hover, [class*=NWPlaylist] ul#nwPlaylist-songs > li.active > a:hover, ul#navTag-phone > li.active > a:hover, ul.nav-auth > li.active > a:hover {
         background: #47331d;
         color: white; }
-  ul.nav > .nav-header, [class*=NWPlaylist] ul#nwPlaylist-songs > .nav-header, header ul.nav-auth > .nav-header {
+  ul.nav > .nav-header, [class*=NWPlaylist] ul#nwPlaylist-songs > .nav-header, ul#navTag-phone > .nav-header, ul.nav-auth > .nav-header {
     padding: 5px 10px;
     color: gray;
     font-size: 12px;
     text-align: left; }
-  ul.nav > .nav-divider, [class*=NWPlaylist] ul#nwPlaylist-songs > .nav-divider, header ul.nav-auth > .nav-divider {
+  ul.nav > .nav-divider, [class*=NWPlaylist] ul#nwPlaylist-songs > .nav-divider, ul#navTag-phone > .nav-divider, ul.nav-auth > .nav-divider {
     height: 1px;
     margin: 9px 0px;
     overflow: hidden;
     background-color: #f0cda4; }
-  ul.nav > li > a > img, [class*=NWPlaylist] ul#nwPlaylist-songs > li > a > img, header ul.nav-auth > li > a > img {
+  ul.nav > li > a > img, [class*=NWPlaylist] ul#nwPlaylist-songs > li > a > img, ul#navTag-phone > li > a > img, ul.nav-auth > li > a > img {
     max-width: none; }
-  ul.nav > .dropdown > ul.nav, [class*=NWPlaylist] ul#nwPlaylist-songs > .dropdown > ul.nav, header ul.nav-auth > .dropdown > ul.nav, [class*=NWPlaylist] ul.nav > .dropdown > ul#nwPlaylist-songs, [class*=NWPlaylist] ul#nwPlaylist-songs > .dropdown > ul#nwPlaylist-songs, header [class*=NWPlaylist] ul.nav-auth > .dropdown > ul#nwPlaylist-songs, [class*=NWPlaylist] header ul.nav-auth > .dropdown > ul#nwPlaylist-songs, header ul.nav > .dropdown > ul.nav-auth, [class*=NWPlaylist] header ul#nwPlaylist-songs > .dropdown > ul.nav-auth, header [class*=NWPlaylist] ul#nwPlaylist-songs > .dropdown > ul.nav-auth, header ul.nav-auth > .dropdown > ul.nav-auth {
+  ul.nav > .dropdown > ul.nav, [class*=NWPlaylist] ul#nwPlaylist-songs > .dropdown > ul.nav, ul#navTag-phone > .dropdown > ul.nav, ul.nav-auth > .dropdown > ul.nav, ul#navTag-phone > li > ul.nav, [class*=NWPlaylist] ul.nav > .dropdown > ul#nwPlaylist-songs, [class*=NWPlaylist] ul#nwPlaylist-songs > .dropdown > ul#nwPlaylist-songs, [class*=NWPlaylist] ul#navTag-phone > .dropdown > ul#nwPlaylist-songs, [class*=NWPlaylist] ul.nav-auth > .dropdown > ul#nwPlaylist-songs, [class*=NWPlaylist] ul#navTag-phone > li > ul#nwPlaylist-songs, ul.nav > .dropdown > ul#navTag-phone, [class*=NWPlaylist] ul#nwPlaylist-songs > .dropdown > ul#navTag-phone, ul#navTag-phone > .dropdown > ul#navTag-phone, ul.nav-auth > .dropdown > ul#navTag-phone, ul#navTag-phone > li > ul#navTag-phone, ul.nav > .dropdown > ul.nav-auth, [class*=NWPlaylist] ul#nwPlaylist-songs > .dropdown > ul.nav-auth, ul#navTag-phone > .dropdown > ul.nav-auth, ul.nav-auth > .dropdown > ul.nav-auth, ul#navTag-phone > li > ul.nav-auth {
     padding: 5px 0px;
     min-width: 200px; }
-    ul.nav > .dropdown > ul.nav > li > a, [class*=NWPlaylist] ul#nwPlaylist-songs > .dropdown > ul.nav > li > a, header ul.nav-auth > .dropdown > ul.nav > li > a, [class*=NWPlaylist] ul.nav > .dropdown > ul#nwPlaylist-songs > li > a, [class*=NWPlaylist] ul#nwPlaylist-songs > .dropdown > ul#nwPlaylist-songs > li > a, header [class*=NWPlaylist] ul.nav-auth > .dropdown > ul#nwPlaylist-songs > li > a, [class*=NWPlaylist] header ul.nav-auth > .dropdown > ul#nwPlaylist-songs > li > a, header ul.nav > .dropdown > ul.nav-auth > li > a, [class*=NWPlaylist] header ul#nwPlaylist-songs > .dropdown > ul.nav-auth > li > a, header [class*=NWPlaylist] ul#nwPlaylist-songs > .dropdown > ul.nav-auth > li > a, header ul.nav-auth > .dropdown > ul.nav-auth > li > a {
+    ul.nav > .dropdown > ul.nav > li > a, [class*=NWPlaylist] ul#nwPlaylist-songs > .dropdown > ul.nav > li > a, ul#navTag-phone > .dropdown > ul.nav > li > a, ul.nav-auth > .dropdown > ul.nav > li > a, ul#navTag-phone > li > ul.nav > li > a, [class*=NWPlaylist] ul.nav > .dropdown > ul#nwPlaylist-songs > li > a, [class*=NWPlaylist] ul#nwPlaylist-songs > .dropdown > ul#nwPlaylist-songs > li > a, [class*=NWPlaylist] ul#navTag-phone > .dropdown > ul#nwPlaylist-songs > li > a, [class*=NWPlaylist] ul.nav-auth > .dropdown > ul#nwPlaylist-songs > li > a, [class*=NWPlaylist] ul#navTag-phone > li > ul#nwPlaylist-songs > li > a, ul.nav > .dropdown > ul#navTag-phone > li > a, [class*=NWPlaylist] ul#nwPlaylist-songs > .dropdown > ul#navTag-phone > li > a, ul#navTag-phone > .dropdown > ul#navTag-phone > li > a, ul.nav-auth > .dropdown > ul#navTag-phone > li > a, ul#navTag-phone > li > ul#navTag-phone > li > a, ul.nav > .dropdown > ul.nav-auth > li > a, [class*=NWPlaylist] ul#nwPlaylist-songs > .dropdown > ul.nav-auth > li > a, ul#navTag-phone > .dropdown > ul.nav-auth > li > a, ul.nav-auth > .dropdown > ul.nav-auth > li > a, ul#navTag-phone > li > ul.nav-auth > li > a {
       text-align: left; }
-    ul.nav > .dropdown > ul.nav > li, [class*=NWPlaylist] ul#nwPlaylist-songs > .dropdown > ul.nav > li, header ul.nav-auth > .dropdown > ul.nav > li, [class*=NWPlaylist] ul.nav > .dropdown > ul#nwPlaylist-songs > li, [class*=NWPlaylist] ul#nwPlaylist-songs > .dropdown > ul#nwPlaylist-songs > li, header [class*=NWPlaylist] ul.nav-auth > .dropdown > ul#nwPlaylist-songs > li, [class*=NWPlaylist] header ul.nav-auth > .dropdown > ul#nwPlaylist-songs > li, header ul.nav > .dropdown > ul.nav-auth > li, [class*=NWPlaylist] header ul#nwPlaylist-songs > .dropdown > ul.nav-auth > li, header [class*=NWPlaylist] ul#nwPlaylist-songs > .dropdown > ul.nav-auth > li, header ul.nav-auth > .dropdown > ul.nav-auth > li {
+    ul.nav > .dropdown > ul.nav > li, [class*=NWPlaylist] ul#nwPlaylist-songs > .dropdown > ul.nav > li, ul#navTag-phone > .dropdown > ul.nav > li, ul.nav-auth > .dropdown > ul.nav > li, ul#navTag-phone > li > ul.nav > li, [class*=NWPlaylist] ul.nav > .dropdown > ul#nwPlaylist-songs > li, [class*=NWPlaylist] ul#nwPlaylist-songs > .dropdown > ul#nwPlaylist-songs > li, [class*=NWPlaylist] ul#navTag-phone > .dropdown > ul#nwPlaylist-songs > li, [class*=NWPlaylist] ul.nav-auth > .dropdown > ul#nwPlaylist-songs > li, [class*=NWPlaylist] ul#navTag-phone > li > ul#nwPlaylist-songs > li, ul.nav > .dropdown > ul#navTag-phone > li, [class*=NWPlaylist] ul#nwPlaylist-songs > .dropdown > ul#navTag-phone > li, ul#navTag-phone > .dropdown > ul#navTag-phone > li, ul.nav-auth > .dropdown > ul#navTag-phone > li, ul#navTag-phone > li > ul#navTag-phone > li, ul.nav > .dropdown > ul.nav-auth > li, [class*=NWPlaylist] ul#nwPlaylist-songs > .dropdown > ul.nav-auth > li, ul#navTag-phone > .dropdown > ul.nav-auth > li, ul.nav-auth > .dropdown > ul.nav-auth > li, ul#navTag-phone > li > ul.nav-auth > li {
       display: block; }
-    ul.nav > .dropdown > ul.nav .dropdown > :not(a):not([class^='dropdown-trigger']), [class*=NWPlaylist] ul#nwPlaylist-songs > .dropdown > ul.nav .dropdown > :not(a):not([class^='dropdown-trigger']), header ul.nav-auth > .dropdown > ul.nav .dropdown > :not(a):not([class^='dropdown-trigger']), [class*=NWPlaylist] ul.nav > .dropdown > ul#nwPlaylist-songs .dropdown > :not(a):not([class^='dropdown-trigger']), [class*=NWPlaylist] ul#nwPlaylist-songs > .dropdown > ul#nwPlaylist-songs .dropdown > :not(a):not([class^='dropdown-trigger']), header [class*=NWPlaylist] ul.nav-auth > .dropdown > ul#nwPlaylist-songs .dropdown > :not(a):not([class^='dropdown-trigger']), [class*=NWPlaylist] header ul.nav-auth > .dropdown > ul#nwPlaylist-songs .dropdown > :not(a):not([class^='dropdown-trigger']), header ul.nav > .dropdown > ul.nav-auth .dropdown > :not(a):not([class^='dropdown-trigger']), [class*=NWPlaylist] header ul#nwPlaylist-songs > .dropdown > ul.nav-auth .dropdown > :not(a):not([class^='dropdown-trigger']), header [class*=NWPlaylist] ul#nwPlaylist-songs > .dropdown > ul.nav-auth .dropdown > :not(a):not([class^='dropdown-trigger']), header ul.nav-auth > .dropdown > ul.nav-auth .dropdown > :not(a):not([class^='dropdown-trigger']) {
+    ul.nav > .dropdown > ul.nav .dropdown > :not(a):not([class^='dropdown-trigger']), [class*=NWPlaylist] ul#nwPlaylist-songs > .dropdown > ul.nav .dropdown > :not(a):not([class^='dropdown-trigger']), ul#navTag-phone > .dropdown > ul.nav .dropdown > :not(a):not([class^='dropdown-trigger']), ul.nav-auth > .dropdown > ul.nav .dropdown > :not(a):not([class^='dropdown-trigger']), ul#navTag-phone > li > ul.nav .dropdown > :not(a):not([class^='dropdown-trigger']), [class*=NWPlaylist] ul.nav > .dropdown > ul#nwPlaylist-songs .dropdown > :not(a):not([class^='dropdown-trigger']), [class*=NWPlaylist] ul#nwPlaylist-songs > .dropdown > ul#nwPlaylist-songs .dropdown > :not(a):not([class^='dropdown-trigger']), [class*=NWPlaylist] ul#navTag-phone > .dropdown > ul#nwPlaylist-songs .dropdown > :not(a):not([class^='dropdown-trigger']), [class*=NWPlaylist] ul.nav-auth > .dropdown > ul#nwPlaylist-songs .dropdown > :not(a):not([class^='dropdown-trigger']), [class*=NWPlaylist] ul#navTag-phone > li > ul#nwPlaylist-songs .dropdown > :not(a):not([class^='dropdown-trigger']), ul.nav > .dropdown > ul#navTag-phone .dropdown > :not(a):not([class^='dropdown-trigger']), [class*=NWPlaylist] ul#nwPlaylist-songs > .dropdown > ul#navTag-phone .dropdown > :not(a):not([class^='dropdown-trigger']), ul#navTag-phone > .dropdown > ul#navTag-phone .dropdown > :not(a):not([class^='dropdown-trigger']), ul.nav-auth > .dropdown > ul#navTag-phone .dropdown > :not(a):not([class^='dropdown-trigger']), ul#navTag-phone > li > ul#navTag-phone .dropdown > :not(a):not([class^='dropdown-trigger']), ul.nav > .dropdown > ul.nav-auth .dropdown > :not(a):not([class^='dropdown-trigger']), [class*=NWPlaylist] ul#nwPlaylist-songs > .dropdown > ul.nav-auth .dropdown > :not(a):not([class^='dropdown-trigger']), ul#navTag-phone > .dropdown > ul.nav-auth .dropdown > :not(a):not([class^='dropdown-trigger']), ul.nav-auth > .dropdown > ul.nav-auth .dropdown > :not(a):not([class^='dropdown-trigger']), ul#navTag-phone > li > ul.nav-auth .dropdown > :not(a):not([class^='dropdown-trigger']), ul.nav > .dropdown > ul.nav #navTag-phone > li > :not(a):not([class^='dropdown-trigger']), [class*=NWPlaylist] ul#nwPlaylist-songs > .dropdown > ul.nav #navTag-phone > li > :not(a):not([class^='dropdown-trigger']), ul#navTag-phone > .dropdown > ul.nav #navTag-phone > li > :not(a):not([class^='dropdown-trigger']), ul.nav-auth > .dropdown > ul.nav #navTag-phone > li > :not(a):not([class^='dropdown-trigger']), ul#navTag-phone > li > ul.nav #navTag-phone > li > :not(a):not([class^='dropdown-trigger']), [class*=NWPlaylist] ul.nav > .dropdown > ul#nwPlaylist-songs #navTag-phone > li > :not(a):not([class^='dropdown-trigger']), [class*=NWPlaylist] ul#nwPlaylist-songs > .dropdown > ul#nwPlaylist-songs #navTag-phone > li > :not(a):not([class^='dropdown-trigger']), [class*=NWPlaylist] ul#navTag-phone > .dropdown > ul#nwPlaylist-songs #navTag-phone > li > :not(a):not([class^='dropdown-trigger']), [class*=NWPlaylist] ul.nav-auth > .dropdown > ul#nwPlaylist-songs #navTag-phone > li > :not(a):not([class^='dropdown-trigger']), [class*=NWPlaylist] ul#navTag-phone > li > ul#nwPlaylist-songs #navTag-phone > li > :not(a):not([class^='dropdown-trigger']), ul.nav > .dropdown > ul#navTag-phone #navTag-phone > li > :not(a):not([class^='dropdown-trigger']), [class*=NWPlaylist] ul#nwPlaylist-songs > .dropdown > ul#navTag-phone #navTag-phone > li > :not(a):not([class^='dropdown-trigger']), ul#navTag-phone > .dropdown > ul#navTag-phone #navTag-phone > li > :not(a):not([class^='dropdown-trigger']), ul.nav-auth > .dropdown > ul#navTag-phone #navTag-phone > li > :not(a):not([class^='dropdown-trigger']), ul#navTag-phone > li > ul#navTag-phone #navTag-phone > li > :not(a):not([class^='dropdown-trigger']), ul.nav > .dropdown > ul.nav-auth #navTag-phone > li > :not(a):not([class^='dropdown-trigger']), [class*=NWPlaylist] ul#nwPlaylist-songs > .dropdown > ul.nav-auth #navTag-phone > li > :not(a):not([class^='dropdown-trigger']), ul#navTag-phone > .dropdown > ul.nav-auth #navTag-phone > li > :not(a):not([class^='dropdown-trigger']), ul.nav-auth > .dropdown > ul.nav-auth #navTag-phone > li > :not(a):not([class^='dropdown-trigger']), ul#navTag-phone > li > ul.nav-auth #navTag-phone > li > :not(a):not([class^='dropdown-trigger']) {
       top: 0px;
       left: 100%; }
-    ul.nav > .dropdown > ul.nav .dropdown > a:after, [class*=NWPlaylist] ul#nwPlaylist-songs > .dropdown > ul.nav .dropdown > a:after, header ul.nav-auth > .dropdown > ul.nav .dropdown > a:after, [class*=NWPlaylist] ul.nav > .dropdown > ul#nwPlaylist-songs .dropdown > a:after, [class*=NWPlaylist] ul#nwPlaylist-songs > .dropdown > ul#nwPlaylist-songs .dropdown > a:after, header [class*=NWPlaylist] ul.nav-auth > .dropdown > ul#nwPlaylist-songs .dropdown > a:after, [class*=NWPlaylist] header ul.nav-auth > .dropdown > ul#nwPlaylist-songs .dropdown > a:after, header ul.nav > .dropdown > ul.nav-auth .dropdown > a:after, [class*=NWPlaylist] header ul#nwPlaylist-songs > .dropdown > ul.nav-auth .dropdown > a:after, header [class*=NWPlaylist] ul#nwPlaylist-songs > .dropdown > ul.nav-auth .dropdown > a:after, header ul.nav-auth > .dropdown > ul.nav-auth .dropdown > a:after {
+    ul.nav > .dropdown > ul.nav .dropdown > a:after, [class*=NWPlaylist] ul#nwPlaylist-songs > .dropdown > ul.nav .dropdown > a:after, ul#navTag-phone > .dropdown > ul.nav .dropdown > a:after, ul.nav-auth > .dropdown > ul.nav .dropdown > a:after, ul#navTag-phone > li > ul.nav .dropdown > a:after, [class*=NWPlaylist] ul.nav > .dropdown > ul#nwPlaylist-songs .dropdown > a:after, [class*=NWPlaylist] ul#nwPlaylist-songs > .dropdown > ul#nwPlaylist-songs .dropdown > a:after, [class*=NWPlaylist] ul#navTag-phone > .dropdown > ul#nwPlaylist-songs .dropdown > a:after, [class*=NWPlaylist] ul.nav-auth > .dropdown > ul#nwPlaylist-songs .dropdown > a:after, [class*=NWPlaylist] ul#navTag-phone > li > ul#nwPlaylist-songs .dropdown > a:after, ul.nav > .dropdown > ul#navTag-phone .dropdown > a:after, [class*=NWPlaylist] ul#nwPlaylist-songs > .dropdown > ul#navTag-phone .dropdown > a:after, ul#navTag-phone > .dropdown > ul#navTag-phone .dropdown > a:after, ul.nav-auth > .dropdown > ul#navTag-phone .dropdown > a:after, ul#navTag-phone > li > ul#navTag-phone .dropdown > a:after, ul.nav > .dropdown > ul.nav-auth .dropdown > a:after, [class*=NWPlaylist] ul#nwPlaylist-songs > .dropdown > ul.nav-auth .dropdown > a:after, ul#navTag-phone > .dropdown > ul.nav-auth .dropdown > a:after, ul.nav-auth > .dropdown > ul.nav-auth .dropdown > a:after, ul#navTag-phone > li > ul.nav-auth .dropdown > a:after, ul.nav > .dropdown > ul.nav #navTag-phone > li > a:after, [class*=NWPlaylist] ul#nwPlaylist-songs > .dropdown > ul.nav #navTag-phone > li > a:after, ul#navTag-phone > .dropdown > ul.nav #navTag-phone > li > a:after, ul.nav-auth > .dropdown > ul.nav #navTag-phone > li > a:after, ul#navTag-phone > li > ul.nav #navTag-phone > li > a:after, [class*=NWPlaylist] ul.nav > .dropdown > ul#nwPlaylist-songs #navTag-phone > li > a:after, [class*=NWPlaylist] ul#nwPlaylist-songs > .dropdown > ul#nwPlaylist-songs #navTag-phone > li > a:after, [class*=NWPlaylist] ul#navTag-phone > .dropdown > ul#nwPlaylist-songs #navTag-phone > li > a:after, [class*=NWPlaylist] ul.nav-auth > .dropdown > ul#nwPlaylist-songs #navTag-phone > li > a:after, [class*=NWPlaylist] ul#navTag-phone > li > ul#nwPlaylist-songs #navTag-phone > li > a:after, ul.nav > .dropdown > ul#navTag-phone #navTag-phone > li > a:after, [class*=NWPlaylist] ul#nwPlaylist-songs > .dropdown > ul#navTag-phone #navTag-phone > li > a:after, ul#navTag-phone > .dropdown > ul#navTag-phone #navTag-phone > li > a:after, ul.nav-auth > .dropdown > ul#navTag-phone #navTag-phone > li > a:after, ul#navTag-phone > li > ul#navTag-phone #navTag-phone > li > a:after, ul.nav > .dropdown > ul.nav-auth #navTag-phone > li > a:after, [class*=NWPlaylist] ul#nwPlaylist-songs > .dropdown > ul.nav-auth #navTag-phone > li > a:after, ul#navTag-phone > .dropdown > ul.nav-auth #navTag-phone > li > a:after, ul.nav-auth > .dropdown > ul.nav-auth #navTag-phone > li > a:after, ul#navTag-phone > li > ul.nav-auth #navTag-phone > li > a:after {
       font-size: 16px;
       font-family: 'Icons';
       speak: none;
@@ -3459,33 +3460,35 @@ ul.nav, [class*=NWPlaylist] ul#nwPlaylist-songs, header ul.nav-auth {
       position: absolute;
       margin: 0px;
       right: 10px; }
-    ul.nav > .dropdown > ul.nav .dropdown .dropdown-trigger-noIcon:after, [class*=NWPlaylist] ul#nwPlaylist-songs > .dropdown > ul.nav .dropdown .dropdown-trigger-noIcon:after, header ul.nav-auth > .dropdown > ul.nav .dropdown .dropdown-trigger-noIcon:after, [class*=NWPlaylist] ul.nav > .dropdown > ul#nwPlaylist-songs .dropdown .dropdown-trigger-noIcon:after, [class*=NWPlaylist] ul#nwPlaylist-songs > .dropdown > ul#nwPlaylist-songs .dropdown .dropdown-trigger-noIcon:after, header [class*=NWPlaylist] ul.nav-auth > .dropdown > ul#nwPlaylist-songs .dropdown .dropdown-trigger-noIcon:after, [class*=NWPlaylist] header ul.nav-auth > .dropdown > ul#nwPlaylist-songs .dropdown .dropdown-trigger-noIcon:after, header ul.nav > .dropdown > ul.nav-auth .dropdown .dropdown-trigger-noIcon:after, [class*=NWPlaylist] header ul#nwPlaylist-songs > .dropdown > ul.nav-auth .dropdown .dropdown-trigger-noIcon:after, header [class*=NWPlaylist] ul#nwPlaylist-songs > .dropdown > ul.nav-auth .dropdown .dropdown-trigger-noIcon:after, header ul.nav-auth > .dropdown > ul.nav-auth .dropdown .dropdown-trigger-noIcon:after {
+    ul.nav > .dropdown > ul.nav .dropdown .dropdown-trigger-noIcon:after, [class*=NWPlaylist] ul#nwPlaylist-songs > .dropdown > ul.nav .dropdown .dropdown-trigger-noIcon:after, ul#navTag-phone > .dropdown > ul.nav .dropdown .dropdown-trigger-noIcon:after, ul.nav-auth > .dropdown > ul.nav .dropdown .dropdown-trigger-noIcon:after, ul#navTag-phone > li > ul.nav .dropdown .dropdown-trigger-noIcon:after, [class*=NWPlaylist] ul.nav > .dropdown > ul#nwPlaylist-songs .dropdown .dropdown-trigger-noIcon:after, [class*=NWPlaylist] ul#nwPlaylist-songs > .dropdown > ul#nwPlaylist-songs .dropdown .dropdown-trigger-noIcon:after, [class*=NWPlaylist] ul#navTag-phone > .dropdown > ul#nwPlaylist-songs .dropdown .dropdown-trigger-noIcon:after, [class*=NWPlaylist] ul.nav-auth > .dropdown > ul#nwPlaylist-songs .dropdown .dropdown-trigger-noIcon:after, [class*=NWPlaylist] ul#navTag-phone > li > ul#nwPlaylist-songs .dropdown .dropdown-trigger-noIcon:after, ul.nav > .dropdown > ul#navTag-phone .dropdown .dropdown-trigger-noIcon:after, [class*=NWPlaylist] ul#nwPlaylist-songs > .dropdown > ul#navTag-phone .dropdown .dropdown-trigger-noIcon:after, ul#navTag-phone > .dropdown > ul#navTag-phone .dropdown .dropdown-trigger-noIcon:after, ul.nav-auth > .dropdown > ul#navTag-phone .dropdown .dropdown-trigger-noIcon:after, ul#navTag-phone > li > ul#navTag-phone .dropdown .dropdown-trigger-noIcon:after, ul.nav > .dropdown > ul.nav-auth .dropdown .dropdown-trigger-noIcon:after, [class*=NWPlaylist] ul#nwPlaylist-songs > .dropdown > ul.nav-auth .dropdown .dropdown-trigger-noIcon:after, ul#navTag-phone > .dropdown > ul.nav-auth .dropdown .dropdown-trigger-noIcon:after, ul.nav-auth > .dropdown > ul.nav-auth .dropdown .dropdown-trigger-noIcon:after, ul#navTag-phone > li > ul.nav-auth .dropdown .dropdown-trigger-noIcon:after, ul.nav > .dropdown > ul.nav #navTag-phone > li .dropdown-trigger-noIcon:after, [class*=NWPlaylist] ul#nwPlaylist-songs > .dropdown > ul.nav #navTag-phone > li .dropdown-trigger-noIcon:after, ul#navTag-phone > .dropdown > ul.nav #navTag-phone > li .dropdown-trigger-noIcon:after, ul.nav-auth > .dropdown > ul.nav #navTag-phone > li .dropdown-trigger-noIcon:after, ul#navTag-phone > li > ul.nav #navTag-phone > li .dropdown-trigger-noIcon:after, [class*=NWPlaylist] ul.nav > .dropdown > ul#nwPlaylist-songs #navTag-phone > li .dropdown-trigger-noIcon:after, [class*=NWPlaylist] ul#nwPlaylist-songs > .dropdown > ul#nwPlaylist-songs #navTag-phone > li .dropdown-trigger-noIcon:after, [class*=NWPlaylist] ul#navTag-phone > .dropdown > ul#nwPlaylist-songs #navTag-phone > li .dropdown-trigger-noIcon:after, [class*=NWPlaylist] ul.nav-auth > .dropdown > ul#nwPlaylist-songs #navTag-phone > li .dropdown-trigger-noIcon:after, [class*=NWPlaylist] ul#navTag-phone > li > ul#nwPlaylist-songs #navTag-phone > li .dropdown-trigger-noIcon:after, ul.nav > .dropdown > ul#navTag-phone #navTag-phone > li .dropdown-trigger-noIcon:after, [class*=NWPlaylist] ul#nwPlaylist-songs > .dropdown > ul#navTag-phone #navTag-phone > li .dropdown-trigger-noIcon:after, ul#navTag-phone > .dropdown > ul#navTag-phone #navTag-phone > li .dropdown-trigger-noIcon:after, ul.nav-auth > .dropdown > ul#navTag-phone #navTag-phone > li .dropdown-trigger-noIcon:after, ul#navTag-phone > li > ul#navTag-phone #navTag-phone > li .dropdown-trigger-noIcon:after, ul.nav > .dropdown > ul.nav-auth #navTag-phone > li .dropdown-trigger-noIcon:after, [class*=NWPlaylist] ul#nwPlaylist-songs > .dropdown > ul.nav-auth #navTag-phone > li .dropdown-trigger-noIcon:after, ul#navTag-phone > .dropdown > ul.nav-auth #navTag-phone > li .dropdown-trigger-noIcon:after, ul.nav-auth > .dropdown > ul.nav-auth #navTag-phone > li .dropdown-trigger-noIcon:after, ul#navTag-phone > li > ul.nav-auth #navTag-phone > li .dropdown-trigger-noIcon:after {
       content: ''; }
-    ul.nav > .dropdown > ul.nav > li > a, [class*=NWPlaylist] ul#nwPlaylist-songs > .dropdown > ul.nav > li > a, header ul.nav-auth > .dropdown > ul.nav > li > a, [class*=NWPlaylist] ul.nav > .dropdown > ul#nwPlaylist-songs > li > a, [class*=NWPlaylist] ul#nwPlaylist-songs > .dropdown > ul#nwPlaylist-songs > li > a, header [class*=NWPlaylist] ul.nav-auth > .dropdown > ul#nwPlaylist-songs > li > a, [class*=NWPlaylist] header ul.nav-auth > .dropdown > ul#nwPlaylist-songs > li > a, header ul.nav > .dropdown > ul.nav-auth > li > a, [class*=NWPlaylist] header ul#nwPlaylist-songs > .dropdown > ul.nav-auth > li > a, header [class*=NWPlaylist] ul#nwPlaylist-songs > .dropdown > ul.nav-auth > li > a, header ul.nav-auth > .dropdown > ul.nav-auth > li > a {
+    ul.nav > .dropdown > ul.nav > li > a, [class*=NWPlaylist] ul#nwPlaylist-songs > .dropdown > ul.nav > li > a, ul#navTag-phone > .dropdown > ul.nav > li > a, ul.nav-auth > .dropdown > ul.nav > li > a, ul#navTag-phone > li > ul.nav > li > a, [class*=NWPlaylist] ul.nav > .dropdown > ul#nwPlaylist-songs > li > a, [class*=NWPlaylist] ul#nwPlaylist-songs > .dropdown > ul#nwPlaylist-songs > li > a, [class*=NWPlaylist] ul#navTag-phone > .dropdown > ul#nwPlaylist-songs > li > a, [class*=NWPlaylist] ul.nav-auth > .dropdown > ul#nwPlaylist-songs > li > a, [class*=NWPlaylist] ul#navTag-phone > li > ul#nwPlaylist-songs > li > a, ul.nav > .dropdown > ul#navTag-phone > li > a, [class*=NWPlaylist] ul#nwPlaylist-songs > .dropdown > ul#navTag-phone > li > a, ul#navTag-phone > .dropdown > ul#navTag-phone > li > a, ul.nav-auth > .dropdown > ul#navTag-phone > li > a, ul#navTag-phone > li > ul#navTag-phone > li > a, ul.nav > .dropdown > ul.nav-auth > li > a, [class*=NWPlaylist] ul#nwPlaylist-songs > .dropdown > ul.nav-auth > li > a, ul#navTag-phone > .dropdown > ul.nav-auth > li > a, ul.nav-auth > .dropdown > ul.nav-auth > li > a, ul#navTag-phone > li > ul.nav-auth > li > a {
       border-radius: 0px; }
-  ul.nav:after, [class*=NWPlaylist] ul#nwPlaylist-songs:after, header ul.nav-auth:after {
+  ul.nav:after, [class*=NWPlaylist] ul#nwPlaylist-songs:after, ul#navTag-phone:after, ul.nav-auth:after {
     content: "";
     display: table;
     clear: both; }
-  ul.nav > li, [class*=NWPlaylist] ul#nwPlaylist-songs > li, header ul.nav-auth > li {
+  ul.nav > li, [class*=NWPlaylist] ul#nwPlaylist-songs > li, ul#navTag-phone > li, ul.nav-auth > li {
     display: inline-block;
     vertical-align: top;
     zoom: 1;
     *display: inline; }
-    ul.nav > li > a, [class*=NWPlaylist] ul#nwPlaylist-songs > li > a, header ul.nav-auth > li > a {
+    ul.nav > li > a, [class*=NWPlaylist] ul#nwPlaylist-songs > li > a, ul#navTag-phone > li > a, ul.nav-auth > li > a {
       text-align: center; }
-  ul.nav > .dropdown > :not(a):not([class^='dropdown-trigger']), [class*=NWPlaylist] ul#nwPlaylist-songs > .dropdown > :not(a):not([class^='dropdown-trigger']), header ul.nav-auth > .dropdown > :not(a):not([class^='dropdown-trigger']) {
+  ul.nav > .dropdown > :not(a):not([class^='dropdown-trigger']), [class*=NWPlaylist] ul#nwPlaylist-songs > .dropdown > :not(a):not([class^='dropdown-trigger']), ul#navTag-phone > .dropdown > :not(a):not([class^='dropdown-trigger']), ul.nav-auth > .dropdown > :not(a):not([class^='dropdown-trigger']), ul#navTag-phone > li > :not(a):not([class^='dropdown-trigger']) {
     right: auto;
     left: 0px;
     text-align: left; }
-  ul.nav > .dropdown > :not(a):not([class^='dropdown-trigger']), [class*=NWPlaylist] ul#nwPlaylist-songs > .dropdown > :not(a):not([class^='dropdown-trigger']), header ul.nav-auth > .dropdown > :not(a):not([class^='dropdown-trigger']) {
+  ul.nav > .dropdown > :not(a):not([class^='dropdown-trigger']), [class*=NWPlaylist] ul#nwPlaylist-songs > .dropdown > :not(a):not([class^='dropdown-trigger']), ul#navTag-phone > .dropdown > :not(a):not([class^='dropdown-trigger']), ul.nav-auth > .dropdown > :not(a):not([class^='dropdown-trigger']), ul#navTag-phone > li > :not(a):not([class^='dropdown-trigger']) {
     top: 100%; }
-  ul.nav > .dropdown > a, [class*=NWPlaylist] ul#nwPlaylist-songs > .dropdown > a, header ul.nav-auth > .dropdown > a,
+  ul.nav > .dropdown > a, [class*=NWPlaylist] ul#nwPlaylist-songs > .dropdown > a, ul#navTag-phone > .dropdown > a, ul.nav-auth > .dropdown > a, ul#navTag-phone > li > a,
   ul.nav > .dropdown > .dropdown-trigger,
   [class*=NWPlaylist] ul#nwPlaylist-songs > .dropdown > .dropdown-trigger,
-  header ul.nav-auth > .dropdown > .dropdown-trigger {
+  ul#navTag-phone > .dropdown > .dropdown-trigger,
+  ul.nav-auth > .dropdown > .dropdown-trigger,
+  ul#navTag-phone > li > .dropdown-trigger {
     margin-bottom: 0px; }
-  ul.nav > .dropdown > a:after, [class*=NWPlaylist] ul#nwPlaylist-songs > .dropdown > a:after, header ul.nav-auth > .dropdown > a:after {
+  ul.nav > .dropdown > a:after, [class*=NWPlaylist] ul#nwPlaylist-songs > .dropdown > a:after, ul#navTag-phone > .dropdown > a:after, ul.nav-auth > .dropdown > a:after, ul#navTag-phone > li > a:after {
     font-size: 16px;
     font-family: 'Icons';
     speak: none;
@@ -3503,16 +3506,18 @@ ul.nav, [class*=NWPlaylist] ul#nwPlaylist-songs, header ul.nav-auth {
     position: relative;
     margin-left: 8px;
     right: 0px; }
-  ul.nav > .dropdown .dropdown-trigger-noIcon:after, [class*=NWPlaylist] ul#nwPlaylist-songs > .dropdown .dropdown-trigger-noIcon:after, header ul.nav-auth > .dropdown .dropdown-trigger-noIcon:after {
+  ul.nav > .dropdown .dropdown-trigger-noIcon:after, [class*=NWPlaylist] ul#nwPlaylist-songs > .dropdown .dropdown-trigger-noIcon:after, ul#navTag-phone > .dropdown .dropdown-trigger-noIcon:after, ul.nav-auth > .dropdown .dropdown-trigger-noIcon:after, ul#navTag-phone > li .dropdown-trigger-noIcon:after {
     content: ''; }
 
 .well > ul.nav > li > a:hover, pre > ul.nav > li > a:hover,
 .pre > ul.nav > li > a:hover, #resultsList-wrapper > ul.nav > li > a:hover, [class*=NWPlaylist] .well > ul#nwPlaylist-songs > li > a:hover, [class*=NWPlaylist] pre > ul#nwPlaylist-songs > li > a:hover,
-[class*=NWPlaylist] .pre > ul#nwPlaylist-songs > li > a:hover, [class*=NWPlaylist] #resultsList-wrapper > ul#nwPlaylist-songs > li > a:hover, header .well > ul.nav-auth > li > a:hover, header pre > ul.nav-auth > li > a:hover,
-header .pre > ul.nav-auth > li > a:hover, header #resultsList-wrapper > ul.nav-auth > li > a:hover, .well > ul.nav > li > a.active, pre > ul.nav > li > a.active,
+[class*=NWPlaylist] .pre > ul#nwPlaylist-songs > li > a:hover, [class*=NWPlaylist] #resultsList-wrapper > ul#nwPlaylist-songs > li > a:hover, .well > ul#navTag-phone > li > a:hover, pre > ul#navTag-phone > li > a:hover,
+.pre > ul#navTag-phone > li > a:hover, #resultsList-wrapper > ul#navTag-phone > li > a:hover, .well > ul.nav-auth > li > a:hover, pre > ul.nav-auth > li > a:hover,
+.pre > ul.nav-auth > li > a:hover, #resultsList-wrapper > ul.nav-auth > li > a:hover, .well > ul.nav > li > a.active, pre > ul.nav > li > a.active,
 .pre > ul.nav > li > a.active, #resultsList-wrapper > ul.nav > li > a.active, [class*=NWPlaylist] .well > ul#nwPlaylist-songs > li > a.active, [class*=NWPlaylist] pre > ul#nwPlaylist-songs > li > a.active,
-[class*=NWPlaylist] .pre > ul#nwPlaylist-songs > li > a.active, [class*=NWPlaylist] #resultsList-wrapper > ul#nwPlaylist-songs > li > a.active, header .well > ul.nav-auth > li > a.active, header pre > ul.nav-auth > li > a.active,
-header .pre > ul.nav-auth > li > a.active, header #resultsList-wrapper > ul.nav-auth > li > a.active {
+[class*=NWPlaylist] .pre > ul#nwPlaylist-songs > li > a.active, [class*=NWPlaylist] #resultsList-wrapper > ul#nwPlaylist-songs > li > a.active, .well > ul#navTag-phone > li > a.active, pre > ul#navTag-phone > li > a.active,
+.pre > ul#navTag-phone > li > a.active, #resultsList-wrapper > ul#navTag-phone > li > a.active, .well > ul.nav-auth > li > a.active, pre > ul.nav-auth > li > a.active,
+.pre > ul.nav-auth > li > a.active, #resultsList-wrapper > ul.nav-auth > li > a.active {
   background-color: #f7e5d0;
   color: #333333; }
 
@@ -3549,91 +3554,123 @@ header .pre > ul.nav-auth > li > a.active, header #resultsList-wrapper > ul.nav-
         color: black; }
   .navbar > nav, header > nav {
     display: inline-block; }
-  .navbar > nav > ul.nav, header > nav > ul.nav, [class*=NWPlaylist] .navbar > nav > ul#nwPlaylist-songs, [class*=NWPlaylist] header > nav > ul#nwPlaylist-songs, header .navbar > nav > ul.nav-auth, header > nav > ul.nav-auth,
+  .navbar > nav > ul.nav, header > nav > ul.nav, [class*=NWPlaylist] .navbar > nav > ul#nwPlaylist-songs, [class*=NWPlaylist] header > nav > ul#nwPlaylist-songs, .navbar > nav > ul#navTag-phone, header > nav > ul#navTag-phone, .navbar > nav > ul.nav-auth, header > nav > ul.nav-auth,
   .navbar > ul.nav,
   header > ul.nav,
   [class*=NWPlaylist] .navbar > ul#nwPlaylist-songs,
   [class*=NWPlaylist] header > ul#nwPlaylist-songs,
-  header .navbar > ul.nav-auth,
+  .navbar > ul#navTag-phone,
+  header > ul#navTag-phone,
+  .navbar > ul.nav-auth,
   header > ul.nav-auth {
     list-style-type: none;
     margin: 0px;
     padding: 0px;
     display: inline-block; }
-    .navbar > nav > ul.nav:after, header > nav > ul.nav:after, [class*=NWPlaylist] .navbar > nav > ul#nwPlaylist-songs:after, [class*=NWPlaylist] header > nav > ul#nwPlaylist-songs:after, header .navbar > nav > ul.nav-auth:after, header > nav > ul.nav-auth:after,
+    .navbar > nav > ul.nav:after, header > nav > ul.nav:after, [class*=NWPlaylist] .navbar > nav > ul#nwPlaylist-songs:after, [class*=NWPlaylist] header > nav > ul#nwPlaylist-songs:after, .navbar > nav > ul#navTag-phone:after, header > nav > ul#navTag-phone:after, .navbar > nav > ul.nav-auth:after, header > nav > ul.nav-auth:after,
     .navbar > ul.nav:after,
     header > ul.nav:after,
     [class*=NWPlaylist] .navbar > ul#nwPlaylist-songs:after,
     [class*=NWPlaylist] header > ul#nwPlaylist-songs:after,
-    header .navbar > ul.nav-auth:after,
+    .navbar > ul#navTag-phone:after,
+    header > ul#navTag-phone:after,
+    .navbar > ul.nav-auth:after,
     header > ul.nav-auth:after {
       content: "";
       display: table;
       clear: both; }
-    .navbar > nav > ul.nav > li, header > nav > ul.nav > li, [class*=NWPlaylist] .navbar > nav > ul#nwPlaylist-songs > li, [class*=NWPlaylist] header > nav > ul#nwPlaylist-songs > li, header .navbar > nav > ul.nav-auth > li, header > nav > ul.nav-auth > li,
+    .navbar > nav > ul.nav > li, header > nav > ul.nav > li, [class*=NWPlaylist] .navbar > nav > ul#nwPlaylist-songs > li, [class*=NWPlaylist] header > nav > ul#nwPlaylist-songs > li, .navbar > nav > ul#navTag-phone > li, header > nav > ul#navTag-phone > li, .navbar > nav > ul.nav-auth > li, header > nav > ul.nav-auth > li,
     .navbar > ul.nav > li,
     header > ul.nav > li,
     [class*=NWPlaylist] .navbar > ul#nwPlaylist-songs > li,
     [class*=NWPlaylist] header > ul#nwPlaylist-songs > li,
-    header .navbar > ul.nav-auth > li,
+    .navbar > ul#navTag-phone > li,
+    header > ul#navTag-phone > li,
+    .navbar > ul.nav-auth > li,
     header > ul.nav-auth > li {
       display: inline-block;
       vertical-align: top;
       zoom: 1;
       *display: inline; }
-      .navbar > nav > ul.nav > li > a, header > nav > ul.nav > li > a, [class*=NWPlaylist] .navbar > nav > ul#nwPlaylist-songs > li > a, [class*=NWPlaylist] header > nav > ul#nwPlaylist-songs > li > a, header .navbar > nav > ul.nav-auth > li > a, header > nav > ul.nav-auth > li > a,
+      .navbar > nav > ul.nav > li > a, header > nav > ul.nav > li > a, [class*=NWPlaylist] .navbar > nav > ul#nwPlaylist-songs > li > a, [class*=NWPlaylist] header > nav > ul#nwPlaylist-songs > li > a, .navbar > nav > ul#navTag-phone > li > a, header > nav > ul#navTag-phone > li > a, .navbar > nav > ul.nav-auth > li > a, header > nav > ul.nav-auth > li > a,
       .navbar > ul.nav > li > a,
       header > ul.nav > li > a,
       [class*=NWPlaylist] .navbar > ul#nwPlaylist-songs > li > a,
       [class*=NWPlaylist] header > ul#nwPlaylist-songs > li > a,
-      header .navbar > ul.nav-auth > li > a,
+      .navbar > ul#navTag-phone > li > a,
+      header > ul#navTag-phone > li > a,
+      .navbar > ul.nav-auth > li > a,
       header > ul.nav-auth > li > a {
         text-align: center; }
-    .navbar > nav > ul.nav > .dropdown > :not(a):not([class^='dropdown-trigger']), header > nav > ul.nav > .dropdown > :not(a):not([class^='dropdown-trigger']), [class*=NWPlaylist] .navbar > nav > ul#nwPlaylist-songs > .dropdown > :not(a):not([class^='dropdown-trigger']), [class*=NWPlaylist] header > nav > ul#nwPlaylist-songs > .dropdown > :not(a):not([class^='dropdown-trigger']), header .navbar > nav > ul.nav-auth > .dropdown > :not(a):not([class^='dropdown-trigger']), header > nav > ul.nav-auth > .dropdown > :not(a):not([class^='dropdown-trigger']),
+    .navbar > nav > ul.nav > .dropdown > :not(a):not([class^='dropdown-trigger']), header > nav > ul.nav > .dropdown > :not(a):not([class^='dropdown-trigger']), [class*=NWPlaylist] .navbar > nav > ul#nwPlaylist-songs > .dropdown > :not(a):not([class^='dropdown-trigger']), [class*=NWPlaylist] header > nav > ul#nwPlaylist-songs > .dropdown > :not(a):not([class^='dropdown-trigger']), .navbar > nav > ul#navTag-phone > .dropdown > :not(a):not([class^='dropdown-trigger']), header > nav > ul#navTag-phone > .dropdown > :not(a):not([class^='dropdown-trigger']), .navbar > nav > ul.nav-auth > .dropdown > :not(a):not([class^='dropdown-trigger']), header > nav > ul.nav-auth > .dropdown > :not(a):not([class^='dropdown-trigger']), .navbar > nav > ul#navTag-phone > li > :not(a):not([class^='dropdown-trigger']), header > nav > ul#navTag-phone > li > :not(a):not([class^='dropdown-trigger']),
     .navbar > ul.nav > .dropdown > :not(a):not([class^='dropdown-trigger']),
     header > ul.nav > .dropdown > :not(a):not([class^='dropdown-trigger']),
     [class*=NWPlaylist] .navbar > ul#nwPlaylist-songs > .dropdown > :not(a):not([class^='dropdown-trigger']),
     [class*=NWPlaylist] header > ul#nwPlaylist-songs > .dropdown > :not(a):not([class^='dropdown-trigger']),
-    header .navbar > ul.nav-auth > .dropdown > :not(a):not([class^='dropdown-trigger']),
-    header > ul.nav-auth > .dropdown > :not(a):not([class^='dropdown-trigger']) {
+    .navbar > ul#navTag-phone > .dropdown > :not(a):not([class^='dropdown-trigger']),
+    header > ul#navTag-phone > .dropdown > :not(a):not([class^='dropdown-trigger']),
+    .navbar > ul.nav-auth > .dropdown > :not(a):not([class^='dropdown-trigger']),
+    header > ul.nav-auth > .dropdown > :not(a):not([class^='dropdown-trigger']),
+    .navbar > ul#navTag-phone > li > :not(a):not([class^='dropdown-trigger']),
+    header > ul#navTag-phone > li > :not(a):not([class^='dropdown-trigger']) {
       right: auto;
       left: 0px;
       text-align: left; }
-    .navbar > nav > ul.nav > .dropdown > :not(a):not([class^='dropdown-trigger']), header > nav > ul.nav > .dropdown > :not(a):not([class^='dropdown-trigger']), [class*=NWPlaylist] .navbar > nav > ul#nwPlaylist-songs > .dropdown > :not(a):not([class^='dropdown-trigger']), [class*=NWPlaylist] header > nav > ul#nwPlaylist-songs > .dropdown > :not(a):not([class^='dropdown-trigger']), header .navbar > nav > ul.nav-auth > .dropdown > :not(a):not([class^='dropdown-trigger']), header > nav > ul.nav-auth > .dropdown > :not(a):not([class^='dropdown-trigger']),
+    .navbar > nav > ul.nav > .dropdown > :not(a):not([class^='dropdown-trigger']), header > nav > ul.nav > .dropdown > :not(a):not([class^='dropdown-trigger']), [class*=NWPlaylist] .navbar > nav > ul#nwPlaylist-songs > .dropdown > :not(a):not([class^='dropdown-trigger']), [class*=NWPlaylist] header > nav > ul#nwPlaylist-songs > .dropdown > :not(a):not([class^='dropdown-trigger']), .navbar > nav > ul#navTag-phone > .dropdown > :not(a):not([class^='dropdown-trigger']), header > nav > ul#navTag-phone > .dropdown > :not(a):not([class^='dropdown-trigger']), .navbar > nav > ul.nav-auth > .dropdown > :not(a):not([class^='dropdown-trigger']), header > nav > ul.nav-auth > .dropdown > :not(a):not([class^='dropdown-trigger']), .navbar > nav > ul#navTag-phone > li > :not(a):not([class^='dropdown-trigger']), header > nav > ul#navTag-phone > li > :not(a):not([class^='dropdown-trigger']),
     .navbar > ul.nav > .dropdown > :not(a):not([class^='dropdown-trigger']),
     header > ul.nav > .dropdown > :not(a):not([class^='dropdown-trigger']),
     [class*=NWPlaylist] .navbar > ul#nwPlaylist-songs > .dropdown > :not(a):not([class^='dropdown-trigger']),
     [class*=NWPlaylist] header > ul#nwPlaylist-songs > .dropdown > :not(a):not([class^='dropdown-trigger']),
-    header .navbar > ul.nav-auth > .dropdown > :not(a):not([class^='dropdown-trigger']),
-    header > ul.nav-auth > .dropdown > :not(a):not([class^='dropdown-trigger']) {
+    .navbar > ul#navTag-phone > .dropdown > :not(a):not([class^='dropdown-trigger']),
+    header > ul#navTag-phone > .dropdown > :not(a):not([class^='dropdown-trigger']),
+    .navbar > ul.nav-auth > .dropdown > :not(a):not([class^='dropdown-trigger']),
+    header > ul.nav-auth > .dropdown > :not(a):not([class^='dropdown-trigger']),
+    .navbar > ul#navTag-phone > li > :not(a):not([class^='dropdown-trigger']),
+    header > ul#navTag-phone > li > :not(a):not([class^='dropdown-trigger']) {
       top: 100%; }
-    .navbar > nav > ul.nav > .dropdown > a, header > nav > ul.nav > .dropdown > a, [class*=NWPlaylist] .navbar > nav > ul#nwPlaylist-songs > .dropdown > a, [class*=NWPlaylist] header > nav > ul#nwPlaylist-songs > .dropdown > a, header .navbar > nav > ul.nav-auth > .dropdown > a, header > nav > ul.nav-auth > .dropdown > a,
+    .navbar > nav > ul.nav > .dropdown > a, header > nav > ul.nav > .dropdown > a, [class*=NWPlaylist] .navbar > nav > ul#nwPlaylist-songs > .dropdown > a, [class*=NWPlaylist] header > nav > ul#nwPlaylist-songs > .dropdown > a, .navbar > nav > ul#navTag-phone > .dropdown > a, header > nav > ul#navTag-phone > .dropdown > a, .navbar > nav > ul.nav-auth > .dropdown > a, header > nav > ul.nav-auth > .dropdown > a, .navbar > nav > ul#navTag-phone > li > a, header > nav > ul#navTag-phone > li > a,
     .navbar > nav > ul.nav > .dropdown > .dropdown-trigger,
     header > nav > ul.nav > .dropdown > .dropdown-trigger,
     [class*=NWPlaylist] .navbar > nav > ul#nwPlaylist-songs > .dropdown > .dropdown-trigger,
     [class*=NWPlaylist] header > nav > ul#nwPlaylist-songs > .dropdown > .dropdown-trigger,
-    header .navbar > nav > ul.nav-auth > .dropdown > .dropdown-trigger,
+    .navbar > nav > ul#navTag-phone > .dropdown > .dropdown-trigger,
+    header > nav > ul#navTag-phone > .dropdown > .dropdown-trigger,
+    .navbar > nav > ul.nav-auth > .dropdown > .dropdown-trigger,
     header > nav > ul.nav-auth > .dropdown > .dropdown-trigger,
+    .navbar > nav > ul#navTag-phone > li > .dropdown-trigger,
+    header > nav > ul#navTag-phone > li > .dropdown-trigger,
     .navbar > ul.nav > .dropdown > a,
     header > ul.nav > .dropdown > a,
     [class*=NWPlaylist] .navbar > ul#nwPlaylist-songs > .dropdown > a,
     [class*=NWPlaylist] header > ul#nwPlaylist-songs > .dropdown > a,
-    header .navbar > ul.nav-auth > .dropdown > a,
+    .navbar > ul#navTag-phone > .dropdown > a,
+    header > ul#navTag-phone > .dropdown > a,
+    .navbar > ul.nav-auth > .dropdown > a,
     header > ul.nav-auth > .dropdown > a,
+    .navbar > ul#navTag-phone > li > a,
+    header > ul#navTag-phone > li > a,
     .navbar > ul.nav > .dropdown > .dropdown-trigger,
     header > ul.nav > .dropdown > .dropdown-trigger,
     [class*=NWPlaylist] .navbar > ul#nwPlaylist-songs > .dropdown > .dropdown-trigger,
     [class*=NWPlaylist] header > ul#nwPlaylist-songs > .dropdown > .dropdown-trigger,
-    header .navbar > ul.nav-auth > .dropdown > .dropdown-trigger,
-    header > ul.nav-auth > .dropdown > .dropdown-trigger {
+    .navbar > ul#navTag-phone > .dropdown > .dropdown-trigger,
+    header > ul#navTag-phone > .dropdown > .dropdown-trigger,
+    .navbar > ul.nav-auth > .dropdown > .dropdown-trigger,
+    header > ul.nav-auth > .dropdown > .dropdown-trigger,
+    .navbar > ul#navTag-phone > li > .dropdown-trigger,
+    header > ul#navTag-phone > li > .dropdown-trigger {
       margin-bottom: 0px; }
-    .navbar > nav > ul.nav > .dropdown > a:after, header > nav > ul.nav > .dropdown > a:after, [class*=NWPlaylist] .navbar > nav > ul#nwPlaylist-songs > .dropdown > a:after, [class*=NWPlaylist] header > nav > ul#nwPlaylist-songs > .dropdown > a:after, header .navbar > nav > ul.nav-auth > .dropdown > a:after, header > nav > ul.nav-auth > .dropdown > a:after,
+    .navbar > nav > ul.nav > .dropdown > a:after, header > nav > ul.nav > .dropdown > a:after, [class*=NWPlaylist] .navbar > nav > ul#nwPlaylist-songs > .dropdown > a:after, [class*=NWPlaylist] header > nav > ul#nwPlaylist-songs > .dropdown > a:after, .navbar > nav > ul#navTag-phone > .dropdown > a:after, header > nav > ul#navTag-phone > .dropdown > a:after, .navbar > nav > ul.nav-auth > .dropdown > a:after, header > nav > ul.nav-auth > .dropdown > a:after, .navbar > nav > ul#navTag-phone > li > a:after, header > nav > ul#navTag-phone > li > a:after,
     .navbar > ul.nav > .dropdown > a:after,
     header > ul.nav > .dropdown > a:after,
     [class*=NWPlaylist] .navbar > ul#nwPlaylist-songs > .dropdown > a:after,
     [class*=NWPlaylist] header > ul#nwPlaylist-songs > .dropdown > a:after,
-    header .navbar > ul.nav-auth > .dropdown > a:after,
-    header > ul.nav-auth > .dropdown > a:after {
+    .navbar > ul#navTag-phone > .dropdown > a:after,
+    header > ul#navTag-phone > .dropdown > a:after,
+    .navbar > ul.nav-auth > .dropdown > a:after,
+    header > ul.nav-auth > .dropdown > a:after,
+    .navbar > ul#navTag-phone > li > a:after,
+    header > ul#navTag-phone > li > a:after {
       font-size: 16px;
       font-family: 'Icons';
       speak: none;
@@ -3651,30 +3688,38 @@ header .pre > ul.nav-auth > li > a.active, header #resultsList-wrapper > ul.nav-
       position: relative;
       margin-left: 8px;
       right: 0px; }
-    .navbar > nav > ul.nav > .dropdown .dropdown-trigger-noIcon:after, header > nav > ul.nav > .dropdown .dropdown-trigger-noIcon:after, [class*=NWPlaylist] .navbar > nav > ul#nwPlaylist-songs > .dropdown .dropdown-trigger-noIcon:after, [class*=NWPlaylist] header > nav > ul#nwPlaylist-songs > .dropdown .dropdown-trigger-noIcon:after, header .navbar > nav > ul.nav-auth > .dropdown .dropdown-trigger-noIcon:after, header > nav > ul.nav-auth > .dropdown .dropdown-trigger-noIcon:after,
+    .navbar > nav > ul.nav > .dropdown .dropdown-trigger-noIcon:after, header > nav > ul.nav > .dropdown .dropdown-trigger-noIcon:after, [class*=NWPlaylist] .navbar > nav > ul#nwPlaylist-songs > .dropdown .dropdown-trigger-noIcon:after, [class*=NWPlaylist] header > nav > ul#nwPlaylist-songs > .dropdown .dropdown-trigger-noIcon:after, .navbar > nav > ul#navTag-phone > .dropdown .dropdown-trigger-noIcon:after, header > nav > ul#navTag-phone > .dropdown .dropdown-trigger-noIcon:after, .navbar > nav > ul.nav-auth > .dropdown .dropdown-trigger-noIcon:after, header > nav > ul.nav-auth > .dropdown .dropdown-trigger-noIcon:after, .navbar > nav > ul#navTag-phone > li .dropdown-trigger-noIcon:after, header > nav > ul#navTag-phone > li .dropdown-trigger-noIcon:after,
     .navbar > ul.nav > .dropdown .dropdown-trigger-noIcon:after,
     header > ul.nav > .dropdown .dropdown-trigger-noIcon:after,
     [class*=NWPlaylist] .navbar > ul#nwPlaylist-songs > .dropdown .dropdown-trigger-noIcon:after,
     [class*=NWPlaylist] header > ul#nwPlaylist-songs > .dropdown .dropdown-trigger-noIcon:after,
-    header .navbar > ul.nav-auth > .dropdown .dropdown-trigger-noIcon:after,
-    header > ul.nav-auth > .dropdown .dropdown-trigger-noIcon:after {
+    .navbar > ul#navTag-phone > .dropdown .dropdown-trigger-noIcon:after,
+    header > ul#navTag-phone > .dropdown .dropdown-trigger-noIcon:after,
+    .navbar > ul.nav-auth > .dropdown .dropdown-trigger-noIcon:after,
+    header > ul.nav-auth > .dropdown .dropdown-trigger-noIcon:after,
+    .navbar > ul#navTag-phone > li .dropdown-trigger-noIcon:after,
+    header > ul#navTag-phone > li .dropdown-trigger-noIcon:after {
       content: ''; }
-    .navbar > nav > ul.nav > li > a, header > nav > ul.nav > li > a, [class*=NWPlaylist] .navbar > nav > ul#nwPlaylist-songs > li > a, [class*=NWPlaylist] header > nav > ul#nwPlaylist-songs > li > a, header .navbar > nav > ul.nav-auth > li > a, header > nav > ul.nav-auth > li > a,
+    .navbar > nav > ul.nav > li > a, header > nav > ul.nav > li > a, [class*=NWPlaylist] .navbar > nav > ul#nwPlaylist-songs > li > a, [class*=NWPlaylist] header > nav > ul#nwPlaylist-songs > li > a, .navbar > nav > ul#navTag-phone > li > a, header > nav > ul#navTag-phone > li > a, .navbar > nav > ul.nav-auth > li > a, header > nav > ul.nav-auth > li > a,
     .navbar > ul.nav > li > a,
     header > ul.nav > li > a,
     [class*=NWPlaylist] .navbar > ul#nwPlaylist-songs > li > a,
     [class*=NWPlaylist] header > ul#nwPlaylist-songs > li > a,
-    header .navbar > ul.nav-auth > li > a,
+    .navbar > ul#navTag-phone > li > a,
+    header > ul#navTag-phone > li > a,
+    .navbar > ul.nav-auth > li > a,
     header > ul.nav-auth > li > a {
       padding-top: 15px;
       padding-bottom: 15px;
       color: #333333; }
-      .navbar > nav > ul.nav > li > a:hover, header > nav > ul.nav > li > a:hover, [class*=NWPlaylist] .navbar > nav > ul#nwPlaylist-songs > li > a:hover, [class*=NWPlaylist] header > nav > ul#nwPlaylist-songs > li > a:hover, header .navbar > nav > ul.nav-auth > li > a:hover, header > nav > ul.nav-auth > li > a:hover,
+      .navbar > nav > ul.nav > li > a:hover, header > nav > ul.nav > li > a:hover, [class*=NWPlaylist] .navbar > nav > ul#nwPlaylist-songs > li > a:hover, [class*=NWPlaylist] header > nav > ul#nwPlaylist-songs > li > a:hover, .navbar > nav > ul#navTag-phone > li > a:hover, header > nav > ul#navTag-phone > li > a:hover, .navbar > nav > ul.nav-auth > li > a:hover, header > nav > ul.nav-auth > li > a:hover,
       .navbar > ul.nav > li > a:hover,
       header > ul.nav > li > a:hover,
       [class*=NWPlaylist] .navbar > ul#nwPlaylist-songs > li > a:hover,
       [class*=NWPlaylist] header > ul#nwPlaylist-songs > li > a:hover,
-      header .navbar > ul.nav-auth > li > a:hover,
+      .navbar > ul#navTag-phone > li > a:hover,
+      header > ul#navTag-phone > li > a:hover,
+      .navbar > ul.nav-auth > li > a:hover,
       header > ul.nav-auth > li > a:hover {
         color: black; }
   .navbar > p, header > p {
@@ -3682,7 +3727,7 @@ header .pre > ul.nav-auth > li > a.active, header #resultsList-wrapper > ul.nav-
     margin: 0px; }
   .navbar > h1 > a, header > h1 > a {
     color: #333333; }
-  .navbar > ul.nav > li.active > a, header > ul.nav > li.active > a, [class*=NWPlaylist] .navbar > ul#nwPlaylist-songs > li.active > a, [class*=NWPlaylist] header > ul#nwPlaylist-songs > li.active > a, header .navbar > ul.nav-auth > li.active > a, header > ul.nav-auth > li.active > a {
+  .navbar > ul.nav > li.active > a, header > ul.nav > li.active > a, [class*=NWPlaylist] .navbar > ul#nwPlaylist-songs > li.active > a, [class*=NWPlaylist] header > ul#nwPlaylist-songs > li.active > a, .navbar > ul#navTag-phone > li.active > a, header > ul#navTag-phone > li.active > a, .navbar > ul.nav-auth > li.active > a, header > ul.nav-auth > li.active > a {
     color: white;
     background: #47331d; }
   .navbar > p, header > p {
@@ -4800,10 +4845,10 @@ form ul[class*=NWPalette] {
       text-align: left; }
     [class*=NWPlaylist] ul#nwPlaylist-songs > li {
       display: block; }
-    [class*=NWPlaylist] ul#nwPlaylist-songs .dropdown > :not(a):not([class^='dropdown-trigger']) {
+    [class*=NWPlaylist] ul#nwPlaylist-songs .dropdown > :not(a):not([class^='dropdown-trigger']), [class*=NWPlaylist] ul#nwPlaylist-songs #navTag-phone > li > :not(a):not([class^='dropdown-trigger']) {
       top: 0px;
       left: 100%; }
-    [class*=NWPlaylist] ul#nwPlaylist-songs .dropdown > a:after {
+    [class*=NWPlaylist] ul#nwPlaylist-songs .dropdown > a:after, [class*=NWPlaylist] ul#nwPlaylist-songs #navTag-phone > li > a:after {
       font-size: 16px;
       font-family: 'Icons';
       speak: none;
@@ -4821,7 +4866,7 @@ form ul[class*=NWPalette] {
       position: absolute;
       margin: 0px;
       right: 10px; }
-    [class*=NWPlaylist] ul#nwPlaylist-songs .dropdown .dropdown-trigger-noIcon:after {
+    [class*=NWPlaylist] ul#nwPlaylist-songs .dropdown .dropdown-trigger-noIcon:after, [class*=NWPlaylist] ul#nwPlaylist-songs #navTag-phone > li .dropdown-trigger-noIcon:after {
       content: ''; }
     [class*=NWPlaylist] ul#nwPlaylist-songs > li {
       border-bottom: 1px solid #e4caab; }
@@ -4996,7 +5041,7 @@ textarea.NWWysiwyg {
 @import '../../../js/mootools/classes/rialto/RialtoStars/stylesheets/scss/rialtoStars.scss'; // RIALTO STARS
 @import '../../../js/mootools/classes/rialto/RialtoScrollable/stylesheets/scss/rialtoScrollable.scss'; // RIALTO SCROLLABLE
 */
-table > tbody > tr > td > .dropdown > div {
+table > tbody > tr > td > .dropdown > div, table > tbody > tr > td#navTag-phone > li > div {
   min-width: 200px; }
 
 form > div label:first-child {
@@ -5133,11 +5178,33 @@ form > div input[type=file] {
 @media (max-width: 759px) and (min-width: 1025px) {
   form > div p {
     margin-left: 0%; } }
+form > div label:first-child {
+  padding: 5px 15px; }
+
+#navTag-phone {
+  width: 100%;
+  text-align: right; }
+  #navTag-phone > li {
+    position: relative; }
+    #navTag-phone > li > a {
+      text-align: right !important; }
+    #navTag-phone > li ul.nav, #navTag-phone > li [class*=NWPlaylist] ul#nwPlaylist-songs, [class*=NWPlaylist] #navTag-phone > li ul#nwPlaylist-songs, #navTag-phone > li ul#navTag-phone, #navTag-phone > li ul.nav-auth {
+      left: auto;
+      position: relative; }
+  @media (max-width: 1024px) {
+    #navTag-phone {
+      display: block;
+      position: absolute; } }
+
+.nav-auth {
+  position: absolute;
+  top: 0px;
+  right: 0px; }
 
 #eventInfoTable > tbody > tr > td > .approvalDropdown > ul, #eventInfoTable > tbody > tr > td > .approvalDropdown > div, #venueInfoTable > tbody > tr > td > .approvalDropdown > ul, #venueInfoTable > tbody > tr > td > .approvalDropdown > div {
   min-width: inherit; }
 
-.dropdown > ul > li > div, .dropdown > ul > li > ul {
+.dropdown > ul > li > div, #navTag-phone > li > ul > li > div, .dropdown > ul > li > ul, #navTag-phone > li > ul > li > ul {
   display: inline-block;
   vertical-align: top; }
 
@@ -5153,18 +5220,11 @@ header {
   color: #333333; }
   header > h1 > a {
     color: #333333; }
-  header > ul.nav > li.active > a, [class*=NWPlaylist] header > ul#nwPlaylist-songs > li.active > a, header > ul.nav-auth > li.active > a {
+  header > ul.nav > li.active > a, [class*=NWPlaylist] header > ul#nwPlaylist-songs > li.active > a, header > ul#navTag-phone > li.active > a, header > ul.nav-auth > li.active > a {
     color: white;
     background: #47331d; }
   header > p {
     color: #333333; }
-  header .nav-auth {
-    position: absolute;
-    top: 0px;
-    right: 0px; }
-  header .nav-type-horizontal {
-    position: relative;
-    right: 150px; }
   header #member-mainNavBar {
     right: 100px; }
 
@@ -5174,7 +5234,7 @@ header {
   height: 100%; }
 
 .hidden {
-  display: none; }
+  display: none !important; }
 
 #login-container {
   text-align: center; }
@@ -5520,18 +5580,24 @@ div#resultsHeader-wrapper a.neutral {
 
 #searchForVenue-button {
   position: absolute;
-  left: 17.6666%; }
+  left: 5px; }
+  @media (min-width: 1025px) {
+    #searchForVenue-button {
+      margin-left: 33.33333%; } }
 
 #changeVenue-button {
   position: absolute;
-  left: 61.6666%; }
+  left: 5px; }
+  @media (min-width: 1025px) {
+    #changeVenue-button {
+      margin-left: 33.33333%; } }
 
 form#addEventForm #addEventForm-contactEmail, form#addVenueForm #addEventForm-contactEmail, form#editVenueForm #addEventForm-contactEmail, form#addEventForm #editEventForm-contactEmail, form#addVenueForm #editEventForm-contactEmail, form#editVenueForm #editEventForm-contactEmail, form#addEventForm #addVenueForm-contactEmail, form#addVenueForm #addVenueForm-contactEmail, form#editVenueForm #addVenueForm-contactEmail, form#addEventForm #editVenueForm-contactEmail, form#addVenueForm #editVenueForm-contactEmail, form#editVenueForm #editVenueForm-contactEmail, #editEventForm #addEventForm-contactEmail, #editEventForm #editEventForm-contactEmail, #editEventForm #addVenueForm-contactEmail, #editEventForm #editVenueForm-contactEmail {
   float: none;
   width: 58.33333%; }
 @media (min-width: 1025px) {
   form#addEventForm button, form#addVenueForm button, form#editVenueForm button, form#addEventForm a.btn, form#addVenueForm a.btn, form#editVenueForm a.btn, #editEventForm button, #editEventForm a.btn {
-    margin-left: 16.66667%; } }
+    margin-left: 33.33333%; } }
 form#addEventForm #repetitionDetails-container, form#addVenueForm #repetitionDetails-container, form#editVenueForm #repetitionDetails-container, #editEventForm #repetitionDetails-container {
   position: relative; }
   form#addEventForm #repetitionDetails-container > label, form#addVenueForm #repetitionDetails-container > label, form#editVenueForm #repetitionDetails-container > label, #editEventForm #repetitionDetails-container > label {
@@ -5551,7 +5617,7 @@ form#addEventForm #repetitionDetails-container, form#addVenueForm #repetitionDet
     position: relative; }
     @media (min-width: 1025px) {
       form#addEventForm #repetitionDetails-container .repetitionDetail-wrapper, form#addVenueForm #repetitionDetails-container .repetitionDetail-wrapper, form#editVenueForm #repetitionDetails-container .repetitionDetail-wrapper, #editEventForm #repetitionDetails-container .repetitionDetail-wrapper {
-        margin-left: 16.66667%; } }
+        margin-left: 33.33333%; } }
     form#addEventForm #repetitionDetails-container .repetitionDetail-wrapper > div, form#addVenueForm #repetitionDetails-container .repetitionDetail-wrapper > div, form#editVenueForm #repetitionDetails-container .repetitionDetail-wrapper > div, #editEventForm #repetitionDetails-container .repetitionDetail-wrapper > div {
       display: inline-block; }
     form#addEventForm #repetitionDetails-container .repetitionDetail-wrapper > div:first-of-type, form#addVenueForm #repetitionDetails-container .repetitionDetail-wrapper > div:first-of-type, form#editVenueForm #repetitionDetails-container .repetitionDetail-wrapper > div:first-of-type, #editEventForm #repetitionDetails-container .repetitionDetail-wrapper > div:first-of-type {
@@ -5593,18 +5659,8 @@ form#addEventForm #costDetails-container, form#addVenueForm #costDetails-contain
   form#addEventForm #costDetails-container > div > input:last-of-type, form#addVenueForm #costDetails-container > div > input:last-of-type, form#editVenueForm #costDetails-container > div > input:last-of-type, #editEventForm #costDetails-container > div > input:last-of-type {
     width: 125px; }
 
-form#addEventForm #eventWillRepeat-wrapper, form#addVenueForm #eventWillRepeat-wrapper, form#editVenueForm #eventWillRepeat-wrapper {
-  display: none; }
-form#addEventForm #repetitionDetails-container > .repetitionDetail-wrapper .repetitionSpacing-wrapper, form#addVenueForm #repetitionDetails-container > .repetitionDetail-wrapper .repetitionSpacing-wrapper, form#editVenueForm #repetitionDetails-container > .repetitionDetail-wrapper .repetitionSpacing-wrapper {
-  display: none; }
-form#addEventForm #repetitionDetails-container > .repetitionDetail-wrapper > div:last-of-type .daysOfMonth-selector, form#addVenueForm #repetitionDetails-container > .repetitionDetail-wrapper > div:last-of-type .daysOfMonth-selector, form#editVenueForm #repetitionDetails-container > .repetitionDetail-wrapper > div:last-of-type .daysOfMonth-selector, form#addEventForm #repetitionDetails-container > .repetitionDetail-wrapper > div:last-of-type .daysOfWeek-selector, form#addVenueForm #repetitionDetails-container > .repetitionDetail-wrapper > div:last-of-type .daysOfWeek-selector, form#editVenueForm #repetitionDetails-container > .repetitionDetail-wrapper > div:last-of-type .daysOfWeek-selector, form#addEventForm #repetitionDetails-container > .repetitionDetail-wrapper > div:last-of-type #monthsOfYear-wrapper-0, form#addVenueForm #repetitionDetails-container > .repetitionDetail-wrapper > div:last-of-type #monthsOfYear-wrapper-0, form#editVenueForm #repetitionDetails-container > .repetitionDetail-wrapper > div:last-of-type #monthsOfYear-wrapper-0 {
-  display: none; }
 form#addEventForm #repetitionDetails-container > .repetitionDetail-wrapper .repetitionParameter, form#addVenueForm #repetitionDetails-container > .repetitionDetail-wrapper .repetitionParameter, form#editVenueForm #repetitionDetails-container > .repetitionDetail-wrapper .repetitionParameter {
   margin-bottom: 10px; }
-form#addEventForm #eventWillStop-wrapper, form#addVenueForm #eventWillStop-wrapper, form#editVenueForm #eventWillStop-wrapper, form#addEventForm #eventEndDate-wrapper, form#addVenueForm #eventEndDate-wrapper, form#editVenueForm #eventEndDate-wrapper {
-  display: none; }
-form#addEventForm #costDetails-container, form#addVenueForm #costDetails-container, form#editVenueForm #costDetails-container {
-  display: none; }
 
 #archiveEvent-button {
   bottom: 46px;

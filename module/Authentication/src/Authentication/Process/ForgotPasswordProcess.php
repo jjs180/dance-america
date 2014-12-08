@@ -28,7 +28,6 @@ class ForgotPasswordProcess extends \NovumWare\Process\AbstractProcess
 				'email'			=> $passwordResetModel->email,
 				'securityKey'	=> $passwordResetModel->security_key
 			));
-
 		$this->getEmailsProcess()->sendEmailFromTemplate($email, EmailConstants::PASSWORD_RESET_SUBJECT, EmailConstants::PASSWORD_RESET_TEMPLATE, array('resetLink'=>$resetLink));
 	}
 

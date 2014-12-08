@@ -1,15 +1,15 @@
 <?php
 namespace People\Controller;
 
-use People\Form\AddEventForm;
-use People\Form\EditEventForm;
+use People\Form\AddPersonForm;
+use People\Form\EditPersonForm;
 use Application\Constants\MessageConstants;
-use Application\Constants\EventVenueStatusConstants;
+use Application\Constants\PersonVenueStatusConstants;
 
 class PeopleController extends \NovumWare\Zend\Mvc\Controller\AbstractActionController
 {
 	public function addAction() {
-		$personModel = $this->getSessionPeopleMapper()->fetchModel(); /*@var $personModel \People\Model\EventModel */
+		$personModel = $this->getSessionPeopleMapper()->fetchModel(); /*@var $personModel \People\Model\PersonModel */
 		$venueId = $this->params('venueId');
 		if (isset($venueId)) $personModel->venue_id = $venueId;
 
@@ -20,11 +20,11 @@ class PeopleController extends \NovumWare\Zend\Mvc\Controller\AbstractActionCont
 
 		if (!$this->getRequest()->isPost()) return $this->getReturnParams();
 
-		$addEventForm = new AddEventForm($this->getRequest()->getPost('addEventForm'));
-		if (!$addEventForm->isValid()) { $this->nwFlashMessenger()->addErrorMessage(MessageConstants::ERROR_INVALID_FORM); return $this->getReturnParams(); }
+		$addPersonForm = new AddPersonForm($this->getRequest()->getPost('addPersonForm'));
+		if (!$addPersonForm->isValid()) { $this->nwFlashMessenger()->addErrorMessage(MessageConstants::ERROR_INVALID_FORM); return $this->getReturnParams(); }
 
-		$addEventFormData = $addEventForm->getData();
-		$processResult = $this->getPeopleProcess()->setEventPropertiesFromFormData($personModel, $addEventFormData);
+		$addPersonFormData = $addPersonForm->getData();
+		$processResult = $this->getPeopleProcess()->setPersonPropertiesFromFormData($personModel, $addPersonFormData);
 		$personModel = $processResult->data;
 
 		$memberModel = $this->getLoggedInMember();
@@ -36,7 +36,7 @@ class PeopleController extends \NovumWare\Zend\Mvc\Controller\AbstractActionCont
 	}
 
 	public function editAction() {
-		$personModel = $this->getEventModel();
+		$personModel = $this->getPersonModel();
 		if (!$personModel) { $this->nwFlashMessenger()->addErrorMessage("Your person cannot be located for editting. Please fill out your person information again."); return $this->redirect()->toRoute('people/add'); }
 
 		$this->setReturnParams(array(
@@ -45,11 +45,11 @@ class PeopleController extends \NovumWare\Zend\Mvc\Controller\AbstractActionCont
 
 		if (!$this->getRequest()->isPost()) return $this->getReturnParams();
 
-		$editEventForm = new EditEventForm($this->getRequest()->getPost('editEventForm'));
-		if (!$editEventForm->isValid()) { $this->nwFlashMessenger()->addErrorMessage(MessageConstants::ERROR_INVALID_FORM); return $this->getReturnParams(); }
-		$editEventFormData = $editEventForm->getData();
+		$editPersonForm = new EditPersonForm($this->getRequest()->getPost('editPersonForm'));
+		if (!$editPersonForm->isValid()) { $this->nwFlashMessenger()->addErrorMessage(MessageConstants::ERROR_INVALID_FORM); return $this->getReturnParams(); }
+		$editPersonFormData = $editPersonForm->getData();
 
-		$processResult = $this->getPeopleProcess()->setEventPropertiesFromFormData($personModel, $editEventFormData);
+		$processResult = $this->getPeopleProcess()->setPersonPropertiesFromFormData($personModel, $editPersonFormData);
 		$personModel = $processResult->data;
 
 		if ($personModel->id) {
@@ -66,7 +66,7 @@ class PeopleController extends \NovumWare\Zend\Mvc\Controller\AbstractActionCont
 	}
 
 	public function reviewAction() {
-		$personModel = $this->getEventModel(); /*@var $personModel \People\Model\EventModel */
+		$personModel = $this->getPersonModel(); /*@var $personModel \People\Model\PersonModel */
 		if (!$personModel || !$personModel->venue_id) { $this->nwFlashMessenger()->addErrorMessage("You cannot navigate back to the review page after submitting an person. Go to \"My People\" or to the home page to view your person in greater detail."); return $this->redirect()->toRoute('home'); }
 
 		if ($personModel->venue_id) { $venueModel = $this->getVenuesMapper()->fetchOneForId($personModel->venue_id);
@@ -87,10 +87,10 @@ class PeopleController extends \NovumWare\Zend\Mvc\Controller\AbstractActionCont
 	}
 
 	public function approveAction() {
-		$personModel = $this->getEventModel();
+		$personModel = $this->getPersonModel();
 		if (!$personModel) { $this->nwFlashMessenger()->addErrorMessage("Your person cannot be located for approval. Please fill out your person information again."); return $this->redirect()->toRoute('people/add'); }
 
-		$personModel->status = EventVenueStatusConstants::PENDING_APPROVAL;
+		$personModel->status = PersonVenueStatusConstants::PENDING_APPROVAL;
 
 		if ($personModel->id) {
 			$processResult = $this->getPeopleProcess()->updateModel($personModel); /*@var $processResult \NovumWare\Process\ProcessResult */
@@ -108,10 +108,10 @@ class PeopleController extends \NovumWare\Zend\Mvc\Controller\AbstractActionCont
 
 	public function archiveAction() {
 		$id = $this->params('personId');
-		$personModel = $this->getPeopleMapper()->fetchOneForId($id); /*@var $personModel \People\Model\EventModel */
+		$personModel = $this->getPeopleMapper()->fetchOneForId($id); /*@var $personModel \People\Model\PersonModel */
 		if (!$personModel) { $this->nwFlashMessenger()->addErrorMessage("Your person cannot be located."); return $this->redirect()->toRoute('home'); }
 
-		$personModel->status = EventVenueStatusConstants::ARCHIVED;
+		$personModel->status = PersonVenueStatusConstants::ARCHIVED;
 		$this->getPeopleMapper()->updateModel($personModel);
 		$this->nwFlashMessenger()->addSuccessMessage("You have successfully removed your person from our site.");
 
@@ -120,10 +120,10 @@ class PeopleController extends \NovumWare\Zend\Mvc\Controller\AbstractActionCont
 
 	public function renewAction() {
 		$id = $this->params('personId');
-		$personModel = $this->getPeopleMapper()->fetchOneForId($id); /*@var $personModel \People\Model\EventModel */
+		$personModel = $this->getPeopleMapper()->fetchOneForId($id); /*@var $personModel \People\Model\PersonModel */
 		if (!$personModel) { $this->nwFlashMessenger()->addErrorMessage("Your person cannot be located."); return $this->redirect()->toRoute('home'); }
 
-		$personModel->status = EventVenueStatusConstants::PENDING_APPROVAL;
+		$personModel->status = PersonVenueStatusConstants::PENDING_APPROVAL;
 		$dateTime = new \DateTime($personModel->end_date);
 		$dateTime->add(new \DateInterval('P1Y'));
 		$personModel->end_date = $dateTime->format('Y-m-d');
@@ -136,38 +136,38 @@ class PeopleController extends \NovumWare\Zend\Mvc\Controller\AbstractActionCont
 
 	// =================================================================== HELPER METHODS ============================================================================
 	/**
-	 * @return \People\Model\EventModel
+	 * @return \People\Model\PersonModel
 	 */
-	private function getEventModel() {
+	private function getPersonModel() {
 		$params = $this->params('personId');
 		$memberModel = $this->getLoggedInMember();
 
 		if (isset($params)) {
-			$personModel = $this->getPeopleMapper()->fetchOneForId($params);  /*@var $personModel \People\Model\EventModel */
+			$personModel = $this->getPeopleMapper()->fetchOneForId($params);  /*@var $personModel \People\Model\PersonModel */
 		} else $personModel = $this->getSessionPeopleMapper()->fetchModel();
 
-		if (isset($personModel->member_id)) $this->checkMemberAgainstEventModel($memberModel, $personModel);
+		if (isset($personModel->member_id)) $this->checkMemberAgainstPersonModel($memberModel, $personModel);
 
 		return $personModel;
 	}
 
 	/**
 	 * @param \Registration\Model\MemberModel $memberModel
-	 * @param \People\Model\EventModel $personModel
+	 * @param \People\Model\PersonModel $personModel
 	 */
-	private function checkMemberAgainstEventModel($memberModel, $personModel) {
+	private function checkMemberAgainstPersonModel($memberModel, $personModel) {
 		if (!$memberModel) {
 			$this->nwFlashMessenger()->addMessage("You must login to review {$personModel->id}.");
 			return $this->redirect()->toRoute('login');
 		}
 		if ($memberModel->role == 'admin') return;
-		if ($memberModel->id != $personModel->member_id) $this->throwExceptionForEvent($personModel);
+		if ($memberModel->id != $personModel->member_id) $this->throwExceptionForPerson($personModel);
 	}
 
 	/**
-	 * @param \People\Model\EventModel $personModel
+	 * @param \People\Model\PersonModel $personModel
 	 */
-	private function throwExceptionForEvent($personModel) {
+	private function throwExceptionForPerson($personModel) {
 		throw new \Exception("You are not authorized to access person: {$personModel->id}. Please make sure you are logged in.");
 	}
 

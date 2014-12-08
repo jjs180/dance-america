@@ -1,7 +1,6 @@
 <h1>Please review the person information below</h1>
 <ul id='personInformation-list' class='personInformation-list'>
 	{include './../partials/_personInformation.tpl'}
-
 </ul>
 <div id='mapAndButton-wrapper'>
 	<div><img src='{$url}' /></div>

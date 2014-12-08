@@ -6,7 +6,6 @@ class AccountController extends \NovumWare\Zend\Mvc\Controller\AbstractActionCon
 	// ========================================================================= ACTIONS =========================================================================
 	public function accountAction() {
 		$memberModel = $this->getLoggedInMember(); /*@var $memberModel \Registration\Model\MemberModel */
-
 		return array(
 			'memberModel'	=> $memberModel
 		);

@@ -80,6 +80,37 @@ return array(
 					),
 				)
 			),
+			'manage-people'	=> array(
+				'type'		=> 'literal',
+				'options'	=> array(
+					'route'		=> '/manage-people',
+					'defaults'	=> array(
+						'controller'	=> 'Admin\Controller\Admin',
+						'action'		=> 'manage-people'
+					)
+				),
+				'may_terminate' => true,
+				'child_routes'	=> array(
+					'approve' => array(
+						'type'		=> 'segment',
+						'options'	=> array(
+							'route'		=> '/approve/:personId',
+							'defaults'	=> array(
+								'action'		=> 'approve-person'
+							)
+						)
+					),
+					'reject' => array(
+						'type'		=> 'segment',
+						'options'	=> array(
+							'route'		=> '/reject/:personId',
+							'defaults'	=> array(
+								'action'		=> 'reject-person'
+							)
+						)
+					),
+				)
+			),
 		)
 	),
 

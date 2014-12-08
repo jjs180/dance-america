@@ -1,3 +1,3 @@
 <select name="addVenueForm[country]" id="addVenueForm-country" data-validators="required">
-	{include './_country-options-list.tpl'}
+	{include './../../../../../../module/Application/view/application/partials/_country-options-list.tpl'}
 </select>

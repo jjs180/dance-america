@@ -8,7 +8,7 @@
 			<option value="days">Every day</option>
 		</select>
 	</div>
-	<div id='repetitionSpacing-wrapper-0' class='repetitionSpacing-wrapper' style='display:none;'>
+	<div id='repetitionSpacing-wrapper-0' class='hidden'>
 		<span>The event will repeat every</span>
 		<input id="editEventForm-repetitionSpacing-0" type="text" name="editEventForm[repetitions][0][repetition_spacing]" value="1" data-validators="required" />
 		<span id='repetitionFactor-wrapper-0'>weeks on</span>&nbsp;

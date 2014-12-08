@@ -1,0 +1,31 @@
+#navTag-phone {
+	@extend .nav;
+	@extend .desktop-invisible;
+	width: 100%;
+	text-align: right;
+	> li {
+		@extend .dropdown;
+		position: relative;
+		> a { text-align: right!important; }
+		ul.nav {
+			left:  		auto;
+			position: 	relative;
+		}
+	}
+	@media (max-width:$screen-maxWidth-tablet) {
+		display: 	block;
+		position: 	absolute;
+	}
+}
+
+.nav.nav-type-horizontal {
+	@extend .desktop-visible;
+}
+
+.nav-auth {
+	@extend		.nav;
+	@extend  	.desktop-visible;
+	position:	absolute;
+	top:		0px;
+	right:		0px;
+}

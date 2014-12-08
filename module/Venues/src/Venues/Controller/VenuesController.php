@@ -111,7 +111,7 @@ class VenuesController extends \NovumWare\Zend\Mvc\Controller\AbstractActionCont
 
 	public function reviewAction() {
 		$venueModel = $this->getVenueModel();
-		if (!$venueModel || !$venueModel->minimum_age) { $this->nwFlashMessenger()->addErrorMessage("You cannot navigate back to the review page after submitting a venue. Go to \"My Venues\" or to the home page to view your venue in greater detail."); return $this->redirect()->toRoute('home'); }
+		if (!$venueModel) { $this->nwFlashMessenger()->addErrorMessage("You cannot navigate back to the review page after submitting a venue. Go to \"My Venues\" or to the home page to view your venue in greater detail."); return $this->redirect()->toRoute('home'); }
 
 		$addressOriginal = $venueModel->address_1.',+'.$venueModel->address_2.',+'.$venueModel->city.',+'.$venueModel->state.'+'.$venueModel->postal_code.',+'.$venueModel->country;
 		$addressWhiteSpaceRemoved = str_replace(['	', '    ', '   ', '  ', ' '], '+', $addressOriginal);

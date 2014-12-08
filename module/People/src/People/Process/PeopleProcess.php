@@ -4,16 +4,16 @@ namespace People\Process;
 use Admin\Constants\EmailConstants;
 
 /**
- * @method Novumware\Process\ProcessResult sendApprovalEmailToAdmin(\People\Model\EventModel $personModel)
- * @method Novumware\Process\ProcessResult saveModel(\People\Model\EventModel $personModel)
- * @method Novumware\Process\ProcessResult insertModel(\People\Model\EventModel $personModel)
- * @method Novumware\Process\ProcessResult updateModel(\People\Model\EventModel $personModel)
- * @method Novumware\Process\ProcessResult setEventPropertiesFromFormData(\People\Model\EventModel $personModel, array $formData)
+ * @method Novumware\Process\ProcessResult sendApprovalEmailToAdmin(\People\Model\PersonModel $personModel)
+ * @method Novumware\Process\ProcessResult saveModel(\People\Model\PersonModel $personModel)
+ * @method Novumware\Process\ProcessResult insertModel(\People\Model\PersonModel $personModel)
+ * @method Novumware\Process\ProcessResult updateModel(\People\Model\PersonModel $personModel)
+ * @method Novumware\Process\ProcessResult setEventPropertiesFromFormData(\People\Model\PersonModel $personModel, array $formData)
  */
 class PeopleProcess extends \NovumWare\Process\AbstractProcess
 {
 	/*
-	 * @param \People\Model\EventModel $personModel
+	 * @param \People\Model\PersonModel $personModel
 	 * @return \NovumWare\Process\ProcessResult
 	 */
 	public function _sendApprovalEmailToAdmin($personModel) {
@@ -29,8 +29,8 @@ class PeopleProcess extends \NovumWare\Process\AbstractProcess
 	}
 
 	/**
-	 * @param \People\Model\EventModel $personModel
-	 * @return \NovumWare\Process\ProcessResult ->data \People\Model\EventModel $personModel
+	 * @param \People\Model\PersonModel $personModel
+	 * @return \NovumWare\Process\ProcessResult ->data \People\Model\PersonModel $personModel
 	 */
 	public function _saveModel($personModel) {
 		if ($personModel->id) $this->getPeopleMapper()->updateModel($personModel);
@@ -40,7 +40,7 @@ class PeopleProcess extends \NovumWare\Process\AbstractProcess
 	}
 
 	/**
-	 * @param \People\Model\EventModel $personModel
+	 * @param \People\Model\PersonModel $personModel
 	 * @return \NovumWare\Process\ProcessResult
 	 */
 	public function _insertModel($personModel) {
@@ -69,7 +69,7 @@ class PeopleProcess extends \NovumWare\Process\AbstractProcess
 	}
 
 	/**
-	 * @param \People\Model\EventModel $personModel
+	 * @param \People\Model\PersonModel $personModel
 	 * @return \NovumWare\Process\ProcessResult
 	 */
 	public function _updateModel($personModel) {
@@ -105,7 +105,7 @@ class PeopleProcess extends \NovumWare\Process\AbstractProcess
 	}
 
 	/**
-	 * @param \People\Model\EventModel $personModel
+	 * @param \People\Model\PersonModel $personModel
 	 * @param array $formData
 	 * @return \NovumWare\Process\ProcessResult
 	 */

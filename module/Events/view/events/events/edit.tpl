@@ -39,18 +39,18 @@
 		{else}<a id="addRepetitionButton-0" class='addRepetitionButton btn new'>+</a>
 		{/if}
 	</div>
-	<div id='eventWillStop-wrapper'>
+	<div class='hidden'>
 		<label for="editEventForm-willStop" class='required'>When will the event stop repeating?</label>
 		<select name="editEventForm[will_stop]" id="editEventForm-willStop" data-validators='required'>
 			<option value="0" {if $eventModel.will_stop === '0'}selected='selected'{/if}>Never</option>
 			<option value="1" {if $eventModel.will_stop === '1'}selected='selected'{/if}>On date</option>
 		</select>
 	</div>
-	<div id='eventEndDate-wrapper'>
+	<div class='hidden'>
 		<label for="editEventForm-endDate" class='required'>End Date</label>
 		<input type='datetime' class='NWDatePicker' id="editEventForm-endDate" name="editEventForm[end_date]" value="{$eventModel.end_date}" data-nwDatePicker-options="{ format:'%Y-%m-%d', startView:'years' }" data-validators='required'/>
 	</div>
-	<div id='costDetails-container' {if $eventModel.costs != []}style='display: block;'{/if}>
+	<div class='hidden' {if $eventModel.costs != []}style='display: block;'{/if}>
 		<label for="editEventForm-cost">Cost of Event</label>
 		<div id='costDetails-rhsWrapper'>
 			{if $eventModel.costs != []}
@@ -107,13 +107,9 @@
 		<textarea id="editEventForm-description" type="text" name="editEventForm[description]" value="{$eventModel.description}" placeholder="Description">{$eventModel.description}</textarea>
 	</div>
 	<div>
-		<label for="editEventForm-specialNotes">Special Notes</label>
-		<textarea id="editEventForm-specialNotes" type="text" name="editEventForm[special_notes]" value="{$eventModel.special_notes}" placeholder="Special Notes" >{$eventModel.special_notes}</textarea>
-	</div>
-	<div>
 		<label for="editEventForm-contactEmail">Your Email</label>
 		<div>
-			<input id="editEventForm-contactEmail" type="text" name="editEventForm[contact_email]" placeholder="Email" data-validators="validate-email" {if $eventModel.contact_email}value="{$eventModel.contact_email}"{else} value="{$loggedInMember.email}"{/if} />
+			<input id="editEventForm-contactEmail" type="email" name="editEventForm[contact_email]" placeholder="Email" data-validators="validate-email" {if $eventModel.contact_email}value="{$eventModel.contact_email}"{else} value="{$loggedInMember.email}"{/if} />
 		</div>
 		<div>If you leave this blank and we have questions about your event, it will not be approved</div>
 	</div>

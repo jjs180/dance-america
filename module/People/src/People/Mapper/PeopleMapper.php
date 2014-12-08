@@ -6,11 +6,11 @@ class PeopleMapper extends \NovumWare\Db\Table\Mapper\AbstractMapper
 	static protected $mapperTableName = 'people';
 	protected $columnPrefix = 'person_';
 	protected $idColumn = 'person_id';
-	protected $modelClass = '\People\Model\EventModel';
+	protected $modelClass = '\People\Model\PersonModel';
 
 	// ======================================================= CONVENIENCE METHOD==================================================================
 	/**
-	 * @return array of \People\Model\EventModel
+	 * @return array of \People\Model\PersonModel
 	 */
 	public function fetchAll(\NovumWare\Db\Sql\Select\SelectOptions $selectOptions=null) {
 		$select = $this->getSelect();
@@ -23,7 +23,7 @@ class PeopleMapper extends \NovumWare\Db\Table\Mapper\AbstractMapper
 	 * @param float $lat
 	 * @param float $long
 	 * @param int $radius
-	 * @return array of \People\Model\EventModel
+	 * @return array of \People\Model\PersonModel
 	 */
 	public function fetchManyForLocationAndRadius($lat, $long, $radius) {
 		$select = $this->getSelect();
@@ -34,7 +34,7 @@ class PeopleMapper extends \NovumWare\Db\Table\Mapper\AbstractMapper
 
 	/**
 	 * @param string $memberId
-	 * @return array of \People\Model\EventModel
+	 * @return array of \People\Model\PersonModel
 	 */
 	public function fetchManyForMemberId($memberId) {
 		$select = $this->getSelect();
@@ -45,7 +45,7 @@ class PeopleMapper extends \NovumWare\Db\Table\Mapper\AbstractMapper
 
 	/**
 	 * @param string $contactEmail
-	 * @return array of \People\Model\EventModel
+	 * @return array of \People\Model\PersonModel
 	 */
 	public function fetchManyForContactEmail($contactEmail) {
 		$where = $this->getWhere();

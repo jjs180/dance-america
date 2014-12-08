@@ -17,11 +17,9 @@ class AddEventForm extends \NovumWare\Zend\Form\Form
 		$endDate = new Element\Date('end_date');
 		$willStop = new Element\Text('will_stop');
 		$repetitions = new Element\Text('repetitions');
-		$specialNotes = new Element\Text('special_notes');
 		$description = new Element\Text('description');
 		$costs = new Element\Text('costs');
 		$contactEmail = new Element\Email('contact_email');
-		$minimumAge = new Element\Text('minimum_age');
 
 		$this	->add($name)
 				->add($venueId)
@@ -32,11 +30,9 @@ class AddEventForm extends \NovumWare\Zend\Form\Form
 				->add($endDate)
 				->add($willStop)
 				->add($repetitions)
-				->add($specialNotes)
 				->add($description)
 				->add($costs)
-				->add($contactEmail)
-				->add($minimumAge);
+				->add($contactEmail);
 	}
 
 	/**
@@ -77,10 +73,6 @@ class AddEventForm extends \NovumWare\Zend\Form\Form
 			$repetitions  ->setAllowEmpty(true);
 			$repetitions	->setRequired(false);
 
-			$specialNotes = new Input('special_notes');
-			$specialNotes	->setAllowEmpty(true);
-			$specialNotes	->setRequired(false);
-
 			$description = new Input('description');
 			$description	->setAllowEmpty(true);
 			$description	->setRequired(false);
@@ -95,9 +87,6 @@ class AddEventForm extends \NovumWare\Zend\Form\Form
 							->getValidatorChain()
 							->addValidator(new \Zend\Validator\EmailAddress());
 
-			$minimumAge = new Input('minimum_age');
-			$minimumAge	->setRequired(true);
-
 			$inputFilter = new InputFilter();
 			$inputFilter	->add($name)
 							->add($url)
@@ -111,8 +100,7 @@ class AddEventForm extends \NovumWare\Zend\Form\Form
 							->add($specialNotes)
 							->add($description)
 							->add($costs)
-							->add($contactEmail)
-							->add($minimumAge);
+							->add($contactEmail);
 
 			$this->inputFilter = $inputFilter;
 		}

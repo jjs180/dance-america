@@ -54,7 +54,7 @@ class PeopleMapperTest extends \NovumWare\Test\Db\Table\Mapper\AbstractMapperTes
 		$data = array(
 			'id'	=> '23'
 		);
-		$expectedModel = $this->peopleMapper->createModelFromData($data); /*@var $expectedModel \People\Model\EventModel */
+		$expectedModel = $this->peopleMapper->createModelFromData($data); /*@var $expectedModel \People\Model\PersonModel */
 
 		$expectedSelect = $this->getSelect('people');
 		$expectedSelect->where(['person_member_id=?' => $data['id']]);
@@ -84,7 +84,7 @@ class PeopleMapperTest extends \NovumWare\Test\Db\Table\Mapper\AbstractMapperTes
 		$data = array(
 			'email'	=> 'example@gmail.com'
 		);
-		$expectedModel = $this->peopleMapper->createModelFromData($data); /*@var $expectedModel \People\Model\EventModel */
+		$expectedModel = $this->peopleMapper->createModelFromData($data); /*@var $expectedModel \People\Model\PersonModel */
 
 		$expectedSelect = $this->getSelect('people');
 		$expectedSelect->where->like('person_contact_email', "%{$data['email']}%");

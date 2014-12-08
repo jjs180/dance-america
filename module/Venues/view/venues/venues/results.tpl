@@ -17,7 +17,7 @@
 						{$venueModel.address_1}<br />
 						{if $venueModel.address_2}{$venueModel.address_2}<br />{/if}
 						{$venueModel.city}, {$venueModel.state} {$venueModel.postal_code}<br />
-						{$venueModel.country}<br />
+/*						{$venueModel.country}<br />*/
 						{if $venueModel.description}
 							<div>Description: {$venueModel.description}</div>
 						{/if}

@@ -15,6 +15,7 @@ class Acl extends \NovumWare\Zend\Permissions\Acl\Acl
 		$this->addResource('account');
 		$this->addResource('my-events', 'account');
 		$this->addResource('my-venues', 'account');
+		$this->addResource('my-people', 'account');
 
 		$this->addResource('authentication');
 		$this->addResource('access-denied', 'authentication');
@@ -36,12 +37,12 @@ class Acl extends \NovumWare\Zend\Permissions\Acl\Acl
 		$this->addResource('venues');
 
 		$this->addResource('events');
-
+		$this->addResource('people');
+		
 		$this->addResource('admin');
+		$this->addResource('manage-people');
 		$this->addResource('manage-venues');
 		$this->addResource('manage-events');
-		$this->addResource('manage-scraps');
-		$this->addResource('archived-scraps');
 	}
 
 	protected function definePermissions() {
@@ -49,10 +50,13 @@ class Acl extends \NovumWare\Zend\Permissions\Acl\Acl
 		$this->allow(RoleConstants::GUEST, 'pages');
 		$this->allow(RoleConstants::GUEST, 'events');
 		$this->allow(RoleConstants::GUEST, 'venues');
+		$this->allow(RoleConstants::GUEST, 'people');
 		$this->allow(RoleConstants::GUEST, 'registration');
 
 		$this->allow(RoleConstants::MEMBER, 'account');
 
 		$this->allow(RoleConstants::ADMIN);
+		$this->allow(RoleConstants::ADMIN, 'account');
+		
 	}
 }
