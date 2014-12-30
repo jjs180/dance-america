@@ -45,7 +45,7 @@ return array(
 						'action'     => 'contact'
 					)
 				)
-			),
+			)
 		)
 	),
 	'translator' => array(

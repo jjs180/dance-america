@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1-DEV, created on 2014-12-08 03:43:12
+<?php /* Smarty version Smarty-3.1-DEV, created on 2014-12-09 05:36:23
          compiled from "/Users/cara/Sites/dance_america/module/Venues/view/venues/venues/add.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:782535628544e7a5a8aece9-85577342%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '18733b90c70a4eb498d86cd728d43fbf02537d23' => 
     array (
       0 => '/Users/cara/Sites/dance_america/module/Venues/view/venues/venues/add.tpl',
-      1 => 1418006555,
+      1 => 1418006908,
       2 => 'file',
     ),
   ),
@@ -74,7 +74,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 	<div>
 		<label for="addVenueForm-contactEmail">Your Email</label>
 		<div>
-			<input id="addVenueForm-contactEmail" type="text" name="addVenueForm[contact_email]" placeholder="Email" data-validators="validate-email" <?php if ($_smarty_tpl->tpl_vars['loggedInMember']->value){?>value="<?php echo $_smarty_tpl->tpl_vars['loggedInMember']->value['email'];?>
+			<input id="addVenueForm-contactEmail" type="email" name="addVenueForm[contact_email]" placeholder="Email" data-validators="validate-email" <?php if ($_smarty_tpl->tpl_vars['loggedInMember']->value){?>value="<?php echo $_smarty_tpl->tpl_vars['loggedInMember']->value['email'];?>
 "<?php }?> />
 		</div>
 		<div>If you leave this blank and we have questions about your venue, it will not be approved</div>

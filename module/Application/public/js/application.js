@@ -1,5 +1,10 @@
-$('[data-toggle-display]').on('change', function() {
-	if ($(this).val() && $(this).find('input:selected').data('display')) {
-		alert('aaaaa');
+$j("select").on('change', function() {
+	if ($j(this).attr('data-toggle-display')) {
+		var container = $j(this).attr('data-toggle-display');
+		var value = $j(this).val();
+		$j('#'+container + ' #'+value+'_wrapper').removeClass('hidden');
+		$j('#'+container + ' #'+value+'_wrapper').siblings().each(function() {
+					$j(this).addClass('hidden')
+		});
 	}
 });

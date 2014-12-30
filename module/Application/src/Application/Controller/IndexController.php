@@ -1,6 +1,7 @@
 <?php
 namespace Application\Controller;
 use Application\Constants\SiteSearchParamConstants;
+use Application\Form\SearchSiteForm;
 
 class IndexController extends \NovumWare\Zend\Mvc\Controller\AbstractActionController
 {
@@ -8,20 +9,27 @@ class IndexController extends \NovumWare\Zend\Mvc\Controller\AbstractActionContr
     public function indexAction() {
 		if ($this->getRequest()->isPost()) {
 			$data = $this->getRequest()->getPost('siteSearchForm');
+			$siteSearchForm = new SearchSiteForm($this->getRequest()->getPost('siteSearchForm'));
+			if (!$siteSearchForm->isValid()) { $this->nwFlashMessenger()->addErrorMessage(MessageConstants::ERROR_INVALID_FORM); return $this->getReturnParams(); }
 
-			if (!$data['searchParam']) return;
-			$searchParam = $data['searchParam'];
+			$siteSearchFormData = $siteSearchForm->getData();
 
+			if (!$data['search_param']) return;
+			$searchParam = $data['search_param'];
+
+			$results = [];
 			if ($searchParam == SiteSearchParamConstants::instructors) {
-
-				$this->getPeopleMapper()->fetchAll($selectOptions);
+				$results = $this->getPeopleMapper()->fetchAll();
+			} else if ($searchParam == SiteSearchParamConstants::events || $searchParam == SiteSearchParamConstants::classes || $searchParam == SiteSearchParamConstants::socialDances) {
+				$location = $this->getGeoForLocation($data['location']);
+				$searchData = ['radius' => $data['radius'], 'location' => $location];
+				$results = $this->getEventsMapper()->fetchManyForTypeAndLocation($searchParam, $searchData);
 			}
-			$this->setReturnParams(array(
-//				'data' =>
-			));
+			return array('results' => $results);
 		} else {
 			$this->setReturnParams(array(
-				'siteSearchParams'		=>	array(SiteSearchParamConstants::classes, SiteSearchParamConstants::events, SiteSearchParamConstants::instructors, SiteSearchParamConstants::socialDances)
+				'siteSearchParams'		=>	array(SiteSearchParamConstants::classes, SiteSearchParamConstants::events, SiteSearchParamConstants::instructors, SiteSearchParamConstants::socialDances),
+				'danceStyles' => $this->getDanceStylesMapper()->fetchAll()
 			));
 
 			return $this->getReturnParams();
@@ -58,17 +66,36 @@ class IndexController extends \NovumWare\Zend\Mvc\Controller\AbstractActionContr
 		return $this->_peopleMapper;
 	}
 
-	/*
-	 * @param int $postalCode
+	/**
+	 * @return \DanceStyles\Mapper\DanceStylesMapper
 	 */
-	private function getGeoForPostalCode($postalCode) {
-
+	private function getDanceStylesMapper() {
+		if (!isset($this->_danceStylesMapper)) $this->_danceStylesMapper = $this->getServiceLocator()->get('\DanceStyles\Mapper\DanceStylesMapper');
+		return $this->_danceStylesMapper;
 	}
 
 	/*
-	 * @param string $city
+	 * @param int $postalCode
 	 */
-	private function getGeoForCity($city) {
+	private function getGeoForLocation($data) {
+		if (is_array($data)) {
+			$address = $data['city'].' '.$data['state'].' '.'United States of America';
+			$Address = urlencode($address);
+			$cleanedAddress = str_replace('++', '+', $Address);
+			$request_url = "http://maps.googleapis.com/maps/api/geocode/xml?address=".$cleanedAddress."&sensor=true";
+			$xml = simplexml_load_file($request_url) or die("url not loading");
+			$status = $xml->status;
+			if ($status=="OK") {
+				$Lat = (string) $xml->result->geometry->location->lat;
+				$Lon = (string) $xml->result->geometry->location->lng;
+			} else {
+				throw new ProcessException('There was an error with this address. Please try again.');
+			}
+			return array(
+				'lat'	=> $Lat,
+				'lon'	=> $Lon
+			);
+		}
 
 	}
 }

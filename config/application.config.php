@@ -9,7 +9,8 @@ return array(
 		'Venues',
 		'Events',
 		'Admin',
-		'People'
+		'People',
+		'DanceStyles'
     ),
 
     // These are various options for the listeners attached to the ModuleManager

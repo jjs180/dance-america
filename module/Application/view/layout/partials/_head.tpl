@@ -6,7 +6,8 @@
 
 	<link rel='stylesheet' href='/stylesheets/css/styles.css' type='text/css' media='screen, projection, print' />
 
-	<script type="text/javascript" src="/js/min/javascript.min.js"></script>
+	<script type="text/javascript" src="/js/min/javascript.min.js"></script>;
+	<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 	<title>Dance America</title>
 	
 	<!--[if lt IE 9]>

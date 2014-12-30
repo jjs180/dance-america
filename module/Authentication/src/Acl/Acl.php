@@ -33,6 +33,7 @@ class Acl extends \NovumWare\Zend\Permissions\Acl\Acl
 		$this->addResource('home', 'pages');
 		$this->addResource('about', 'pages');
 		$this->addResource('contact', 'pages');
+		$this->addResource('search', 'pages');
 
 		$this->addResource('venues');
 
