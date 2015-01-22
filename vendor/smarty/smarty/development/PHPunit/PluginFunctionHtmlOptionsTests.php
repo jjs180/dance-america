@@ -28,9 +28,9 @@ class PluginFunctionHtmlOptionsTests extends PHPUnit_Framework_TestCase {
     {
         $n = "\n";
         $expected = '<select name="foo">'
-            . $n . '<option value="1800">Joe Schmoe</option>'
-            . $n . '<option value="9904" selected="selected">Jack Smith</option>'
-            . $n . '<option value="2003">Charlie Brown</option>'
+            . $n . '<option {if $smarty.post && $smarty.post['siteSearchForm']['location']['state'] == 'CA'}selected='selected'{/if} value="1800">Joe Schmoe</option>'
+            . $n . '<option {if $smarty.post && $smarty.post['siteSearchForm']['location']['state'] == 'CA'}selected='selected'{/if} value="9904" selected="selected">Jack Smith</option>'
+            . $n . '<option {if $smarty.post && $smarty.post['siteSearchForm']['location']['state'] == 'CA'}selected='selected'{/if} value="2003">Charlie Brown</option>'
             . $n . '</select>' . $n;
 
         $tpl = $this->smarty->createTemplate('eval:{html_options name="foo" options=$myOptions selected=$mySelect}');
@@ -48,9 +48,9 @@ class PluginFunctionHtmlOptionsTests extends PHPUnit_Framework_TestCase {
     {
         $n = "\n";
         $expected = '<select name="foo">'
-            . $n . '<option value="56">Joe Schmoe</option>'
-            . $n . '<option value="92" selected="selected">Jane Johnson</option>'
-            . $n . '<option value="13">Charlie Brown</option>'
+            . $n . '<option {if $smarty.post && $smarty.post['siteSearchForm']['location']['state'] == 'CA'}selected='selected'{/if} value="56">Joe Schmoe</option>'
+            . $n . '<option {if $smarty.post && $smarty.post['siteSearchForm']['location']['state'] == 'CA'}selected='selected'{/if} value="92" selected="selected">Jane Johnson</option>'
+            . $n . '<option {if $smarty.post && $smarty.post['siteSearchForm']['location']['state'] == 'CA'}selected='selected'{/if} value="13">Charlie Brown</option>'
             . $n . '</select>' . $n;
             
         $tpl = $this->smarty->createTemplate('eval:{html_options name="foo" values=$cust_ids output=$cust_names selected=$customer_id}');
@@ -69,9 +69,9 @@ class PluginFunctionHtmlOptionsTests extends PHPUnit_Framework_TestCase {
     {
         $n = "\n";
         $expected = '<select name="foo">'
-            . $n . '<option value="1800">Joe Schmoe</option>'
-            . $n . '<option value="9904" selected="selected">Jack Smith</option>'
-            . $n . '<option value="2003">Charlie Brown</option>'
+            . $n . '<option {if $smarty.post && $smarty.post['siteSearchForm']['location']['state'] == 'CA'}selected='selected'{/if} value="1800">Joe Schmoe</option>'
+            . $n . '<option {if $smarty.post && $smarty.post['siteSearchForm']['location']['state'] == 'CA'}selected='selected'{/if} value="9904" selected="selected">Jack Smith</option>'
+            . $n . '<option {if $smarty.post && $smarty.post['siteSearchForm']['location']['state'] == 'CA'}selected='selected'{/if} value="2003">Charlie Brown</option>'
             . $n . '</select>' . $n;
 
         $tpl = $this->smarty->createTemplate('eval:{html_options name="foo" options=$myOptions selected=$mySelect}');
@@ -90,13 +90,13 @@ class PluginFunctionHtmlOptionsTests extends PHPUnit_Framework_TestCase {
         $n = "\n";
         $expected = '<select name="foo">'
             . $n . '<optgroup label="Sport">'
-            . $n . '<option value="6">Golf</option>'
-            . $n . '<option value="9">Cricket</option>'
-            . $n . '<option value="7" selected="selected">Swim</option>'
+            . $n . '<option {if $smarty.post && $smarty.post['siteSearchForm']['location']['state'] == 'CA'}selected='selected'{/if} value="6">Golf</option>'
+            . $n . '<option {if $smarty.post && $smarty.post['siteSearchForm']['location']['state'] == 'CA'}selected='selected'{/if} value="9">Cricket</option>'
+            . $n . '<option {if $smarty.post && $smarty.post['siteSearchForm']['location']['state'] == 'CA'}selected='selected'{/if} value="7" selected="selected">Swim</option>'
             . $n . '</optgroup>'
             . $n . '<optgroup label="Rest">'
-            . $n . '<option value="3">Sauna</option>'
-            . $n . '<option value="1">Massage</option>'
+            . $n . '<option {if $smarty.post && $smarty.post['siteSearchForm']['location']['state'] == 'CA'}selected='selected'{/if} value="3">Sauna</option>'
+            . $n . '<option {if $smarty.post && $smarty.post['siteSearchForm']['location']['state'] == 'CA'}selected='selected'{/if} value="1">Massage</option>'
             . $n . '</optgroup>'
             . $n . '</select>' . $n;
 
@@ -121,15 +121,15 @@ class PluginFunctionHtmlOptionsTests extends PHPUnit_Framework_TestCase {
     {
         $n = "\n";
         $expected = '<select name="foo">'
-            . $n . '<option value="null" selected="selected">null</option>'
-            . $n . '<option value="0">zero</option>'
-            . $n . '<option value="1">one</option>'
-            . $n . '<option value="2">two</option>'
+            . $n . '<option {if $smarty.post && $smarty.post['siteSearchForm']['location']['state'] == 'CA'}selected='selected'{/if} value="null" selected="selected">null</option>'
+            . $n . '<option {if $smarty.post && $smarty.post['siteSearchForm']['location']['state'] == 'CA'}selected='selected'{/if} value="0">zero</option>'
+            . $n . '<option {if $smarty.post && $smarty.post['siteSearchForm']['location']['state'] == 'CA'}selected='selected'{/if} value="1">one</option>'
+            . $n . '<option {if $smarty.post && $smarty.post['siteSearchForm']['location']['state'] == 'CA'}selected='selected'{/if} value="2">two</option>'
             . $n . '<optgroup label="optgroup">'
-            . $n . '<option value="null" selected="selected">null</option>'
-            . $n . '<option value="0">zero</option>'
-            . $n . '<option value="1">one</option>'
-            . $n . '<option value="2">two</option>'
+            . $n . '<option {if $smarty.post && $smarty.post['siteSearchForm']['location']['state'] == 'CA'}selected='selected'{/if} value="null" selected="selected">null</option>'
+            . $n . '<option {if $smarty.post && $smarty.post['siteSearchForm']['location']['state'] == 'CA'}selected='selected'{/if} value="0">zero</option>'
+            . $n . '<option {if $smarty.post && $smarty.post['siteSearchForm']['location']['state'] == 'CA'}selected='selected'{/if} value="1">one</option>'
+            . $n . '<option {if $smarty.post && $smarty.post['siteSearchForm']['location']['state'] == 'CA'}selected='selected'{/if} value="2">two</option>'
             . $n . '</optgroup>'
             . $n . '</select>' . $n;
 
@@ -155,17 +155,17 @@ class PluginFunctionHtmlOptionsTests extends PHPUnit_Framework_TestCase {
     {
         $n = "\n";
         $expected = '<select name="foo">'
-            . $n . '<option value="" selected="selected">empty string</option>'
-            . $n . '<option value="null">null</option>'
-            . $n . '<option value="0">zero</option>'
-            . $n . '<option value="1">one</option>'
-            . $n . '<option value="2">two</option>'
+            . $n . '<option {if $smarty.post && $smarty.post['siteSearchForm']['location']['state'] == 'CA'}selected='selected'{/if} value="" selected="selected">empty string</option>'
+            . $n . '<option {if $smarty.post && $smarty.post['siteSearchForm']['location']['state'] == 'CA'}selected='selected'{/if} value="null">null</option>'
+            . $n . '<option {if $smarty.post && $smarty.post['siteSearchForm']['location']['state'] == 'CA'}selected='selected'{/if} value="0">zero</option>'
+            . $n . '<option {if $smarty.post && $smarty.post['siteSearchForm']['location']['state'] == 'CA'}selected='selected'{/if} value="1">one</option>'
+            . $n . '<option {if $smarty.post && $smarty.post['siteSearchForm']['location']['state'] == 'CA'}selected='selected'{/if} value="2">two</option>'
             . $n . '<optgroup label="optgroup">'
-            . $n . '<option value="" selected="selected">empty string</option>'
-            . $n . '<option value="null">null</option>'
-            . $n . '<option value="0">zero</option>'
-            . $n . '<option value="1">one</option>'
-            . $n . '<option value="2">two</option>'
+            . $n . '<option {if $smarty.post && $smarty.post['siteSearchForm']['location']['state'] == 'CA'}selected='selected'{/if} value="" selected="selected">empty string</option>'
+            . $n . '<option {if $smarty.post && $smarty.post['siteSearchForm']['location']['state'] == 'CA'}selected='selected'{/if} value="null">null</option>'
+            . $n . '<option {if $smarty.post && $smarty.post['siteSearchForm']['location']['state'] == 'CA'}selected='selected'{/if} value="0">zero</option>'
+            . $n . '<option {if $smarty.post && $smarty.post['siteSearchForm']['location']['state'] == 'CA'}selected='selected'{/if} value="1">one</option>'
+            . $n . '<option {if $smarty.post && $smarty.post['siteSearchForm']['location']['state'] == 'CA'}selected='selected'{/if} value="2">two</option>'
             . $n . '</optgroup>'
             . $n . '</select>' . $n;
 
@@ -194,15 +194,15 @@ class PluginFunctionHtmlOptionsTests extends PHPUnit_Framework_TestCase {
     {
         $n = "\n";
         $expected = '<select name="foo">'
-            . $n . '<option value="null">null</option>'
-            . $n . '<option value="0" selected="selected">zero</option>'
-            . $n . '<option value="1">one</option>'
-            . $n . '<option value="2">two</option>'
+            . $n . '<option {if $smarty.post && $smarty.post['siteSearchForm']['location']['state'] == 'CA'}selected='selected'{/if} value="null">null</option>'
+            . $n . '<option {if $smarty.post && $smarty.post['siteSearchForm']['location']['state'] == 'CA'}selected='selected'{/if} value="0" selected="selected">zero</option>'
+            . $n . '<option {if $smarty.post && $smarty.post['siteSearchForm']['location']['state'] == 'CA'}selected='selected'{/if} value="1">one</option>'
+            . $n . '<option {if $smarty.post && $smarty.post['siteSearchForm']['location']['state'] == 'CA'}selected='selected'{/if} value="2">two</option>'
             . $n . '<optgroup label="optgroup">'
-            . $n . '<option value="null">null</option>'
-            . $n . '<option value="0" selected="selected">zero</option>'
-            . $n . '<option value="1">one</option>'
-            . $n . '<option value="2">two</option>'
+            . $n . '<option {if $smarty.post && $smarty.post['siteSearchForm']['location']['state'] == 'CA'}selected='selected'{/if} value="null">null</option>'
+            . $n . '<option {if $smarty.post && $smarty.post['siteSearchForm']['location']['state'] == 'CA'}selected='selected'{/if} value="0" selected="selected">zero</option>'
+            . $n . '<option {if $smarty.post && $smarty.post['siteSearchForm']['location']['state'] == 'CA'}selected='selected'{/if} value="1">one</option>'
+            . $n . '<option {if $smarty.post && $smarty.post['siteSearchForm']['location']['state'] == 'CA'}selected='selected'{/if} value="2">two</option>'
             . $n . '</optgroup>'
             . $n . '</select>' . $n;
 
@@ -227,15 +227,15 @@ class PluginFunctionHtmlOptionsTests extends PHPUnit_Framework_TestCase {
     {
         $n = "\n";
         $expected = '<select name="foo">'
-            . $n . '<option value="null">null</option>'
-            . $n . '<option value="0" selected="selected">zero</option>'
-            . $n . '<option value="1">one</option>'
-            . $n . '<option value="2">two</option>'
+            . $n . '<option {if $smarty.post && $smarty.post['siteSearchForm']['location']['state'] == 'CA'}selected='selected'{/if} value="null">null</option>'
+            . $n . '<option {if $smarty.post && $smarty.post['siteSearchForm']['location']['state'] == 'CA'}selected='selected'{/if} value="0" selected="selected">zero</option>'
+            . $n . '<option {if $smarty.post && $smarty.post['siteSearchForm']['location']['state'] == 'CA'}selected='selected'{/if} value="1">one</option>'
+            . $n . '<option {if $smarty.post && $smarty.post['siteSearchForm']['location']['state'] == 'CA'}selected='selected'{/if} value="2">two</option>'
             . $n . '<optgroup label="optgroup">'
-            . $n . '<option value="null">null</option>'
-            . $n . '<option value="0" selected="selected">zero</option>'
-            . $n . '<option value="1">one</option>'
-            . $n . '<option value="2">two</option>'
+            . $n . '<option {if $smarty.post && $smarty.post['siteSearchForm']['location']['state'] == 'CA'}selected='selected'{/if} value="null">null</option>'
+            . $n . '<option {if $smarty.post && $smarty.post['siteSearchForm']['location']['state'] == 'CA'}selected='selected'{/if} value="0" selected="selected">zero</option>'
+            . $n . '<option {if $smarty.post && $smarty.post['siteSearchForm']['location']['state'] == 'CA'}selected='selected'{/if} value="1">one</option>'
+            . $n . '<option {if $smarty.post && $smarty.post['siteSearchForm']['location']['state'] == 'CA'}selected='selected'{/if} value="2">two</option>'
             . $n . '</optgroup>'
             . $n . '</select>' . $n;
 
@@ -261,15 +261,15 @@ class PluginFunctionHtmlOptionsTests extends PHPUnit_Framework_TestCase {
     {
         $n = "\n";
         $expected = '<select name="foo">'
-            . $n . '<option value="null">null</option>'
-            . $n . '<option value="0">zero</option>'
-            . $n . '<option value="1">one</option>'
-            . $n . '<option value="2">two</option>'
+            . $n . '<option {if $smarty.post && $smarty.post['siteSearchForm']['location']['state'] == 'CA'}selected='selected'{/if} value="null">null</option>'
+            . $n . '<option {if $smarty.post && $smarty.post['siteSearchForm']['location']['state'] == 'CA'}selected='selected'{/if} value="0">zero</option>'
+            . $n . '<option {if $smarty.post && $smarty.post['siteSearchForm']['location']['state'] == 'CA'}selected='selected'{/if} value="1">one</option>'
+            . $n . '<option {if $smarty.post && $smarty.post['siteSearchForm']['location']['state'] == 'CA'}selected='selected'{/if} value="2">two</option>'
             . $n . '<optgroup label="optgroup">'
-            . $n . '<option value="null">null</option>'
-            . $n . '<option value="0">zero</option>'
-            . $n . '<option value="1">one</option>'
-            . $n . '<option value="2">two</option>'
+            . $n . '<option {if $smarty.post && $smarty.post['siteSearchForm']['location']['state'] == 'CA'}selected='selected'{/if} value="null">null</option>'
+            . $n . '<option {if $smarty.post && $smarty.post['siteSearchForm']['location']['state'] == 'CA'}selected='selected'{/if} value="0">zero</option>'
+            . $n . '<option {if $smarty.post && $smarty.post['siteSearchForm']['location']['state'] == 'CA'}selected='selected'{/if} value="1">one</option>'
+            . $n . '<option {if $smarty.post && $smarty.post['siteSearchForm']['location']['state'] == 'CA'}selected='selected'{/if} value="2">two</option>'
             . $n . '</optgroup>'
             . $n . '</select>' . $n;
 
@@ -295,17 +295,17 @@ class PluginFunctionHtmlOptionsTests extends PHPUnit_Framework_TestCase {
     {
         $n = "\n";
         $expected = '<select name="foo">'
-            . $n . '<option value="" selected="selected">empty string</option>'
-            . $n . '<option value="null">null</option>'
-            . $n . '<option value="0">zero</option>'
-            . $n . '<option value="1">one</option>'
-            . $n . '<option value="2">two</option>'
+            . $n . '<option {if $smarty.post && $smarty.post['siteSearchForm']['location']['state'] == 'CA'}selected='selected'{/if} value="" selected="selected">empty string</option>'
+            . $n . '<option {if $smarty.post && $smarty.post['siteSearchForm']['location']['state'] == 'CA'}selected='selected'{/if} value="null">null</option>'
+            . $n . '<option {if $smarty.post && $smarty.post['siteSearchForm']['location']['state'] == 'CA'}selected='selected'{/if} value="0">zero</option>'
+            . $n . '<option {if $smarty.post && $smarty.post['siteSearchForm']['location']['state'] == 'CA'}selected='selected'{/if} value="1">one</option>'
+            . $n . '<option {if $smarty.post && $smarty.post['siteSearchForm']['location']['state'] == 'CA'}selected='selected'{/if} value="2">two</option>'
             . $n . '<optgroup label="optgroup">'
-            . $n . '<option value="" selected="selected">empty string</option>'
-            . $n . '<option value="null">null</option>'
-            . $n . '<option value="0">zero</option>'
-            . $n . '<option value="1">one</option>'
-            . $n . '<option value="2">two</option>'
+            . $n . '<option {if $smarty.post && $smarty.post['siteSearchForm']['location']['state'] == 'CA'}selected='selected'{/if} value="" selected="selected">empty string</option>'
+            . $n . '<option {if $smarty.post && $smarty.post['siteSearchForm']['location']['state'] == 'CA'}selected='selected'{/if} value="null">null</option>'
+            . $n . '<option {if $smarty.post && $smarty.post['siteSearchForm']['location']['state'] == 'CA'}selected='selected'{/if} value="0">zero</option>'
+            . $n . '<option {if $smarty.post && $smarty.post['siteSearchForm']['location']['state'] == 'CA'}selected='selected'{/if} value="1">one</option>'
+            . $n . '<option {if $smarty.post && $smarty.post['siteSearchForm']['location']['state'] == 'CA'}selected='selected'{/if} value="2">two</option>'
             . $n . '</optgroup>'
             . $n . '</select>' . $n;
 
@@ -333,9 +333,9 @@ class PluginFunctionHtmlOptionsTests extends PHPUnit_Framework_TestCase {
     {
         $n = "\n";
         $expected = '<select name="foo">'
-            . $n . '<option value="1800">Joe Schmoe</option>'
-            . $n . '<option value="9904" selected="selected">Jack Smith</option>'
-            . $n . '<option value="2003">Charlie Brown</option>'
+            . $n . '<option {if $smarty.post && $smarty.post['siteSearchForm']['location']['state'] == 'CA'}selected='selected'{/if} value="1800">Joe Schmoe</option>'
+            . $n . '<option {if $smarty.post && $smarty.post['siteSearchForm']['location']['state'] == 'CA'}selected='selected'{/if} value="9904" selected="selected">Jack Smith</option>'
+            . $n . '<option {if $smarty.post && $smarty.post['siteSearchForm']['location']['state'] == 'CA'}selected='selected'{/if} value="2003">Charlie Brown</option>'
             . $n . '</select>' . $n;
 
         $tpl = $this->smarty->createTemplate('eval:{html_options name="foo" options=$myOptions selected=$mySelect}');
@@ -353,9 +353,9 @@ class PluginFunctionHtmlOptionsTests extends PHPUnit_Framework_TestCase {
     {
         $n = "\n";
         $expected = '<select name="foo">'
-            . $n . '<option value="1800">Joe Schmoe</option>'
-            . $n . '<option value="9904" selected="selected">Jack Smith</option>'
-            . $n . '<option value="2003">Charlie Brown</option>'
+            . $n . '<option {if $smarty.post && $smarty.post['siteSearchForm']['location']['state'] == 'CA'}selected='selected'{/if} value="1800">Joe Schmoe</option>'
+            . $n . '<option {if $smarty.post && $smarty.post['siteSearchForm']['location']['state'] == 'CA'}selected='selected'{/if} value="9904" selected="selected">Jack Smith</option>'
+            . $n . '<option {if $smarty.post && $smarty.post['siteSearchForm']['location']['state'] == 'CA'}selected='selected'{/if} value="2003">Charlie Brown</option>'
             . $n . '</select>' . $n;
 
         $tpl = $this->smarty->createTemplate('eval:{html_options name="foo" options=$myOptions selected=$mySelect}');
@@ -381,9 +381,9 @@ class PluginFunctionHtmlOptionsTests extends PHPUnit_Framework_TestCase {
         set_error_handler(array($this, 'error_handler'));
         $n = "\n";
         $expected = '<select name="foo">'
-            . $n . '<option value="1800">Joe Schmoe</option>'
-            . $n . '<option value="9904" selected="selected">Jack Smith</option>'
-            . $n . '<option value="2003">Charlie Brown</option>'
+            . $n . '<option {if $smarty.post && $smarty.post['siteSearchForm']['location']['state'] == 'CA'}selected='selected'{/if} value="1800">Joe Schmoe</option>'
+            . $n . '<option {if $smarty.post && $smarty.post['siteSearchForm']['location']['state'] == 'CA'}selected='selected'{/if} value="9904" selected="selected">Jack Smith</option>'
+            . $n . '<option {if $smarty.post && $smarty.post['siteSearchForm']['location']['state'] == 'CA'}selected='selected'{/if} value="2003">Charlie Brown</option>'
             . $n . '</select>' . $n;
 
         $tpl = $this->smarty->createTemplate('eval:{html_options name="foo" options=$myOptions selected=$mySelect}');
@@ -407,9 +407,9 @@ class PluginFunctionHtmlOptionsTests extends PHPUnit_Framework_TestCase {
         set_error_handler(array($this, 'error_handler'));
         $n = "\n";
         $expected = '<select name="foo">'
-            . $n . '<option value="1800">Joe Schmoe</option>'
-            . $n . '<option value="9904">Jack Smith</option>'
-            . $n . '<option value="2003">Charlie Brown</option>'
+            . $n . '<option {if $smarty.post && $smarty.post['siteSearchForm']['location']['state'] == 'CA'}selected='selected'{/if} value="1800">Joe Schmoe</option>'
+            . $n . '<option {if $smarty.post && $smarty.post['siteSearchForm']['location']['state'] == 'CA'}selected='selected'{/if} value="9904">Jack Smith</option>'
+            . $n . '<option {if $smarty.post && $smarty.post['siteSearchForm']['location']['state'] == 'CA'}selected='selected'{/if} value="2003">Charlie Brown</option>'
             . $n . '</select>' . $n;
 
         $tpl = $this->smarty->createTemplate('eval:{html_options name="foo" options=$myOptions selected=$mySelect}');
@@ -431,9 +431,9 @@ class PluginFunctionHtmlOptionsTests extends PHPUnit_Framework_TestCase {
     {
         $n = "\n";
         $expected = '<select name="foo" disabled="1">'
-            . $n . '<option value="1800">Joe Schmoe</option>'
-            . $n . '<option value="9904" selected="selected">Jack Smith</option>'
-            . $n . '<option value="2003">Charlie Brown</option>'
+            . $n . '<option {if $smarty.post && $smarty.post['siteSearchForm']['location']['state'] == 'CA'}selected='selected'{/if} value="1800">Joe Schmoe</option>'
+            . $n . '<option {if $smarty.post && $smarty.post['siteSearchForm']['location']['state'] == 'CA'}selected='selected'{/if} value="9904" selected="selected">Jack Smith</option>'
+            . $n . '<option {if $smarty.post && $smarty.post['siteSearchForm']['location']['state'] == 'CA'}selected='selected'{/if} value="2003">Charlie Brown</option>'
             . $n . '</select>' . $n;
 
         $tpl = $this->smarty->createTemplate('eval:{html_options name="foo" options=$myOptions selected=$mySelect disabled=1}');
@@ -451,9 +451,9 @@ class PluginFunctionHtmlOptionsTests extends PHPUnit_Framework_TestCase {
     {
         $n = "\n";
         $expected = '<select name="foo">'
-            . $n . '<option value="1800">Joe Schmoe</option>'
-            . $n . '<option value="9904" selected="selected">Jack Smith</option>'
-            . $n . '<option value="2003">Charlie Brown</option>'
+            . $n . '<option {if $smarty.post && $smarty.post['siteSearchForm']['location']['state'] == 'CA'}selected='selected'{/if} value="1800">Joe Schmoe</option>'
+            . $n . '<option {if $smarty.post && $smarty.post['siteSearchForm']['location']['state'] == 'CA'}selected='selected'{/if} value="9904" selected="selected">Jack Smith</option>'
+            . $n . '<option {if $smarty.post && $smarty.post['siteSearchForm']['location']['state'] == 'CA'}selected='selected'{/if} value="2003">Charlie Brown</option>'
             . $n . '</select>' . $n;
 
         $tpl = $this->smarty->createTemplate('eval:{html_options name="foo" options=$myOptions selected=$mySelect disabled=1 strict=true}');
@@ -468,9 +468,9 @@ class PluginFunctionHtmlOptionsTests extends PHPUnit_Framework_TestCase {
         
         $n = "\n";
         $expected = '<select name="foo" disabled="disabled">'
-            . $n . '<option value="1800">Joe Schmoe</option>'
-            . $n . '<option value="9904" selected="selected">Jack Smith</option>'
-            . $n . '<option value="2003">Charlie Brown</option>'
+            . $n . '<option {if $smarty.post && $smarty.post['siteSearchForm']['location']['state'] == 'CA'}selected='selected'{/if} value="1800">Joe Schmoe</option>'
+            . $n . '<option {if $smarty.post && $smarty.post['siteSearchForm']['location']['state'] == 'CA'}selected='selected'{/if} value="9904" selected="selected">Jack Smith</option>'
+            . $n . '<option {if $smarty.post && $smarty.post['siteSearchForm']['location']['state'] == 'CA'}selected='selected'{/if} value="2003">Charlie Brown</option>'
             . $n . '</select>' . $n;
 
         $tpl = $this->smarty->createTemplate('eval:{html_options name="foo" options=$myOptions selected=$mySelect disabled=true strict=true}');
@@ -485,9 +485,9 @@ class PluginFunctionHtmlOptionsTests extends PHPUnit_Framework_TestCase {
         
         $n = "\n";
         $expected = '<select name="foo" disabled="disabled">'
-            . $n . '<option value="1800">Joe Schmoe</option>'
-            . $n . '<option value="9904" selected="selected">Jack Smith</option>'
-            . $n . '<option value="2003">Charlie Brown</option>'
+            . $n . '<option {if $smarty.post && $smarty.post['siteSearchForm']['location']['state'] == 'CA'}selected='selected'{/if} value="1800">Joe Schmoe</option>'
+            . $n . '<option {if $smarty.post && $smarty.post['siteSearchForm']['location']['state'] == 'CA'}selected='selected'{/if} value="9904" selected="selected">Jack Smith</option>'
+            . $n . '<option {if $smarty.post && $smarty.post['siteSearchForm']['location']['state'] == 'CA'}selected='selected'{/if} value="2003">Charlie Brown</option>'
             . $n . '</select>' . $n;
 
         $tpl = $this->smarty->createTemplate('eval:{html_options name="foo" options=$myOptions selected=$mySelect disabled="disabled" strict=true}');

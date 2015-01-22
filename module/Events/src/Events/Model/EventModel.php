@@ -14,6 +14,7 @@ class EventModel extends \NovumWare\Model\AbstractModel
 	public $end_date;
 	public $web_links;
 	public $description;
+	public $special_notes;
 	public $status = EventVenueStatusConstants::PENDING_APPROVAL;
 	public $member_id;
 	public $will_stop;
@@ -81,9 +82,15 @@ class EventModel extends \NovumWare\Model\AbstractModel
 
 		$this->repetitions = $cleanedRepetitionModelsArray;
 	}
+//
+//	/**
+//	 * @param $venue of \Venues\Model\VenueModel
+//	 */
+//	protected function setVenue($venue) {
+//		$this->venue = $this->getVenue();
+//	}
 
-
-	// ========================================================================= HELPER METHODS =========================================================================
+		// ========================================================================= HELPER METHODS =========================================================================
 	public function toSessionArray() {
 		$eventPropertiesArray = $this->toArray();
 		$eventPropertiesArray['repetitions'] = $this->modelsArrayToSessionArray($this->getRepetitions());

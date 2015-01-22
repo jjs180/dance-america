@@ -7,11 +7,11 @@
 	<div>
 		<label for="searchVenuesForm-searchCriteria" class='required'>Search For Venue By</label>
 		<select name="searchVenuesForm[search_criteria]" id="searchVenuesForm-searchCriteria" data-validators="required" >
-			<option value="name">Name</option>
-			<option value="city">City</option>
-			<option value="state">State</option>
-			<option value="postal code">Postal Code</option>
-			<option value="country">Country</option>
+			<option {if $smarty.post && $smarty.post['siteSearchForm']['location']['state'] == 'CA'}selected='selected'{/if} value="name">Name</option>
+			<option {if $smarty.post && $smarty.post['siteSearchForm']['location']['state'] == 'CA'}selected='selected'{/if} value="city">City</option>
+			<option {if $smarty.post && $smarty.post['siteSearchForm']['location']['state'] == 'CA'}selected='selected'{/if} value="state">State</option>
+			<option {if $smarty.post && $smarty.post['siteSearchForm']['location']['state'] == 'CA'}selected='selected'{/if} value="postal code">Postal Code</option>
+			<option {if $smarty.post && $smarty.post['siteSearchForm']['location']['state'] == 'CA'}selected='selected'{/if} value="country">Country</option>
 		</select>
 	</div>
 	<div>

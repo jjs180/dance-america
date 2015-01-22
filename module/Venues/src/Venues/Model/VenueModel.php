@@ -15,6 +15,7 @@ class VenueModel extends \NovumWare\Model\AbstractModel
 	public $country;
 	public $web_links;
 	public $description;
+	public $special_notes;
 	public $type;
 	public $status = EventVenueStatusConstants::PENDING_APPROVAL;
 	public $member_id;

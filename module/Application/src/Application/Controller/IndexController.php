@@ -7,6 +7,11 @@ class IndexController extends \NovumWare\Zend\Mvc\Controller\AbstractActionContr
 {
 	// ========================================================================= ACTIONS =========================================================================
     public function indexAction() {
+		$returnParams = array(
+			'siteSearchParams'		=>	array(SiteSearchParamConstants::classes, SiteSearchParamConstants::events, SiteSearchParamConstants::instructors, SiteSearchParamConstants::socialDances),
+			'danceStyles'			=> $this->getDanceStylesMapper()->fetchAll()
+		);
+		$this->setReturnParams($returnParams);
 		if ($this->getRequest()->isPost()) {
 			$data = $this->getRequest()->getPost('siteSearchForm');
 			$siteSearchForm = new SearchSiteForm($this->getRequest()->getPost('siteSearchForm'));
@@ -17,23 +22,28 @@ class IndexController extends \NovumWare\Zend\Mvc\Controller\AbstractActionContr
 			if (!$data['search_param']) return;
 			$searchParam = $data['search_param'];
 
-			$results = [];
-			if ($searchParam == SiteSearchParamConstants::instructors) {
-				$results = $this->getPeopleMapper()->fetchAll();
-			} else if ($searchParam == SiteSearchParamConstants::events || $searchParam == SiteSearchParamConstants::classes || $searchParam == SiteSearchParamConstants::socialDances) {
-				$location = $this->getGeoForLocation($data['location']);
-				$searchData = ['radius' => $data['radius'], 'location' => $location];
-				$results = $this->getEventsMapper()->fetchManyForTypeAndLocation($searchParam, $searchData);
-			}
-			return array('results' => $results);
-		} else {
-			$this->setReturnParams(array(
-				'siteSearchParams'		=>	array(SiteSearchParamConstants::classes, SiteSearchParamConstants::events, SiteSearchParamConstants::instructors, SiteSearchParamConstants::socialDances),
-				'danceStyles' => $this->getDanceStylesMapper()->fetchAll()
-			));
+			if ($data['location']['city'] && $data['location']['state'] || $data['location']['postal_code']) {
+				$data['location']['geo_coordinates'] = $this->getGeoForLocation($data['location']);
+				$results = [];
 
-			return $this->getReturnParams();
+				if ($searchParam == SiteSearchParamConstants::instructors) {
+					$results = $this->getPeopleMapper()->fetchAll();
+				} else if ($searchParam == SiteSearchParamConstants::events || $searchParam == SiteSearchParamConstants::classes || $searchParam == SiteSearchParamConstants::socialDances) {
+					if ($data['radius']) {
+						$results = $this->getEventsMapper()->fetchManyForTypeAndLocation($data);
+					} else {
+						if ($data['location']['city'] && $data['location']['state']) $results = $this->getEventsMapper()->fetchManyForCityState($data);
+						else if ($data['location']['postal_code']) $results = $this->getEventsMapper()->fetchManyForPostalCode($data);
+					}
+				}
+				$returnParams = array_merge($returnParams, array('results' => $results));
+			} else {
+				$results = $this->getEventsMapper()->fetchManyWithParams($data);
+				$returnParams = array_merge($returnParams, array('results' => $results));
+			}
 		}
+		$this->setReturnParams($returnParams);
+		return $this->getReturnParams();
 	}
 
 	public function aboutAction() {}

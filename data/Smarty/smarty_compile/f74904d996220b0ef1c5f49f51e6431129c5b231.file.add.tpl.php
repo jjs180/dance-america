@@ -62,11 +62,11 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 		<div class='repetitionDetail-wrapper' id='repetitionDetail-wrapper-0'>
 			<div id="repetitionParameter-wrapper-0">
 				<select name="addEventForm[repetitions][0][repetition_parameter]" class="repetitionParameter" id="addEventForm-repetitionParameter-0" data-validators='required' onchange='changeRepetitionParameter(0)' >
-					<option value="one time event">One time event</option>
-					<option value="days">Every day</option>
-					<option value="weeks">Weekly</option>
-					<option value="months">Monthly</option>
-					<option value="years">Yearly</option>
+					<option {if $smarty.post && $smarty.post['siteSearchForm']['location']['state'] == 'CA'}selected='selected'{/if} value="one time event">One time event</option>
+					<option {if $smarty.post && $smarty.post['siteSearchForm']['location']['state'] == 'CA'}selected='selected'{/if} value="days">Every day</option>
+					<option {if $smarty.post && $smarty.post['siteSearchForm']['location']['state'] == 'CA'}selected='selected'{/if} value="weeks">Weekly</option>
+					<option {if $smarty.post && $smarty.post['siteSearchForm']['location']['state'] == 'CA'}selected='selected'{/if} value="months">Monthly</option>
+					<option {if $smarty.post && $smarty.post['siteSearchForm']['location']['state'] == 'CA'}selected='selected'{/if} value="years">Yearly</option>
 				</select>
 			</div>
 			<!-- <div id='repetitionSpacing-wrapper-0' class='repetitionSpacing-wrapper'> -->
@@ -98,8 +98,8 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 	<div class='hidden'>
 		<label for="addEventForm-willStop" class='required'>When will the event stop repeating?</label>
 		<select name="addEventForm[will_stop]" id="addEventForm-willStop" data-validators='required'>
-			<option value="0">Never</option>
-			<option value="1">On date</option>
+			<option {if $smarty.post && $smarty.post['siteSearchForm']['location']['state'] == 'CA'}selected='selected'{/if} value="0">Never</option>
+			<option {if $smarty.post && $smarty.post['siteSearchForm']['location']['state'] == 'CA'}selected='selected'{/if} value="1">On date</option>
 		</select>
 	</div>
 	<div class='hidden'>
@@ -120,9 +120,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 	<div>
 		<label for="addEventForm-minimumAge" class='required'>Minimum Age</label>
 		<select name="addEventForm[minimum_age]" id="addEventForm-minimumAge" data-validators="required">
-			<option value="None" selected='selected'>None</option>
-			<option value="18 and over">18 and over</option>
-			<option value="21 and over">21 and over</option>
+			<option {if $smarty.post && $smarty.post['siteSearchForm']['location']['state'] == 'CA'}selected='selected'{/if} value="None" selected='selected'>None</option>
+			<option {if $smarty.post && $smarty.post['siteSearchForm']['location']['state'] == 'CA'}selected='selected'{/if} value="18 and over">18 and over</option>
+			<option {if $smarty.post && $smarty.post['siteSearchForm']['location']['state'] == 'CA'}selected='selected'{/if} value="21 and over">21 and over</option>
 		</select>
 	</div>
 	<div id='webLinks-container'>

@@ -37,9 +37,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 	<div>
 		<label for="determineRegistrationStatusForm-status" class='required'>Would you like to register with us?</label>
 		<select name="determineRegistrationStatusForm[status]" id="determineRegistrationStatusForm-status" data-validators='required'>
-			<option value="<?php echo $_smarty_tpl->tpl_vars['register']->value;?>
+			<option {if $smarty.post && $smarty.post['siteSearchForm']['location']['state'] == 'CA'}selected='selected'{/if} value="<?php echo $_smarty_tpl->tpl_vars['register']->value;?>
 ">I would like to register</option>
-			<option value="<?php echo $_smarty_tpl->tpl_vars['remainUnregistered']->value;?>
+			<option {if $smarty.post && $smarty.post['siteSearchForm']['location']['state'] == 'CA'}selected='selected'{/if} value="<?php echo $_smarty_tpl->tpl_vars['remainUnregistered']->value;?>
 ">I prefer to continue unregistered</option>
 		</select>
 	</div>

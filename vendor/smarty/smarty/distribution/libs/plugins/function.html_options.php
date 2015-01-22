@@ -150,7 +150,7 @@ function smarty_function_html_options_optoutput($key, $value, $selected, $id, $c
 {
     if (!is_array($value)) {
         $_key = smarty_function_escape_special_chars($key);
-        $_html_result = '<option value="' . $_key . '"';
+        $_html_result = '<option {if $smarty.post && $smarty.post['siteSearchForm']['location']['state'] == 'CA'}selected='selected'{/if} value="' . $_key . '"';
         if (is_array($selected)) {
             if (isset($selected[$_key])) {
                 $_html_result .= ' selected="selected"';

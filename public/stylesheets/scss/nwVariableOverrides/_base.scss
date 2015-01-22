@@ -1,0 +1,10 @@
+header {
+	background-color: $bgColor !important;
+	border-bottom: darken($bgColor, 20%);
+	> h1 > a {
+		color: $color !important;
+	}
+	> ul.nav > li > a {
+		color: $color;
+	}
+}

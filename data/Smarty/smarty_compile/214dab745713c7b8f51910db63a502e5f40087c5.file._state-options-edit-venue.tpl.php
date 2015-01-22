@@ -26,7 +26,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 <?php if ($_valid && !is_callable('content_52f516bbb90c98_75755197')) {function content_52f516bbb90c98_75755197($_smarty_tpl) {?><select name="editVenueForm[state]" id="editVenueForm-state">
 	<?php echo $_smarty_tpl->getSubTemplate ('./_state-options-list.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, null, null, array(), 0);?>
 
-	<option value="<?php echo $_smarty_tpl->tpl_vars['venueModel']->value['state'];?>
+	<option {if $smarty.post && $smarty.post['siteSearchForm']['location']['state'] == 'CA'}selected='selected'{/if} value="<?php echo $_smarty_tpl->tpl_vars['venueModel']->value['state'];?>
 " selected='selected'><?php echo $_smarty_tpl->tpl_vars['venueModel']->value['state'];?>
 </option>
 </select><?php }} ?>

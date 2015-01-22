@@ -124,6 +124,22 @@ class VenuesController extends \NovumWare\Zend\Mvc\Controller\AbstractActionCont
 			'venueModel'			=>	$venueModel
 		);
 	}
+	
+	public function viewAction() {
+		$venueModel = $this->getVenueModel();
+		if (!$venueModel) { $this->nwFlashMessenger()->addErrorMessage("Unable to find your venue."); return $this->redirect()->toRoute('home'); }
+
+		$addressOriginal = $venueModel->address_1.',+'.$venueModel->address_2.',+'.$venueModel->city.',+'.$venueModel->state.'+'.$venueModel->postal_code.',+'.$venueModel->country;
+		$addressWhiteSpaceRemoved = str_replace(['	', '    ', '   ', '  ', ' '], '+', $addressOriginal);
+		$addressTrimmed = str_replace(',+,+', ',+', $addressWhiteSpaceRemoved);
+		$addressCleaned = str_replace("'", '', $addressTrimmed);
+		$url = "http://maps.googleapis.com/maps/api/staticmap?center=$addressCleaned&zoom=13&size=600x300&maptype=roadmap&markers=$addressCleaned&sensor=false";
+
+		return array(
+			'url'					=>	$url,
+			'venueModel'			=>	$venueModel
+		);
+	}
 
 	public function approveAction() {
 		$venueModel = $this->getVenueModel();

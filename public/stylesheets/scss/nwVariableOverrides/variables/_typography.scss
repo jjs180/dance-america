@@ -1,0 +1,13 @@
+// ============================================================= TYPOGRAPHY ================================================
+$fontSize:					14px !default;
+$fontSize-large:			ceil($fontSize * 1.125) !default; // ~18px
+$fontSize-small:			ceil($fontSize * 0.85) !default; // ~12px
+
+$fontFamily-sansSerif:		"Helvetica Neue", Helvetica, Arial, sans-serif !default;
+//$fontFamily-serif:			Georgia, "Times New Roman", Times, serif !default;
+$fontFamily-monospace:		Monaco, Menlo, Consolas, "Courier New", monospace !default;
+$fontFamily:				$fontFamily-sansSerif !default;
+
+$lineHeight:				floor($fontSize * 1.428571429) !default; // 20/14
+
+$textShadow:				1px 1px 2px #000000 !default;

@@ -22,11 +22,11 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 <?php if ($_valid && !is_callable('content_533b157a921a84_65173293')) {function content_533b157a921a84_65173293($_smarty_tpl) {?><div class='repetitionDetail-wrapper'>
 	<div id='repetitionParameter-wrapper-0'>
 		<select name="editEventForm[repetitions][0][repetition_parameter]" class="repetitionParameter" id="editEventForm-repetitionParameter-0" data-validators='required' onchange="changeRepetitionParameter(0)">
-			<option value="one time event">One Time Event</option>
-			<option value="years">Yearly</option>
-			<option value="months">Monthly</option>
-			<option value="weeks">Weekly</option>
-			<option value="days">Every day</option>
+			<option {if $smarty.post && $smarty.post['siteSearchForm']['location']['state'] == 'CA'}selected='selected'{/if} value="one time event">One Time Event</option>
+			<option {if $smarty.post && $smarty.post['siteSearchForm']['location']['state'] == 'CA'}selected='selected'{/if} value="years">Yearly</option>
+			<option {if $smarty.post && $smarty.post['siteSearchForm']['location']['state'] == 'CA'}selected='selected'{/if} value="months">Monthly</option>
+			<option {if $smarty.post && $smarty.post['siteSearchForm']['location']['state'] == 'CA'}selected='selected'{/if} value="weeks">Weekly</option>
+			<option {if $smarty.post && $smarty.post['siteSearchForm']['location']['state'] == 'CA'}selected='selected'{/if} value="days">Every day</option>
 		</select>
 	</div>
 	<div id='repetitionSpacing-wrapper-0' class='repetitionSpacing-wrapper' style='display:none;'>

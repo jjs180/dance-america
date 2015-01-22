@@ -31,11 +31,11 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 		<select name="editEventForm[repetitions][<?php echo $_smarty_tpl->tpl_vars['index']->value;?>
 ][repetition_parameter]" class="editEventForm-repetitionParameter" id="editEventForm-repetitionParameter-<?php echo $_smarty_tpl->tpl_vars['index']->value;?>
 " data-validators='required'>
-			<option <?php if (isset($_smarty_tpl->tpl_vars['repetition']->value)&&$_smarty_tpl->tpl_vars['repetition']->value['repetition_parameter']=='one time event'){?>selected='selected'<?php }?>value="one time event">One Time Event</option>
-			<option <?php if (isset($_smarty_tpl->tpl_vars['repetition']->value)&&$_smarty_tpl->tpl_vars['repetition']->value['repetition_parameter']=='years'){?>selected='selected'<?php }?> value="years">Yearly</option>
-			<option <?php if (isset($_smarty_tpl->tpl_vars['repetition']->value)&&$_smarty_tpl->tpl_vars['repetition']->value['repetition_parameter']=='months'){?>selected='selected'<?php }?> value="months">Monthly</option>
-			<option <?php if (isset($_smarty_tpl->tpl_vars['repetition']->value)&&$_smarty_tpl->tpl_vars['repetition']->value['repetition_parameter']=='weeks'){?>selected='selected'<?php }?> value="weeks">Weekly</option>
-			<option <?php if (isset($_smarty_tpl->tpl_vars['repetition']->value)&&$_smarty_tpl->tpl_vars['repetition']->value['repetition_parameter']=='days'){?>selected='selected'<?php }?> value="days">Every day</option>
+			<option {if $smarty.post && $smarty.post['siteSearchForm']['location']['state'] == 'CA'}selected='selected'{/if} <?php if (isset($_smarty_tpl->tpl_vars['repetition']->value)&&$_smarty_tpl->tpl_vars['repetition']->value['repetition_parameter']=='one time event'){?>selected='selected'<?php }?>value="one time event">One Time Event</option>
+			<option {if $smarty.post && $smarty.post['siteSearchForm']['location']['state'] == 'CA'}selected='selected'{/if} <?php if (isset($_smarty_tpl->tpl_vars['repetition']->value)&&$_smarty_tpl->tpl_vars['repetition']->value['repetition_parameter']=='years'){?>selected='selected'<?php }?> value="years">Yearly</option>
+			<option {if $smarty.post && $smarty.post['siteSearchForm']['location']['state'] == 'CA'}selected='selected'{/if} <?php if (isset($_smarty_tpl->tpl_vars['repetition']->value)&&$_smarty_tpl->tpl_vars['repetition']->value['repetition_parameter']=='months'){?>selected='selected'<?php }?> value="months">Monthly</option>
+			<option {if $smarty.post && $smarty.post['siteSearchForm']['location']['state'] == 'CA'}selected='selected'{/if} <?php if (isset($_smarty_tpl->tpl_vars['repetition']->value)&&$_smarty_tpl->tpl_vars['repetition']->value['repetition_parameter']=='weeks'){?>selected='selected'<?php }?> value="weeks">Weekly</option>
+			<option {if $smarty.post && $smarty.post['siteSearchForm']['location']['state'] == 'CA'}selected='selected'{/if} <?php if (isset($_smarty_tpl->tpl_vars['repetition']->value)&&$_smarty_tpl->tpl_vars['repetition']->value['repetition_parameter']=='days'){?>selected='selected'<?php }?> value="days">Every day</option>
 		</select>
 	</div>
 	<div id='repetitionSpacing-wrapper-<?php echo $_smarty_tpl->tpl_vars['index']->value;?>

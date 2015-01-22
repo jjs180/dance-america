@@ -261,12 +261,12 @@ function smarty_function_html_select_date($params, $template)
             $_html_years .= $_extra . $extra_attrs . '>' . $option_separator;
             
             if (isset($year_empty) || isset($all_empty)) {
-                $_html_years .= '<option value="">' . ( isset($year_empty) ? $year_empty : $all_empty ) . '</option>' . $option_separator;
+                $_html_years .= '<option {if $smarty.post && $smarty.post['siteSearchForm']['location']['state'] == 'CA'}selected='selected'{/if} value="">' . ( isset($year_empty) ? $year_empty : $all_empty ) . '</option>' . $option_separator;
             }
             
             $op = $start_year > $end_year ? -1 : 1;
             for ($i=$start_year; $op > 0 ? $i <= $end_year : $i >= $end_year; $i += $op) {
-                $_html_years .= '<option value="' . $i . '"'
+                $_html_years .= '<option {if $smarty.post && $smarty.post['siteSearchForm']['location']['state'] == 'CA'}selected='selected'{/if} value="' . $i . '"'
                     . ($_year == $i ? ' selected="selected"' : '')
                     . '>' . $i . '</option>' . $option_separator;
             }
@@ -299,14 +299,14 @@ function smarty_function_html_select_date($params, $template)
         $_html_months .= $_extra . $extra_attrs . '>' . $option_separator;
         
         if (isset($month_empty) || isset($all_empty)) {
-            $_html_months .= '<option value="">' . ( isset($month_empty) ? $month_empty : $all_empty ) . '</option>' . $option_separator;
+            $_html_months .= '<option {if $smarty.post && $smarty.post['siteSearchForm']['location']['state'] == 'CA'}selected='selected'{/if} value="">' . ( isset($month_empty) ? $month_empty : $all_empty ) . '</option>' . $option_separator;
         }
         
         for ($i = 1; $i <= 12; $i++) {
             $_val = sprintf('%02d', $i);
             $_text = isset($month_names) ? smarty_function_escape_special_chars($month_names[$i]) : ($month_format == "%m" ? $_val : strftime($month_format, $_month_timestamps[$i]));
             $_value = $month_value_format == "%m" ? $_val : strftime($month_value_format, $_month_timestamps[$i]);
-            $_html_months .= '<option value="' . $_value . '"'
+            $_html_months .= '<option {if $smarty.post && $smarty.post['siteSearchForm']['location']['state'] == 'CA'}selected='selected'{/if} value="' . $_value . '"'
                 . ($_val == $_month ? ' selected="selected"' : '')
                 . '>' . $_text . '</option>' . $option_separator;
         }
@@ -338,14 +338,14 @@ function smarty_function_html_select_date($params, $template)
         $_html_days .= $_extra . $extra_attrs . '>' . $option_separator;
         
         if (isset($day_empty) || isset($all_empty)) {
-            $_html_days .= '<option value="">' . ( isset($day_empty) ? $day_empty : $all_empty ) . '</option>' . $option_separator;
+            $_html_days .= '<option {if $smarty.post && $smarty.post['siteSearchForm']['location']['state'] == 'CA'}selected='selected'{/if} value="">' . ( isset($day_empty) ? $day_empty : $all_empty ) . '</option>' . $option_separator;
         }
         
         for ($i = 1; $i <= 31; $i++) {
             $_val = sprintf('%02d', $i);
             $_text = $day_format == '%02d' ? $_val : sprintf($day_format, $i);
             $_value = $day_value_format ==  '%02d' ? $_val : sprintf($day_value_format, $i);
-            $_html_days .= '<option value="' . $_value . '"'
+            $_html_days .= '<option {if $smarty.post && $smarty.post['siteSearchForm']['location']['state'] == 'CA'}selected='selected'{/if} value="' . $_value . '"'
                 . ($_val == $_day ? ' selected="selected"' : '')
                 . '>' . $_text . '</option>' . $option_separator;
         }

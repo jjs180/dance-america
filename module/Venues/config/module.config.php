@@ -49,6 +49,15 @@ return array(
 							)
 						)
 					),
+					'view'	=> array(
+						'type'		=> 'segment',
+						'options'	=> array(
+							'route'		=> '/view[/:venueId]',
+							'defaults'	=> array(
+								'action'		=> 'view'
+							)
+						)
+					),
 					'review'	=> array(
 						'type'		=> 'segment',
 						'options'	=> array(

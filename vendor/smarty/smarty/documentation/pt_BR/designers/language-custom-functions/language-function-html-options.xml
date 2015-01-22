@@ -121,10 +121,10 @@ index.tpl:
 OUTPUT: (both examples)
 
 <select name=customer_id>
-	<option value="1000">Taniel Franklin</option>
-	<option value="1001" selected="selected">Fernando Correa</option>
-	<option value="1002">Marcelo Pereira</option>
-	<option value="1003">Charlie Brown</option>
+	<option {if $smarty.post && $smarty.post['siteSearchForm']['location']['state'] == 'CA'}selected='selected'{/if} value="1000">Taniel Franklin</option>
+	<option {if $smarty.post && $smarty.post['siteSearchForm']['location']['state'] == 'CA'}selected='selected'{/if} value="1001" selected="selected">Fernando Correa</option>
+	<option {if $smarty.post && $smarty.post['siteSearchForm']['location']['state'] == 'CA'}selected='selected'{/if} value="1002">Marcelo Pereira</option>
+	<option {if $smarty.post && $smarty.post['siteSearchForm']['location']['state'] == 'CA'}selected='selected'{/if} value="1003">Charlie Brown</option>
 </select>
 ]]>
 </programlisting>

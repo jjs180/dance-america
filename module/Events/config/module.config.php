@@ -37,6 +37,15 @@ return array(
 							)
 						)
 					),
+					'view'	=> array(
+						'type'		=> 'segment',
+						'options'	=> array(
+							'route'		=> '/view[/:eventId]',
+							'defaults'	=> array(
+								'action'		=> 'view'
+							)
+						),
+					),
 					'review'	=> array(
 						'type'		=> 'segment',
 						'options'	=> array(

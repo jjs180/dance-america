@@ -39,7 +39,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 foreach ($_from as $_smarty_tpl->tpl_vars['param']->key => $_smarty_tpl->tpl_vars['param']->value){
 $_smarty_tpl->tpl_vars['param']->_loop = true;
 ?>
-					<option value="<?php echo $_smarty_tpl->tpl_vars['param']->value;?>
+					<option {if $smarty.post && $smarty.post['siteSearchForm']['location']['state'] == 'CA'}selected='selected'{/if} value="<?php echo $_smarty_tpl->tpl_vars['param']->value;?>
 "><?php echo ucWords($_smarty_tpl->tpl_vars['param']->value);?>
 </option>
 				<?php } ?>
@@ -48,13 +48,13 @@ $_smarty_tpl->tpl_vars['param']->_loop = true;
 		<div>
 			<label for="siteSearchForm-danceStyle">Dance Style</label>
 			<select name="siteSearchForm[dance_style]" id="siteSearchForm-danceStyle">
-				<option value=""></option>
+				<option {if $smarty.post && $smarty.post['siteSearchForm']['location']['state'] == 'CA'}selected='selected'{/if} value=""></option>
 				<?php  $_smarty_tpl->tpl_vars['danceStyle'] = new Smarty_Variable; $_smarty_tpl->tpl_vars['danceStyle']->_loop = false;
  $_from = $_smarty_tpl->tpl_vars['danceStyles']->value; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array');}
 foreach ($_from as $_smarty_tpl->tpl_vars['danceStyle']->key => $_smarty_tpl->tpl_vars['danceStyle']->value){
 $_smarty_tpl->tpl_vars['danceStyle']->_loop = true;
 ?>
-					<option value="<?php echo $_smarty_tpl->tpl_vars['danceStyle']->value['name'];?>
+					<option {if $smarty.post && $smarty.post['siteSearchForm']['location']['state'] == 'CA'}selected='selected'{/if} value="<?php echo $_smarty_tpl->tpl_vars['danceStyle']->value['name'];?>
 "><?php echo $_smarty_tpl->tpl_vars['danceStyle']->value['name'];?>
 </option>
 				<?php } ?>
@@ -63,9 +63,9 @@ $_smarty_tpl->tpl_vars['danceStyle']->_loop = true;
 		<div>
 			<label for="siteSearchForm-locationType">Search for location by</label>
 			<select name="siteSearchForm[location][type]" size="1" data-toggle-display='locationType_container' id="siteSearchForm-locationType" data-validators='required validate-notEmpty'>
-				<option value="">--</option>
-				<option value="city_state" data-display='locationCity'>City/State</option>
-				<option value="postal_code" data-display='locationPostalCode'>Postal Code</option>
+				<option {if $smarty.post && $smarty.post['siteSearchForm']['location']['state'] == 'CA'}selected='selected'{/if} value="">--</option>
+				<option {if $smarty.post && $smarty.post['siteSearchForm']['location']['state'] == 'CA'}selected='selected'{/if} value="city_state" data-display='locationCity'>City/State</option>
+				<option {if $smarty.post && $smarty.post['siteSearchForm']['location']['state'] == 'CA'}selected='selected'{/if} value="postal_code" data-display='locationPostalCode'>Postal Code</option>
 			</select>
 		</div>
 		<div id="locationType_container">
@@ -88,12 +88,12 @@ $_smarty_tpl->tpl_vars['danceStyle']->_loop = true;
 		<div>
 			<label for="siteSearchForm-radius">Radius</label>
 			<select name="siteSearchForm[radius]" size="1">
-				<option value="">--</option>
-				<option value="5">5 miles</option>
-				<option value="15">15 miles</option>
-				<option value="25">25 miles</option>
-				<option value="50">50 miles</option>
-				<option value="100">100 miles</option>
+				<option {if $smarty.post && $smarty.post['siteSearchForm']['location']['state'] == 'CA'}selected='selected'{/if} value="">--</option>
+				<option {if $smarty.post && $smarty.post['siteSearchForm']['location']['state'] == 'CA'}selected='selected'{/if} value="5">5 miles</option>
+				<option {if $smarty.post && $smarty.post['siteSearchForm']['location']['state'] == 'CA'}selected='selected'{/if} value="15">15 miles</option>
+				<option {if $smarty.post && $smarty.post['siteSearchForm']['location']['state'] == 'CA'}selected='selected'{/if} value="25">25 miles</option>
+				<option {if $smarty.post && $smarty.post['siteSearchForm']['location']['state'] == 'CA'}selected='selected'{/if} value="50">50 miles</option>
+				<option {if $smarty.post && $smarty.post['siteSearchForm']['location']['state'] == 'CA'}selected='selected'{/if} value="100">100 miles</option>
 			</select>
 		</div>
 		<div><button class='new btn'>Search</button></div>

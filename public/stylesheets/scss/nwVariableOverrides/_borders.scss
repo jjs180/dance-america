@@ -1,0 +1,19 @@
+// ============================================================= BORDERS ================================================
+$border-color:				darken($input-color, 20%) !default;
+$border-color-inverse:		lighten($bgColor-inverse, 10%) !default;
+//$border-color-hard:			$color !default;
+//$border-color-hard-inverse:	$color-inverse !default;
+//$border:					1px solid $border-color !default;
+//$border-inverse:			1px solid $border-color-inverse !default;
+//$border-hard:				1px solid $border-color-hard !default;
+//$border-hard-inverse:		1px solid $border-color-hard-inverse !default;
+//
+//$border-positive-color:		darken(adjust-hue($bgColor-positive, -10), 5%) !default;
+//$border-neutral-color:		darken(adjust-hue($bgColor-neutral, -10), 5%) !default;
+//$border-negative-color:		darken(adjust-hue($bgColor-negative, -10), 5%) !default;
+//$border-positive:			1px solid $border-positive-color !default;
+//$border-neutral:			1px solid $border-neutral-color !default;
+//$border-negative:			1px solid $border-negative-color !default;
+//
+//$border-image:				$border !default;
+//$border-image-inverse:		$border-inverse !default;

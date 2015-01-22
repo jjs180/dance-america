@@ -1,0 +1,48 @@
+
+// ================================================== COLORS ================================================
+$color:						rgb(241, 215, 255);
+$color-inverse:				#ffffff !default;
+$color-dark:				rgb(26, 1, 37) !default;
+$color-soft:				lighten($color, 30%) !default;
+$color-soft-inverse:		lighten($color-inverse, 30%) !default;
+$color-accent:				rgb(213, 171, 0) !default;
+$color-lighter: 			rgb(58, 4, 95) !default;
+$color-accent-inverse:		rgb(81, 112, 0) !default;
+$color-positive:			rgb(69, 94, 19) !default;
+$color-neutral:				rgb(121, 121, 121) !important;
+//$color-negative:			#b94a48 !default;
+//$color-info:				#31708f !default;
+//$color-placeholderText: $colorSoft !default;
+
+$link-color:				$color-accent !default;
+//$link-color-inverse: $color-accent-inverse !default;
+$link-color-hover:			lighten($link-color, 20%) !default;
+$link-color-active:			$link-color-hover !default;
+//$link-color-hover-inverse: fade-out($link-color-inverse, 0.2) !default;
+
+//$header-color:				$color-accent !default;
+//$header-2-color:			lighten($header-color, 9%) !default;
+//$header-3-color:			lighten($header-2-color, 9%) !default;
+//$header-4-color:			lighten($header-3-color, 9%) !default;
+//$header-5-color:			lighten($header-4-color, 9%) !default;
+//$header-6-color:			lighten($header-5-color, 9%) !default;
+//$header-color-inverse:		$color-accent-inverse !default;
+
+$bgColor:					#230930;
+$bgColor-soft:				lighten($bgColor, 20%) !default;
+//$bgColor-images:			#ffffff !default;
+//$bgColor-inverse:			#242C2A !default;
+//$bgColor-positive:			#dff0d8 !default;
+//$bgColor-neutral:			#fcf8e3 !default;
+//$bgColor-negative:			#f2dede !default;
+//$bgColor-info:				#d9edf7 !default;
+//
+//$boxShadow-color:			rgba(0, 0, 0, 0.075) !default;
+//$boxShadow:					1px 2px 2px 0px $boxShadow-color !default;
+//$boxShadow-hard:			1px 2px 2px 0px #000000 !default;
+//
+$brandColor-positive:		rgb(69, 94, 19) !important;
+//$brandColor-neutral:		#ed9c28 !default;
+//$brandColor-negative:		#d9534f !default;
+//$brandColor-info:			#5bc0de !default;
+$input-bg : $color-neutral;

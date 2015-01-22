@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1-DEV, created on 2014-12-30 00:48:01
+<?php /* Smarty version Smarty-3.1-DEV, created on 2015-01-08 07:48:56
          compiled from "/Users/cara/Sites/dance_america/module/Application/public/js/application.js" */ ?>
 <?php /*%%SmartyHeaderCode:5746553654a089055e8b27-72318229%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '60500e35fe8707d79fc27becabcdf1609283b3f0' => 
     array (
       0 => '/Users/cara/Sites/dance_america/module/Application/public/js/application.js',
-      1 => 1419896813,
+      1 => 1420699615,
       2 => 'file',
     ),
   ),
@@ -23,10 +23,12 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 	if ($j(this).attr('data-toggle-display')) {
 		var container = $j(this).attr('data-toggle-display');
 		var value = $j(this).val();
-		$j('#'+container + ' #'+value+'_wrapper').removeClass('hidden');
-		$j('#'+container + ' #'+value+'_wrapper').siblings().each(function() {
-					$j(this).addClass('hidden')
-		});
+		if (value) {
+			$j('#'+container + ' #'+value+'_wrapper').removeClass('hidden');
+			$j('#'+container + ' #'+value+'_wrapper').siblings().each(function() {
+				$j(this).addClass('hidden')
+			});
+		} else $j('#'+container).children().addClass('hidden');
 	}
 });
 <?php }} ?>

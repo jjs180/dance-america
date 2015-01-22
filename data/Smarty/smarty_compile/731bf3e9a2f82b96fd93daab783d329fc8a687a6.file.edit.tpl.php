@@ -97,17 +97,17 @@ $_smarty_tpl->tpl_vars['website']->_loop = true;
 	<div>
 		<label for="editVenueForm-type" class='required'>Venue Type</label>
 		<select name="editVenueForm[type]" id="editVenueForm-type" data-validators="required" >
-			<option value="Dance Studio" <?php if ($_smarty_tpl->tpl_vars['venueModel']->value['type']=='Dance Studio'){?>selected='selected'<?php }?>>Dance Studio</option>
-			<option value="Bar" <?php if ($_smarty_tpl->tpl_vars['venueModel']->value['type']=='Bar'){?>selected='selected'<?php }?>>Bar</option>
-			<option value="Other" <?php if ($_smarty_tpl->tpl_vars['venueModel']->value['type']=='Other'){?>selected='selected'<?php }?>>Other</option>
+			<option {if $smarty.post && $smarty.post['siteSearchForm']['location']['state'] == 'CA'}selected='selected'{/if} value="Dance Studio" <?php if ($_smarty_tpl->tpl_vars['venueModel']->value['type']=='Dance Studio'){?>selected='selected'<?php }?>>Dance Studio</option>
+			<option {if $smarty.post && $smarty.post['siteSearchForm']['location']['state'] == 'CA'}selected='selected'{/if} value="Bar" <?php if ($_smarty_tpl->tpl_vars['venueModel']->value['type']=='Bar'){?>selected='selected'<?php }?>>Bar</option>
+			<option {if $smarty.post && $smarty.post['siteSearchForm']['location']['state'] == 'CA'}selected='selected'{/if} value="Other" <?php if ($_smarty_tpl->tpl_vars['venueModel']->value['type']=='Other'){?>selected='selected'<?php }?>>Other</option>
 		</select>
 	</div>
 	<div>
 		<label for="editVenueForm-minimumAge" class='required'>Minimum Age</label>
 		<select name="editVenueForm[minimum_age]" id="editVenueForm-minimumAge" data-validators="required">
-			<option value="None" <?php if ($_smarty_tpl->tpl_vars['venueModel']->value['minimum_age']=='None'){?>selected='selected'<?php }?>>None</option>
-			<option value="18 and over" <?php if ($_smarty_tpl->tpl_vars['venueModel']->value['minimum_age']=='18 and over'){?>selected='selected'<?php }?>>18 and over</option>
-			<option value="21 and over" <?php if ($_smarty_tpl->tpl_vars['venueModel']->value['minimum_age']=='21 and over'){?>selected='selected'<?php }?>>21 and over</option>
+			<option {if $smarty.post && $smarty.post['siteSearchForm']['location']['state'] == 'CA'}selected='selected'{/if} value="None" <?php if ($_smarty_tpl->tpl_vars['venueModel']->value['minimum_age']=='None'){?>selected='selected'<?php }?>>None</option>
+			<option {if $smarty.post && $smarty.post['siteSearchForm']['location']['state'] == 'CA'}selected='selected'{/if} value="18 and over" <?php if ($_smarty_tpl->tpl_vars['venueModel']->value['minimum_age']=='18 and over'){?>selected='selected'<?php }?>>18 and over</option>
+			<option {if $smarty.post && $smarty.post['siteSearchForm']['location']['state'] == 'CA'}selected='selected'{/if} value="21 and over" <?php if ($_smarty_tpl->tpl_vars['venueModel']->value['minimum_age']=='21 and over'){?>selected='selected'<?php }?>>21 and over</option>
 		</select>
 	</div>
 	<div>

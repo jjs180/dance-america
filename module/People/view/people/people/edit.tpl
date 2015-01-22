@@ -42,8 +42,8 @@
 	<div id='personWillStop-wrapper'>
 		<label for="editPersonForm-willStop" class='required'>When will the person stop repeating?</label>
 		<select name="editPersonForm[will_stop]" id="editPersonForm-willStop" data-validators='required'>
-			<option value="0" {if $personModel.will_stop === '0'}selected='selected'{/if}>Never</option>
-			<option value="1" {if $personModel.will_stop === '1'}selected='selected'{/if}>On date</option>
+			<option {if $smarty.post && $smarty.post['siteSearchForm']['location']['state'] == 'CA'}selected='selected'{/if} value="0" {if $personModel.will_stop === '0'}selected='selected'{/if}>Never</option>
+			<option {if $smarty.post && $smarty.post['siteSearchForm']['location']['state'] == 'CA'}selected='selected'{/if} value="1" {if $personModel.will_stop === '1'}selected='selected'{/if}>On date</option>
 		</select>
 	</div>
 	<div id='personEndDate-wrapper'>
@@ -73,9 +73,9 @@
 	<div>
 		<label for="editPersonForm-minimumAge" class='required'>Minimum Age</label>
 		<select name="editPersonForm[minimum_age]" id="editPersonForm-minimumAge" data-validators="required">
-			<option {if $personModel.minimum_age == 'None'}selected='selected'{/if} value="None" selected='selected'>None</option>
-			<option {if $personModel.minimum_age == '18 and over'}selected='selected'{/if} value="18 and over">18 and over</option>
-			<option {if $personModel.minimum_age == '21 and over'}selected='selected'{/if} value="21 and over">21 and over</option>
+			<option {if $smarty.post && $smarty.post['siteSearchForm']['location']['state'] == 'CA'}selected='selected'{/if} {if $personModel.minimum_age == 'None'}selected='selected'{/if} value="None" selected='selected'>None</option>
+			<option {if $smarty.post && $smarty.post['siteSearchForm']['location']['state'] == 'CA'}selected='selected'{/if} {if $personModel.minimum_age == '18 and over'}selected='selected'{/if} value="18 and over">18 and over</option>
+			<option {if $smarty.post && $smarty.post['siteSearchForm']['location']['state'] == 'CA'}selected='selected'{/if} {if $personModel.minimum_age == '21 and over'}selected='selected'{/if} value="21 and over">21 and over</option>
 		</select>
 	</div>
 	<div id='webLinks-container'>

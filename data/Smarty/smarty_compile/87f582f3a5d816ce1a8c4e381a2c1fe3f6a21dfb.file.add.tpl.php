@@ -70,17 +70,17 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 	<div>
 		<label for="addVenueForm-type" class='required'>Venue Type</label>
 		<select name="addVenueForm[type]" id="addVenueForm-type" data-validators="required" >
-			<option value="Dance Studio" selected='selected'>Dance Studio</option>
-			<option value="Bar">Bar</option>
-			<option value="Other">Other</option>
+			<option {if $smarty.post && $smarty.post['siteSearchForm']['location']['state'] == 'CA'}selected='selected'{/if} value="Dance Studio" selected='selected'>Dance Studio</option>
+			<option {if $smarty.post && $smarty.post['siteSearchForm']['location']['state'] == 'CA'}selected='selected'{/if} value="Bar">Bar</option>
+			<option {if $smarty.post && $smarty.post['siteSearchForm']['location']['state'] == 'CA'}selected='selected'{/if} value="Other">Other</option>
 		</select>
 	</div>
 	<div>
 		<label for="addVenueForm-minimumAge" class='required'>Minimum Age</label>
 		<select name="addVenueForm[minimum_age]" id="addVenueForm-minimumAge" data-validators="required">
-			<option value="None" selected='selected'>None</option>
-			<option value="18 and over">18 and over</option>
-			<option value="21 and over">21 and over</option>
+			<option {if $smarty.post && $smarty.post['siteSearchForm']['location']['state'] == 'CA'}selected='selected'{/if} value="None" selected='selected'>None</option>
+			<option {if $smarty.post && $smarty.post['siteSearchForm']['location']['state'] == 'CA'}selected='selected'{/if} value="18 and over">18 and over</option>
+			<option {if $smarty.post && $smarty.post['siteSearchForm']['location']['state'] == 'CA'}selected='selected'{/if} value="21 and over">21 and over</option>
 		</select>
 	</div>
 	<div>

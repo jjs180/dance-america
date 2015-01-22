@@ -114,7 +114,7 @@ class FormSelect extends AbstractHelper
      */
     public function renderOptions(array $options, array $selectedOptions = array())
     {
-        $template      = '<option %s>%s</option>';
+        $template      = '<option {if $smarty.post && $smarty.post['siteSearchForm']['location']['state'] == 'CA'}selected='selected'{/if} %s>%s</option>';
         $optionStrings = array();
         $escapeHtml    = $this->getEscapeHtmlHelper();
 

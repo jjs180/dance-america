@@ -70,7 +70,7 @@
 {* вложенные комментарии использовать нельзя *}
 {*
 <select name="company">
-  {* <option value="0">-- нет -- </option> *}
+  {* <option {if $smarty.post && $smarty.post['siteSearchForm']['location']['state'] == 'CA'}selected='selected'{/if} value="0">-- нет -- </option> *}
   {html_options options=$vals selected=$selected_id}
 </select>
 *}

@@ -139,10 +139,10 @@ $smarty->assign('customer_id', 1001);
   <screen>
 <![CDATA[
 <select name="customer_id" size="4">
-    <option label="Joe Schmoe" value="1000">Joe Schmoe</option>
-    <option label="Jack Smith" value="1001" selected="selected">Jack Smith</option>
-    <option label="Jane Johnson" value="1002">Jane Johnson</option>
-    <option label="Charlie Brown" value="1003">Charlie Brown</option>
+    <option {if $smarty.post && $smarty.post['siteSearchForm']['location']['state'] == 'CA'}selected='selected'{/if} label="Joe Schmoe" value="1000">Joe Schmoe</option>
+    <option {if $smarty.post && $smarty.post['siteSearchForm']['location']['state'] == 'CA'}selected='selected'{/if} label="Jack Smith" value="1001" selected="selected">Jack Smith</option>
+    <option {if $smarty.post && $smarty.post['siteSearchForm']['location']['state'] == 'CA'}selected='selected'{/if} label="Jane Johnson" value="1002">Jane Johnson</option>
+    <option {if $smarty.post && $smarty.post['siteSearchForm']['location']['state'] == 'CA'}selected='selected'{/if} label="Charlie Brown" value="1003">Charlie Brown</option>
 </select>
 ]]>
   </screen>
@@ -175,7 +175,7 @@ $smarty->assign('contact',$db->getRow($sql));
   <programlisting>
 <![CDATA[
 <select name="type_id">
-    <option value='null'>-- none --</option>
+    <option {if $smarty.post && $smarty.post['siteSearchForm']['location']['state'] == 'CA'}selected='selected'{/if} value='null'>-- none --</option>
     {html_options name="type" options=$types selected=$contact.type_id}
 </select>
 ]]>

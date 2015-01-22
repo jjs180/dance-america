@@ -3,8 +3,8 @@ namespace Application\Constants;
 
 class SiteSearchParamConstants
 {
-	const socialDances = 'social dances';
-	const instructors = 'instructors';
-	const classes = 'classes';
-	const events = 'events';
+	const socialDances = 'Social Dances';
+	const instructors = 'Instructors';
+	const classes = 'Classes';
+	const events = 'Events';
 }

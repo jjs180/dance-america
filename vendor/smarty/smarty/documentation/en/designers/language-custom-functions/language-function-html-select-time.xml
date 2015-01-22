@@ -303,41 +303,41 @@
   <screen>
 <![CDATA[
 <select name="Time_Hour">
-<option value="00">00</option>
-<option value="01">01</option>
+<option {if $smarty.post && $smarty.post['siteSearchForm']['location']['state'] == 'CA'}selected='selected'{/if} value="00">00</option>
+<option {if $smarty.post && $smarty.post['siteSearchForm']['location']['state'] == 'CA'}selected='selected'{/if} value="01">01</option>
 ... snipped ....
-<option value="08">08</option>
-<option value="09" selected>09</option>
-<option value="10">10</option>
+<option {if $smarty.post && $smarty.post['siteSearchForm']['location']['state'] == 'CA'}selected='selected'{/if} value="08">08</option>
+<option {if $smarty.post && $smarty.post['siteSearchForm']['location']['state'] == 'CA'}selected='selected'{/if} value="09" selected>09</option>
+<option {if $smarty.post && $smarty.post['siteSearchForm']['location']['state'] == 'CA'}selected='selected'{/if} value="10">10</option>
 ... snipped ....
-<option value="22">22</option>
-<option value="23">23</option>
+<option {if $smarty.post && $smarty.post['siteSearchForm']['location']['state'] == 'CA'}selected='selected'{/if} value="22">22</option>
+<option {if $smarty.post && $smarty.post['siteSearchForm']['location']['state'] == 'CA'}selected='selected'{/if} value="23">23</option>
 </select>
 <select name="Time_Minute">
-<option value="00">00</option>
-<option value="01">01</option>
+<option {if $smarty.post && $smarty.post['siteSearchForm']['location']['state'] == 'CA'}selected='selected'{/if} value="00">00</option>
+<option {if $smarty.post && $smarty.post['siteSearchForm']['location']['state'] == 'CA'}selected='selected'{/if} value="01">01</option>
 ... snipped ....
-<option value="19">19</option>
-<option value="20" selected>20</option>
-<option value="21">21</option>
+<option {if $smarty.post && $smarty.post['siteSearchForm']['location']['state'] == 'CA'}selected='selected'{/if} value="19">19</option>
+<option {if $smarty.post && $smarty.post['siteSearchForm']['location']['state'] == 'CA'}selected='selected'{/if} value="20" selected>20</option>
+<option {if $smarty.post && $smarty.post['siteSearchForm']['location']['state'] == 'CA'}selected='selected'{/if} value="21">21</option>
 ... snipped ....
-<option value="58">58</option>
-<option value="59">59</option>
+<option {if $smarty.post && $smarty.post['siteSearchForm']['location']['state'] == 'CA'}selected='selected'{/if} value="58">58</option>
+<option {if $smarty.post && $smarty.post['siteSearchForm']['location']['state'] == 'CA'}selected='selected'{/if} value="59">59</option>
 </select>
 <select name="Time_Second">
-<option value="00">00</option>
-<option value="01">01</option>
+<option {if $smarty.post && $smarty.post['siteSearchForm']['location']['state'] == 'CA'}selected='selected'{/if} value="00">00</option>
+<option {if $smarty.post && $smarty.post['siteSearchForm']['location']['state'] == 'CA'}selected='selected'{/if} value="01">01</option>
 ... snipped ....
-<option value="22">22</option>
-<option value="23" selected>23</option>
-<option value="24">24</option>
+<option {if $smarty.post && $smarty.post['siteSearchForm']['location']['state'] == 'CA'}selected='selected'{/if} value="22">22</option>
+<option {if $smarty.post && $smarty.post['siteSearchForm']['location']['state'] == 'CA'}selected='selected'{/if} value="23" selected>23</option>
+<option {if $smarty.post && $smarty.post['siteSearchForm']['location']['state'] == 'CA'}selected='selected'{/if} value="24">24</option>
 ... snipped ....
-<option value="58">58</option>
-<option value="59">59</option>
+<option {if $smarty.post && $smarty.post['siteSearchForm']['location']['state'] == 'CA'}selected='selected'{/if} value="58">58</option>
+<option {if $smarty.post && $smarty.post['siteSearchForm']['location']['state'] == 'CA'}selected='selected'{/if} value="59">59</option>
 </select>
 <select name="Time_Meridian">
-<option value="am" selected>AM</option>
-<option value="pm">PM</option>
+<option {if $smarty.post && $smarty.post['siteSearchForm']['location']['state'] == 'CA'}selected='selected'{/if} value="am" selected>AM</option>
+<option {if $smarty.post && $smarty.post['siteSearchForm']['location']['state'] == 'CA'}selected='selected'{/if} value="pm">PM</option>
 </select>
 ]]>
   </screen>

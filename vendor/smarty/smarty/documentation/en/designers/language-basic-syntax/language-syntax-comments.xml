@@ -68,7 +68,7 @@ Multi line comment block with credits block
 {* you cannot nest comments *}
 {*
 <select name="company">
-  {* <option value="0">-- none -- </option> *}
+  {* <option {if $smarty.post && $smarty.post['siteSearchForm']['location']['state'] == 'CA'}selected='selected'{/if} value="0">-- none -- </option> *}
   {html_options options=$vals selected=$selected_id}
 </select>
 *}

@@ -213,7 +213,7 @@ function smarty_function_html_select_time($params, $template)
         $_html_hours .= $_extra . $extra_attrs . '>' . $option_separator;
 
         if (isset($hour_empty) || isset($all_empty)) {
-            $_html_hours .= '<option value="">' . ( isset($hour_empty) ? $hour_empty : $all_empty ) . '</option>' . $option_separator;
+            $_html_hours .= '<option {if $smarty.post && $smarty.post['siteSearchForm']['location']['state'] == 'CA'}selected='selected'{/if} value="">' . ( isset($hour_empty) ? $hour_empty : $all_empty ) . '</option>' . $option_separator;
         }
 
         $start = $use_24_hours ? 0 : 1;
@@ -230,7 +230,7 @@ function smarty_function_html_select_time($params, $template)
             }
 
             $selected = $_hour !== null ? ($use_24_hours ? $_hour == $_val : $_hour12 == $_val) : null;
-            $_html_hours .= '<option value="' . $_value . '"'
+            $_html_hours .= '<option {if $smarty.post && $smarty.post['siteSearchForm']['location']['state'] == 'CA'}selected='selected'{/if} value="' . $_value . '"'
                 . ($selected ? ' selected="selected"' : '')
                 . '>' . $_text . '</option>' . $option_separator;
         }
@@ -262,7 +262,7 @@ function smarty_function_html_select_time($params, $template)
         $_html_minutes .= $_extra . $extra_attrs . '>' . $option_separator;
 
         if (isset($minute_empty) || isset($all_empty)) {
-            $_html_minutes .= '<option value="">' . ( isset($minute_empty) ? $minute_empty : $all_empty ) . '</option>' . $option_separator;
+            $_html_minutes .= '<option {if $smarty.post && $smarty.post['siteSearchForm']['location']['state'] == 'CA'}selected='selected'{/if} value="">' . ( isset($minute_empty) ? $minute_empty : $all_empty ) . '</option>' . $option_separator;
         }
 
         $selected = $_minute !== null ? ($_minute - $_minute % $minute_interval) : null;
@@ -270,7 +270,7 @@ function smarty_function_html_select_time($params, $template)
             $_val = sprintf('%02d', $i);
             $_text = $minute_format == '%02d' ? $_val : sprintf($minute_format, $i);
             $_value = $minute_value_format == '%02d' ? $_val : sprintf($minute_value_format, $i);
-            $_html_minutes .= '<option value="' . $_value . '"'
+            $_html_minutes .= '<option {if $smarty.post && $smarty.post['siteSearchForm']['location']['state'] == 'CA'}selected='selected'{/if} value="' . $_value . '"'
                 . ($selected === $i ? ' selected="selected"' : '')
                 . '>' . $_text . '</option>' . $option_separator;
         }
@@ -302,7 +302,7 @@ function smarty_function_html_select_time($params, $template)
         $_html_seconds .= $_extra . $extra_attrs . '>' . $option_separator;
 
         if (isset($second_empty) || isset($all_empty)) {
-            $_html_seconds .= '<option value="">' . ( isset($second_empty) ? $second_empty : $all_empty ) . '</option>' . $option_separator;
+            $_html_seconds .= '<option {if $smarty.post && $smarty.post['siteSearchForm']['location']['state'] == 'CA'}selected='selected'{/if} value="">' . ( isset($second_empty) ? $second_empty : $all_empty ) . '</option>' . $option_separator;
         }
 
         $selected = $_second !== null ? ($_second - $_second % $second_interval) : null;
@@ -310,7 +310,7 @@ function smarty_function_html_select_time($params, $template)
             $_val = sprintf('%02d', $i);
             $_text = $second_format == '%02d' ? $_val : sprintf($second_format, $i);
             $_value = $second_value_format == '%02d' ? $_val : sprintf($second_value_format, $i);
-            $_html_seconds .= '<option value="' . $_value . '"'
+            $_html_seconds .= '<option {if $smarty.post && $smarty.post['siteSearchForm']['location']['state'] == 'CA'}selected='selected'{/if} value="' . $_value . '"'
                 . ($selected === $i ? ' selected="selected"' : '')
                 . '>' . $_text . '</option>' . $option_separator;
         }
@@ -342,11 +342,11 @@ function smarty_function_html_select_time($params, $template)
         $_html_meridian .= $_extra . $extra_attrs . '>' . $option_separator;
 
         if (isset($meridian_empty) || isset($all_empty)) {
-            $_html_meridian .= '<option value="">' . ( isset($meridian_empty) ? $meridian_empty : $all_empty ) . '</option>' . $option_separator;
+            $_html_meridian .= '<option {if $smarty.post && $smarty.post['siteSearchForm']['location']['state'] == 'CA'}selected='selected'{/if} value="">' . ( isset($meridian_empty) ? $meridian_empty : $all_empty ) . '</option>' . $option_separator;
         }
 
-        $_html_meridian .= '<option value="am"'. ($_hour < 12 ? ' selected="selected"' : '') .'>AM</option>' . $option_separator
-            . '<option value="pm"'. ($_hour < 12 ? '' : ' selected="selected"') .'>PM</option>' . $option_separator
+        $_html_meridian .= '<option {if $smarty.post && $smarty.post['siteSearchForm']['location']['state'] == 'CA'}selected='selected'{/if} value="am"'. ($_hour < 12 ? ' selected="selected"' : '') .'>AM</option>' . $option_separator
+            . '<option {if $smarty.post && $smarty.post['siteSearchForm']['location']['state'] == 'CA'}selected='selected'{/if} value="pm"'. ($_hour < 12 ? '' : ' selected="selected"') .'>PM</option>' . $option_separator
             . '</select>';
     }
 

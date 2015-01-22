@@ -1,0 +1,12 @@
+// ============================================================= TABLES ================================================
+$table-border:			$border !default;
+$table-positive-bg:		$bgColor-positive !default;
+$table-negative-bg:		$bgColor-negative !default;
+
+$table-header-border:	2px solid $border-color !default;
+$table-header-color:	$color !default;
+
+$table-cell-padding:	$padding !default;
+
+$table-style-condensed-cell-padding:	$padding-small !default;
+$table-style-striped-bg:				darken($bgColor, 3%);

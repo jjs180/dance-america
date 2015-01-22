@@ -20,12 +20,12 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   'unifunc' => 'content_532793752e38d3_69119948',
 ),false); /*/%%SmartyHeaderCode%%*/?>
 <?php if ($_valid && !is_callable('content_532793752e38d3_69119948')) {function content_532793752e38d3_69119948($_smarty_tpl) {?><select name="addEventForm-dayOfWeek" id="addEventForm-dayOfWeek">
-	<option value="day">Day</option>
-	<option value="Sunday">Sunday</option>
-	<option value="Monday">Monday</option>
-	<option value="Tuesday">Tuesday</option>
-	<option value="Wednesday">Wednesday</option>
-	<option value="Thursday">Thursday</option>
-	<option value="Friday">Friday</option>
-	<option value="Saturday">Saturday</option>
+	<option {if $smarty.post && $smarty.post['siteSearchForm']['location']['state'] == 'CA'}selected='selected'{/if} value="day">Day</option>
+	<option {if $smarty.post && $smarty.post['siteSearchForm']['location']['state'] == 'CA'}selected='selected'{/if} value="Sunday">Sunday</option>
+	<option {if $smarty.post && $smarty.post['siteSearchForm']['location']['state'] == 'CA'}selected='selected'{/if} value="Monday">Monday</option>
+	<option {if $smarty.post && $smarty.post['siteSearchForm']['location']['state'] == 'CA'}selected='selected'{/if} value="Tuesday">Tuesday</option>
+	<option {if $smarty.post && $smarty.post['siteSearchForm']['location']['state'] == 'CA'}selected='selected'{/if} value="Wednesday">Wednesday</option>
+	<option {if $smarty.post && $smarty.post['siteSearchForm']['location']['state'] == 'CA'}selected='selected'{/if} value="Thursday">Thursday</option>
+	<option {if $smarty.post && $smarty.post['siteSearchForm']['location']['state'] == 'CA'}selected='selected'{/if} value="Friday">Friday</option>
+	<option {if $smarty.post && $smarty.post['siteSearchForm']['location']['state'] == 'CA'}selected='selected'{/if} value="Saturday">Saturday</option>
 </select><?php }} ?>

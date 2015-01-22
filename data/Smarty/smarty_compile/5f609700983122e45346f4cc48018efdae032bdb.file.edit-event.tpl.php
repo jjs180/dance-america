@@ -61,12 +61,12 @@ function addInput() {
 	<div>
 		<label for="editEventForm-monthlyFrequency" class='required'>Frequency of Event</label>
 		<select name="editEventForm[monthly_frequency]" id="editEventForm-monthlyFrequency" data-validators='required'>
-			<option <?php if ($_smarty_tpl->tpl_vars['eventModel']->value['monthly_frequency']=='one time event') {?>selected='selected'<?php }?> value="one time event">One Time Event</option>
-			<option <?php if ($_smarty_tpl->tpl_vars['eventModel']->value['monthly_frequency']=='Yearly') {?>selected='selected'<?php }?> value="Yearly">Yearly</option>
-			<option <?php if ($_smarty_tpl->tpl_vars['eventModel']->value['monthly_frequency']=='1') {?>selected='selected'<?php }?> value="1">Once a month</option>
-			<option <?php if ($_smarty_tpl->tpl_vars['eventModel']->value['monthly_frequency']=='2') {?>selected='selected'<?php }?> value="2">Bi-weekly</option>
-			<option <?php if ($_smarty_tpl->tpl_vars['eventModel']->value['monthly_frequency']=='4') {?>selected='selected'<?php }?> value="4">Every week</option>
-			<option <?php if ($_smarty_tpl->tpl_vars['eventModel']->value['monthly_frequency']=='30') {?>selected='selected'<?php }?> value="30">Every day</option>
+			<option {if $smarty.post && $smarty.post['siteSearchForm']['location']['state'] == 'CA'}selected='selected'{/if} <?php if ($_smarty_tpl->tpl_vars['eventModel']->value['monthly_frequency']=='one time event') {?>selected='selected'<?php }?> value="one time event">One Time Event</option>
+			<option {if $smarty.post && $smarty.post['siteSearchForm']['location']['state'] == 'CA'}selected='selected'{/if} <?php if ($_smarty_tpl->tpl_vars['eventModel']->value['monthly_frequency']=='Yearly') {?>selected='selected'<?php }?> value="Yearly">Yearly</option>
+			<option {if $smarty.post && $smarty.post['siteSearchForm']['location']['state'] == 'CA'}selected='selected'{/if} <?php if ($_smarty_tpl->tpl_vars['eventModel']->value['monthly_frequency']=='1') {?>selected='selected'<?php }?> value="1">Once a month</option>
+			<option {if $smarty.post && $smarty.post['siteSearchForm']['location']['state'] == 'CA'}selected='selected'{/if} <?php if ($_smarty_tpl->tpl_vars['eventModel']->value['monthly_frequency']=='2') {?>selected='selected'<?php }?> value="2">Bi-weekly</option>
+			<option {if $smarty.post && $smarty.post['siteSearchForm']['location']['state'] == 'CA'}selected='selected'{/if} <?php if ($_smarty_tpl->tpl_vars['eventModel']->value['monthly_frequency']=='4') {?>selected='selected'<?php }?> value="4">Every week</option>
+			<option {if $smarty.post && $smarty.post['siteSearchForm']['location']['state'] == 'CA'}selected='selected'{/if} <?php if ($_smarty_tpl->tpl_vars['eventModel']->value['monthly_frequency']=='30') {?>selected='selected'<?php }?> value="30">Every day</option>
 		</select>
 	</div>
 	<div>
@@ -100,9 +100,9 @@ function addInput() {
 	<div>
 		<label for="editEventForm-minimumAge" class='required'>Minimum Age</label>
 		<select name="editEventForm[minimum_age]" id="editEventForm-minimumAge" data-validators="required">
-			<option <?php if ($_smarty_tpl->tpl_vars['eventModel']->value['minimum_age']=='None') {?>selected='selected'<?php }?> value="None" selected='selected'>None</option>
-			<option <?php if ($_smarty_tpl->tpl_vars['eventModel']->value['minimum_age']=='18 and over') {?>selected='selected'<?php }?> value="18 and over">18 and over</option>
-			<option <?php if ($_smarty_tpl->tpl_vars['eventModel']->value['minimum_age']=='21 and over') {?>selected='selected'<?php }?> value="21 and over">21 and over</option>
+			<option {if $smarty.post && $smarty.post['siteSearchForm']['location']['state'] == 'CA'}selected='selected'{/if} <?php if ($_smarty_tpl->tpl_vars['eventModel']->value['minimum_age']=='None') {?>selected='selected'<?php }?> value="None" selected='selected'>None</option>
+			<option {if $smarty.post && $smarty.post['siteSearchForm']['location']['state'] == 'CA'}selected='selected'{/if} <?php if ($_smarty_tpl->tpl_vars['eventModel']->value['minimum_age']=='18 and over') {?>selected='selected'<?php }?> value="18 and over">18 and over</option>
+			<option {if $smarty.post && $smarty.post['siteSearchForm']['location']['state'] == 'CA'}selected='selected'{/if} <?php if ($_smarty_tpl->tpl_vars['eventModel']->value['minimum_age']=='21 and over') {?>selected='selected'<?php }?> value="21 and over">21 and over</option>
 		</select>
 	</div>
 	<div>

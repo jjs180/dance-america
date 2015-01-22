@@ -1,6 +1,4 @@
 form {
-	
-	
 	@include form-type-horizontal-fullWidth;
 	@include tablet-andSmaller {
 		> div {
@@ -17,9 +15,28 @@ form {
 		@include form-type-vertical;
 	}
 	> div {
-		label:first-child {
-			padding: 		$padding-small $padding-large;
+		label {
+			color: $color-soft-inverse;
+			&:first-child {
+				padding: 	$padding-small $padding-large;
+			}
 		}
+		textarea,
+		input:not([type=submit]), select {
+			background-color: $input-bg;
+			color: $color-dark;
+		}
+		input[type=submit] {
+			background: $brandColor-positive;
+			border-color : #2e400d;
+		}
+		
 	}
 }
+
+// ============================================================= FORMS ================================================
+//$input-color:			$color !default;
+//$input-border:			1px solid $border-color !default;
+//
+//$placeholder-color:		$color-soft !default;
 
