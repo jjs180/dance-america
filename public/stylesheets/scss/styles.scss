@@ -1,62 +1,13 @@
 @import '../../../vendor/markisacat/novumware-module/public/stylesheets/scss/nwMain.scss'; // NOVUMWARE STYLES
 
 
-// ============================================================= VARIABLES ================================================
-//@import './nwVariableOverrides/variables/_icons.scss';
-//@import './nwVariableOverrides/variables/_screen-sizes.scss';
-@import './nwVariableOverrides/variables/_colors.scss';
-//@import './nwVariableOverrides/variables/_typography.scss';
-@import './nwVariableOverrides/variables/_borders.scss';
-//@import './nwVariableOverrides/variables/_sizing.scss';
-//@import './nwVariableOverrides/variables/_grid.scss';
-//@import './nwVariableOverrides/variables/_alerts.scss';
-//@import './nwVariableOverrides/variables/_badges.scss';
-@import './nwVariableOverrides/variables/_dropdowns.scss';
-@import './nwVariableOverrides/variables/_navs.scss';
-@import './nwVariableOverrides/variables/_navbar.scss';
-//@import './nwVariableOverrides/variables/_wells.scss';
-@import './nwVariableOverrides/variables/_panels.scss';
-@import './nwVariableOverrides/variables/_buttons.scss';
-@import './nwVariableOverrides/variables/_forms.scss';
-//@import './nwVariableOverrides/variables/_tables.scss';
-//@import './nwVariableOverrides/variables/_code.scss';
-//@import './nwVariableOverrides/variables/_misc.scss';
-
-//@import './nwJsPlugins/_variables.scss';
-
-
-// ============================================================= NOVUMWARE ================================================
-//@import './nwVariableOverrides/_responsive-utilities.scss';
-//@import './nwVariableOverrides/_icons.scss';
-//@import './nwVariableOverrides/_mixins.scss';
-//@import './nwVariableOverrides/_base.scss';
-//@import './nwVariableOverrides/_grid.scss';
-//@import './nwVariableOverrides/_alerts.scss';
-//@import './nwVariableOverrides/_badges.scss';
-@import './nwVariableOverrides/_base.scss';
-@import './nwVariableOverrides/_dropdowns.scss';
-@import './nwVariableOverrides/_navs.scss';
-@import './nwVariableOverrides/_navbar.scss';
-//@import './nwVariableOverrides/_wells.scss';
-@import './nwVariableOverrides/_panels.scss';
-@import './nwVariableOverrides/_buttons.scss';
-
-//@import './novumware/_tables.scss';
-//@import './nwVariableOverrides/_code.scss';
-//@import './nwVariableOverrides/_breadcrumbs.scss';
-@import './nwVariableOverrides/_misc.scss';
-
-@import './nwVariableOverrides/_forms.scss';
-//@import './nwVariableOverrides/_extends.scss';
-//@import './nwJsPlugins/_imports.scss';
-
 // ============================================== MODULE STYLES ===============================================
 @import './../../../module/Admin/public/stylesheets/scss/admin.scss';
 @import './../../../module/Application/public/stylesheets/scss/application.scss';
 @import './../../../module/Authentication/public/stylesheets/scss/authentication.scss';
 @import './../../../module/Authentication/public/stylesheets/scss/account.scss';
-@import '../../../module/Venues/public/stylesheets/scss/venues.scss';
-@import '../../../module/Events/public/stylesheets/scss/events.scss';
+@import './../../../module/Venues/public/stylesheets/scss/venues.scss';
+@import './../../../module/Events/public/stylesheets/scss/events.scss';
 
 
 #locationType_container {
@@ -69,4 +20,30 @@
 		min-height: 32px;
 		margin-bottom: 10px;
 	}
+}
+
+form {
+  @include form-type-horizontal-fullWidth;
+  @include tablet-andSmaller {
+	> div {
+	  label:first-child {
+		@include		column-desktop(6, $gutter:false);
+		text-align:		left;
+		margin-bottom:	$margin-small;
+	  }
+	  textarea,
+	  input:not([type=checkbox]) { @include column-desktop(6, $gutter:false); }
+	}
+  }
+  @include phone-andSmaller {
+	@include form-type-vertical;
+  }
+  > div {
+	label {
+	  color: $color-soft-inverse;
+	  &:first-child {
+		padding: 	$padding-small $padding-large;
+	  }
+	}
+  }
 }

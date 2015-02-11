@@ -29,7 +29,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   'has_nocache_code' => false,
 ),false); /*/%%SmartyHeaderCode%%*/?>
 <?php if ($_valid && !is_callable('content_52f579119a9db8_96195658')) {function content_52f579119a9db8_96195658($_smarty_tpl) {?><h1>Edit your event</h1>
-<a id='changeVenue-button' class='btn new' href="<?php echo $_smarty_tpl->smarty->registered_objects['zf'][0]->url('venues/search',array('eventId'=>$_smarty_tpl->tpl_vars['eventModel']->value['id'])); ?>">Click to change venue</a>
+<a id='changeVenue-button' class='btn positive' href="<?php echo $_smarty_tpl->smarty->registered_objects['zf'][0]->url('venues/search',array('eventId'=>$_smarty_tpl->tpl_vars['eventModel']->value['id'])); ?>">Click to change venue</a>
 <form id="editEventForm" class="NWForm" action="<?php echo $_smarty_tpl->smarty->registered_objects['zf'][0]->url('events/edit',array('eventId'=>$_smarty_tpl->tpl_vars['eventModel']->value['id'])); ?>" method="post">
 	<div>
 		<label for="editEventForm-venueId" class='required'>Event Location:</label>
@@ -78,8 +78,8 @@ $_smarty_tpl->tpl_vars['repetition']->_loop = true;
 
 		<?php }?>
 		<?php if ($_smarty_tpl->tpl_vars['eventModel']->value['repetitions']){?><a id="addRepetitionButton-<?php echo count($_smarty_tpl->tpl_vars['eventModel']->value['repetitions'])-1;?>
-" class='addRepetitionButton btn new'style='display:block;'>+</a>
-		<?php }else{ ?><a id="addRepetitionButton-0" class='addRepetitionButton btn new'>+</a>
+" class='addRepetitionButton btn positive'style='display:block;'>+</a>
+		<?php }else{ ?><a id="addRepetitionButton-0" class='addRepetitionButton btn positive'>+</a>
 		<?php }?>
 	</div>
 	<div id='eventWillStop-wrapper'>
@@ -160,7 +160,7 @@ $_smarty_tpl->tpl_vars['website']->_loop = true;
 		<?php }?>
 	</div>
 	<div>
-		<a class='btn new' onclick="addInput()" id='addWebLink-button'>Add another website</a>
+		<a class='btn positive' onclick="addInput()" id='addWebLink-button'>Add another website</a>
 	</div>
 	<div>
 		<label for="editEventForm-description">Description</label>

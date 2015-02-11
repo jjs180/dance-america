@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1-DEV, created on 2014-12-08 03:05:51
+<?php /* Smarty version Smarty-3.1-DEV, created on 2015-02-05 07:51:05
          compiled from "/Users/cara/Sites/dance_america/module/Application/view/layout/partials/_nav-main.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:16443100235439c8d726f8b8-90290622%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '8365ae731b94390f2433fb123dffcb274efaf530' => 
     array (
       0 => '/Users/cara/Sites/dance_america/module/Application/view/layout/partials/_nav-main.tpl',
-      1 => 1418004181,
+      1 => 1423119053,
       2 => 'file',
     ),
   ),
@@ -27,12 +27,12 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 	<li><a <?php if ((($tmp = @$_smarty_tpl->tpl_vars['route']->value)===null||$tmp==='' ? '' : $tmp)=='about'){?>class='active'<?php }?> href="<?php echo $_smarty_tpl->smarty->registered_objects['zf'][0]->url('about'); ?>">About</a></li>
 	<li><a <?php if ((($tmp = @$_smarty_tpl->tpl_vars['route']->value)===null||$tmp==='' ? '' : $tmp)=='contact'){?>class='active'<?php }?> href="<?php echo $_smarty_tpl->smarty->registered_objects['zf'][0]->url('contact'); ?>">Contact</a></li>
 	<li class='dropdown'>
-		<a>Add another...</a>
 		<ul class='nav'>
 			<li><a <?php if ((($tmp = @$_smarty_tpl->tpl_vars['route']->value)===null||$tmp==='' ? '' : $tmp)=='venues/add'){?>class='active'<?php }?> href="<?php echo $_smarty_tpl->smarty->registered_objects['zf'][0]->url('venues/add'); ?>">Venue</a></li>
 			<li><a <?php if ((($tmp = @$_smarty_tpl->tpl_vars['route']->value)===null||$tmp==='' ? '' : $tmp)=='events/add'){?>class='active'<?php }?> href="<?php echo $_smarty_tpl->smarty->registered_objects['zf'][0]->url('events/add'); ?>">Event</a></li>
 			<li><a <?php if ((($tmp = @$_smarty_tpl->tpl_vars['route']->value)===null||$tmp==='' ? '' : $tmp)=='people/add'){?>class='active'<?php }?> href="<?php echo $_smarty_tpl->smarty->registered_objects['zf'][0]->url('people/add'); ?>">Instructor</a></li>
 		</ul>
+		<a>Add another...</a>
 	</li>
 </ul>
 <ul id='navTag-phone'>

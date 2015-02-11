@@ -24,7 +24,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   'has_nocache_code' => false,
 ),false); /*/%%SmartyHeaderCode%%*/?>
 <?php if ($_valid && !is_callable('content_53601f56020db0_91113651')) {function content_53601f56020db0_91113651($_smarty_tpl) {?><h1>Original Information</h1>
-<a class='btn new' id='backButton' href="<?php echo $_smarty_tpl->smarty->registered_objects['zf'][0]->url('manage-scraps'); ?>">Back to list</a>
+<a class='btn positive' id='backButton' href="<?php echo $_smarty_tpl->smarty->registered_objects['zf'][0]->url('manage-scraps'); ?>">Back to list</a>
 <div id='scrapVenueEvent-wrapper'>
 	<ul>
 		<li>

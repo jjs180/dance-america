@@ -53,7 +53,7 @@
 				<option  {if $smarty.post &&  $smarty.post['siteSearchForm']['radius'] == '100'}selected='selected'{/if} value="100">100 miles</option>
 			</select>
 		</div>
-		<div><label></label><input class='btn' type='submit' value="Submit"></div>
+		<div><button type='submit'>Submit</button></div>
 	</form>
 	<script>
 		{include './../../../public/js/application.js'}

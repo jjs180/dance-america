@@ -13,7 +13,6 @@ class AuthenticationController extends \NovumWare\Zend\Mvc\Controller\AbstractAc
 
 	// ========================================================================= ACTIONS =========================================================================
 	public function loginAction() {
-		$this->logout();
 		if (!$this->getRequest()->isPost()) return;
 
 		$loginForm = new LoginForm($this->getRequest()->getPost('loginForm'));

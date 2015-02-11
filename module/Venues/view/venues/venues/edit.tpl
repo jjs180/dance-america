@@ -52,7 +52,7 @@
 		{/if}
 	</div>
 	<div>
-		<a class='btn new' onclick="addInput()" id='addWebLink-button'>Add another website</a>
+		<a class='btn positive' onclick="addInput()" id='addWebLink-button'>Add another website</a>
 	</div>
 	<div>
 		<label for="editVenueForm-description">Description</label>

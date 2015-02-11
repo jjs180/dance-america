@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1-DEV, created on 2015-01-13 08:21:24
+<?php /* Smarty version Smarty-3.1-DEV, created on 2015-02-11 05:18:24
          compiled from "/Users/cara/Sites/dance_america/module/Application/view/application/index/index.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:1230976164544a6d85b56296-69825588%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '2f2e1f8f8964ac4e68b0524c43c5eae4003f802b' => 
     array (
       0 => '/Users/cara/Sites/dance_america/module/Application/view/application/index/index.tpl',
-      1 => 1421133681,
+      1 => 1423628302,
       2 => 'file',
     ),
   ),
@@ -99,7 +99,7 @@ $_smarty_tpl->tpl_vars['danceStyle']->_loop = true;
 				<option  <?php if ($_POST&&$_POST['siteSearchForm']['radius']=='100'){?>selected='selected'<?php }?> value="100">100 miles</option>
 			</select>
 		</div>
-		<div><label></label><input class='btn' type='submit' value="Submit"></div>
+		<div><button type='submit'>Submit</button></div>
 	</form>
 	<script>
 		<?php echo $_smarty_tpl->getSubTemplate ('./../../../public/js/application.js', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, null, null, array(), 0);?>

@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1-DEV, created on 2014-11-07 06:26:08
+<?php /* Smarty version Smarty-3.1-DEV, created on 2015-02-07 21:30:34
          compiled from "/Users/cara/Sites/dance_america/module/Application/view/layout/layout.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:20106273515439c8d70fa898-57763108%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '9f79f4dd30b7413ea90b0e20179f5d5bccc27f88' => 
     array (
       0 => '/Users/cara/Sites/dance_america/module/Application/view/layout/layout.tpl',
-      1 => 1415337945,
+      1 => 1423288782,
       2 => 'file',
     ),
   ),
@@ -30,7 +30,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 	<body>
 		<?php echo $_smarty_tpl->getSubTemplate ('layout/partials/_header.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, null, null, array(), 0);?>
 
-		<div id='content'>
+		<div id='content' class='container'>
 			<?php echo $_smarty_tpl->tpl_vars['this']->value->nwFlashMessenger();?>
 
 			<?php echo $_smarty_tpl->tpl_vars['this']->value->content;?>

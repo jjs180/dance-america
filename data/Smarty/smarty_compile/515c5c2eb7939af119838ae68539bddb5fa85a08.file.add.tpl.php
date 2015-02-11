@@ -27,7 +27,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 <?php if ($_valid && !is_callable('content_52f5790f28e641_60378925')) {function content_52f5790f28e641_60378925($_smarty_tpl) {?><h1>Add a Dance Event</h1>
 <p>Registration is not necessary, but it will allow you to edit the events you have added without having to contact the admin to make changes</p>
 <?php if (!isset($_smarty_tpl->tpl_vars['eventModel']->value['venue_id'])){?>
-	<a id='searchForVenue-button' class='btn new' href="<?php echo $_smarty_tpl->smarty->registered_objects['zf'][0]->url('venues/search'); ?>">Search for a venue</a>
+	<a id='searchForVenue-button' class='btn positive' href="<?php echo $_smarty_tpl->smarty->registered_objects['zf'][0]->url('venues/search'); ?>">Search for a venue</a>
 <?php }else{ ?>
 	<a id='changeVenue-button' class='btn' href="<?php echo $_smarty_tpl->smarty->registered_objects['zf'][0]->url('venues/search'); ?>">Click to change venue</a>
 <?php }?>
@@ -92,7 +92,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 				<a onclick="deleteRepetition(0)" id='deleteRepetitionButton-0' class='btn negative deleteRepetitionButton'>-</a>
 			</div>
 		</div>
-		<a id='addRepetitionButton-0' class='addRepetitionButton btn new'>+</a>
+		<a id='addRepetitionButton-0' class='addRepetitionButton btn positive'>+</a>
 	</div>
 	<div id='eventWillStop-wrapper'>
 		<label for="addEventForm-willStop" class='required'>When will the event stop repeating?</label>

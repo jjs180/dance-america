@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1-DEV, created on 2014-12-08 04:10:00
+<?php /* Smarty version Smarty-3.1-DEV, created on 2015-02-11 06:53:28
          compiled from "/Users/cara/Sites/dance_america/module/Events/view/events/events/add.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:2100203503545e4966a6b876-04099459%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'f74904d996220b0ef1c5f49f51e6431129c5b231' => 
     array (
       0 => '/Users/cara/Sites/dance_america/module/Events/view/events/events/add.tpl',
-      1 => 1418008164,
+      1 => 1423346505,
       2 => 'file',
     ),
   ),
@@ -27,7 +27,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 <?php if ($_valid && !is_callable('content_545e4966b0f427_03778898')) {function content_545e4966b0f427_03778898($_smarty_tpl) {?><h1>Add a Dance Event</h1>
 <p>Registration is not necessary, but it will allow you to edit the events you have added without having to contact the admin to make changes</p>
 <?php if (!isset($_smarty_tpl->tpl_vars['eventModel']->value['venue_id'])){?>
-	<a id='searchForVenue-button' class='btn new' href="<?php echo $_smarty_tpl->smarty->registered_objects['zf'][0]->url('venues/search'); ?>">Search for a venue</a>
+	<a id='searchForVenue-button' class='btn positive' href="<?php echo $_smarty_tpl->smarty->registered_objects['zf'][0]->url('venues/search'); ?>">Search for a venue</a>
 <?php }else{ ?>
 	<a id='changeVenue-button' class='btn' href="<?php echo $_smarty_tpl->smarty->registered_objects['zf'][0]->url('venues/search'); ?>">Click to change venue</a>
 <?php }?>
@@ -62,11 +62,11 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 		<div class='repetitionDetail-wrapper' id='repetitionDetail-wrapper-0'>
 			<div id="repetitionParameter-wrapper-0">
 				<select name="addEventForm[repetitions][0][repetition_parameter]" class="repetitionParameter" id="addEventForm-repetitionParameter-0" data-validators='required' onchange='changeRepetitionParameter(0)' >
-					<option {if $smarty.post && $smarty.post['siteSearchForm']['location']['state'] == 'CA'}selected='selected'{/if} value="one time event">One time event</option>
-					<option {if $smarty.post && $smarty.post['siteSearchForm']['location']['state'] == 'CA'}selected='selected'{/if} value="days">Every day</option>
-					<option {if $smarty.post && $smarty.post['siteSearchForm']['location']['state'] == 'CA'}selected='selected'{/if} value="weeks">Weekly</option>
-					<option {if $smarty.post && $smarty.post['siteSearchForm']['location']['state'] == 'CA'}selected='selected'{/if} value="months">Monthly</option>
-					<option {if $smarty.post && $smarty.post['siteSearchForm']['location']['state'] == 'CA'}selected='selected'{/if} value="years">Yearly</option>
+					<option <?php if ($_POST&&$_POST['siteSearchForm']['location']['state']=='CA'){?>selected='selected'<?php }?> value="one time event">One time event</option>
+					<option <?php if ($_POST&&$_POST['siteSearchForm']['location']['state']=='CA'){?>selected='selected'<?php }?> value="days">Every day</option>
+					<option <?php if ($_POST&&$_POST['siteSearchForm']['location']['state']=='CA'){?>selected='selected'<?php }?> value="weeks">Weekly</option>
+					<option <?php if ($_POST&&$_POST['siteSearchForm']['location']['state']=='CA'){?>selected='selected'<?php }?> value="months">Monthly</option>
+					<option <?php if ($_POST&&$_POST['siteSearchForm']['location']['state']=='CA'){?>selected='selected'<?php }?> value="years">Yearly</option>
 				</select>
 			</div>
 			<!-- <div id='repetitionSpacing-wrapper-0' class='repetitionSpacing-wrapper'> -->
@@ -93,13 +93,13 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 				<a onclick="deleteRepetition(0)" id='deleteRepetitionButton-0' class='btn negative deleteRepetitionButton'>-</a>
 			</div>
 		</div>
-		<a id='addRepetitionButton-0' class='addRepetitionButton btn new'>+</a>
+		<a id='addRepetitionButton-0' class='addRepetitionButton btn positive'>+</a>
 	</div>
 	<div class='hidden'>
 		<label for="addEventForm-willStop" class='required'>When will the event stop repeating?</label>
 		<select name="addEventForm[will_stop]" id="addEventForm-willStop" data-validators='required'>
-			<option {if $smarty.post && $smarty.post['siteSearchForm']['location']['state'] == 'CA'}selected='selected'{/if} value="0">Never</option>
-			<option {if $smarty.post && $smarty.post['siteSearchForm']['location']['state'] == 'CA'}selected='selected'{/if} value="1">On date</option>
+			<option <?php if ($_POST&&$_POST['siteSearchForm']['location']['state']=='CA'){?>selected='selected'<?php }?> value="0">Never</option>
+			<option <?php if ($_POST&&$_POST['siteSearchForm']['location']['state']=='CA'){?>selected='selected'<?php }?> value="1">On date</option>
 		</select>
 	</div>
 	<div class='hidden'>
@@ -120,9 +120,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 	<div>
 		<label for="addEventForm-minimumAge" class='required'>Minimum Age</label>
 		<select name="addEventForm[minimum_age]" id="addEventForm-minimumAge" data-validators="required">
-			<option {if $smarty.post && $smarty.post['siteSearchForm']['location']['state'] == 'CA'}selected='selected'{/if} value="None" selected='selected'>None</option>
-			<option {if $smarty.post && $smarty.post['siteSearchForm']['location']['state'] == 'CA'}selected='selected'{/if} value="18 and over">18 and over</option>
-			<option {if $smarty.post && $smarty.post['siteSearchForm']['location']['state'] == 'CA'}selected='selected'{/if} value="21 and over">21 and over</option>
+			<option <?php if ($_POST&&$_POST['siteSearchForm']['location']['state']=='CA'){?>selected='selected'<?php }?> value="None" selected='selected'>None</option>
+			<option <?php if ($_POST&&$_POST['siteSearchForm']['location']['state']=='CA'){?>selected='selected'<?php }?> value="18 and over">18 and over</option>
+			<option <?php if ($_POST&&$_POST['siteSearchForm']['location']['state']=='CA'){?>selected='selected'<?php }?> value="21 and over">21 and over</option>
 		</select>
 	</div>
 	<div id='webLinks-container'>

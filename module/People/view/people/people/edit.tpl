@@ -1,5 +1,5 @@
 <h1>Edit your person</h1>
-<a id='changeVenue-button' class='btn new' href="{url 'venues/search' [personId => $personModel.id]}">Click to change venue</a>
+<a id='changeVenue-button' class='btn positive' href="{url 'venues/search' [personId => $personModel.id]}">Click to change venue</a>
 <form id="editPersonForm" class="NWForm" action="{url 'people/edit' [personId => $personModel.id]}" method="post">
 	<div>
 		<label for="editPersonForm-venueId" class='required'>Event Location:</label>
@@ -35,8 +35,8 @@
 		{else}
 			{include './../partials/_edit-person-repetition-detail-no-existing-repetitions.tpl'}
 		{/if}
-		{if $personModel.repetitions}<a id="addRepetitionButton-{count($personModel.repetitions)-1}" class='addRepetitionButton btn new'style='display:block;'>+</a>
-		{else}<a id="addRepetitionButton-0" class='addRepetitionButton btn new'>+</a>
+		{if $personModel.repetitions}<a id="addRepetitionButton-{count($personModel.repetitions)-1}" class='addRepetitionButton btn positive'style='display:block;'>+</a>
+		{else}<a id="addRepetitionButton-0" class='addRepetitionButton btn positive'>+</a>
 		{/if}
 	</div>
 	<div id='personWillStop-wrapper'>
@@ -100,7 +100,7 @@
 		{/if}
 	</div>
 	<div>
-		<a class='btn new' onclick="addInput()" id='addWebLink-button'>Add another website</a>
+		<a class='btn positive' onclick="addInput()" id='addWebLink-button'>Add another website</a>
 	</div>
 	<div>
 		<label for="editPersonForm-description">Description</label>

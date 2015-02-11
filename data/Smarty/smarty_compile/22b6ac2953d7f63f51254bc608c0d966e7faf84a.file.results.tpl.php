@@ -71,7 +71,7 @@ $_smarty_tpl->tpl_vars['venueModel']->_loop = true;
 </div>
 						<?php }?>
 					</div>
-					<a class='btn new' href="<?php echo $_smarty_tpl->smarty->registered_objects['zf'][0]->url('events/add',array('venueId'=>$_smarty_tpl->tpl_vars['venueModel']->value['id'])); ?>">This is the venue!</a>
+					<a class='btn positive' href="<?php echo $_smarty_tpl->smarty->registered_objects['zf'][0]->url('events/add',array('venueId'=>$_smarty_tpl->tpl_vars['venueModel']->value['id'])); ?>">This is the venue!</a>
 				</li>
 			<?php $_smarty_tpl->tpl_vars['count'] = new Smarty_variable($_smarty_tpl->tpl_vars['count']->value+1, null, 0);?>
 			<?php } ?>
@@ -84,7 +84,7 @@ $_smarty_tpl->tpl_vars['venueModel']->_loop = true;
 
 <?php }else{ ?>
 	<p>Sorry, but it appears that we could not find anything matching your criteria. Your options are to:</p>
-	<a class='btn new' href="<?php echo $_smarty_tpl->smarty->registered_objects['zf'][0]->url('venues/add'); ?>">Add a new venue</a>
-	<a class='btn new' href="<?php echo $_smarty_tpl->smarty->registered_objects['zf'][0]->url('venues/search'); ?>">Change search criteria</a>
+	<a class='btn positive' href="<?php echo $_smarty_tpl->smarty->registered_objects['zf'][0]->url('venues/add'); ?>">Add a new venue</a>
+	<a class='btn positive' href="<?php echo $_smarty_tpl->smarty->registered_objects['zf'][0]->url('venues/search'); ?>">Change search criteria</a>
 <?php }?>
 <?php }} ?>

@@ -39,7 +39,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 		</div>
 	</div>
 	<div>
-		<a class='btn new' onclick="addInput()" id='addWebLink-button'>Add another website</a>
+		<a class='btn positive' onclick="addInput()" id='addWebLink-button'>Add another website</a>
 	</div>
 	<div>
 		<label for="addVenueForm-address1" class='required'>Address 1</label>

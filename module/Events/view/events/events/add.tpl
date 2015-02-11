@@ -1,7 +1,7 @@
 <h1>Add a Dance Event</h1>
 <p>Registration is not necessary, but it will allow you to edit the events you have added without having to contact the admin to make changes</p>
 {if !isset($eventModel.venue_id)}
-	<a id='searchForVenue-button' class='btn new' href="{url 'venues/search'}">Search for a venue</a>
+	<a id='searchForVenue-button' class='btn positive' href="{url 'venues/search'}">Search for a venue</a>
 {else}
 	<a id='changeVenue-button' class='btn' href="{url 'venues/search'}">Click to change venue</a>
 {/if}
@@ -62,7 +62,7 @@
 				<a onclick="deleteRepetition(0)" id='deleteRepetitionButton-0' class='btn negative deleteRepetitionButton'>-</a>
 			</div>
 		</div>
-		<a id='addRepetitionButton-0' class='addRepetitionButton btn new'>+</a>
+		<a id='addRepetitionButton-0' class='addRepetitionButton btn positive'>+</a>
 	</div>
 	<div class='hidden'>
 		<label for="addEventForm-willStop" class='required'>When will the event stop repeating?</label>

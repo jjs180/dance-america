@@ -58,6 +58,7 @@ class Acl extends \NovumWare\Zend\Permissions\Acl\Acl
 
 		$this->allow(RoleConstants::ADMIN);
 		$this->allow(RoleConstants::ADMIN, 'account');
+		$this->allow(RoleConstants::ADMIN, 'admin');
 		
 	}
 }

@@ -1,0 +1,52 @@
+
+// ================================================== COLORS ================================================
+$color:						gray;
+$color-inverse:				rgb(211, 211, 211);
+$color-dark:				rgb(26, 1, 37) ;
+$color-soft:				lighten($color, 30%) ;
+$color-soft-inverse:		lighten($color-inverse, 30%) ;
+$color-accent:				darkolivegreen;
+$color-lighter: 			lightgray;
+$color-accent-inverse:		rgb(81, 112, 0) ;
+$color-positive:			rgb(69, 94, 19) ;
+$color-neutral:				rgb(121, 121, 121);
+//$color-negative:			#b94a48 ;
+//$color-info:				#31708f ;
+//$color-placeholderText: $colorSoft ;
+
+$link-color:				$color-accent;
+//$link-color-inverse: $color-accent-inverse ;
+$link-color-hover:			lighten($link-color, 20%);
+$link-color-active:			$link-color-hover ;
+//$link-color-hover-inverse: fade-out($link-color-inverse, 0.2) ;
+
+$header-color:				$color-accent;
+$header-2-color:			lighten($header-color, 9%) ;
+$header-3-color:			lighten($header-2-color, 9%) ;
+$header-4-color:			lighten($header-3-color, 9%) ;
+$header-5-color:			lighten($header-4-color, 9%) ;
+$header-6-color:			lighten($header-5-color, 9%) ;
+$header-color-inverse:		$color-accent-inverse ;
+
+$bgColor:					#230930;
+$bgColor-soft:				lighten($bgColor, 5%) ;
+//$bgColor-soft:				lighten($bgColor, 5%) ;
+//$bgColor-images:			#ffffff ;
+$bgColor-inverse:			rgb(211, 211, 211);
+$bgColor-positive:			darkolivegreen ;
+$bgColor-neutral:			rgb(211, 211, 211) ;
+//$bgColor-negative:			#f2dede ;
+//$bgColor-info:				#d9edf7 ;
+//
+//$boxShadow-color:			rgba(0, 0, 0, 0.075) ;
+//$boxShadow:					1px 2px 2px 0px $boxShadow-color ;
+//$boxShadow-hard:			1px 2px 2px 0px #000000 ;
+//
+
+$bgColor-alert-positive: #dff0d8;
+
+$brandColor-positive:		rgb(69, 94, 19);
+$brandColor-neutral:		thistle;
+//$brandColor-negative:		#d9534f ;
+//$brandColor-info:			#5bc0de ;
+$input-bg : $color-neutral;

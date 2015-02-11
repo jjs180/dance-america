@@ -1,22 +1,22 @@
 // ============================================================= NAVBAR ================================================
-$navbar-height:								50px !default;
-$navbar-margin-bottom:						$lineHeight !default;
-$navbar-padding-horizontal:					floor($grid-gutterWidth / 2) !default;
-$navbar-padding-vertical:					(($navbar-height - $lineHeight) / 2) !default;
-$navbar-borderRadius:						$borderRadius !default;
+$navbar-height:								50px ;
+$navbar-margin-bottom:						$lineHeight ;
+$navbar-padding-horizontal:					floor($grid-gutterWidth / 2) ;
+$navbar-padding-vertical:					(($navbar-height - $lineHeight) / 2) ;
+$navbar-borderRadius:						$borderRadius ;
 
-$navbar-type-default-zIndex:				1000 !default;
-$navbar-type-fixed-top-zIndex:				1030 !default;
+$navbar-type-default-zIndex:				1000 ;
+$navbar-type-fixed-top-zIndex:				1030 ;
 
-$navbar-style-default-color:				$color !default;
-$navbar-style-default-bg:					$bgColor-soft !default;
-$navbar-style-default-color-link:			$navbar-style-default-color !default;
-$navbar-style-default-color-link-hover:		darken($navbar-style-default-color-link, 20%) !default;
-$navbar-style-default-color-link-active:	$color-inverse !default;
-$navbar-style-default-bg-link-active:		$bgColor-inverse !default;
-$navbar-style-default-brand-color:			$navbar-style-default-color !default;
-$navbar-style-default-brand-hover-color:	darken($navbar-style-default-brand-color, 20%) !default;
-$navbar-style-default-border-color:			darken($navbar-style-default-bg, 6.5%) !default;
-$navbar-style-default-border:				1px solid $navbar-style-default-border-color !default;
+$navbar-style-default-color:				$color-inverse;
+$navbar-style-default-bg:					$bgColor-soft ;
+$navbar-style-default-color-link:			$navbar-style-default-color ;
+$navbar-style-default-color-link-hover:		$bgColor;
+$navbar-style-default-color-link-active:	$navbar-style-default-color-link-hover;
+$navbar-style-default-bg-link-active:		$bgColor-inverse;
+$navbar-style-default-brand-color:			$color-accent;
+$navbar-style-default-brand-hover-color:	lighten($navbar-style-default-brand-color, 20%) !important;
+$navbar-style-default-border-color:			darken($navbar-style-default-bg, 6.5%) ;
+$navbar-style-default-border:				1px solid $navbar-style-default-border-color ;
 
-$navbar-style-inverse-bg:					$bgColor-inverse !default;
+$navbar-style-inverse-bg:					$bgColor-inverse ;

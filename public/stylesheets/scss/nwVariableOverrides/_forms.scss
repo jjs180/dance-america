@@ -1,42 +1,8 @@
-form {
-	@include form-type-horizontal-fullWidth;
-	@include tablet-andSmaller {
-		> div {
-			label:first-child {
-				@include		column-desktop(6, $gutter:false);
-				text-align:		left;
-				margin-bottom:	$margin-small;
-			}
-			textarea,
-			input:not([type=checkbox]) { @include column-desktop(6, $gutter:false); }
-		}
-	}
-	@include phone-andSmaller {
-		@include form-type-vertical;
-	}
-	> div {
-		label {
-			color: $color-soft-inverse;
-			&:first-child {
-				padding: 	$padding-small $padding-large;
-			}
-		}
-		textarea,
-		input:not([type=submit]), select {
-			background-color: $input-bg;
-			color: $color-dark;
-		}
-		input[type=submit] {
-			background: $brandColor-positive;
-			border-color : #2e400d;
-		}
-		
-	}
-}
-
 // ============================================================= FORMS ================================================
-//$input-color:			$color !default;
-//$input-border:			1px solid $border-color !default;
-//
-//$placeholder-color:		$color-soft !default;
+$input-color:			$color-dark;
+$input-bg:				lightgray;
+$input-height:			($lineHeight + ($padding-small * 2) + 2);
+$input-border:			1px solid $border-color ;
+
+$placeholder-color:		$color-soft;
 

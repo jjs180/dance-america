@@ -62,7 +62,7 @@ $_smarty_tpl->tpl_vars['website']->_loop = true;
 		<?php }?>
 	</div>
 	<div>
-		<a class='btn new' onclick="addInput()" id='addWebLink-button'>Add another website</a>
+		<a class='btn positive' onclick="addInput()" id='addWebLink-button'>Add another website</a>
 	</div>
 	<div>
 		<label for="editVenueForm-address1" class='required'>Address 1</label>

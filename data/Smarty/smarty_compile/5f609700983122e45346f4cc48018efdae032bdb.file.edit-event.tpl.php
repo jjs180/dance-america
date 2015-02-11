@@ -33,7 +33,7 @@ function addInput() {
 <h1>Edit <?php echo $_smarty_tpl->tpl_vars['eventModel']->value['name'];?>
 </h1>
 <p>Edit the event information below as necessary.</p>
-<a id='searchForVenue-button' class='btn new NWPopup' href="<?php echo $_smarty_tpl->smarty->registered_objects['zf'][0]->url('search-venues'); ?>">Click to change venue</a>
+<a id='searchForVenue-button' class='btn positive NWPopup' href="<?php echo $_smarty_tpl->smarty->registered_objects['zf'][0]->url('search-venues'); ?>">Click to change venue</a>
 <form id="editEventForm" class="NWForm" action="<?php echo $_smarty_tpl->smarty->registered_objects['zf'][0]->url('edit-event'); ?>" method="post">
 	<div>
 		<label for="editEventForm-venueId" class='required'>Event Location: <?php echo $_smarty_tpl->tpl_vars['eventModel']->value['venue']['name'];?>
@@ -56,7 +56,7 @@ function addInput() {
 		</div>
 	</div>
 	<div>
-		<a class='btn new' onclick="addInput()" id='addWebLink-button'>Add another link</a>
+		<a class='btn positive' onclick="addInput()" id='addWebLink-button'>Add another link</a>
 	</div>
 	<div>
 		<label for="editEventForm-monthlyFrequency" class='required'>Frequency of Event</label>

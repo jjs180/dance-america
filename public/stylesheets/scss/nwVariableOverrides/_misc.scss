@@ -1,4 +1,7 @@
+// ============================================================= MISC ================================================
 body{
-	background: url('/images/dancers.png');
-	background-size: 100% auto;
+  background: url('/images/dancers.png');
+  background-size: 100% auto;
 }
+
+$hr-border:			1px solid $border-color !default;

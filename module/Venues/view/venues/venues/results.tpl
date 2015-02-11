@@ -25,7 +25,7 @@
 							<div>Special Notes: {$venueModel.special_notes}</div>
 						{/if}
 					</div>
-					<a class='btn new' href="{url 'events/add' ['venueId' => $venueModel.id]}">This is the venue!</a>
+					<a class='btn positive' href="{url 'events/add' ['venueId' => $venueModel.id]}">This is the venue!</a>
 				</li>
 			{$count = $count+1}
 			{/foreach}
@@ -37,6 +37,6 @@
 	{include './partials/_resultsScript.tpl'}
 {else}
 	<p>Sorry, but it appears that we could not find anything matching your criteria. Your options are to:</p>
-	<a class='btn new' href="{url 'venues/add'}">Add a new venue</a>
-	<a class='btn new' href="{url 'venues/search'}">Change search criteria</a>
+	<a class='btn positive' href="{url 'venues/add'}">Add a new venue</a>
+	<a class='btn positive' href="{url 'venues/search'}">Change search criteria</a>
 {/if}

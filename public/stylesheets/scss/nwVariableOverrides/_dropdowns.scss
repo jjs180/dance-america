@@ -1,78 +1,22 @@
-@import './variables/_dropdowns.scss';
+// ============================================================= DROPDOWNS ================================================
+$dropdown-bg:						$bgColor-inverse;
+$dropdown-border:					$border;
+$dropdown-zIndex:					1100;
+
+$dropdown-type-vertical-icon:		$icon-doubleAngle-down;
+$dropdown-type-horizontal-icon:		$icon-doubleAngle-right;
+
 table > tbody > tr > td > .dropdown > div { min-width:200px; }
-// ================================================================== HELPER MIXINS ======================================================
-@mixin dropdown-notTrigger {
-	> :not(a):not([class^='dropdown-trigger']) { @content; }
-}
 
-
-// ================================================================== STYLE MIXINS ======================================================
-@mixin dropdown-type-vertical($side:'left') {
-	@if ($side == 'left') { @include dropdown-type-vertical-left; }
-	@else if ($side == 'right') { @include dropdown-type-vertical-right; }
-	@include dropdown-notTrigger { top: 100%; }
-	> a,
-	> .dropdown-trigger { margin-bottom: 0px; }
-	> a:after {
-		@include		icon($dropdown-type-vertical-icon, $multiplier:0.5);
-		position:		relative;
-		margin-left:	8px;
-		right:			0px;
-	}
-	.dropdown-trigger-noIcon:after { content: ''; }
-}
-
-@mixin dropdown-type-vertical-left {
-	@include dropdown-notTrigger {
-		right:		auto;
-		left:		0px;
-		text-align:	left;
+.dropdown > .nav {
+	&:hover ~ a {
+		background-color: $dropdown-bg;
+		color: $color-dark;
 	}
 }
 
-@mixin dropdown-type-vertical-right {
-	@include dropdown-notTrigger {
-		left:		auto;
-		right:		0px;
-		text-align:	right;
+.navbar .nav .dropdown > a {
+	&:hover {
+		background-color: $dropdown-bg;
 	}
-}
-
-@mixin dropdown-type-horizontal {
-	@include dropdown-notTrigger {
-		top:	0px;
-		left:	100%;
-	}
-	> a:after {
-		@include	icon($dropdown-type-horizontal-icon, $multiplier:0.5);
-		position:	absolute;
-		margin:		0px;
-		right:		$padding;
-	}
-	.dropdown-trigger-noIcon:after { content: ''; }
-}
-
-
-// ================================================================== EXTRA MIXINS ======================================================
-@mixin dropdown-trigger-noArrow {
-	&:after { content: ''; }
-}
-
-
-// ==================================================================  BASE ======================================================
-.dropdown {
-	position: relative;
-	@include dropdown-notTrigger {
-		box-shadow:		$boxShadow;
-		background:		$dropdown-bg;
-		border:			$dropdown-border;
-		border-radius:	$borderRadius;
-		padding:		$padding;
-		z-index:		$dropdown-zIndex;
-		position:		absolute;
-		margin:			0px;
-	}
-	&:not(:hover) { @include dropdown-notTrigger { display: none; } }
-	
-	@include dropdown-type-vertical;
 }
