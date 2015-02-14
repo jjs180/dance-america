@@ -20,7 +20,7 @@
 {include file="header.tpl"}
 {insert file="banner_ads.tpl" title="My Site"}
 
-{if $logged_in}
+{if _in}
     Welcome, <span style="color:{#fontColor#}">{$name}!</span>
 {else}
     hi, {$name}

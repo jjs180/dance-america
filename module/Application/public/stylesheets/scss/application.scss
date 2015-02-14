@@ -14,3 +14,14 @@ header {
 .hidden {
 	display: none!important;
 }
+
+form > div > label ~ div {
+	@include column-desktop(8, 4, false);
+	margin-bottom: $margin-small;
+	> div > label:first-child {
+		@include column-desktop(2);
+	}
+	> div > input:not([type=checkbox]) {
+		@include column-desktop(10);
+	}
+}

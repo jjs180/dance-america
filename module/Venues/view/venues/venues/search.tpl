@@ -16,9 +16,7 @@
 	</div>
 	<div>
 		<label for="searchVenuesForm-searchParam" class='required'>Search Phrase</label>
-		<div id='searchParamInput-wrapper'>
-			<input id="searchVenuesForm-searchParam" type="text" name="searchVenuesForm[search_param]" placeholder="Search Phrase" data-validators="required" />
-		</div>
+		<input id="searchVenuesForm-searchParam" type="text" name="searchVenuesForm[search_param]" placeholder="Search Phrase" data-validators="required" />
 	</div>
 	<div><button type="submit">Search</button></div>
 </form>
@@ -30,38 +28,37 @@
 	}
 	
 	if (selectCriteriaValue == 'state') {
-		$j('#searchVenuesForm-searchParam').remove();
-		var stateFile = $j('#searchParamInput-wrapper').load('/_state-options-search-venue.tpl');
+		$j("input[name='searchVenuesForm[search_param]']").remove();
+		var stateFile = $j("input[name='searchVenuesForm[search_param]']").load('/_state-options-search-venue.tpl');
 		var stateFileHtml = stateFile[0];
 		
-		$j("#searchParamInput-wrapper").append(stateFileHtml);
+		$j("label[for='searchVenuesForm-searchParam']").after(stateFileHtml);
 	} else if (selectCriteriaValue == 'country') {
-		$j('#searchVenuesForm-searchParam').remove();
-		var countryFile = $j('#searchParamInput-wrapper').load('/_country-options-search-venue.tpl');
+		$j("input[name='searchVenuesForm[search_param]']").remove();
+		var countryFile = $j("label[for='searchVenuesForm[search_param]']").load('/_country-options-search-venue.tpl');
 		var countryFileHtml = countryFile[0];
 		
-		$j("#searchParamInput-wrapper").append(countryFileHtml);
+		$j("label[for='searchVenuesForm-searchParam']").after(countryFileHtml).text("Country");
 	}
 	
 	$j('#searchVenuesForm-searchCriteria').change(function() {
 		selectCriteriaValue = getValue();
+		$j("input[name='searchVenuesForm[search_param]']").remove();
 		if (selectCriteriaValue == 'state') {
-			$j('#searchVenuesForm-searchParam').remove();
-			var stateFile = $j('#searchParamInput-wrapper').load('/_state-options-search-venue.tpl');
+
+			var stateFile = $j("label[for='searchVenuesForm-searchParam']").load('/_state-options-search-venue.tpl');
 			var stateFileHtml = stateFile[0];
 			
-			$j("#searchParamInput-wrapper").append(stateFileHtml);
+			$j("label[for='searchVenuesForm-searchParam']").after(stateFileHtml);
 		} else if (selectCriteriaValue == 'country') {
-			$j('#searchVenuesForm-searchParam').remove();
-			var countryFile = $j('#searchParamInput-wrapper').load('/_country-options-search-venue.tpl');
+			var countryFile = $j("label[for='searchVenuesForm-searchParam']").load('/_country-options-search-venue.tpl');
 			var countryFileHtml = countryFile[0];
 			
-			$j("#searchParamInput-wrapper").append(countryFileHtml);
+			$j("label[for='searchVenuesForm-searchParam']").after(countryFileHtml);
 		} else if (selectCriteriaValue == 'name' || selectCriteriaValue == 'city' || selectCriteriaValue == 'postal code') {
-			$j('#searchVenuesForm-searchParam').remove();
-			var blankInputFile = $j('#searchParamInput-wrapper').load('/_blank-input-options-search.tpl');
+			var blankInputFile = $j("label[for='searchVenuesForm-searchParam']").load('/_blank-input-options-search.tpl');
 			var blankInputFileHtml = blankInputFile[0];
-			$j("#searchParamInput-wrapper").append(blankInputFileHtml);
+			$j("label[for='searchVenuesForm-searchParam']").after(blankInputFileHtml);
 		}
 		
 	});

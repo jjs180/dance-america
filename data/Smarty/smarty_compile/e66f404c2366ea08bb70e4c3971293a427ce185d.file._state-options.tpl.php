@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1-DEV, created on 2015-01-08 07:02:48
+<?php /* Smarty version Smarty-3.1-DEV, created on 2015-02-14 17:56:53
          compiled from "/Users/cara/Sites/dance_america/module/Application/view/application/partials/_state-options.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:1399499778545688e725afa9-69175572%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'e66f404c2366ea08bb70e4c3971293a427ce185d' => 
     array (
       0 => '/Users/cara/Sites/dance_america/module/Application/view/application/partials/_state-options.tpl',
-      1 => 1420696964,
+      1 => 1423931967,
       2 => 'file',
     ),
   ),
@@ -19,8 +19,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   'unifunc' => 'content_545688e725f376_93611876',
   'has_nocache_code' => false,
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_545688e725f376_93611876')) {function content_545688e725f376_93611876($_smarty_tpl) {?><select name="siteSearchForm[location][state]" id="siteSearchForm-locationState">
-	<option <?php if ($_POST&&$_POST['siteSearchForm']['location']['state']==''){?>selected='selected'<?php }?> value="" selected='selected'></option>
+<?php if ($_valid && !is_callable('content_545688e725f376_93611876')) {function content_545688e725f376_93611876($_smarty_tpl) {?>	<option <?php if ($_POST&&$_POST['siteSearchForm']['location']['state']==''){?>selected='selected'<?php }?> value="" selected='selected'></option>
 	<option <?php if ($_POST&&$_POST['siteSearchForm']['location']['state']=='AL'){?>selected='selected'<?php }?> value="AL">Alabama</option>
 	<option <?php if ($_POST&&$_POST['siteSearchForm']['location']['state']=='AK'){?>selected='selected'<?php }?> value="AK">Alaska</option>
 	<option <?php if ($_POST&&$_POST['siteSearchForm']['location']['state']=='AZ'){?>selected='selected'<?php }?> value="AZ">Arizona</option>
@@ -72,4 +71,4 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 	<option <?php if ($_POST&&$_POST['siteSearchForm']['location']['state']=='WV'){?>selected='selected'<?php }?> value="WV">West Virginia</option>
 	<option <?php if ($_POST&&$_POST['siteSearchForm']['location']['state']=='WI'){?>selected='selected'<?php }?> value="WI">Wisconsin</option>
 	<option <?php if ($_POST&&$_POST['siteSearchForm']['location']['state']=='WY'){?>selected='selected'<?php }?> value="WY">Wyoming</option>
-</select><?php }} ?>
+<?php }} ?>

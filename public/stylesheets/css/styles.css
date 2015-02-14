@@ -2135,12 +2135,12 @@ table > tbody > tr > td > .dropdown > div, table > tbody > tr > td#navTag-phone 
 }
 
 .dropdown > .nav:hover ~ a, #navTag-phone > li > .nav:hover ~ a, .dropdown > #navTag-phone:hover ~ a, #navTag-phone > li > #navTag-phone:hover ~ a, .dropdown > .nav-auth:hover ~ a, #navTag-phone > li > .nav-auth:hover ~ a {
-  background-color: lightgrey;
+  background-color: gray;
   color: #1a0125;
 }
 
 .navbar .nav .dropdown > a:hover, header .nav .dropdown > a:hover, .navbar #navTag-phone .dropdown > a:hover, header #navTag-phone .dropdown > a:hover, .navbar .nav-auth .dropdown > a:hover, header .nav-auth .dropdown > a:hover, .navbar #navTag-phone > li > a:hover, header #navTag-phone > li > a:hover {
-  background-color: lightgrey;
+  background-color: gray;
 }
 
 #navTag-phone {
@@ -2168,6 +2168,24 @@ table > tbody > tr > td > .dropdown > div, table > tbody > tr > td#navTag-phone 
   position: absolute;
   top: 0px;
   right: 0px;
+}
+
+::-webkit-input-placeholder {
+  color: gray !important;
+}
+
+:-moz-placeholder {
+  /* Firefox 18- */
+  color: gray !important;
+}
+
+::-moz-placeholder {
+  /* Firefox 19+ */
+  color: gray !important;
+}
+
+:-ms-input-placeholder {
+  color: gray !important;
 }
 
 body {
@@ -5459,15 +5477,15 @@ body .ui-tooltip {
 }
 
 .icon-chevron-down:before {
-  content: "\f078";
+  content: "\e605";
 }
 
 .icon-chevron-left:before {
-  content: "\f053";
+  content: "\e607";
 }
 
 .icon-chevron-right:before {
-  content: "\f054";
+  content: "\e60b";
 }
 
 .icon-checkmark:before {
@@ -5483,7 +5501,7 @@ body .ui-tooltip {
 }
 
 .icon-edit:before {
-  content: "\f044";
+  content: "\e604";
 }
 
 .icon-facebook-f:before {
@@ -5495,7 +5513,7 @@ body .ui-tooltip {
 }
 
 .icon-info:before {
-  content: "\f129";
+  content: "\e60f";
 }
 
 .icon-loading:before {
@@ -5507,11 +5525,11 @@ body .ui-tooltip {
 }
 
 .icon-pause:before {
-  content: "\f04c";
+  content: "\e608";
 }
 
 .icon-play:before {
-  content: "\f04b";
+  content: "\e609";
 }
 
 .icon-shoppingCart:before {
@@ -5523,7 +5541,7 @@ body .ui-tooltip {
 }
 
 .icon-trash:before {
-  content: "\f014";
+  content: "\e603";
 }
 
 .icon-loading {
@@ -6115,12 +6133,12 @@ ul.nav > li > a:hover, ul#navTag-phone > li > a:hover, ul.nav-auth > li > a:hove
 }
 ul.nav > li.active > a, ul#navTag-phone > li.active > a, ul.nav-auth > li.active > a, [class*=NWPlaylist] ul#nwPlaylist-songs > li.active > a {
   background: lightgrey;
-  color: lightgrey;
+  color: red;
   cursor: default;
 }
 ul.nav > li.active > a:hover, ul#navTag-phone > li.active > a:hover, ul.nav-auth > li.active > a:hover, [class*=NWPlaylist] ul#nwPlaylist-songs > li.active > a:hover {
   background: lightgrey;
-  color: lightgrey;
+  color: red;
 }
 ul.nav > .nav-header, ul#navTag-phone > .nav-header, ul.nav-auth > .nav-header, [class*=NWPlaylist] ul#nwPlaylist-songs > .nav-header {
   padding: 5px 10px;
@@ -6257,7 +6275,7 @@ ul.nav > .dropdown .dropdown-trigger-noIcon:after, ul#navTag-phone > .dropdown .
   line-height: 0px;
   background-color: #330d45;
   border-bottom-color: #1e082a;
-  color: lightgrey;
+  color: red;
 }
 .navbar:after, header:after {
   content: "";
@@ -6273,7 +6291,7 @@ ul.nav > .dropdown .dropdown-trigger-noIcon:after, ul#navTag-phone > .dropdown .
 }
 .navbar > h1 > a, header > h1 > a {
   text-decoration: none;
-  color: lightgrey;
+  color: red;
 }
 .navbar > h1 > a:hover, header > h1 > a:hover {
   color: #8db14f !important;
@@ -6447,7 +6465,7 @@ header > ul.nav-auth > li > a,
 [class*=NWPlaylist] header > ul#nwPlaylist-songs > li > a {
   padding-top: 15px;
   padding-bottom: 15px;
-  color: lightgrey;
+  color: red;
 }
 .navbar > nav > ul.nav > li > a:hover, header > nav > ul.nav > li > a:hover, .navbar > nav > ul#navTag-phone > li > a:hover, header > nav > ul#navTag-phone > li > a:hover, .navbar > nav > ul.nav-auth > li > a:hover, header > nav > ul.nav-auth > li > a:hover, [class*=NWPlaylist] .navbar > nav > ul#nwPlaylist-songs > li > a:hover, [class*=NWPlaylist] header > nav > ul#nwPlaylist-songs > li > a:hover,
 .navbar > ul.nav > li > a:hover,
@@ -6472,7 +6490,7 @@ header > ul.nav-auth > li > a:hover,
   background: lightgrey;
 }
 .navbar > p, header > p {
-  color: lightgrey;
+  color: red;
 }
 
 .well.positive, pre.positive,
@@ -6585,7 +6603,7 @@ header > ul.nav-auth > li > a:hover,
 }
 
 .btn.positive, button.positive {
-  color: lightgrey;
+  color: red;
   background: darkolivegreen;
   border-color: #1d2410;
 }
@@ -6594,7 +6612,7 @@ header > ul.nav-auth > li > a:hover,
 .btn.positive:active, .btn.positive:focus
 button.positive:active, button.positive:focus
 button.positive:active {
-  color: lightgrey;
+  color: red;
   background-color: #3e4f23 !important;
   border-color: black !important;
 }
@@ -6805,7 +6823,7 @@ form input[type=checkbox] {
 }
 form input[type=submit],
 form button[type=submit] {
-  color: lightgrey;
+  color: red;
   background: darkolivegreen;
   border-color: #1d2410;
 }
@@ -6814,7 +6832,7 @@ form input[type=submit]:active,
 form button[type=submit]:hover,
 form button[type=submit]:focus
 form button[type=submit]:active {
-  color: lightgrey;
+  color: red;
   background-color: #3e4f23 !important;
   border-color: black !important;
 }
@@ -6876,7 +6894,7 @@ pre,
 .pre {
   display: block;
   background-color: lightgrey;
-  color: lightgrey;
+  color: red;
   font-size: 12px;
   max-height: 400px;
   overflow-y: scroll;
@@ -6943,7 +6961,7 @@ button[disabled], button[disabled]:hover, button[disabled]:focus, button[disable
 }
 
 .btn.new, button.new {
-  color: lightgrey;
+  color: red;
   background: darkolivegreen;
   border-color: #1d2410;
 }
@@ -6952,7 +6970,7 @@ button[disabled], button[disabled]:hover, button[disabled]:focus, button[disable
 .btn.new:active, .btn.new:focus
 button.new:active, button.new:focus
 button.new:active {
-  color: lightgrey;
+  color: red;
   background-color: #3e4f23 !important;
   border-color: black !important;
 }
@@ -7102,7 +7120,7 @@ ul[class*=NWAccordion] > li .nwAccordion-content {
 }
 ul[class*=NWAccordion] > li.nwAccordion-open .nwAccordion-header {
   background-color: lightgrey;
-  color: lightgrey;
+  color: red;
 }
 ul[class*=NWAccordion] > li:not(:first-of-type) {
   margin-top: -1px;
@@ -7230,7 +7248,7 @@ form input.validation-failed {
   left: 16px;
 }
 [class^='NWGallery'] .nwGallery-image-container > .nwGallery-image-innerContainer > .nwGallery-navOverlay > .nwGallery-nav-previous > .icon:before {
-  content: "\f053";
+  content: "\e607";
 }
 [class^='NWGallery'] .nwGallery-image-container > .nwGallery-image-innerContainer > .nwGallery-navOverlay > .nwGallery-nav-next {
   right: 0px;
@@ -7252,7 +7270,7 @@ form input.validation-failed {
   right: 16px;
 }
 [class^='NWGallery'] .nwGallery-image-container > .nwGallery-image-innerContainer > .nwGallery-navOverlay > .nwGallery-nav-next > .icon:before {
-  content: "\f054";
+  content: "\e60b";
 }
 [class^='NWGallery'] .nwGallery-image-container > .nwGallery-image-innerContainer > .nwGallery-navOverlay > .nwGallery-nav-previous,
 [class^='NWGallery'] .nwGallery-image-container > .nwGallery-image-innerContainer > .nwGallery-navOverlay > .nwGallery-nav-next {
@@ -7300,7 +7318,7 @@ form input.validation-failed {
   top: 2px;
 }
 [class^='NWGallery'] .nwGallery-image-container > .nwGallery-image-innerContainer > .nwGallery-navOverlay > .nwGallery-nav-playPause > .icon:before {
-  content: "\f04c";
+  content: "\e608";
 }
 [class^='NWGallery'] .nwGallery-image-container > .nwGallery-image-innerContainer > .nwGallery-navOverlay > .nwGallery-nav-playPause.nwGallery-paused > .icon {
   font-size: 16px;
@@ -7319,7 +7337,7 @@ form input.validation-failed {
   margin-left: 2px;
 }
 [class^='NWGallery'] .nwGallery-image-container > .nwGallery-image-innerContainer > .nwGallery-navOverlay > .nwGallery-nav-playPause.nwGallery-paused > .icon:before {
-  content: "\f04b";
+  content: "\e609";
 }
 [class^='NWGallery'] .nwGallery-image-container > .nwGallery-image-innerContainer > .nwGallery-navOverlay > .nwGallery-nav-thumbs {
   color: white;
@@ -7406,7 +7424,7 @@ form input.validation-failed {
   font-size: 16px;
 }
 [class^='NWGallery'] div.nwGallery-nav a.nwGallery-nav-previous:before {
-  content: "\f053";
+  content: "\e607";
 }
 [class^='NWGallery'] div.nwGallery-nav a.nwGallery-nav-next {
   font-size: 16px;
@@ -7424,7 +7442,7 @@ form input.validation-failed {
   font-size: 16px;
 }
 [class^='NWGallery'] div.nwGallery-nav a.nwGallery-nav-next:before {
-  content: "\f054";
+  content: "\e60b";
 }
 [class^='NWGallery'] div.nwGallery-nav a.nwGallery-nav-playPause {
   font-size: 16px;
@@ -7444,7 +7462,7 @@ form input.validation-failed {
   display: block;
 }
 [class^='NWGallery'] div.nwGallery-nav a.nwGallery-nav-playPause:before {
-  content: "\f04c";
+  content: "\e608";
 }
 [class^='NWGallery'] div.nwGallery-nav a.nwGallery-nav-playPause.nwGallery-paused {
   font-size: 16px;
@@ -7462,7 +7480,7 @@ form input.validation-failed {
   font-size: 16px;
 }
 [class^='NWGallery'] div.nwGallery-nav a.nwGallery-nav-playPause.nwGallery-paused:before {
-  content: "\f04b";
+  content: "\e609";
 }
 [class^='NWGallery'] div.nwGallery-nav li.active a {
   color: #8db14f;
@@ -7951,7 +7969,7 @@ form ul[class*=NWPalette] {
   /*	border: #121a3f 1px solid;*/
   border-radius: 3px;
   background-color: lightgrey;
-  color: lightgrey;
+  color: red;
   padding: 20px;
   margin: 10px 0px;
   /*	clear: both;*/
@@ -8060,7 +8078,7 @@ header {
   z-index: 1030;
   background-color: #330d45;
   border-bottom-color: #1e082a;
-  color: lightgrey;
+  color: red;
 }
 header > h1 > a {
   color: darkolivegreen;
@@ -8070,7 +8088,7 @@ header > ul.nav > li.active > a, header > ul#navTag-phone > li.active > a, heade
   background: lightgrey;
 }
 header > p {
-  color: lightgrey;
+  color: red;
 }
 header #member-mainNavBar {
   right: 100px;
@@ -8084,6 +8102,64 @@ header #member-mainNavBar {
 
 .hidden {
   display: none !important;
+}
+
+form > div > label ~ div {
+  position: relative;
+  display: block;
+  min-height: 1px;
+  margin-bottom: 5px;
+}
+@media (min-width: 1025px) {
+  form > div > label ~ div {
+    float: left;
+    width: 66.66667%;
+  }
+}
+@media (min-width: 1025px) {
+  form > div > label ~ div {
+    margin-left: 33.33333%;
+  }
+}
+form > div > label ~ div > div > label:first-child {
+  position: relative;
+  display: block;
+  min-height: 1px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+@media (min-width: 1025px) {
+  form > div > label ~ div > div > label:first-child {
+    float: left;
+    width: 16.66667%;
+  }
+}
+@media (min-width: 1025px) {
+  form > div > label ~ div > div > label:first-child {
+    margin-left: 0%;
+  }
+}
+form > div > label ~ div > div > input:not([type=checkbox]) {
+  position: relative;
+  display: block;
+  min-height: 1px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+@media (min-width: 1025px) {
+  form > div > label ~ div > div > input:not([type=checkbox]) {
+    float: left;
+    width: 83.33333%;
+  }
+}
+@media (min-width: 1025px) {
+  form > div > label ~ div > div > input:not([type=checkbox]) {
+    margin-left: 0%;
+  }
 }
 
 #login-container {
@@ -8456,7 +8532,7 @@ div#resultsHeader-wrapper a {
 div#resultsHeader-wrapper a#addNewVenue-button {
   float: right;
   background-color: lightgrey;
-  color: lightgrey;
+  color: red;
 }
 div#resultsHeader-wrapper a#addNewVenue-button:hover {
   background-color: black;
@@ -8864,7 +8940,7 @@ form > div input[type=file] {
   }
 }
 form > div label {
-  color: white;
+  color: #ff9999;
 }
 form > div label:first-child {
   padding: 5px 15px;

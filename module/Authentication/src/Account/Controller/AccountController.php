@@ -31,6 +31,16 @@ class AccountController extends \NovumWare\Zend\Mvc\Controller\AbstractActionCon
 		);
 	}
 
+	public function myInstructorsAction() {
+		$memberModel = $this->getLoggedInMember(); /*@var $memberModel \Registration\Model\MemberModel */
+
+		$instructorModelsArray = $this->getPeopleMapper()->fetchManyForMemberId($memberModel->id);
+		
+		return array(
+			'instructorModelsArray '	=>	$instructorModelsArray
+		);
+	}
+
 	// ========================================================================= FACTORY METHODS =========================================================================
 	/**
 	 * @return \Venues\Mapper\VenuesMapper
@@ -46,5 +56,13 @@ class AccountController extends \NovumWare\Zend\Mvc\Controller\AbstractActionCon
 	private function getEventsMapper() {
 		if (!isset($this->_eventsMapper)) $this->_eventsMapper = $this->getServiceLocator()->get('\Events\Mapper\EventsMapper');
 		return $this->_eventsMapper;
+	}
+
+	/**
+	 * @return \People\Mapper\PeopleMapper
+	 */
+	private function getPeopleMapper() {
+		if (!isset($this->_peopleMapper)) $this->_peopleMapper = $this->getServiceLocator()->get('\People\Mapper\PeopleMapper');
+		return $this->_peopleMapper;
 	}
 }

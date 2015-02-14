@@ -10,13 +10,13 @@ table > tbody > tr > td > .dropdown > div { min-width:200px; }
 
 .dropdown > .nav {
 	&:hover ~ a {
-		background-color: $dropdown-bg;
+		background-color: gray;
 		color: $color-dark;
 	}
 }
 
 .navbar .nav .dropdown > a {
 	&:hover {
-		background-color: $dropdown-bg;
+		background-color: gray;
 	}
 }

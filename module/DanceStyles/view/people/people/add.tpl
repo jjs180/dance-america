@@ -59,7 +59,7 @@
 	<div>
 		<label for="addPersonForm-contactEmail">Your Email</label>
 		<div>
-			<input id="addPersonForm-contactEmail" type="email" name="addPersonForm[contact_email]" placeholder="Email" data-validators="validate-email" {if $loggedInMember}value="{$loggedInMember.email}"{/if} />
+			<input id="addPersonForm-contactEmail" type="email" name="addPersonForm[contact_email]" placeholder="Email" data-validators="validate-email" {if isset($loggedInMember)}value="{$loggedInMember.email}"{/if} />
 		</div>
 		<div>If you leave this blank and we have questions about your person, it will not be approved</div>
 	</div>

@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1-DEV, created on 2014-11-08 18:04:45
+<?php /* Smarty version Smarty-3.1-DEV, created on 2015-02-14 18:40:45
          compiled from "/Users/cara/Sites/dance_america/module/Venues/view/venues/venues/results.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:1628695536545e4d2d61f6b7-29750559%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '22b6ac2953d7f63f51254bc608c0d966e7faf84a' => 
     array (
       0 => '/Users/cara/Sites/dance_america/module/Venues/view/venues/venues/results.tpl',
-      1 => 1396323809,
+      1 => 1423935640,
       2 => 'file',
     ),
   ),
@@ -15,6 +15,8 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   'function' => 
   array (
   ),
+  'version' => 'Smarty-3.1-DEV',
+  'unifunc' => 'content_545e4d2d921ff7_60077400',
   'variables' => 
   array (
     'venueModelsArray' => 0,
@@ -24,8 +26,6 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'venueModel' => 0,
   ),
   'has_nocache_code' => false,
-  'version' => 'Smarty-3.1-DEV',
-  'unifunc' => 'content_545e4d2d921ff7_60077400',
 ),false); /*/%%SmartyHeaderCode%%*/?>
 <?php if ($_valid && !is_callable('content_545e4d2d921ff7_60077400')) {function content_545e4d2d921ff7_60077400($_smarty_tpl) {?><?php if ($_smarty_tpl->tpl_vars['venueModelsArray']->value){?>
 	<div id='resultsHeader-wrapper'>
@@ -59,9 +59,7 @@ $_smarty_tpl->tpl_vars['venueModel']->_loop = true;
 						<?php echo $_smarty_tpl->tpl_vars['venueModel']->value['city'];?>
 , <?php echo $_smarty_tpl->tpl_vars['venueModel']->value['state'];?>
  <?php echo $_smarty_tpl->tpl_vars['venueModel']->value['postal_code'];?>
-<br />
-						<?php echo $_smarty_tpl->tpl_vars['venueModel']->value['country'];?>
-<br />
+
 						<?php if ($_smarty_tpl->tpl_vars['venueModel']->value['description']){?>
 							<div>Description: <?php echo $_smarty_tpl->tpl_vars['venueModel']->value['description'];?>
 </div>

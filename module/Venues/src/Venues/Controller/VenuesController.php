@@ -124,7 +124,7 @@ class VenuesController extends \NovumWare\Zend\Mvc\Controller\AbstractActionCont
 			'venueModel'			=>	$venueModel
 		);
 	}
-	
+
 	public function viewAction() {
 		$venueModel = $this->getVenueModel();
 		if (!$venueModel) { $this->nwFlashMessenger()->addErrorMessage("Unable to find your venue."); return $this->redirect()->toRoute('home'); }
@@ -158,7 +158,7 @@ class VenuesController extends \NovumWare\Zend\Mvc\Controller\AbstractActionCont
 		} else {
 			$processResult = $this->getVenuesProcess()->insertModel($venueModel);
 			if ($processResult->success) {
-				$this->nwFlashMessenger()->addSuccessMessage("You have successfully added an venue to our site!");
+				$this->nwFlashMessenger()->addSuccessMessage("You have successfully added a venue to our site!");
 				$this->getSessionVenuesMapper()->delete();
 				$this->getVenuesProcess()->sendApprovalEmailToAdmin($venueModel);
 			}

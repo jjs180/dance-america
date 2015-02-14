@@ -13,7 +13,7 @@
 		<ul class='nav'>
 			<li><a {if $route|default=='manage-events'}class='active'{/if} href="{url 'account/my-events'}">Events</a></li>
 			<li><a {if $route|default=='manage-venues'}class='active'{/if} href="{url 'account/my-venues'}">Venues</a></li>
-			<li><a {if $route|default=='manage-people'}class='active'{/if} href="{url 'account/my-people'}">Instructors</a></li>
+			<li><a {if $route|default=='manage-people'}class='active'{/if} href="{url 'account/my-instructors'}">Instructors</a></li>
 		</ul>
 		<a>Manage my</a>
 	</li>
@@ -31,7 +31,7 @@
 			<li class='nav-divider'></li>
 			<li><a {if $route|default=='manage-events'}class='active'{/if} href="{url 'account/my-events'}">My Events</a></li>
 			<li><a {if $route|default=='manage-venues'}class='active'{/if} href="{url 'account/my-venues'}">My Venues</a></li>
-			<li><a {if $route|default=='manage-people'}class='active'{/if} href="{url 'account/my-people'}">My Instructors</a></li>
+			<li><a {if $route|default=='manage-people'}class='active'{/if} href="{url 'account/my-instructors'}">My Instructors</a></li>
 			<li class='nav-divider'></li>
 			<li {if $route|default=='account'}class='active'{/if}><a href="{url account}">My Account</a></li>
 			<li><a href='{url logout}'>Logout</a></li>

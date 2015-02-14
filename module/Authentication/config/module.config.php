@@ -169,12 +169,12 @@ return array(
 							)
 						)
 					),
-					'my-people'	=> array(
+					'my-instructors'	=> array(
 						'type'		=> 'literal',
 						'options'	=> array(
-							'route'		=> '/my-people',
+							'route'		=> '/my-instructors',
 							'defaults'	=> array(
-								'action'		=> 'my-people'
+								'action'		=> 'my-instructors'
 							)
 						)
 					)

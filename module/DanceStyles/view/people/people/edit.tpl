@@ -109,7 +109,7 @@
 	<div>
 		<label for="editPersonForm-contactEmail">Your Email</label>
 		<div>
-			<input id="editPersonForm-contactEmail" type="email" name="editPersonForm[contact_email]" placeholder="Email" data-validators="validate-email" {if $personModel.contact_email}value="{$personModel.contact_email}"{else} value="{$loggedInMember.email}"{/if} />
+			<input id="editPersonForm-contactEmail" type="email" name="editPersonForm[contact_email]" placeholder="Email" data-validators="validate-email" {if $personModel.contact_email}value="{$personModel.contact_email}"{else} value="{InMember.email}"{/if} />
 		</div>
 		<div>If you leave this blank and we have questions about your person, it will not be approved</div>
 	</div>

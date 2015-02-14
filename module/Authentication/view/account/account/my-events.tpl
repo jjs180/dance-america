@@ -1,4 +1,4 @@
-{if $eventModelsArray}
+{if !empty($eventModelsArray)}
 	<h1>Events You Have Listed</h1>
 	<table border="1" id='myEvents-table'>
 		<thead>

@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1-DEV, created on 2015-02-11 05:18:24
+<?php /* Smarty version Smarty-3.1-DEV, created on 2015-02-14 17:56:52
          compiled from "/Users/cara/Sites/dance_america/module/Application/view/application/index/index.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:1230976164544a6d85b56296-69825588%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '2f2e1f8f8964ac4e68b0524c43c5eae4003f802b' => 
     array (
       0 => '/Users/cara/Sites/dance_america/module/Application/view/application/index/index.tpl',
-      1 => 1423628302,
+      1 => 1423931783,
       2 => 'file',
     ),
   ),
@@ -32,7 +32,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 <?php if ($_valid && !is_callable('content_544a6d85df7b37_26144463')) {function content_544a6d85df7b37_26144463($_smarty_tpl) {?><div class='<?php if (!$_POST){?>column-desktop-12 column-tablet-12<?php }else{ ?>column-desktop-6 column-tablet-6<?php }?>'>
 	<form id = "siteSearchForm" action="<?php echo $_smarty_tpl->smarty->registered_objects['zf'][0]->url('home'); ?>" class="NWForm" method='POST'>
 		<div>
-			<label for="siteSearchForm-searchParam">What are you looking for?&nbsp;<span class="required">*</span></label>
+			<label class='required' for="siteSearchForm-searchParam">What are you looking for?</label>
 			<select type="text" name="siteSearchForm[search_param]" data-validators="required" required>
 				<option <?php if ($_POST&&$_POST['siteSearchForm']['location']['state']=='CA'){?>selected='selected'<?php }?> value="">--</option>
 				<?php  $_smarty_tpl->tpl_vars['param'] = new Smarty_Variable; $_smarty_tpl->tpl_vars['param']->_loop = false;
@@ -78,8 +78,10 @@ $_smarty_tpl->tpl_vars['danceStyle']->_loop = true;
 				</div>
 				<div>
 					<label for="siteSearchForm-locationState">State</label>
-					<?php echo $_smarty_tpl->getSubTemplate ('../partials/_state-options.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, null, null, array(), 0);?>
+					<select name="siteSearchForm[location][state]" id="siteSearchForm-locationState">
+						<?php echo $_smarty_tpl->getSubTemplate ('../partials/_state-options.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, null, null, array(), 0);?>
 
+					</select>
 				</div>
 			</div>
 			<div class="<?php if ($_POST&&$_POST['siteSearchForm']['location']['type']!==' '&&$_POST['siteSearchForm']['location']['type']!=='postal_code'||!$_POST){?>hidden<?php }?>" id='postal_code_wrapper'>

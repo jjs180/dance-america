@@ -19,7 +19,7 @@
 {include file='header.tpl'}
 {insert file='banner_ads.tpl' title='Smarty est cool !'}
 
-{if $logged_in}
+{if _in}
    Bonjour, <font color="{#fontColor#}">{$name}!</font>
 {else}
    Bonjour, {$name}!

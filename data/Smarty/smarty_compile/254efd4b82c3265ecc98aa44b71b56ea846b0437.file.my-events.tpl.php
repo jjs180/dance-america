@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1-DEV, created on 2015-02-11 07:02:38
+<?php /* Smarty version Smarty-3.1-DEV, created on 2015-02-11 07:41:37
          compiled from "/Users/cara/Sites/dance_america/module/Authentication/view/account/account/my-events.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:47900799254daf07e800020-23373057%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '254efd4b82c3265ecc98aa44b71b56ea846b0437' => 
     array (
       0 => '/Users/cara/Sites/dance_america/module/Authentication/view/account/account/my-events.tpl',
-      1 => 1406659241,
+      1 => 1423636872,
       2 => 'file',
     ),
   ),
@@ -15,6 +15,8 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   'function' => 
   array (
   ),
+  'version' => 'Smarty-3.1-DEV',
+  'unifunc' => 'content_54daf07eba2bf0_13753861',
   'variables' => 
   array (
     'eventModelsArray' => 0,
@@ -23,11 +25,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'cost' => 0,
   ),
   'has_nocache_code' => false,
-  'version' => 'Smarty-3.1-DEV',
-  'unifunc' => 'content_54daf07eba2bf0_13753861',
 ),false); /*/%%SmartyHeaderCode%%*/?>
 <?php if ($_valid && !is_callable('content_54daf07eba2bf0_13753861')) {function content_54daf07eba2bf0_13753861($_smarty_tpl) {?><?php if (!is_callable('smarty_modifier_date_format')) include '/Users/cara/Sites/dance_america/vendor/smarty/smarty/distribution/libs/plugins/modifier.date_format.php';
-?><?php if ($_smarty_tpl->tpl_vars['eventModelsArray']->value){?>
+?><?php if (!empty($_smarty_tpl->tpl_vars['eventModelsArray']->value)){?>
 	<h1>Events You Have Listed</h1>
 	<table border="1" id='myEvents-table'>
 		<thead>

@@ -1,7 +1,7 @@
 <div class='{if !$smarty.post}column-desktop-12 column-tablet-12{else}column-desktop-6 column-tablet-6{/if}'>
 	<form id = "siteSearchForm" action="{url 'home'}" class="NWForm" method='POST'>
 		<div>
-			<label for="siteSearchForm-searchParam">What are you looking for?&nbsp;<span class="required">*</span></label>
+			<label class='required' for="siteSearchForm-searchParam">What are you looking for?</label>
 			<select type="text" name="siteSearchForm[search_param]" data-validators="required" required>
 				<option {if $smarty.post && $smarty.post['siteSearchForm']['location']['state'] == 'CA'}selected='selected'{/if} value="">--</option>
 				{foreach $siteSearchParams as $param}
@@ -34,7 +34,9 @@
 				</div>
 				<div>
 					<label for="siteSearchForm-locationState">State</label>
-					{include '../partials/_state-options.tpl'}
+					<select name="siteSearchForm[location][state]" id="siteSearchForm-locationState">
+						{include '../partials/_state-options.tpl'}
+					</select>
 				</div>
 			</div>
 			<div class="{if $smarty.post && $smarty.post['siteSearchForm']['location']['type'] !== ' ' &&  $smarty.post['siteSearchForm']['location']['type'] !== 'postal_code' || !$smarty.post}hidden{/if}" id='postal_code_wrapper'>

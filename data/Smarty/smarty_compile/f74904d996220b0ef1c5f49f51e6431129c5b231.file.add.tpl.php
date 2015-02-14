@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1-DEV, created on 2015-02-11 06:53:28
+<?php /* Smarty version Smarty-3.1-DEV, created on 2015-02-14 18:34:44
          compiled from "/Users/cara/Sites/dance_america/module/Events/view/events/events/add.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:2100203503545e4966a6b876-04099459%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'f74904d996220b0ef1c5f49f51e6431129c5b231' => 
     array (
       0 => '/Users/cara/Sites/dance_america/module/Events/view/events/events/add.tpl',
-      1 => 1423346505,
+      1 => 1423935282,
       2 => 'file',
     ),
   ),
@@ -19,13 +19,15 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   'unifunc' => 'content_545e4966b0f427_03778898',
   'variables' => 
   array (
-    'eventModel' => 0,
     'loggedInMember' => 0,
+    'eventModel' => 0,
   ),
   'has_nocache_code' => false,
 ),false); /*/%%SmartyHeaderCode%%*/?>
 <?php if ($_valid && !is_callable('content_545e4966b0f427_03778898')) {function content_545e4966b0f427_03778898($_smarty_tpl) {?><h1>Add a Dance Event</h1>
-<p>Registration is not necessary, but it will allow you to edit the events you have added without having to contact the admin to make changes</p>
+<?php if (!isset($_smarty_tpl->tpl_vars['loggedInMember']->value)){?>
+	<p>Registration is not necessary, but it will allow you to edit the events you have added without having to contact the admin to make changes</p>
+<?php }?>
 <?php if (!isset($_smarty_tpl->tpl_vars['eventModel']->value['venue_id'])){?>
 	<a id='searchForVenue-button' class='btn positive' href="<?php echo $_smarty_tpl->smarty->registered_objects['zf'][0]->url('venues/search'); ?>">Search for a venue</a>
 <?php }else{ ?>
@@ -143,10 +145,8 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 	</div>
 	<div>
 		<label for="addEventForm-contactEmail">Your Email</label>
-		<div>
-			<input id="addEventForm-contactEmail" type="email" name="addEventForm[contact_email]" placeholder="Email" data-validators="validate-email" <?php if ($_smarty_tpl->tpl_vars['loggedInMember']->value){?>value="<?php echo $_smarty_tpl->tpl_vars['loggedInMember']->value['email'];?>
+		<input id="addEventForm-contactEmail" type="email" name="addEventForm[contact_email]" placeholder="Email" data-validators="validate-email" <?php if ($_smarty_tpl->tpl_vars['loggedInMember']->value){?>value="<?php echo $_smarty_tpl->tpl_vars['loggedInMember']->value['email'];?>
 "<?php }?> />
-		</div>
 		<div>If you leave this blank and we have questions about your event, it will not be approved</div>
 	</div>
 	<div><button class='new btn'>Add Event</button></div>

@@ -2,91 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1aaacee2-5aa3-469b-984a-93d50a749b12" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dance_america.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/scopes/scope_settings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/stylesheets/scss/nwVariableOverrides/_base.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/stylesheets/scss/nwVariableOverrides/font-awesome.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/stylesheets/scss/nwVariableOverrides/variables/_alerts.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/stylesheets/scss/nwVariableOverrides/variables/_badges.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/stylesheets/scss/nwVariableOverrides/variables/_borders.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/stylesheets/scss/nwVariableOverrides/variables/_buttons.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/stylesheets/scss/nwVariableOverrides/variables/_code.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/stylesheets/scss/nwVariableOverrides/variables/_colors.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/stylesheets/scss/nwVariableOverrides/variables/_dropdowns.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/stylesheets/scss/nwVariableOverrides/variables/_forms.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/stylesheets/scss/nwVariableOverrides/variables/_grid.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/stylesheets/scss/nwVariableOverrides/variables/_icons.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/stylesheets/scss/nwVariableOverrides/variables/_misc.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/stylesheets/scss/nwVariableOverrides/variables/_navbar.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/stylesheets/scss/nwVariableOverrides/variables/_navs.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/stylesheets/scss/nwVariableOverrides/variables/_panels.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/stylesheets/scss/nwVariableOverrides/variables/_screen-sizes.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/stylesheets/scss/nwVariableOverrides/variables/_sizing.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/stylesheets/scss/nwVariableOverrides/variables/_tables.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/stylesheets/scss/nwVariableOverrides/variables/_typography.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/stylesheets/scss/nwVariableOverrides/variables/_wells.scss" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/maxnuf/maxnuf-smarty" afterPath="$PROJECT_DIR$/vendor/maxnuf/maxnuf-smarty" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/markisacat/novumware-module" afterPath="$PROJECT_DIR$/vendor/markisacat/novumware-module" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/Smarty/smarty_compile/18733b90c70a4eb498d86cd728d43fbf02537d23.file.add.tpl.php" afterPath="$PROJECT_DIR$/data/Smarty/smarty_compile/18733b90c70a4eb498d86cd728d43fbf02537d23.file.add.tpl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/Smarty/smarty_compile/2270ea97f5f96a1551a5ffca1e1f30f71824e5f5.file.edit-event.tpl.php" afterPath="$PROJECT_DIR$/data/Smarty/smarty_compile/2270ea97f5f96a1551a5ffca1e1f30f71824e5f5.file.edit-event.tpl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/Smarty/smarty_compile/22b6ac2953d7f63f51254bc608c0d966e7faf84a.file.results.tpl.php" afterPath="$PROJECT_DIR$/data/Smarty/smarty_compile/22b6ac2953d7f63f51254bc608c0d966e7faf84a.file.results.tpl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/Smarty/smarty_compile/2f2e1f8f8964ac4e68b0524c43c5eae4003f802b.file.index.tpl.php" afterPath="$PROJECT_DIR$/data/Smarty/smarty_compile/2f2e1f8f8964ac4e68b0524c43c5eae4003f802b.file.index.tpl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/Smarty/smarty_compile/43c744f0de39735fe7f497e2d497fba9fa66fe68.file._country-options-list.tpl.php" afterPath="$PROJECT_DIR$/data/Smarty/smarty_compile/43c744f0de39735fe7f497e2d497fba9fa66fe68.file._country-options-list.tpl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/Smarty/smarty_compile/4b84ca0632758ac5807404e59efba982670c30b2.file.edit.tpl.php" afterPath="$PROJECT_DIR$/data/Smarty/smarty_compile/4b84ca0632758ac5807404e59efba982670c30b2.file.edit.tpl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/Smarty/smarty_compile/4fc7c9e7077892ce7cc7fc407bb52a0eb0bf8b2b.file._header.tpl.php" afterPath="$PROJECT_DIR$/data/Smarty/smarty_compile/4fc7c9e7077892ce7cc7fc407bb52a0eb0bf8b2b.file._header.tpl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/Smarty/smarty_compile/515c5c2eb7939af119838ae68539bddb5fa85a08.file.add.tpl.php" afterPath="$PROJECT_DIR$/data/Smarty/smarty_compile/515c5c2eb7939af119838ae68539bddb5fa85a08.file.add.tpl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/Smarty/smarty_compile/5f609700983122e45346f4cc48018efdae032bdb.file.edit-event.tpl.php" afterPath="$PROJECT_DIR$/data/Smarty/smarty_compile/5f609700983122e45346f4cc48018efdae032bdb.file.edit-event.tpl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/Smarty/smarty_compile/731bf3e9a2f82b96fd93daab783d329fc8a687a6.file.edit.tpl.php" afterPath="$PROJECT_DIR$/data/Smarty/smarty_compile/731bf3e9a2f82b96fd93daab783d329fc8a687a6.file.edit.tpl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/Smarty/smarty_compile/8365ae731b94390f2433fb123dffcb274efaf530.file._nav-main.tpl.php" afterPath="$PROJECT_DIR$/data/Smarty/smarty_compile/8365ae731b94390f2433fb123dffcb274efaf530.file._nav-main.tpl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/Smarty/smarty_compile/87f582f3a5d816ce1a8c4e381a2c1fe3f6a21dfb.file.add.tpl.php" afterPath="$PROJECT_DIR$/data/Smarty/smarty_compile/87f582f3a5d816ce1a8c4e381a2c1fe3f6a21dfb.file.add.tpl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/Smarty/smarty_compile/9f79f4dd30b7413ea90b0e20179f5d5bccc27f88.file.layout.tpl.php" afterPath="$PROJECT_DIR$/data/Smarty/smarty_compile/9f79f4dd30b7413ea90b0e20179f5d5bccc27f88.file.layout.tpl.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module/Authentication/src/Account/Controller/AccountController.php" afterPath="$PROJECT_DIR$/module/Authentication/src/Account/Controller/AccountController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module/Authentication/src/Acl/Acl.php" afterPath="$PROJECT_DIR$/module/Authentication/src/Acl/Acl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module/Authentication/src/Authentication/Controller/AuthenticationController.php" afterPath="$PROJECT_DIR$/module/Authentication/src/Authentication/Controller/AuthenticationController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/stylesheets/scss/nwVariableOverrides/_alerts.scss" afterPath="$PROJECT_DIR$/public/stylesheets/scss/nwVariableOverrides/_alerts.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/stylesheets/scss/nwVariableOverrides/_badges.scss" afterPath="$PROJECT_DIR$/public/stylesheets/scss/nwVariableOverrides/_badges.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/stylesheets/scss/nwVariableOverrides/_borders.scss" afterPath="$PROJECT_DIR$/public/stylesheets/scss/nwVariableOverrides/_borders.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/stylesheets/scss/nwVariableOverrides/_buttons.scss" afterPath="$PROJECT_DIR$/public/stylesheets/scss/nwVariableOverrides/_buttons.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/stylesheets/scss/nwVariableOverrides/_code.scss" afterPath="$PROJECT_DIR$/public/stylesheets/scss/nwVariableOverrides/_code.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/stylesheets/scss/nwVariableOverrides/_dropdowns.scss" afterPath="$PROJECT_DIR$/public/stylesheets/scss/nwVariableOverrides/_dropdowns.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/stylesheets/scss/nwVariableOverrides/_forms.scss" afterPath="$PROJECT_DIR$/public/stylesheets/scss/nwVariableOverrides/_forms.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/stylesheets/scss/nwVariableOverrides/_grid.scss" afterPath="$PROJECT_DIR$/public/stylesheets/scss/nwVariableOverrides/_grid.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module/Application/view/layout/partials/_header.tpl" afterPath="$PROJECT_DIR$/module/Application/view/layout/partials/_header.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/stylesheets/scss/nwVariableOverrides/_misc.scss" afterPath="$PROJECT_DIR$/public/stylesheets/scss/nwVariableOverrides/_misc.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module/Application/view/layout/partials/_nav-main-admin.tpl" afterPath="$PROJECT_DIR$/module/Application/view/layout/partials/_nav-main-admin.tpl" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module/Application/view/layout/partials/_nav-main-member.tpl" afterPath="$PROJECT_DIR$/module/Application/view/layout/partials/_nav-main-member.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module/Application/view/layout/partials/_nav-main.tpl" afterPath="$PROJECT_DIR$/module/Application/view/layout/partials/_nav-main.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/stylesheets/scss/nwVariableOverrides/_navbar.scss" afterPath="$PROJECT_DIR$/public/stylesheets/scss/nwVariableOverrides/_navbar.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/stylesheets/scss/nwVariableOverrides/_navs.scss" afterPath="$PROJECT_DIR$/public/stylesheets/scss/nwVariableOverrides/_navs.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/stylesheets/scss/nwVariableOverrides/_panels.scss" afterPath="$PROJECT_DIR$/public/stylesheets/scss/nwVariableOverrides/_panels.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/stylesheets/scss/nwVariableOverrides/_screen-sizes.scss" afterPath="$PROJECT_DIR$/public/stylesheets/scss/nwVariableOverrides/_screen-sizes.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/stylesheets/scss/nwVariableOverrides/_sizing.scss" afterPath="$PROJECT_DIR$/public/stylesheets/scss/nwVariableOverrides/_sizing.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/stylesheets/scss/nwVariableOverrides/_tables.scss" afterPath="$PROJECT_DIR$/public/stylesheets/scss/nwVariableOverrides/_tables.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/stylesheets/scss/nwVariableOverrides/_typography.scss" afterPath="$PROJECT_DIR$/public/stylesheets/scss/nwVariableOverrides/_typography.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/stylesheets/scss/nwVariableOverrides/_wells.scss" afterPath="$PROJECT_DIR$/public/stylesheets/scss/nwVariableOverrides/_wells.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/Smarty/smarty_compile/acc2315abdbddc1e110ca6bb73fa34863bfa007f.file.view.tpl.php" afterPath="$PROJECT_DIR$/data/Smarty/smarty_compile/acc2315abdbddc1e110ca6bb73fa34863bfa007f.file.view.tpl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module/Events/view/events/events/add.tpl" afterPath="$PROJECT_DIR$/module/Events/view/events/events/add.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module/Venues/view/venues/venues/add.tpl" afterPath="$PROJECT_DIR$/module/Venues/view/venues/venues/add.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/Smarty/smarty_compile/b45c3d297799f35bceb98e61598199b36eaa97b7.file._days-of-week.tpl.php" afterPath="$PROJECT_DIR$/data/Smarty/smarty_compile/b45c3d297799f35bceb98e61598199b36eaa97b7.file._days-of-week.tpl.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/Smarty/smarty_compile/c41a810b40eefdf309d9a4f5d4cfe8eb739e8130.file._nav-main-member.tpl.php" afterPath="$PROJECT_DIR$/data/Smarty/smarty_compile/c41a810b40eefdf309d9a4f5d4cfe8eb739e8130.file._nav-main-member.tpl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/Smarty/smarty_compile/ce04c5f20735f02c8161afdbe55743a00ebf7f1f.file._state-options-list.tpl.php" afterPath="$PROJECT_DIR$/data/Smarty/smarty_compile/ce04c5f20735f02c8161afdbe55743a00ebf7f1f.file._state-options-list.tpl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/Smarty/smarty_compile/dafe7f02cf13cf921a94c71705e08d07831bee80.file._addEventScript.tpl.php" afterPath="$PROJECT_DIR$/data/Smarty/smarty_compile/dafe7f02cf13cf921a94c71705e08d07831bee80.file._addEventScript.tpl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/Smarty/smarty_compile/e5c30cee1fb567bb2244b78b46d582fb8c1a38b5.file._months-of-year.tpl.php" afterPath="$PROJECT_DIR$/data/Smarty/smarty_compile/e5c30cee1fb567bb2244b78b46d582fb8c1a38b5.file._months-of-year.tpl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/Smarty/smarty_compile/eb15ff760441e4ab1f48d4f27d244528bda4eee2.file.results.tpl.php" afterPath="$PROJECT_DIR$/data/Smarty/smarty_compile/eb15ff760441e4ab1f48d4f27d244528bda4eee2.file.results.tpl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module/DanceStyles/view/people/people/edit.tpl" afterPath="$PROJECT_DIR$/module/DanceStyles/view/people/people/edit.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module/Events/view/events/events/edit.tpl" afterPath="$PROJECT_DIR$/module/Events/view/events/events/edit.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module/People/view/people/people/edit.tpl" afterPath="$PROJECT_DIR$/module/People/view/people/people/edit.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module/Venues/view/venues/venues/edit.tpl" afterPath="$PROJECT_DIR$/module/Venues/view/venues/venues/edit.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/Smarty/smarty_compile/ef68de39de138209dcba8a70d9335485e71a22b0.file._days-of-month.tpl.php" afterPath="$PROJECT_DIR$/data/Smarty/smarty_compile/ef68de39de138209dcba8a70d9335485e71a22b0.file._days-of-month.tpl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/Smarty/smarty_compile/f74904d996220b0ef1c5f49f51e6431129c5b231.file.add.tpl.php" afterPath="$PROJECT_DIR$/data/Smarty/smarty_compile/f74904d996220b0ef1c5f49f51e6431129c5b231.file.add.tpl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module/Application/view/application/index/index.tpl" afterPath="$PROJECT_DIR$/module/Application/view/application/index/index.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module/Application/view/layout/layout.tpl" afterPath="$PROJECT_DIR$/module/Application/view/layout/layout.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module/Venues/view/venues/venues/results.tpl" afterPath="$PROJECT_DIR$/module/Venues/view/venues/venues/results.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/stylesheets/css/styles.css" afterPath="$PROJECT_DIR$/public/stylesheets/css/styles.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/stylesheets/scss/styles.scss" afterPath="$PROJECT_DIR$/public/stylesheets/scss/styles.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module/Authentication/config/module.config.php" afterPath="$PROJECT_DIR$/module/Authentication/config/module.config.php" />
     </list>
     <ignored path="dance_america.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -111,41 +33,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="IndexController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/module/Application/src/Application/Controller/IndexController.php">
+      <file leaf-file-name="AccountController.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/module/Authentication/src/Account/Controller/AccountController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="1740">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AuthenticationController.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/module/Authentication/src/Authentication/Controller/AuthenticationController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.40106952" vertical-offset="0" max-vertical-offset="1890">
-              <caret line="15" column="40" selection-start-line="15" selection-start-column="40" selection-end-line="15" selection-end-column="40" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PeopleController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/module/People/src/People/Controller/PeopleController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-4.375" vertical-offset="0" max-vertical-offset="3135">
-              <caret line="10" column="33" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="33" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="manage-venues.tpl" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/module/Admin/view/admin/admin/manage-venues.tpl">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-1.25" vertical-offset="0" max-vertical-offset="1095">
-              <caret line="2" column="38" selection-start-line="2" selection-start-column="38" selection-end-line="2" selection-end-column="38" />
+            <state vertical-scroll-proportion="0.62299466" vertical-offset="322" max-vertical-offset="1095">
+              <caret line="37" column="8" selection-start-line="37" selection-start-column="8" selection-end-line="37" selection-end-column="8" />
               <folding />
             </state>
           </provider>
@@ -191,6 +83,7 @@
         <option value="$PROJECT_DIR$/public/stylesheets/scss/nwVariableOverrides/_forms.scss" />
         <option value="$PROJECT_DIR$/public/stylesheets/scss/styles.scss" />
         <option value="$PROJECT_DIR$/module/Authentication/src/Authentication/Controller/AuthenticationController.php" />
+        <option value="$PROJECT_DIR$/module/Authentication/src/Account/Controller/AccountController.php" />
       </list>
     </option>
   </component>
@@ -532,33 +425,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Authentication" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dance_america" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dance_america" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="module" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Authentication" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Authentication" />
+              <option name="myItemId" value="Account" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -642,13 +509,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="4" y="22" width="1276" height="778" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32863188" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.39915374" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.39915374" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -992,26 +859,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/module/Admin/view/admin/admin/manage-venues.tpl">
+    <entry file="file://$PROJECT_DIR$/module/People/src/People/Mapper/PeopleMapper.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.25" vertical-offset="0" max-vertical-offset="1095">
-          <caret line="2" column="38" selection-start-line="2" selection-start-column="38" selection-end-line="2" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module/People/src/People/Controller/PeopleController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.375" vertical-offset="0" max-vertical-offset="3135">
-          <caret line="10" column="33" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module/Application/src/Application/Controller/IndexController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1740">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.56149733" vertical-offset="405" max-vertical-offset="915">
+          <caret line="41" column="36" selection-start-line="41" selection-start-column="23" selection-end-line="41" selection-end-column="36" />
           <folding />
         </state>
       </provider>
@@ -1020,6 +871,38 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.40106952" vertical-offset="0" max-vertical-offset="1890">
           <caret line="15" column="40" selection-start-line="15" selection-start-column="40" selection-end-line="15" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/People/src/People/Controller/PeopleController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.28074867" vertical-offset="0" max-vertical-offset="3135">
+          <caret line="10" column="33" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/Application/src/Application/Controller/IndexController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.080213904" vertical-offset="30" max-vertical-offset="1740">
+          <caret line="0" column="1" selection-start-line="0" selection-start-column="1" selection-end-line="0" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/Admin/view/admin/admin/manage-venues.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.080213904" vertical-offset="0" max-vertical-offset="1095">
+          <caret line="2" column="38" selection-start-line="2" selection-start-column="38" selection-end-line="2" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/Authentication/src/Account/Controller/AccountController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.62299466" vertical-offset="322" max-vertical-offset="1095">
+          <caret line="37" column="8" selection-start-line="37" selection-start-column="8" selection-end-line="37" selection-end-column="8" />
           <folding />
         </state>
       </provider>

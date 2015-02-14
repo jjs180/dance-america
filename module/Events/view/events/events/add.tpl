@@ -1,5 +1,7 @@
 <h1>Add a Dance Event</h1>
-<p>Registration is not necessary, but it will allow you to edit the events you have added without having to contact the admin to make changes</p>
+{if !isset($loggedInMember)}
+	<p>Registration is not necessary, but it will allow you to edit the events you have added without having to contact the admin to make changes</p>
+{/if}
 {if !isset($eventModel.venue_id)}
 	<a id='searchForVenue-button' class='btn positive' href="{url 'venues/search'}">Search for a venue</a>
 {else}
@@ -112,9 +114,7 @@
 	</div>
 	<div>
 		<label for="addEventForm-contactEmail">Your Email</label>
-		<div>
-			<input id="addEventForm-contactEmail" type="email" name="addEventForm[contact_email]" placeholder="Email" data-validators="validate-email" {if $loggedInMember}value="{$loggedInMember.email}"{/if} />
-		</div>
+		<input id="addEventForm-contactEmail" type="email" name="addEventForm[contact_email]" placeholder="Email" data-validators="validate-email" {if $loggedInMember}value="{$loggedInMember.email}"{/if} />
 		<div>If you leave this blank and we have questions about your event, it will not be approved</div>
 	</div>
 	<div><button class='new btn'>Add Event</button></div>

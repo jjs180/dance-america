@@ -16,8 +16,7 @@
 					<div class='description-container'>
 						{$venueModel.address_1}<br />
 						{if $venueModel.address_2}{$venueModel.address_2}<br />{/if}
-						{$venueModel.city}, {$venueModel.state} {$venueModel.postal_code}<br />
-/*						{$venueModel.country}<br />*/
+						{$venueModel.city}, {$venueModel.state} {$venueModel.postal_code}
 						{if $venueModel.description}
 							<div>Description: {$venueModel.description}</div>
 						{/if}

@@ -1,4 +1,3 @@
-<select name="siteSearchForm[location][state]" id="siteSearchForm-locationState">
 	<option {if $smarty.post && $smarty.post['siteSearchForm']['location']['state'] == ''}selected='selected'{/if} value="" selected='selected'></option>
 	<option {if $smarty.post && $smarty.post['siteSearchForm']['location']['state'] == 'AL'}selected='selected'{/if} value="AL">Alabama</option>
 	<option {if $smarty.post && $smarty.post['siteSearchForm']['location']['state'] == 'AK'}selected='selected'{/if} value="AK">Alaska</option>
@@ -51,4 +50,3 @@
 	<option {if $smarty.post && $smarty.post['siteSearchForm']['location']['state'] == 'WV'}selected='selected'{/if} value="WV">West Virginia</option>
 	<option {if $smarty.post && $smarty.post['siteSearchForm']['location']['state'] == 'WI'}selected='selected'{/if} value="WI">Wisconsin</option>
 	<option {if $smarty.post && $smarty.post['siteSearchForm']['location']['state'] == 'WY'}selected='selected'{/if} value="WY">Wyoming</option>
-</select>

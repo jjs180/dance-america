@@ -15,7 +15,7 @@ class Acl extends \NovumWare\Zend\Permissions\Acl\Acl
 		$this->addResource('account');
 		$this->addResource('my-events', 'account');
 		$this->addResource('my-venues', 'account');
-		$this->addResource('my-people', 'account');
+		$this->addResource('my-instructors', 'account');
 
 		$this->addResource('authentication');
 		$this->addResource('access-denied', 'authentication');

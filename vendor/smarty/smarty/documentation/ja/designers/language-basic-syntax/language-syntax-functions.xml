@@ -23,7 +23,7 @@
 {include file="header.tpl"}
 {insert file="banner_ads.tpl" title="イケてる Smarty"}
 
-{if $logged_in}
+{if _in}
     ようこそ、<span style="color:{#fontColor#}">{$name}!</span>
 {else}
     やぁ、{$name}

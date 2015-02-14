@@ -1,4 +1,4 @@
-{if $venueModelsArray}
+{if !empty($venueModelsArray)}
 <h1>Venues You Have Listed</h1>
 	<table border="1" id='myVenues-table'>
 		<thead>
@@ -6,7 +6,6 @@
 				<th>Name</th>
 				<th>Websites</th>
 				<th>Address</th>
-				<th>Minimum Age</th>
 				<th>Venue Type</th>
 				<th>Extended Details</th>
 				<th>Status</th>
@@ -28,11 +27,9 @@
 					<td>
 						{$venueModel.address_1}<br />
 						{if $venueModel.address_2 != ''}{$venueModel.address_2}<br />{/if}
-						{$venueModel.city}, {$venueModel.state} {$venueModel.postal_code}<br />
-						{$venueModel.country}
+						{$venueModel.city}, {$venueModel.state} {$venueModel.postal_code}
 					</td>
 					<td>{$venueModel.type}</td>
-					<td>{$venueModel.minimum_age}</td>
 					<td>
 						{if $venueModel.description || $venueModel.special_notes}
 							<div class='dropdown'>
@@ -46,10 +43,10 @@
 						{/if}
 					</td>
 					<td>{$venueModel.status}</td>
-					<td class='editting-cell'><a href="{url 'venues/edit' ['venueId' => $venueModel.id]}"><i class='icon-edit'></i></a></td>
+					<td class='editting-cell'><a class='icon-edit' href="{url 'venues/edit' ['venueId' => $venueModel.id]}"><i ></i></a></td>
 				</tr>
 			{/foreach}
 		</tbody>
 	</table>
-{else}<h1>You have not submitted any venues to our site</h1>
+{else}<h1>You have not listed any venues on our site</h1>
 {/if}

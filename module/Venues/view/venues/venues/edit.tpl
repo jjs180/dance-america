@@ -5,7 +5,22 @@
 		<label for="editVenueForm-name" class='required'>Name of the Venue</label>
 		<input id="editVenueForm-name" type="text" name="editVenueForm[name]" value="{$venueModel.name}" data-validators="required" />
 	</div>
-	
+	<div>
+		<label for="editVenueForm-type" class='required'>Venue Type</label>
+		<select name="editVenueForm[type]" id="editVenueForm-type" data-validators="required" >
+			<option value="Dance Studio" {if $venueModel.type == 'Dance Studio'}selected='selected'{/if}>Dance Studio</option>
+			<option value="Bar" {if $venueModel.type == 'Bar'}selected='selected'{/if}>Bar</option>
+			<option value="Other" {if $venueModel.type == 'Other'}selected='selected'{/if}>Other</option>
+		</select>
+	</div>
+	<div>
+		<label for="editVenueForm-minimumAge" class='required'>Minimum Age</label>
+		<select name="editVenueForm[minimum_age]" id="editVenueForm-minimumAge" data-validators="required">
+			<option value="None" {if $venueModel.minimum_age == 'None'}selected='selected'{/if}>None</option>
+			<option value="18 and over" {if $venueModel.minimum_age == '18 and over'}selected='selected'{/if}>18 and over</option>
+			<option value="21 and over" {if $venueModel.minimum_age == '21 and over'}selected='selected'{/if}>21 and over</option>
+		</select>
+	</div>
 	<div>
 		<label for="editVenueForm-address1" class='required'>Address 1</label>
 		<input id="editVenueForm-address1" type="text" name="editVenueForm[address_1]" value="{$venueModel.address_1}" data-validators="required" />
@@ -26,10 +41,13 @@
 		<label for="editVenueForm-postalCode" class='required'>Postal Code</label>
 		<input id="editVenueForm-postalCode" type="text" name="editVenueForm[postal_code]" value="{$venueModel.postal_code}" data-validators='required'/>
 	</div>
-	<!-- <div>
-		<label for="editVenueForm-country" class='required'>Country</label>
-		{include './partials/_country-options-edit-venue.tpl'}
-	</div> -->
+	<div class='hidden'>
+		<input id="editVenueForm-country" type="hidden" name="editVenueForm[country]" value="{$venueModel.country}" />
+	</div>
+	<!-- <div> -->
+		<!-- <label for="editVenueForm-country" class='required'>Country</label> -->
+			<!-- {include './../../../../../module/Application/view/application/partials/_state-options-list-generic.tpl'} -->
+	<!-- </div> -->
 	<div id='webLinks-container'>
 		<label for="editVenueForm-webLinks">Websites</label>
 		{if $venueModel.web_links}

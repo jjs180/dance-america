@@ -13,6 +13,7 @@ class VenueModel extends \NovumWare\Model\AbstractModel
 	public $state;
 	public $postal_code;
 	public $country;
+	public $minimum_age;
 	public $web_links;
 	public $description;
 	public $special_notes;
