@@ -17,7 +17,7 @@ class EventsController extends \NovumWare\Zend\Mvc\Controller\AbstractActionCont
 		$this->setReturnParams(
 			array(
 				'eventModel'	=>	$eventModel,
-				'siteSearchParams'		=>	array(SiteSearchParamConstants::classes, SiteSearchParamConstants::events, SiteSearchParamConstants::instructors, SiteSearchParamConstants::socialDances)
+				'siteSearchParams'		=>	array(SiteSearchParamConstants::classes, SiteSearchParamConstants::events, SiteSearchParamConstants::socialDances)
 		));
 
 		if (!$this->getRequest()->isPost()) return $this->getReturnParams();

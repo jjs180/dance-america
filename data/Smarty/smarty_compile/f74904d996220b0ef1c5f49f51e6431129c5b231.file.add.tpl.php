@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1-DEV, created on 2015-02-16 22:53:24
+<?php /* Smarty version Smarty-3.1-DEV, created on 2015-02-17 02:43:57
          compiled from "/Users/cara/Sites/dance_america/module/Events/view/events/events/add.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:2100203503545e4966a6b876-04099459%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'f74904d996220b0ef1c5f49f51e6431129c5b231' => 
     array (
       0 => '/Users/cara/Sites/dance_america/module/Events/view/events/events/add.tpl',
-      1 => 1424123592,
+      1 => 1424137241,
       2 => 'file',
     ),
   ),
@@ -103,7 +103,7 @@ $_smarty_tpl->tpl_vars['param']->_loop = true;
 					<?php echo $_smarty_tpl->getSubTemplate ('./../partials/_days-of-week.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, null, null, array(), 0);?>
 	
 				</select>
-				<div id="monthsOfYear-wrapper-0" class='hidden'>
+				<div class='monthsOfYear-wrapper hidden'>
 					in <select name="addEventForm[repetitions][0][month_of_year]" id="monthsOfYear-select-0" onchange='changeMonthOfYear(0)'>
 						<?php echo $_smarty_tpl->getSubTemplate ('./../partials/_months-of-year.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, null, null, array(), 0);?>
 	

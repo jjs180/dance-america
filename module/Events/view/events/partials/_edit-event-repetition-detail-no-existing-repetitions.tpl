@@ -14,13 +14,13 @@
 		<span id='repetitionFactor-wrapper-0'>weeks on</span>&nbsp;
 	</div>
 	<div>
-		<select class='daysOfMonth-selector' name="editEventForm[repetitions][0][day_of_month]" id="daysOfMonth-select-0" style='display:none;' onchange="changeDayOfMonth(0)">
+		<select class='daysOfMonth-selector hidden' id="daysOfMonth-select-0" name="editEventForm[repetitions][0][day_of_month]" onchange="changeDayOfMonth(0)">
 			{include './../partials/_days-of-month.tpl'}
 		</select>
-		<select class='daysOfWeek-selector' name="editEventForm[repetitions][0][day_of_week]" id="daysOfWeek-select-0" style='display:none;' onchange="changeDayOfWeek(0)">
+		<select class='daysOfWeek-selector hidden' id="daysOfWeek-select-0" name="editEventForm[repetitions][0][day_of_week]" onchange="changeDayOfWeek(0)">
 			{include './../partials/_days-of-week.tpl'}	
 		</select>
-		<div id="monthsOfYear-wrapper-0" style='display:none;'>
+		<div class='monthsOfYear-wrapper hidden' id="monthsOfYear-select-0">
 			in <select name="editEventForm[repetitions][0][month_of_year]" id="monthsOfYear-select-0" onchange="changeMonthOfYear(0)">
 				{include './../partials/_months-of-year.tpl'}	
 			</select>

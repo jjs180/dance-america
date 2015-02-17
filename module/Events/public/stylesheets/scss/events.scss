@@ -27,7 +27,8 @@ form#addEventForm, #editEventForm {
 			display:	none;
 			margin:		0px;
 			position:	absolute;
-			right:		30%;
+		  	border: 	none;
+			right:		-25px;
 		}
 		.repetitionDetail-wrapper {
 			@include		column-desktop-offset(4);
@@ -58,8 +59,9 @@ form#addEventForm, #editEventForm {
 					display:	none;
 					margin:		0px;
 					position:	absolute;
-					right:		39%;
+					right:		0px;
 					width:		30px;
+				  	border: 	none;
 				}
 			}
 			select { width: auto; }

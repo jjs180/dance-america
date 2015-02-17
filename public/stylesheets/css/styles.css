@@ -8655,7 +8655,8 @@ form#addEventForm #repetitionDetails-container > a.addRepetitionButton, form#add
   display: none;
   margin: 0px;
   position: absolute;
-  right: 30%;
+  border: none;
+  right: -25px;
 }
 form#addEventForm #repetitionDetails-container .repetitionDetail-wrapper, form#addVenueForm #repetitionDetails-container .repetitionDetail-wrapper, form#editVenueForm #repetitionDetails-container .repetitionDetail-wrapper, #editEventForm #repetitionDetails-container .repetitionDetail-wrapper {
   margin-bottom: 15px;
@@ -8690,8 +8691,9 @@ form#addEventForm #repetitionDetails-container .repetitionDetail-wrapper > div:l
   display: none;
   margin: 0px;
   position: absolute;
-  right: 39%;
+  right: 0px;
   width: 30px;
+  border: none;
 }
 form#addEventForm #repetitionDetails-container .repetitionDetail-wrapper select, form#addVenueForm #repetitionDetails-container .repetitionDetail-wrapper select, form#editVenueForm #repetitionDetails-container .repetitionDetail-wrapper select, #editEventForm #repetitionDetails-container .repetitionDetail-wrapper select {
   width: auto;

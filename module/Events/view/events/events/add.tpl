@@ -65,7 +65,7 @@
 				<select class='daysOfWeek-selector  hidden' name="addEventForm[repetitions][0][day_of_week]" id="daysOfWeek-select-0" onchange='changeDayOfWeek(0)'>
 					{include './../partials/_days-of-week.tpl'}	
 				</select>
-				<div id="monthsOfYear-wrapper-0" class='hidden'>
+				<div class='monthsOfYear-wrapper hidden'>
 					in <select name="addEventForm[repetitions][0][month_of_year]" id="monthsOfYear-select-0" onchange='changeMonthOfYear(0)'>
 						{include './../partials/_months-of-year.tpl'}	
 					</select>

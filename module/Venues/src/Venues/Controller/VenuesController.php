@@ -22,7 +22,6 @@ class VenuesController extends \NovumWare\Zend\Mvc\Controller\AbstractActionCont
 		if (!$searchVenuesForm->isValid()) { $this->nwFlashMessenger()->addErrorMessage(MessageConstants::ERROR_INVALID_FORM); return $this->getReturnParams(); }
 
 		$searchVenuesFormData = $searchVenuesForm->getData();
-		$this->getSessionVenuesMapper()->saveModel(array('param' => $searchVenuesFormData));
 
 		$params = array(
 			'eventId'			=>	$searchVenuesFormData['event_id'],
