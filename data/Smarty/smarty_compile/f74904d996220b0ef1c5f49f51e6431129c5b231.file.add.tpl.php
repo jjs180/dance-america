@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1-DEV, created on 2015-02-14 18:34:44
+<?php /* Smarty version Smarty-3.1-DEV, created on 2015-02-16 22:53:24
          compiled from "/Users/cara/Sites/dance_america/module/Events/view/events/events/add.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:2100203503545e4966a6b876-04099459%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'f74904d996220b0ef1c5f49f51e6431129c5b231' => 
     array (
       0 => '/Users/cara/Sites/dance_america/module/Events/view/events/events/add.tpl',
-      1 => 1423935282,
+      1 => 1424123592,
       2 => 'file',
     ),
   ),
@@ -21,6 +21,8 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   array (
     'loggedInMember' => 0,
     'eventModel' => 0,
+    'siteSearchParams' => 0,
+    'param' => 0,
   ),
   'has_nocache_code' => false,
 ),false); /*/%%SmartyHeaderCode%%*/?>
@@ -48,6 +50,21 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 		<input id="addEventForm-name" type="text" name="addEventForm[name]" placeholder="Name" />
 	</div>
 	<div>
+		<label class='required' for="addEventForm-venueId">Type</label>
+		<select type="text" name="addEventForm[type]" data-validators="required">
+			<option value="">--</option>
+			<?php  $_smarty_tpl->tpl_vars['param'] = new Smarty_Variable; $_smarty_tpl->tpl_vars['param']->_loop = false;
+ $_from = $_smarty_tpl->tpl_vars['siteSearchParams']->value; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array');}
+foreach ($_from as $_smarty_tpl->tpl_vars['param']->key => $_smarty_tpl->tpl_vars['param']->value){
+$_smarty_tpl->tpl_vars['param']->_loop = true;
+?>
+				<option value="<?php echo $_smarty_tpl->tpl_vars['param']->value;?>
+"><?php echo $_smarty_tpl->tpl_vars['param']->value;?>
+</option>
+			<?php } ?>
+		</select>
+	</div>
+	<div>
 		<label for="addEventForm-startDate" class='required'>Event Date</label>
 		<input type='datetime' class='NWDatePicker' id="addEventForm-startDate" name="addEventForm[start_date]" data-nwDatePicker-options="{ format:'%Y-%m-%d', startView:'years' }" data-validators='required'/>
 	</div>
@@ -64,11 +81,11 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 		<div class='repetitionDetail-wrapper' id='repetitionDetail-wrapper-0'>
 			<div id="repetitionParameter-wrapper-0">
 				<select name="addEventForm[repetitions][0][repetition_parameter]" class="repetitionParameter" id="addEventForm-repetitionParameter-0" data-validators='required' onchange='changeRepetitionParameter(0)' >
-					<option <?php if ($_POST&&$_POST['siteSearchForm']['location']['state']=='CA'){?>selected='selected'<?php }?> value="one time event">One time event</option>
-					<option <?php if ($_POST&&$_POST['siteSearchForm']['location']['state']=='CA'){?>selected='selected'<?php }?> value="days">Every day</option>
-					<option <?php if ($_POST&&$_POST['siteSearchForm']['location']['state']=='CA'){?>selected='selected'<?php }?> value="weeks">Weekly</option>
-					<option <?php if ($_POST&&$_POST['siteSearchForm']['location']['state']=='CA'){?>selected='selected'<?php }?> value="months">Monthly</option>
-					<option <?php if ($_POST&&$_POST['siteSearchForm']['location']['state']=='CA'){?>selected='selected'<?php }?> value="years">Yearly</option>
+					<option value="one time event">One time event</option>
+					<option value="days">Every day</option>
+					<option value="weeks">Weekly</option>
+					<option value="months">Monthly</option>
+					<option value="years">Yearly</option>
 				</select>
 			</div>
 			<!-- <div id='repetitionSpacing-wrapper-0' class='repetitionSpacing-wrapper'> -->
@@ -100,8 +117,8 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 	<div class='hidden'>
 		<label for="addEventForm-willStop" class='required'>When will the event stop repeating?</label>
 		<select name="addEventForm[will_stop]" id="addEventForm-willStop" data-validators='required'>
-			<option <?php if ($_POST&&$_POST['siteSearchForm']['location']['state']=='CA'){?>selected='selected'<?php }?> value="0">Never</option>
-			<option <?php if ($_POST&&$_POST['siteSearchForm']['location']['state']=='CA'){?>selected='selected'<?php }?> value="1">On date</option>
+			<option value="0">Never</option>
+			<option value="1">On date</option>
 		</select>
 	</div>
 	<div class='hidden'>
@@ -122,9 +139,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 	<div>
 		<label for="addEventForm-minimumAge" class='required'>Minimum Age</label>
 		<select name="addEventForm[minimum_age]" id="addEventForm-minimumAge" data-validators="required">
-			<option <?php if ($_POST&&$_POST['siteSearchForm']['location']['state']=='CA'){?>selected='selected'<?php }?> value="None" selected='selected'>None</option>
-			<option <?php if ($_POST&&$_POST['siteSearchForm']['location']['state']=='CA'){?>selected='selected'<?php }?> value="18 and over">18 and over</option>
-			<option <?php if ($_POST&&$_POST['siteSearchForm']['location']['state']=='CA'){?>selected='selected'<?php }?> value="21 and over">21 and over</option>
+			<option value="None" selected='selected'>None</option>
+			<option value="18 and over">18 and over</option>
+			<option value="21 and over">21 and over</option>
 		</select>
 	</div>
 	<div id='webLinks-container'>
@@ -144,11 +161,15 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 		<textarea id="addEventForm-description" type="text" name="addEventForm[description]" placeholder="Description" ></textarea>
 	</div>
 	<div>
+		<input id="addEventForm-specialNotes" type="hidden" name="addEventForm[special_notes]" placeholder="Special Notes" value=""/>
+	</div>
+	<div>
 		<label for="addEventForm-contactEmail">Your Email</label>
 		<input id="addEventForm-contactEmail" type="email" name="addEventForm[contact_email]" placeholder="Email" data-validators="validate-email" <?php if ($_smarty_tpl->tpl_vars['loggedInMember']->value){?>value="<?php echo $_smarty_tpl->tpl_vars['loggedInMember']->value['email'];?>
 "<?php }?> />
 		<div>If you leave this blank and we have questions about your event, it will not be approved</div>
 	</div>
+
 	<div><button class='new btn'>Add Event</button></div>
 </form>
 <?php echo $_smarty_tpl->getSubTemplate ('./../partials/_addEventScript.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, null, null, array(), 0);?>

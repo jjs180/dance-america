@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1-DEV, created on 2015-02-14 18:05:31
+<?php /* Smarty version Smarty-3.1-DEV, created on 2015-02-17 01:00:59
          compiled from "/Users/cara/Sites/dance_america/module/Venues/view/venues/venues/add.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:782535628544e7a5a8aece9-85577342%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '18733b90c70a4eb498d86cd728d43fbf02537d23' => 
     array (
       0 => '/Users/cara/Sites/dance_america/module/Venues/view/venues/venues/add.tpl',
-      1 => 1423933474,
+      1 => 1423936540,
       2 => 'file',
     ),
   ),
@@ -35,6 +35,14 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 			<option value="Dance Studio" selected='selected'>Dance Studio</option>
 			<option value="Bar">Bar</option>
 			<option value="Other">Other</option>
+		</select>
+	</div>
+	<div>
+		<label for="addVenueForm-minimumAge" class='required'>Minimum Age</label>
+		<select name="addVenueForm[minimum_age]" id="addVenueForm-minimumAge" data-validators="required">
+			<option value="None" selected='selected'>None</option>
+			<option value="18 and over">18 and over</option>
+			<option value="21 and over">21 and over</option>
 		</select>
 	</div>
 	<div>

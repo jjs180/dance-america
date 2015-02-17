@@ -40,7 +40,7 @@ return array(
 					'view'	=> array(
 						'type'		=> 'segment',
 						'options'	=> array(
-							'route'		=> '/view[/:eventId]',
+							'route'		=> '/view/:eventId',
 							'defaults'	=> array(
 								'action'		=> 'view'
 							)
@@ -76,7 +76,7 @@ return array(
 					'renew'	=> array(
 						'type'		=> 'segment',
 						'options'	=> array(
-							'route'		=> '/renew[/:eventId]',
+							'route'		=> '/renew/:eventId',
 							'defaults'	=> array(
 								'action'		=> 'renew'
 							)

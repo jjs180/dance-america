@@ -3,16 +3,16 @@
 		<div>
 			<label class='required' for="siteSearchForm-searchParam">What are you looking for?</label>
 			<select type="text" name="siteSearchForm[search_param]" data-validators="required" required>
-				<option {if $smarty.post && $smarty.post['siteSearchForm']['location']['state'] == 'CA'}selected='selected'{/if} value="">--</option>
+				<option value="">--</option>
 				{foreach $siteSearchParams as $param}
-				<option {if $smarty.post && $smarty.post['siteSearchForm']['location']['state'] == 'CA'}selected='selected'{/if} value="{$param}" {if $smarty.post && $smarty.post['siteSearchForm']['search_param'] == $param}selected='selected'{/if}>{$param}</option>
+				<option value="{$param}" {if $smarty.post && $smarty.post['siteSearchForm']['search_param'] == $param}selected='selected'{/if}>{$param}</option>
 				{/foreach}
 	 		</select>
 		</div>
 		<div>
 			<label for="siteSearchForm-danceStyle">Dance Style</label>
 			<select name="siteSearchForm[dance_style]" id="siteSearchForm-danceStyle">
-				<option {if $smarty.post && $smarty.post['siteSearchForm']['location']['state'] == 'CA'}selected='selected'{/if} value="">--</option>
+				<option value="">--</option>
 				{foreach $danceStyles as $danceStyle}
 					<option value="{$danceStyle.name}" {if $smarty.post && $smarty.post['siteSearchForm']['dance_style'] == $danceStyle.name}selected='selected'{/if}>{$danceStyle.name}</option>
 				{/foreach}
@@ -71,7 +71,13 @@
 				{$count = 0}
 				{foreach $results result}
 					<div class='panel'>
-						<h1 class='row'><div class=" column-desktop-11 column-tablet-11">{$result.name}</div><a  class="column-desktop-1 column-tablet-1 pull-right" href="{url 'events/view' ['venueId' => $result.venue.id]}" ><i class='icon-chevron-right icon'></i></a></h1>
+						<h1 class='row'><div class=" column-desktop-11 column-tablet-11">{$result.name}</div>
+							{if $viewPath == 'events/view'}
+								<a class="column-desktop-1 column-tablet-1 pull-right" href="{url $viewPath ['eventId' => $result.id]}" >
+							{else}
+								<a class="column-desktop-1 column-tablet-1 pull-right" href="{url $viewPath ['personId' => $result.person.id]}" >
+							{/if}
+								<i class='icon-chevron-right icon'></i></a></h1>
 						<div>
 							<p>
 								{$result.venue.address_1}<br />

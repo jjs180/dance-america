@@ -8,6 +8,7 @@ class EventModel extends \NovumWare\Model\AbstractModel
 	public $id;
 	public $venue_id;
 	public $name;
+	public $type;
 	public $start_time;
 	public $end_time;
 	public $start_date;
@@ -15,6 +16,7 @@ class EventModel extends \NovumWare\Model\AbstractModel
 	public $web_links;
 	public $description;
 	public $special_notes;
+	public $minimum_age;
 	public $status = EventVenueStatusConstants::PENDING_APPROVAL;
 	public $member_id;
 	public $will_stop;

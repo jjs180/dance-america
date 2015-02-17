@@ -2,6 +2,7 @@
 namespace Events\Controller;
 
 use Events\Form\AddEventForm;
+use Application\Constants\SiteSearchParamConstants;
 use Events\Form\EditEventForm;
 use Application\Constants\MessageConstants;
 use Application\Constants\EventVenueStatusConstants;
@@ -15,7 +16,8 @@ class EventsController extends \NovumWare\Zend\Mvc\Controller\AbstractActionCont
 
 		$this->setReturnParams(
 			array(
-				'eventModel'	=>	$eventModel
+				'eventModel'	=>	$eventModel,
+				'siteSearchParams'		=>	array(SiteSearchParamConstants::classes, SiteSearchParamConstants::events, SiteSearchParamConstants::instructors, SiteSearchParamConstants::socialDances)
 		));
 
 		if (!$this->getRequest()->isPost()) return $this->getReturnParams();
@@ -40,7 +42,8 @@ class EventsController extends \NovumWare\Zend\Mvc\Controller\AbstractActionCont
 		if (!$eventModel) { $this->nwFlashMessenger()->addErrorMessage("Your event cannot be located for editting. Please fill out your event information again."); return $this->redirect()->toRoute('events/add'); }
 
 		$this->setReturnParams(array(
-			'eventModel' =>	$eventModel
+			'eventModel' =>	$eventModel,
+			'siteSearchParams'		=>	array(SiteSearchParamConstants::classes, SiteSearchParamConstants::events, SiteSearchParamConstants::instructors, SiteSearchParamConstants::socialDances)
 		));
 
 		if (!$this->getRequest()->isPost()) return $this->getReturnParams();
@@ -65,24 +68,26 @@ class EventsController extends \NovumWare\Zend\Mvc\Controller\AbstractActionCont
 		}
 	}
 
+	public function viewAction() {
+		$eventModel = $this->getEventsMapper()->fetchOneForId($this->params('eventId'));
+		if (!$eventModel) { $this->nwFlashMessenger()->addErrorMessage("Your event cannot be located for viewing."); return $this->redirect()->toRoute('home'); }
+		$processResult = $this->getEventsProcess()->getMapUrlForEvent($eventModel);
+
+		if ($processResult->success) return array(
+			'eventModel'			=>	$eventModel,
+			'url'					=>	$processResult->data['url']
+		);
+	}
+
 	public function reviewAction() {
 		$eventModel = $this->getEventModel(); /*@var $eventModel \Events\Model\EventModel */
 		if (!$eventModel || !$eventModel->venue_id) { $this->nwFlashMessenger()->addErrorMessage("You cannot navigate back to the review page after submitting an event. Go to \"My Events\" or to the home page to view your event in greater detail."); return $this->redirect()->toRoute('home'); }
 
-		if ($eventModel->venue_id) { $venueModel = $this->getVenuesMapper()->fetchOneForId($eventModel->venue_id);
-		} else $venueModel = $this->getSessionVenuesMapper()->fetchModel();
-		if (!$venueModel) throw new \Exception("Venue: {$eventModel->venue_id} cannot be found.");
+		$processResult = $this->getEventsProcess()->getMapUrlForEvent($eventModel);
 
-		$addressOriginal = $venueModel['address_1'].',+'.$venueModel['address_2'].',+'.$venueModel['city'].',+'.$venueModel['state'].'+'.$venueModel['postal_code'].',+'.$venueModel['country'];
-		$addressWhiteSpaceRemoved = str_replace(['	', '    ', '   ', '  ', ' '], '+', $addressOriginal);
-		$addressTrimmed = str_replace(',+,+', ',+', $addressWhiteSpaceRemoved);
-		$addressCleaned = str_replace("'", '', $addressTrimmed);
-
-		$url = "//maps.googleapis.com/maps/api/staticmap?center=$addressCleaned&zoom=13&size=600x300&maptype=roadmap&markers=$addressCleaned&sensor=false";
-
-		return array(
+		if ($processResult->success) return array(
 			'eventModel'			=>	$eventModel,
-			'url'					=>	$url,
+			'url'					=>	$processResult->data['url']
 		);
 	}
 
@@ -99,7 +104,6 @@ class EventsController extends \NovumWare\Zend\Mvc\Controller\AbstractActionCont
 			$processResult = $this->getEventsProcess()->insertModel($eventModel); /*@var $processResult \NovumWare\Process\ProcessResult */
 			if ($processResult->success) $this->nwFlashMessenger()->addSuccessMessage("You have successfully added an event to our site!");
 		}
-
 		if ($processResult->success) $this->getEventsProcess()->sendApprovalEmailToAdmin($eventModel);
 		else $this->nwFlashMessenger()->addErrorMessage($processResult->message);
 
@@ -157,7 +161,7 @@ class EventsController extends \NovumWare\Zend\Mvc\Controller\AbstractActionCont
 	 */
 	private function checkMemberAgainstEventModel($memberModel, $eventModel) {
 		if (!$memberModel) {
-			$this->nwFlashMessenger()->addMessage("You must login to review {$eventModel->id}.");
+			$this->nwFlashMessenger()->addMessage("fYou must login to review {$eventModel->id}.");
 			return $this->redirect()->toRoute('login');
 		}
 		if ($memberModel->role == 'admin') return;

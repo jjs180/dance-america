@@ -2,6 +2,7 @@
 namespace Application\Controller;
 use Application\Constants\SiteSearchParamConstants;
 use Application\Form\SearchSiteForm;
+use Zend\Stdlib\ErrorHandler;
 
 class IndexController extends \NovumWare\Zend\Mvc\Controller\AbstractActionController
 {
@@ -11,13 +12,10 @@ class IndexController extends \NovumWare\Zend\Mvc\Controller\AbstractActionContr
 			'siteSearchParams'		=>	array(SiteSearchParamConstants::classes, SiteSearchParamConstants::events, SiteSearchParamConstants::instructors, SiteSearchParamConstants::socialDances),
 			'danceStyles'			=> $this->getDanceStylesMapper()->fetchAll()
 		);
-		$this->setReturnParams($returnParams);
 		if ($this->getRequest()->isPost()) {
 			$data = $this->getRequest()->getPost('siteSearchForm');
 			$siteSearchForm = new SearchSiteForm($this->getRequest()->getPost('siteSearchForm'));
 			if (!$siteSearchForm->isValid()) { $this->nwFlashMessenger()->addErrorMessage(MessageConstants::ERROR_INVALID_FORM); return $this->getReturnParams(); }
-
-			$siteSearchFormData = $siteSearchForm->getData();
 
 			if (!$data['search_param']) return;
 			$searchParam = $data['search_param'];
@@ -27,8 +25,11 @@ class IndexController extends \NovumWare\Zend\Mvc\Controller\AbstractActionContr
 				$results = [];
 
 				if ($searchParam == SiteSearchParamConstants::instructors) {
+					// TODO Cara: flush out people mapper
 					$results = $this->getPeopleMapper()->fetchAll();
+					$viewPath = '/people/view';
 				} else if ($searchParam == SiteSearchParamConstants::events || $searchParam == SiteSearchParamConstants::classes || $searchParam == SiteSearchParamConstants::socialDances) {
+					$viewPath = '/events/view';
 					if ($data['radius']) {
 						$results = $this->getEventsMapper()->fetchManyForTypeAndLocation($data);
 					} else {
@@ -36,12 +37,21 @@ class IndexController extends \NovumWare\Zend\Mvc\Controller\AbstractActionContr
 						else if ($data['location']['postal_code']) $results = $this->getEventsMapper()->fetchManyForPostalCode($data);
 					}
 				}
-				$returnParams = array_merge($returnParams, array('results' => $results));
 			} else {
-				$results = $this->getEventsMapper()->fetchManyWithParams($data);
-				$returnParams = array_merge($returnParams, array('results' => $results));
+				if ($searchParam == SiteSearchParamConstants::instructors) {
+					// TODO Cara: flush out people mapper
+					$viewPath = 'people/view';
+					$results = $this->getPeopleMapper()->fetchAll();
+				} else if ($searchParam == SiteSearchParamConstants::events || $searchParam == SiteSearchParamConstants::classes || $searchParam == SiteSearchParamConstants::socialDances) {
+					$viewPath = 'events/view';
+					$results = $this->getEventsMapper()->fetchManyWithParams($data);
+				}
 			}
+			if (!isset($viewPath)) throw new \Exception("Path not set");
+			$returnParams = array_merge($returnParams, array('results' => $results));
+			$returnParams = array_merge($returnParams, array('viewPath' => $viewPath));
 		}
+
 		$this->setReturnParams($returnParams);
 		return $this->getReturnParams();
 	}

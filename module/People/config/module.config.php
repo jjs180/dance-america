@@ -37,6 +37,15 @@ return array(
 							)
 						)
 					),
+					'view'	=> array(
+						'type'		=> 'segment',
+						'options'	=> array(
+							'route'		=> '/view/:personId',
+							'defaults'	=> array(
+								'action'		=> 'view'
+							)
+						)
+					),
 					'review'	=> array(
 						'type'		=> 'segment',
 						'options'	=> array(
@@ -67,7 +76,7 @@ return array(
 					'renew'	=> array(
 						'type'		=> 'segment',
 						'options'	=> array(
-							'route'		=> '/renew[/:personId]',
+							'route'		=> '/renew/:personId',
 							'defaults'	=> array(
 								'action'		=> 'renew'
 							)

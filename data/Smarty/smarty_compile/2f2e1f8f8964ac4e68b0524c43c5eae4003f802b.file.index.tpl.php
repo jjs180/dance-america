@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1-DEV, created on 2015-02-14 17:56:52
+<?php /* Smarty version Smarty-3.1-DEV, created on 2015-02-16 21:20:32
          compiled from "/Users/cara/Sites/dance_america/module/Application/view/application/index/index.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:1230976164544a6d85b56296-69825588%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '2f2e1f8f8964ac4e68b0524c43c5eae4003f802b' => 
     array (
       0 => '/Users/cara/Sites/dance_america/module/Application/view/application/index/index.tpl',
-      1 => 1423931783,
+      1 => 1424118031,
       2 => 'file',
     ),
   ),
@@ -25,6 +25,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'danceStyle' => 0,
     'results' => 0,
     'result' => 0,
+    'viewPath' => 0,
     'count' => 0,
   ),
   'has_nocache_code' => false,
@@ -123,7 +124,13 @@ $_smarty_tpl->tpl_vars['result']->_loop = true;
 ?>
 					<div class='panel'>
 						<h1 class='row'><div class=" column-desktop-11 column-tablet-11"><?php echo $_smarty_tpl->tpl_vars['result']->value['name'];?>
-</div><a  class="column-desktop-1 column-tablet-1 pull-right" href="<?php echo $_smarty_tpl->smarty->registered_objects['zf'][0]->url('events/view',array('venueId'=>$_smarty_tpl->tpl_vars['result']->value['venue']['id'])); ?>" ><i class='icon-chevron-right icon'></i></a></h1>
+</div>
+							<?php if ($_smarty_tpl->tpl_vars['viewPath']->value=='events/view'){?>
+								<a class="column-desktop-1 column-tablet-1 pull-right" href="<?php echo $_smarty_tpl->smarty->registered_objects['zf'][0]->url($_smarty_tpl->tpl_vars['viewPath']->value,array('eventId'=>$_smarty_tpl->tpl_vars['result']->value['id'])); ?>" >
+							<?php }else{ ?>
+								<a class="column-desktop-1 column-tablet-1 pull-right" href="<?php echo $_smarty_tpl->smarty->registered_objects['zf'][0]->url($_smarty_tpl->tpl_vars['viewPath']->value,array('personId'=>$_smarty_tpl->tpl_vars['result']->value['person']['id'])); ?>" >
+							<?php }?>
+								<i class='icon-chevron-right icon'></i></a></h1>
 						<div>
 							<p>
 								<?php echo $_smarty_tpl->tpl_vars['result']->value['venue']['address_1'];?>

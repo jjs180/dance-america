@@ -35,7 +35,7 @@ class AccountController extends \NovumWare\Zend\Mvc\Controller\AbstractActionCon
 		$memberModel = $this->getLoggedInMember(); /*@var $memberModel \Registration\Model\MemberModel */
 
 		$instructorModelsArray = $this->getPeopleMapper()->fetchManyForMemberId($memberModel->id);
-		
+
 		return array(
 			'instructorModelsArray '	=>	$instructorModelsArray
 		);

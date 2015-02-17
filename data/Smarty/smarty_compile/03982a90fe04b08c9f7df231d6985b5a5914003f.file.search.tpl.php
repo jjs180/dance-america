@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1-DEV, created on 2015-02-11 08:26:28
+<?php /* Smarty version Smarty-3.1-DEV, created on 2015-02-17 01:57:30
          compiled from "/Users/cara/Sites/dance_america/module/Venues/view/venues/venues/search.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:1740198492545e49887fc7c7-19770780%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '03982a90fe04b08c9f7df231d6985b5a5914003f' => 
     array (
       0 => '/Users/cara/Sites/dance_america/module/Venues/view/venues/venues/search.tpl',
-      1 => 1423639587,
+      1 => 1424134649,
       2 => 'file',
     ),
   ),
@@ -33,15 +33,14 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 	<div>
 		<label for="searchVenuesForm-searchCriteria" class='required'>Search For Venue By</label>
 		<select name="searchVenuesForm[search_criteria]" id="searchVenuesForm-searchCriteria" data-validators="required" >
-			<option <?php if ($_POST&&$_POST['siteSearchForm']['location']['state']=='CA'){?>selected='selected'<?php }?> value="name">Name</option>
-			<option <?php if ($_POST&&$_POST['siteSearchForm']['location']['state']=='CA'){?>selected='selected'<?php }?> value="city">City</option>
-			<option <?php if ($_POST&&$_POST['siteSearchForm']['location']['state']=='CA'){?>selected='selected'<?php }?> value="state">State</option>
-			<option <?php if ($_POST&&$_POST['siteSearchForm']['location']['state']=='CA'){?>selected='selected'<?php }?> value="postal code">Postal Code</option>
-			<option <?php if ($_POST&&$_POST['siteSearchForm']['location']['state']=='CA'){?>selected='selected'<?php }?> value="country">Country</option>
+			<option value="name">Name</option>
+			<option value="city">City</option>
+			<option value="state">State</option>
+			<option value="postal code">Postal Code</option>
 		</select>
 	</div>
 	<div>
-		<label for="searchVenuesForm-searchParam" class='required'>Search Phrase</label>
+		<label for="searchVenuesForm-searchParam" class='required'>Name</label>
 		<input id="searchVenuesForm-searchParam" type="text" name="searchVenuesForm[search_param]" placeholder="Search Phrase" data-validators="required" />
 	</div>
 	<div><button type="submit">Search</button></div>
@@ -52,41 +51,31 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 	function getValue() {
 		return $j('#searchVenuesForm-searchCriteria').val();
 	}
-	
-	if (selectCriteriaValue == 'state') {
-		$j("input[name='searchVenuesForm[search_param]']").remove();
-		var stateFile = $j("input[name='searchVenuesForm[search_param]']").load('/_state-options-search-venue.tpl');
-		var stateFileHtml = stateFile[0];
-		
-		$j("label[for='searchVenuesForm-searchParam']").after(stateFileHtml);
-	} else if (selectCriteriaValue == 'country') {
-		$j("input[name='searchVenuesForm[search_param]']").remove();
-		var countryFile = $j("label[for='searchVenuesForm[search_param]']").load('/_country-options-search-venue.tpl');
-		var countryFileHtml = countryFile[0];
-		
-		$j("label[for='searchVenuesForm-searchParam']").after(countryFileHtml).text("Country");
+
+	function toTitleCase(str)
+	{
+		return str.replace(/\w\S*/g, function(txt){
+			return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
+		});
 	}
-	
+
 	$j('#searchVenuesForm-searchCriteria').change(function() {
 		selectCriteriaValue = getValue();
+		var $inputSearchCriteria = $j("*[name='searchVenuesForm[search_param]']");
+		var $searchLabel = $j("label[for='searchVenuesForm-searchParam']");
+		$inputSearchCriteria.remove();
 		if (selectCriteriaValue == 'state') {
-			$j("input[name='searchVenuesForm[search_param]']").remove();
-			var stateFile = $j("label[for='searchVenuesForm-searchParam']").load('/_state-options-search-venue.tpl');
-			var stateFileHtml = stateFile[0];
-			
-			$j("label[for='searchVenuesForm-searchParam']").after(stateFileHtml);
-		} else if (selectCriteriaValue == 'country') {
-			$j("input[name='searchVenuesForm[search_param]']").remove();
-			var countryFile = $j("label[for='searchVenuesForm-searchParam']").load('/_country-options-search-venue.tpl');
-			var countryFileHtml = countryFile[0];
-			
-			$j("label[for='searchVenuesForm-searchParam']").after(countryFileHtml);
+			$searchLabel.text('State');
+			$j.get( "/_state-options-search-venue.tpl", function(data) {
+				$searchLabel.after(data);
+			});
 		} else if (selectCriteriaValue == 'name' || selectCriteriaValue == 'city' || selectCriteriaValue == 'postal code') {
-			$j("input[name='searchVenuesForm[search_param]']").remove();
-			var blankInputFile = $j("label[for='searchVenuesForm-searchParam']").load('/_blank-input-options-search.tpl');
-			var blankInputFileHtml = blankInputFile[0];
-			$j("label[for='searchVenuesForm-searchParam']").after(blankInputFileHtml);
+			$searchLabel.text(toTitleCase(selectCriteriaValue));
+			$j.get( '/_blank-input-options-search.tpl', function(data) {
+				$searchLabel.after(data);
+			});
 		}
-		
 	});
+
+
 </script><?php }} ?>

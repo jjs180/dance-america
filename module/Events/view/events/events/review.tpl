@@ -1,5 +1,5 @@
 <h1>Please review the event information below</h1>
-<ul id='eventInformation-list' class='eventInformation-list'>
+<ul class='eventInformation-list'>
 	{include './../partials/_eventInformation.tpl'}
 
 </ul>

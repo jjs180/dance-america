@@ -8390,7 +8390,11 @@ form div#advice-validate-required-check-registrationForm-terms {
   text-indent: -10px;
 }
 
-ul#venueInformation-list, ul#eventInformation-list {
+ul#venueInformation-list > li > div, ul#venueInformation-list > li ul, ul#eventInformation-list > li > div, ul#eventInformation-list > li ul {
+  overflow-x: scroll;
+}
+
+ul.venueInformation-list, ul.eventInformation-list {
   position: relative;
   display: block;
   min-height: 1px;
@@ -8401,28 +8405,27 @@ ul#venueInformation-list, ul#eventInformation-list {
   list-style: none;
 }
 @media (min-width: 1025px) {
-  ul#venueInformation-list, ul#eventInformation-list {
+  ul.venueInformation-list, ul.eventInformation-list {
     float: left;
     width: 41.66667%;
   }
 }
 @media (min-width: 1025px) {
-  ul#venueInformation-list, ul#eventInformation-list {
+  ul.venueInformation-list, ul.eventInformation-list {
     margin-left: 0%;
   }
 }
-ul#venueInformation-list > li, ul#eventInformation-list > li {
+ul.venueInformation-list > li, ul.eventInformation-list > li {
   margin-bottom: 10px;
 }
-ul#venueInformation-list > li > div, ul#venueInformation-list > li ul, ul#eventInformation-list > li > div, ul#eventInformation-list > li ul {
+ul.venueInformation-list > li > div, ul.venueInformation-list > li ul, ul.eventInformation-list > li > div, ul.eventInformation-list > li ul {
   display: inline-block;
   max-width: 65%;
-  overflow-x: scroll;
 }
-ul#venueInformation-list > li > div > ul, ul#venueInformation-list > li ul > ul, ul#eventInformation-list > li > div > ul, ul#eventInformation-list > li ul > ul {
+ul.venueInformation-list > li > div > ul, ul.venueInformation-list > li ul > ul, ul.eventInformation-list > li > div > ul, ul.eventInformation-list > li ul > ul {
   display: block;
 }
-ul#venueInformation-list > li > label, ul#eventInformation-list > li > label {
+ul.venueInformation-list > li > label, ul.eventInformation-list > li > label {
   vertical-align: top;
 }
 
@@ -8628,18 +8631,9 @@ div#resultsHeader-wrapper a.neutral {
 
 #changeVenue-button {
   position: absolute;
-  left: 5px;
-}
-@media (min-width: 1025px) {
-  #changeVenue-button {
-    margin-left: 33.33333%;
-  }
+  right: 15px;
 }
 
-form#addEventForm #addEventForm-contactEmail, form#addVenueForm #addEventForm-contactEmail, form#editVenueForm #addEventForm-contactEmail, form#addEventForm #editEventForm-contactEmail, form#addVenueForm #editEventForm-contactEmail, form#editVenueForm #editEventForm-contactEmail, form#addEventForm #addVenueForm-contactEmail, form#addVenueForm #addVenueForm-contactEmail, form#editVenueForm #addVenueForm-contactEmail, form#addEventForm #editVenueForm-contactEmail, form#addVenueForm #editVenueForm-contactEmail, form#editVenueForm #editVenueForm-contactEmail, #editEventForm #addEventForm-contactEmail, #editEventForm #editEventForm-contactEmail, #editEventForm #addVenueForm-contactEmail, #editEventForm #editVenueForm-contactEmail {
-  float: none;
-  width: 58.33333%;
-}
 @media (min-width: 1025px) {
   form#addEventForm button, form#addVenueForm button, form#editVenueForm button, form#addEventForm a.btn, form#addVenueForm a.btn, form#editVenueForm a.btn, #editEventForm button, #editEventForm a.btn {
     margin-left: 33.33333%;

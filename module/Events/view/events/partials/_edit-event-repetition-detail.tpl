@@ -1,11 +1,11 @@
 <div class='repetitionDetail-wrapper' id="repetitionDetail-wrapper-{$index}">
 	<div id="repetitionParameter-wrapper-{$index}">
 		<select name="editEventForm[repetitions][{$index}][repetition_parameter]" class="repetitionParameter" id="editEventForm-repetitionParameter-{$index}" data-validators='required' onchange="changeRepetitionParameter({$index})">
-			<option {if $smarty.post && $smarty.post['siteSearchForm']['location']['state'] == 'CA'}selected='selected'{/if} {if $repetition.repetition_parameter=='years'}selected='selected'{/if} value="years">Yearly</option>
-			<option {if $smarty.post && $smarty.post['siteSearchForm']['location']['state'] == 'CA'}selected='selected'{/if} {if $repetition.repetition_parameter=='months'}selected='selected'{/if} value="months">Monthly</option>
-			<option {if $smarty.post && $smarty.post['siteSearchForm']['location']['state'] == 'CA'}selected='selected'{/if} {if $repetition.repetition_parameter=='weeks'}selected='selected'{/if} value="weeks">Weekly</option>
-			<option {if $smarty.post && $smarty.post['siteSearchForm']['location']['state'] == 'CA'}selected='selected'{/if} {if $repetition.repetition_parameter=='days'}selected='selected'{/if} value="days">Every day</option>
-			<option {if $smarty.post && $smarty.post['siteSearchForm']['location']['state'] == 'CA'}selected='selected'{/if} value="one time event">One time event</option>
+			<option {if $repetition.repetition_parameter=='years'}selected='selected'{/if} value="years">Yearly</option>
+			<option {if $repetition.repetition_parameter=='months'}selected='selected'{/if} value="months">Monthly</option>
+			<option {if $repetition.repetition_parameter=='weeks'}selected='selected'{/if} value="weeks">Weekly</option>
+			<option {if $repetition.repetition_parameter=='days'}selected='selected'{/if} value="days">Every day</option>
+			<option value="one time event">One time event</option>
 		</select>
 	</div>
 	<div id='repetitionSpacing-wrapper-{$index}' class='hidden'>

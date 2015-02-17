@@ -2,6 +2,7 @@
 namespace Events\Process;
 
 use Admin\Constants\EmailConstants;
+use NovumWare\Process\ProcessResult;
 
 /**
  * @method Novumware\Process\ProcessResult sendApprovalEmailToAdmin(\Events\Model\EventModel $eventModel)
@@ -9,6 +10,7 @@ use Admin\Constants\EmailConstants;
  * @method Novumware\Process\ProcessResult insertModel(\Events\Model\EventModel $eventModel)
  * @method Novumware\Process\ProcessResult updateModel(\Events\Model\EventModel $eventModel)
  * @method Novumware\Process\ProcessResult setEventPropertiesFromFormData(\Events\Model\EventModel $eventModel, array $formData)
+ * @method Novumware\Process\ProcessResult getMapUrlForEvent(\Events\Model\EventModel $eventModel)
  */
 class EventsProcess extends \NovumWare\Process\AbstractProcess
 {
@@ -18,6 +20,7 @@ class EventsProcess extends \NovumWare\Process\AbstractProcess
 	 */
 	public function _sendApprovalEmailToAdmin($eventModel) {
 		$adminMemberModel = $this->getMembersMapper()->fetchOneForAdminPrivileges();
+
 		$rejectEventLink = $this->urlCanonical('manage-events/reject', array(
 			'eventId' =>	$eventModel->id
 		));
@@ -139,6 +142,24 @@ class EventsProcess extends \NovumWare\Process\AbstractProcess
 		return $eventModel;
 	}
 
+	/**
+	 * @param \Events\Model\EventModel $eventModel
+	 * @return \NovumWare\Process\ProcessResult
+	 * @throws \Exception
+	 */
+	public function _getMapUrlForEvent($eventModel) {
+		if ($eventModel->venue_id) { $venueModel = $this->getVenuesMapper()->fetchOneForId($eventModel->venue_id);
+		} else $venueModel = $this->getSessionVenuesMapper()->fetchModel();
+		if (!$venueModel) throw new \ProcessException("Venue: {$eventModel->venue_id} cannot be found.");
+
+		$addressOriginal = $venueModel['address_1'].',+'.$venueModel['address_2'].',+'.$venueModel['city'].',+'.$venueModel['state'].'+'.$venueModel['postal_code'].',+'.$venueModel['country'];
+		$addressWhiteSpaceRemoved = str_replace(['	', '    ', '   ', '  ', ' '], '+', $addressOriginal);
+		$addressTrimmed = str_replace(',+,+', ',+', $addressWhiteSpaceRemoved);
+		$addressCleaned = str_replace("'", '', $addressTrimmed);
+
+		return new ProcessResult(true, array('url' => "//maps.googleapis.com/maps/api/staticmap?center=$addressCleaned&zoom=13&size=600x300&maptype=roadmap&markers=$addressCleaned&sensor=false"));
+	}
+
 
 	// ================================================================= FACTORY METHODS============================================================
 	/**
@@ -173,6 +194,13 @@ class EventsProcess extends \NovumWare\Process\AbstractProcess
 		return $this->_repetitionsMapper;
 	}
 
+	/**
+	 * @return \Venues\Mapper\VenuesMapper
+	 */
+	private function getVenuesMapper() {
+		if (!isset($this->venuesMapper)) $this->venuesMapper = $this->serviceManager->get('\Venues\Mapper\VenuesMapper');
+		return $this->venuesMapper;
+	}
 
 	/**
 	 * @return \Events\Mapper\SessionEventsMapper

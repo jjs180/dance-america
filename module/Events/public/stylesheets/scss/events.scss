@@ -6,18 +6,13 @@
 }
 
 #changeVenue-button {
-	@include 	column-desktop-offset(4);
 	position:	absolute;
-	left: 		5px;
+	right: 		15px;
 }
 
 //#eventWillRepeat-wrapper, .repetitionDetails-wrapper { display: none; }
 
 form#addEventForm, #editEventForm {
-	#addEventForm-contactEmail, #editEventForm-contactEmail,  #addVenueForm-contactEmail, #editVenueForm-contactEmail {
-		float:	none;
-		width:	58.33333%;;
-	}
 	button, a.btn { @include column-desktop-offset(4); }
 	#repetitionDetails-container {
 		position:	relative;

@@ -20,6 +20,15 @@
 		<input id="addEventForm-name" type="text" name="addEventForm[name]" placeholder="Name" />
 	</div>
 	<div>
+		<label class='required' for="addEventForm-venueId">Type</label>
+		<select type="text" name="addEventForm[type]" data-validators="required">
+			<option value="">--</option>
+			{foreach $siteSearchParams as $param}
+				<option value="{$param}">{$param}</option>
+			{/foreach}
+		</select>
+	</div>
+	<div>
 		<label for="addEventForm-startDate" class='required'>Event Date</label>
 		<input type='datetime' class='NWDatePicker' id="addEventForm-startDate" name="addEventForm[start_date]" data-nwDatePicker-options="{ format:'%Y-%m-%d', startView:'years' }" data-validators='required'/>
 	</div>
@@ -36,11 +45,11 @@
 		<div class='repetitionDetail-wrapper' id='repetitionDetail-wrapper-0'>
 			<div id="repetitionParameter-wrapper-0">
 				<select name="addEventForm[repetitions][0][repetition_parameter]" class="repetitionParameter" id="addEventForm-repetitionParameter-0" data-validators='required' onchange='changeRepetitionParameter(0)' >
-					<option {if $smarty.post && $smarty.post['siteSearchForm']['location']['state'] == 'CA'}selected='selected'{/if} value="one time event">One time event</option>
-					<option {if $smarty.post && $smarty.post['siteSearchForm']['location']['state'] == 'CA'}selected='selected'{/if} value="days">Every day</option>
-					<option {if $smarty.post && $smarty.post['siteSearchForm']['location']['state'] == 'CA'}selected='selected'{/if} value="weeks">Weekly</option>
-					<option {if $smarty.post && $smarty.post['siteSearchForm']['location']['state'] == 'CA'}selected='selected'{/if} value="months">Monthly</option>
-					<option {if $smarty.post && $smarty.post['siteSearchForm']['location']['state'] == 'CA'}selected='selected'{/if} value="years">Yearly</option>
+					<option value="one time event">One time event</option>
+					<option value="days">Every day</option>
+					<option value="weeks">Weekly</option>
+					<option value="months">Monthly</option>
+					<option value="years">Yearly</option>
 				</select>
 			</div>
 			<!-- <div id='repetitionSpacing-wrapper-0' class='repetitionSpacing-wrapper'> -->
@@ -69,8 +78,8 @@
 	<div class='hidden'>
 		<label for="addEventForm-willStop" class='required'>When will the event stop repeating?</label>
 		<select name="addEventForm[will_stop]" id="addEventForm-willStop" data-validators='required'>
-			<option {if $smarty.post && $smarty.post['siteSearchForm']['location']['state'] == 'CA'}selected='selected'{/if} value="0">Never</option>
-			<option {if $smarty.post && $smarty.post['siteSearchForm']['location']['state'] == 'CA'}selected='selected'{/if} value="1">On date</option>
+			<option value="0">Never</option>
+			<option value="1">On date</option>
 		</select>
 	</div>
 	<div class='hidden'>
@@ -91,9 +100,9 @@
 	<div>
 		<label for="addEventForm-minimumAge" class='required'>Minimum Age</label>
 		<select name="addEventForm[minimum_age]" id="addEventForm-minimumAge" data-validators="required">
-			<option {if $smarty.post && $smarty.post['siteSearchForm']['location']['state'] == 'CA'}selected='selected'{/if} value="None" selected='selected'>None</option>
-			<option {if $smarty.post && $smarty.post['siteSearchForm']['location']['state'] == 'CA'}selected='selected'{/if} value="18 and over">18 and over</option>
-			<option {if $smarty.post && $smarty.post['siteSearchForm']['location']['state'] == 'CA'}selected='selected'{/if} value="21 and over">21 and over</option>
+			<option value="None" selected='selected'>None</option>
+			<option value="18 and over">18 and over</option>
+			<option value="21 and over">21 and over</option>
 		</select>
 	</div>
 	<div id='webLinks-container'>
@@ -113,10 +122,14 @@
 		<textarea id="addEventForm-description" type="text" name="addEventForm[description]" placeholder="Description" ></textarea>
 	</div>
 	<div>
+		<input id="addEventForm-specialNotes" type="hidden" name="addEventForm[special_notes]" placeholder="Special Notes" value=""/>
+	</div>
+	<div>
 		<label for="addEventForm-contactEmail">Your Email</label>
 		<input id="addEventForm-contactEmail" type="email" name="addEventForm[contact_email]" placeholder="Email" data-validators="validate-email" {if $loggedInMember}value="{$loggedInMember.email}"{/if} />
 		<div>If you leave this blank and we have questions about your event, it will not be approved</div>
 	</div>
+
 	<div><button class='new btn'>Add Event</button></div>
 </form>
 {include './../partials/_addEventScript.tpl'}
