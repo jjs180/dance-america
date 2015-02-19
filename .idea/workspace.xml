@@ -4,17 +4,25 @@
     <list default="true" id="1aaacee2-5aa3-469b-984a-93d50a749b12" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/maxnuf/maxnuf-smarty" afterPath="$PROJECT_DIR$/vendor/maxnuf/maxnuf-smarty" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/markisacat/novumware-module" afterPath="$PROJECT_DIR$/vendor/markisacat/novumware-module" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module/Events/src/Events/Controller/EventsController.php" afterPath="$PROJECT_DIR$/module/Events/src/Events/Controller/EventsController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module/Venues/src/Venues/Controller/VenuesController.php" afterPath="$PROJECT_DIR$/module/Venues/src/Venues/Controller/VenuesController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/Smarty/smarty_compile/22b6ac2953d7f63f51254bc608c0d966e7faf84a.file.results.tpl.php" afterPath="$PROJECT_DIR$/data/Smarty/smarty_compile/22b6ac2953d7f63f51254bc608c0d966e7faf84a.file.results.tpl.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/Smarty/smarty_compile/2f2e1f8f8964ac4e68b0524c43c5eae4003f802b.file.index.tpl.php" afterPath="$PROJECT_DIR$/data/Smarty/smarty_compile/2f2e1f8f8964ac4e68b0524c43c5eae4003f802b.file.index.tpl.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module/Venues/src/Venues/Form/AddVenueForm.php" afterPath="$PROJECT_DIR$/module/Venues/src/Venues/Form/AddVenueForm.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module/Events/view/events/partials/_addEventScript.tpl" afterPath="$PROJECT_DIR$/module/Events/view/events/partials/_addEventScript.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module/Events/view/events/partials/_edit-event-repetition-detail-no-existing-repetitions.tpl" afterPath="$PROJECT_DIR$/module/Events/view/events/partials/_edit-event-repetition-detail-no-existing-repetitions.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module/Events/view/events/partials/_editEventScript.tpl" afterPath="$PROJECT_DIR$/module/Events/view/events/partials/_editEventScript.tpl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module/Events/view/events/partials/_eventInformation.tpl" afterPath="$PROJECT_DIR$/module/Events/view/events/partials/_eventInformation.tpl" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module/Events/view/events/events/add.tpl" afterPath="$PROJECT_DIR$/module/Events/view/events/events/add.tpl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/Smarty/smarty_compile/b2b3633e31e21c39e4c588c564cf455183006630.file.review.tpl.php" afterPath="$PROJECT_DIR$/data/Smarty/smarty_compile/b2b3633e31e21c39e4c588c564cf455183006630.file.review.tpl.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/Smarty/smarty_compile/dafe7f02cf13cf921a94c71705e08d07831bee80.file._addEventScript.tpl.php" afterPath="$PROJECT_DIR$/data/Smarty/smarty_compile/dafe7f02cf13cf921a94c71705e08d07831bee80.file._addEventScript.tpl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module/Events/view/events/events/edit.tpl" afterPath="$PROJECT_DIR$/module/Events/view/events/events/edit.tpl" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module/Events/public/stylesheets/scss/events.scss" afterPath="$PROJECT_DIR$/module/Events/public/stylesheets/scss/events.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/Smarty/smarty_compile/f74904d996220b0ef1c5f49f51e6431129c5b231.file.add.tpl.php" afterPath="$PROJECT_DIR$/data/Smarty/smarty_compile/f74904d996220b0ef1c5f49f51e6431129c5b231.file.add.tpl.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/Smarty/smarty_compile/f8c8808104c6e8279e4115c7e73a4c9fdb327c32.file.review.tpl.php" afterPath="$PROJECT_DIR$/data/Smarty/smarty_compile/f8c8808104c6e8279e4115c7e73a4c9fdb327c32.file.review.tpl.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module/People/public/stylesheets/scss/people.scss" afterPath="$PROJECT_DIR$/module/People/public/stylesheets/scss/people.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module/DanceStyles/view/people/people/review.tpl" afterPath="$PROJECT_DIR$/module/DanceStyles/view/people/people/review.tpl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module/Events/view/events/events/review.tpl" afterPath="$PROJECT_DIR$/module/Events/view/events/events/review.tpl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module/People/view/people/people/review.tpl" afterPath="$PROJECT_DIR$/module/People/view/people/people/review.tpl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module/Venues/view/venues/venues/review.tpl" afterPath="$PROJECT_DIR$/module/Venues/view/venues/venues/review.tpl" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/stylesheets/css/styles.css" afterPath="$PROJECT_DIR$/public/stylesheets/css/styles.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/stylesheets/scss/styles.scss" afterPath="$PROJECT_DIR$/public/stylesheets/scss/styles.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module/Venues/public/stylesheets/scss/venues.scss" afterPath="$PROJECT_DIR$/module/Venues/public/stylesheets/scss/venues.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="dance_america.iws" />
@@ -40,61 +48,71 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
+      <file leaf-file-name="add.tpl" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/module/Events/view/events/events/add.tpl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-4.647059" vertical-offset="768" max-vertical-offset="2100">
+              <caret line="67" column="55" selection-start-line="67" selection-start-column="49" selection-end-line="67" selection-end-column="55" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="_addEventScript.tpl" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/module/Events/view/events/partials/_addEventScript.tpl">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-1.6666666" vertical-offset="1095" max-vertical-offset="2535">
+            <state vertical-scroll-proportion="0.89411765" vertical-offset="145" max-vertical-offset="2625">
+              <caret line="35" column="86" selection-start-line="35" selection-start-column="86" selection-end-line="35" selection-end-column="86" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="venues.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/module/Venues/public/stylesheets/scss/venues.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="2100">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="people.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/module/People/public/stylesheets/scss/people.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.6122449" vertical-offset="0" max-vertical-offset="180">
+              <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="layout.tpl" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/module/Application/view/layout/layout.tpl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="240">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="add.tpl" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/module/Events/view/events/events/add.tpl">
+      <file leaf-file-name="styles.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/stylesheets/scss/styles.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-9.375" vertical-offset="735" max-vertical-offset="2100">
-              <caret line="64" column="133" selection-start-line="64" selection-start-column="109" selection-end-line="64" selection-end-column="133" />
+            <state vertical-scroll-proportion="-3.0612245" vertical-offset="0" max-vertical-offset="825">
+              <caret line="10" column="33" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="33" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="edit.tpl" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/module/Events/view/events/events/edit.tpl">
+      <file leaf-file-name="events.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/module/Events/public/stylesheets/scss/events.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-26.875" vertical-offset="15" max-vertical-offset="1905">
-              <caret line="44" column="20" selection-start-line="44" selection-start-column="20" selection-end-line="44" selection-end-column="20" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_edit-event-repetition-detail-no-existing-repetitions.tpl" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/module/Events/view/events/partials/_edit-event-repetition-detail-no-existing-repetitions.tpl">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-10.0" vertical-offset="0" max-vertical-offset="540">
-              <caret line="16" column="67" selection-start-line="16" selection-start-column="67" selection-end-line="16" selection-end-column="67" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="review.tpl" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/module/Events/view/events/events/review.tpl">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="240" max-vertical-offset="405">
-              <caret line="16" column="65" selection-start-line="16" selection-start-column="65" selection-end-line="16" selection-end-column="65" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="view.tpl" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/module/Events/view/events/events/view.tpl">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="105" max-vertical-offset="270">
-              <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+            <state vertical-scroll-proportion="-3.0131578" vertical-offset="371" max-vertical-offset="1800">
+              <caret line="40" column="9" selection-start-line="40" selection-start-column="9" selection-end-line="40" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -108,14 +126,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/data/Smarty/smarty_compile/4b84ca0632758ac5807404e59efba982670c30b2.file.edit.tpl.php" />
-        <option value="$PROJECT_DIR$/data/Smarty/smarty_compile/515c5c2eb7939af119838ae68539bddb5fa85a08.file.add.tpl.php" />
-        <option value="$PROJECT_DIR$/data/Smarty/smarty_compile/5f609700983122e45346f4cc48018efdae032bdb.file.edit-event.tpl.php" />
-        <option value="$PROJECT_DIR$/data/Smarty/smarty_compile/731bf3e9a2f82b96fd93daab783d329fc8a687a6.file.edit.tpl.php" />
-        <option value="$PROJECT_DIR$/data/Smarty/smarty_compile/87f582f3a5d816ce1a8c4e381a2c1fe3f6a21dfb.file.add.tpl.php" />
-        <option value="$PROJECT_DIR$/data/Smarty/smarty_compile/acc2315abdbddc1e110ca6bb73fa34863bfa007f.file.view.tpl.php" />
-        <option value="$PROJECT_DIR$/data/Smarty/smarty_compile/eb15ff760441e4ab1f48d4f27d244528bda4eee2.file.results.tpl.php" />
-        <option value="$PROJECT_DIR$/data/Smarty/smarty_compile/f74904d996220b0ef1c5f49f51e6431129c5b231.file.add.tpl.php" />
         <option value="$PROJECT_DIR$/module/DanceStyles/view/people/people/edit.tpl" />
         <option value="$PROJECT_DIR$/module/People/view/people/people/edit.tpl" />
         <option value="$PROJECT_DIR$/module/Venues/view/venues/venues/add.tpl" />
@@ -132,15 +142,12 @@
         <option value="$PROJECT_DIR$/public/stylesheets/scss/nwVariableOverrides/_navs.scss" />
         <option value="$PROJECT_DIR$/public/stylesheets/scss/nwVariableOverrides/_misc.scss" />
         <option value="$PROJECT_DIR$/public/stylesheets/scss/nwVariableOverrides/_forms.scss" />
-        <option value="$PROJECT_DIR$/public/stylesheets/scss/styles.scss" />
         <option value="$PROJECT_DIR$/module/Authentication/src/Authentication/Controller/AuthenticationController.php" />
         <option value="$PROJECT_DIR$/module/Authentication/src/Account/Controller/AccountController.php" />
         <option value="$PROJECT_DIR$/module/People/config/module.config.php" />
         <option value="$PROJECT_DIR$/module/Events/config/module.config.php" />
         <option value="$PROJECT_DIR$/module/Application/src/Application/Controller/IndexController.php" />
         <option value="$PROJECT_DIR$/module/Events/view/events/events/view.tpl" />
-        <option value="$PROJECT_DIR$/module/Venues/public/stylesheets/scss/venues.scss" />
-        <option value="$PROJECT_DIR$/module/Events/view/events/events/review.tpl" />
         <option value="$PROJECT_DIR$/vendor/markisacat/novumware-module/src/NovumWare/Db/Table/Mapper/AbstractMapper.php" />
         <option value="$PROJECT_DIR$/module/Events/view/events/partials/_days-of-month.tpl" />
         <option value="$PROJECT_DIR$/module/Events/view/events/partials/_days-of-week.tpl" />
@@ -153,12 +160,23 @@
         <option value="$PROJECT_DIR$/module/Venues/view/venues/venues/search.tpl" />
         <option value="$PROJECT_DIR$/module/Venues/src/Venues/Controller/VenuesController.php" />
         <option value="$PROJECT_DIR$/module/Events/src/Events/Controller/EventsController.php" />
-        <option value="$PROJECT_DIR$/module/Events/public/stylesheets/scss/events.scss" />
-        <option value="$PROJECT_DIR$/module/Events/view/events/events/add.tpl" />
         <option value="$PROJECT_DIR$/module/Events/view/events/events/edit.tpl" />
         <option value="$PROJECT_DIR$/module/Events/view/events/partials/_edit-event-repetition-detail-no-existing-repetitions.tpl" />
-        <option value="$PROJECT_DIR$/module/Events/view/events/partials/_addEventScript.tpl" />
         <option value="$PROJECT_DIR$/module/Events/view/events/partials/_editEventScript.tpl" />
+        <option value="$PROJECT_DIR$/module/Events/view/events/partials/_eventInformation.tpl" />
+        <option value="$PROJECT_DIR$/data/Smarty/smarty_compile/6406208dd0c959e11acf1cdb9c14d76e2aeffa6f.file.review.tpl.php" />
+        <option value="$PROJECT_DIR$/data/Smarty/smarty_compile/b2b3633e31e21c39e4c588c564cf455183006630.file.review.tpl.php" />
+        <option value="$PROJECT_DIR$/module/People/view/people/people/review.tpl" />
+        <option value="$PROJECT_DIR$/module/DanceStyles/view/people/people/review.tpl" />
+        <option value="$PROJECT_DIR$/module/Venues/public/stylesheets/scss/venues.scss" />
+        <option value="$PROJECT_DIR$/module/Events/view/events/events/review.tpl" />
+        <option value="$PROJECT_DIR$/module/Venues/view/venues/venues/review.tpl" />
+        <option value="$PROJECT_DIR$/module/Venues/src/Venues/Form/AddVenueForm.php" />
+        <option value="$PROJECT_DIR$/module/People/public/stylesheets/scss/people.scss" />
+        <option value="$PROJECT_DIR$/public/stylesheets/scss/styles.scss" />
+        <option value="$PROJECT_DIR$/module/Events/view/events/events/add.tpl" />
+        <option value="$PROJECT_DIR$/module/Events/public/stylesheets/scss/events.scss" />
+        <option value="$PROJECT_DIR$/module/Events/view/events/partials/_addEventScript.tpl" />
       </list>
     </option>
   </component>
@@ -204,7 +222,7 @@
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectView">
-    <navigator currentView="Scope" currentSubView="Default" proportions="" version="1">
+    <navigator currentView="Scope" currentSubView="Project Files" proportions="" version="1">
       <flattenPackages />
       <showMembers />
       <showModules />
@@ -238,6 +256,144 @@
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT USER_OBJECT="module">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="Venues">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="view/venues/venues">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="dance_america">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="module">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="Venues">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="dance_america">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="module">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+        <subPane subId="Project Files">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="dance_america">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="dance_america">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="public">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="dance_america">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="public">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="stylesheets">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="scss">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="dance_america">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="public">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="stylesheets">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="dance_america">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="module">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="dance_america">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="module">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="Events">
               <option name="myItemId" value="" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
@@ -289,7 +445,25 @@
               <option name="myItemId" value="" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="events">
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="dance_america">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="module">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="Events">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="src/Events">
               <option name="myItemId" value="" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
@@ -308,6 +482,36 @@
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT USER_OBJECT="Events">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="public/stylesheets">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="scss">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="dance_america">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="module">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="Events">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="public/stylesheets">
               <option name="myItemId" value="" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
@@ -507,7 +711,7 @@
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32722145" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32722145" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -520,9 +724,9 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39915374" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -569,83 +773,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/public/stylesheets/scss/nwVariableOverrides/_misc.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2476415" vertical-offset="0" max-vertical-offset="424">
-          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/stylesheets/scss/nwVariableOverrides/_navs.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.1603774" vertical-offset="93" max-vertical-offset="780">
-          <caret line="39" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/stylesheets/scss/nwVariableOverrides/_colors.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.95108694" vertical-offset="190" max-vertical-offset="855">
-          <caret line="36" column="37" selection-start-line="36" selection-start-column="37" selection-end-line="36" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/novumWarePublic/stylesheets/scss/novumWare/variables/_colors.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="750">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/novumWarePublic/stylesheets/scss/novumWare/_base.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.8042452" vertical-offset="765" max-vertical-offset="2040">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="130" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/markisacat/novumware-module/public/stylesheets/scss/nwMain.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.6766917" vertical-offset="780" max-vertical-offset="1215">
-          <caret line="34" column="72" selection-start-line="34" selection-start-column="53" selection-end-line="34" selection-end-column="72" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/markisacat/novumware-module/public/stylesheets/scss/novumWare/_forms.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3514151" vertical-offset="286" max-vertical-offset="1680">
-          <caret line="29" column="7" selection-start-line="29" selection-start-column="7" selection-end-line="29" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module/People/src/People/Mapper/PeopleMapper.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.56149733" vertical-offset="405" max-vertical-offset="915">
-          <caret line="41" column="36" selection-start-line="41" selection-start-column="23" selection-end-line="41" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module/Authentication/src/Authentication/Controller/AuthenticationController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.40106952" vertical-offset="0" max-vertical-offset="1890">
-          <caret line="15" column="40" selection-start-line="15" selection-start-column="40" selection-end-line="15" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module/People/src/People/Controller/PeopleController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.28074867" vertical-offset="0" max-vertical-offset="3135">
-          <caret line="10" column="33" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module/Admin/view/admin/admin/manage-venues.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.080213904" vertical-offset="0" max-vertical-offset="1095">
-          <caret line="2" column="38" selection-start-line="2" selection-start-column="38" selection-end-line="2" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/module/Authentication/src/Account/Controller/AccountController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.5646481" vertical-offset="0" max-vertical-offset="1095">
@@ -720,13 +847,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.6372549" vertical-offset="0" max-vertical-offset="612">
           <caret line="26" column="40" selection-start-line="26" selection-start-column="32" selection-end-line="26" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module/Venues/public/stylesheets/scss/venues.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.8552631" vertical-offset="39" max-vertical-offset="1995">
-          <caret line="12" column="5" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -835,24 +955,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/module/Events/public/stylesheets/scss/events.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4375" vertical-offset="545" max-vertical-offset="1785">
-          <caret line="48" column="42" selection-start-line="48" selection-start-column="42" selection-end-line="48" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/module/Events/src/Events/Controller/EventsController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.24705882" vertical-offset="180" max-vertical-offset="3240">
           <caret line="19" column="119" selection-start-line="19" selection-start-column="119" selection-end-line="19" selection-end-column="119" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module/Events/view/events/partials/_eventInformation.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="75" max-vertical-offset="900">
-          <caret line="5" column="4" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="4" />
         </state>
       </provider>
     </entry>
@@ -877,61 +983,186 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/module/Events/view/events/events/view.tpl">
+    <entry file="file://$PROJECT_DIR$/module/Events/view/events/partials/_editEventScript.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="105" max-vertical-offset="270">
-          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding />
+        <state vertical-scroll-proportion="1.2380953" vertical-offset="825" max-vertical-offset="2475">
+          <caret line="107" column="42" selection-start-line="107" selection-start-column="42" selection-end-line="107" selection-end-column="42" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/module/Events/view/events/events/review.tpl">
+    <entry file="file://$PROJECT_DIR$/module/Events/view/events/partials/_edit-event-repetition-detail-no-existing-repetitions.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="240" max-vertical-offset="405">
-          <caret line="16" column="65" selection-start-line="16" selection-start-column="65" selection-end-line="16" selection-end-column="65" />
+        <state vertical-scroll-proportion="0.3652968" vertical-offset="0" max-vertical-offset="657">
+          <caret line="16" column="67" selection-start-line="16" selection-start-column="67" selection-end-line="16" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/Events/view/events/partials/_eventInformation.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3607306" vertical-offset="183" max-vertical-offset="900">
+          <caret line="28" column="40" selection-start-line="28" selection-start-column="40" selection-end-line="28" selection-end-column="40" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/module/Events/view/events/events/edit.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-26.875" vertical-offset="15" max-vertical-offset="1905">
+        <state vertical-scroll-proportion="0.70776254" vertical-offset="195" max-vertical-offset="1905">
           <caret line="44" column="20" selection-start-line="44" selection-start-column="20" selection-end-line="44" selection-end-column="20" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/module/Events/view/events/partials/_edit-event-repetition-detail-no-existing-repetitions.tpl">
+    <entry file="file://$PROJECT_DIR$/module/Events/view/events/events/view.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.0" vertical-offset="0" max-vertical-offset="540">
-          <caret line="16" column="67" selection-start-line="16" selection-start-column="67" selection-end-line="16" selection-end-column="67" />
+        <state vertical-scroll-proportion="0.15981735" vertical-offset="0" max-vertical-offset="657">
+          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/module/Events/view/events/partials/_editEventScript.tpl">
+    <entry file="file://$PROJECT_DIR$/module/People/view/people/people/review.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.2380953" vertical-offset="825" max-vertical-offset="2475">
-          <caret line="107" column="42" selection-start-line="107" selection-start-column="42" selection-end-line="107" selection-end-column="42" />
+        <state vertical-scroll-proportion="0.1826484" vertical-offset="0" max-vertical-offset="657">
+          <caret line="8" column="93" selection-start-line="8" selection-start-column="93" selection-end-line="8" selection-end-column="93" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/Smarty/smarty_compile/6406208dd0c959e11acf1cdb9c14d76e2aeffa6f.file.review.tpl.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5890411" vertical-offset="153" max-vertical-offset="810">
+          <caret line="37" column="194" selection-start-line="37" selection-start-column="194" selection-end-line="37" selection-end-column="194" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/Smarty/smarty_compile/b2b3633e31e21c39e4c588c564cf455183006630.file.review.tpl.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5890411" vertical-offset="153" max-vertical-offset="810">
+          <caret line="37" column="194" selection-start-line="37" selection-start-column="194" selection-end-line="37" selection-end-column="194" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/DanceStyles/view/people/people/review.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.25114155" vertical-offset="0" max-vertical-offset="657">
+          <caret line="11" column="96" selection-start-line="11" selection-start-column="96" selection-end-line="11" selection-end-column="96" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/Events/view/events/events/review.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.31764707" vertical-offset="0" max-vertical-offset="425">
+          <caret line="9" column="26" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/Venues/view/venues/venues/review.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.3764706" vertical-offset="0" max-vertical-offset="735">
+          <caret line="39" column="73" selection-start-line="39" selection-start-column="73" selection-end-line="39" selection-end-column="73" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/Venues/src/Venues/Form/AddVenueForm.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6" vertical-offset="0" max-vertical-offset="1770">
+          <caret line="19" column="20" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/Venues/public/stylesheets/scss/venues.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="2100">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/People/public/stylesheets/scss/people.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.6122449" vertical-offset="0" max-vertical-offset="180">
+          <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/Application/view/layout/partials/_head.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="449">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/Application/view/layout/partials/_header.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="449">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/Application/view/layout/layout.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="449">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/stylesheets/scss/styles.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.0612245" vertical-offset="0" max-vertical-offset="825">
+          <caret line="10" column="33" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/Events/public/stylesheets/scss/events.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.0131578" vertical-offset="371" max-vertical-offset="1800">
+          <caret line="40" column="9" selection-start-line="40" selection-start-column="9" selection-end-line="40" selection-end-column="9" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/module/Events/view/events/events/add.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.375" vertical-offset="735" max-vertical-offset="2100">
-          <caret line="64" column="133" selection-start-line="64" selection-start-column="109" selection-end-line="64" selection-end-column="133" />
+        <state vertical-scroll-proportion="-4.647059" vertical-offset="768" max-vertical-offset="2100">
+          <caret line="67" column="55" selection-start-line="67" selection-start-column="49" selection-end-line="67" selection-end-column="55" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/module/Events/view/events/partials/_addEventScript.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.6666666" vertical-offset="1095" max-vertical-offset="2535">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.89411765" vertical-offset="145" max-vertical-offset="2625">
+          <caret line="35" column="86" selection-start-line="35" selection-start-column="86" selection-end-line="35" selection-end-column="86" />
           <folding />
         </state>
       </provider>
     </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>

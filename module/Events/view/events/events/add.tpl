@@ -86,9 +86,9 @@
 		<label for="addEventForm-endDate" class='required'>End Date</label>
 		<input type='datetime' class='NWDatePicker' id="addEventForm-endDate" name="addEventForm[end_date]" data-nwDatePicker-options="{ format:'%Y-%m-%d', startView:'years' }" data-validators='required'/>
 	</div>
-	<div class='hidden'>
+	<div class='hidden costDetails-container'>
 		<label for="addEventForm-cost">Cost of Event</label>
-		<div id='costDetails-rhsWrapper'>
+		<div class='costDetails-rhsWrapper'>
 			<div>
 				<input type="text" name="addEventForm[costs][0][person_type]" class='person-type' placeholder='Type (eg members, non-members, etc)' /> pay $ <input type="text" name="addEventForm[costs][0][amount]" placeholder='Amount (USD)' data-validators='validate-numeric' />
 			</div>

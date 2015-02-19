@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1-DEV, created on 2015-02-14 18:04:13
+<?php /* Smarty version Smarty-3.1-DEV, created on 2015-02-17 03:33:07
          compiled from "/Users/cara/Sites/dance_america/module/Venues/view/venues/venues/review.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:52868749354df800d7647e1-71560471%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'f8c8808104c6e8279e4115c7e73a4c9fdb327c32' => 
     array (
       0 => '/Users/cara/Sites/dance_america/module/Venues/view/venues/venues/review.tpl',
-      1 => 1415467612,
+      1 => 1424140318,
       2 => 'file',
     ),
   ),
@@ -15,6 +15,8 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   'function' => 
   array (
   ),
+  'version' => 'Smarty-3.1-DEV',
+  'unifunc' => 'content_54df800d88d3d4_13999197',
   'variables' => 
   array (
     'venueModel' => 0,
@@ -23,11 +25,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'url' => 0,
   ),
   'has_nocache_code' => false,
-  'version' => 'Smarty-3.1-DEV',
-  'unifunc' => 'content_54df800d88d3d4_13999197',
 ),false); /*/%%SmartyHeaderCode%%*/?>
 <?php if ($_valid && !is_callable('content_54df800d88d3d4_13999197')) {function content_54df800d88d3d4_13999197($_smarty_tpl) {?><h1>Please review the venue information below</h1>
-<ul id='venueInformation-list'>
+<ul class='venueInformation-list'>
 	<li>
 		<label>Name of the Venue:</label><div><?php echo $_smarty_tpl->tpl_vars['venueModel']->value['name'];?>
 </div>
@@ -75,11 +75,11 @@ $_smarty_tpl->tpl_vars['website']->_loop = true;
 " /></div>
 	<div id='button-wrapper'>
 		<?php if (isset($_smarty_tpl->tpl_vars['venueModel']->value['id'])){?>
-			<a class='new btn' href="<?php echo $_smarty_tpl->smarty->registered_objects['zf'][0]->url('venues/approve',array('venueId'=>$_smarty_tpl->tpl_vars['venueModel']->value['id'])); ?>">The venue information looks correct</a>
-			<a id='editVenue-button' class='btn' href="<?php echo $_smarty_tpl->smarty->registered_objects['zf'][0]->url('venues/edit',array('venueId'=>$_smarty_tpl->tpl_vars['venueModel']->value['id'])); ?>">I need to change some details about the venue</a>
+			<a class='btn negative' href="<?php echo $_smarty_tpl->smarty->registered_objects['zf'][0]->url('venues/edit',array('venueId'=>$_smarty_tpl->tpl_vars['venueModel']->value['id'])); ?>">Edit</a>
+			<a class='new btn' href="<?php echo $_smarty_tpl->smarty->registered_objects['zf'][0]->url('venues/approve',array('venueId'=>$_smarty_tpl->tpl_vars['venueModel']->value['id'])); ?>">Continue</a>
 		<?php }else{ ?>
-			<a class='new btn' href="<?php echo $_smarty_tpl->smarty->registered_objects['zf'][0]->url('venues/approve'); ?>">The venue information looks correct</a>
-			<a id='editVenue-button' class='btn' href="<?php echo $_smarty_tpl->smarty->registered_objects['zf'][0]->url('venues/edit'); ?>">I need to change some details about the venue</a>
+			<a class='btn negative' href="<?php echo $_smarty_tpl->smarty->registered_objects['zf'][0]->url('venues/edit'); ?>">Edit</a>
+			<a class='new btn' href="<?php echo $_smarty_tpl->smarty->registered_objects['zf'][0]->url('venues/approve'); ?>">Continue</a>
 		<?php }?>
 	</div>
 </div>

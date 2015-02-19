@@ -8421,6 +8421,8 @@ ul.venueInformation-list > li, ul.eventInformation-list > li {
 ul.venueInformation-list > li > div, ul.venueInformation-list > li ul, ul.eventInformation-list > li > div, ul.eventInformation-list > li ul {
   display: inline-block;
   max-width: 65%;
+  list-style: none;
+  padding: 0px;
 }
 ul.venueInformation-list > li > div > ul, ul.venueInformation-list > li ul > ul, ul.eventInformation-list > li > div > ul, ul.eventInformation-list > li ul > ul {
   display: block;
@@ -8456,20 +8458,11 @@ ul.venueInformation-list > li > label, ul.eventInformation-list > li > label {
 #mapAndButton-wrapper > div#button-wrapper {
   margin-top: 15px;
 }
-#mapAndButton-wrapper > div#button-wrapper #editVenue-button {
-  color: white;
-  background: #d9534f;
-  border-color: #d43f3a;
+#mapAndButton-wrapper > div#button-wrapper a:first-of-type {
+  float: left;
 }
-#mapAndButton-wrapper > div#button-wrapper #editVenue-button:hover, #mapAndButton-wrapper > div#button-wrapper #editVenue-button:focus
-#mapAndButton-wrapper > div#button-wrapper #editVenue-button:active {
-  color: white;
-  background-color: #d2322d !important;
-  border-color: #ac2925 !important;
-}
-#mapAndButton-wrapper > div#button-wrapper #editVenue-button[disabled], #mapAndButton-wrapper > div#button-wrapper #editVenue-button[disabled]:hover, #mapAndButton-wrapper > div#button-wrapper #editVenue-button[disabled]:focus, #mapAndButton-wrapper > div#button-wrapper #editVenue-button[disabled]:active {
-  background-color: #d9534f;
-  border-color: #d43f3a;
+#mapAndButton-wrapper > div#button-wrapper a:last-of-type {
+  float: right;
 }
 
 #searchVenuesForm > div > label:first-child {
@@ -8634,59 +8627,7 @@ div#resultsHeader-wrapper a.neutral {
   right: 15px;
 }
 
-@media (min-width: 1025px) {
-  form#addEventForm button, form#addVenueForm button, form#editVenueForm button, form#addEventForm a.btn, form#addVenueForm a.btn, form#editVenueForm a.btn, #editEventForm button, #editEventForm a.btn {
-    margin-left: 33.33333%;
-  }
-}
-form#addEventForm #repetitionDetails-container, form#addVenueForm #repetitionDetails-container, form#editVenueForm #repetitionDetails-container, #editEventForm #repetitionDetails-container {
-  position: relative;
-}
-form#addEventForm #repetitionDetails-container > label, form#addVenueForm #repetitionDetails-container > label, form#editVenueForm #repetitionDetails-container > label, #editEventForm #repetitionDetails-container > label {
-  position: absolute;
-}
-form#addEventForm #repetitionDetails-container > label.required:after, form#addVenueForm #repetitionDetails-container > label.required:after, form#editVenueForm #repetitionDetails-container > label.required:after, #editEventForm #repetitionDetails-container > label.required:after {
-  position: relative;
-  top: -2px;
-  right: -3px;
-}
-form#addEventForm #repetitionDetails-container > a.addRepetitionButton, form#addVenueForm #repetitionDetails-container > a.addRepetitionButton, form#editVenueForm #repetitionDetails-container > a.addRepetitionButton, #editEventForm #repetitionDetails-container > a.addRepetitionButton {
-  bottom: 15px;
-  display: none;
-  margin: 0px;
-  position: absolute;
-  border: none;
-  right: -25px;
-}
-form#addEventForm #repetitionDetails-container .repetitionDetail-wrapper, form#addVenueForm #repetitionDetails-container .repetitionDetail-wrapper, form#editVenueForm #repetitionDetails-container .repetitionDetail-wrapper, #editEventForm #repetitionDetails-container .repetitionDetail-wrapper {
-  margin-bottom: 15px;
-  position: relative;
-}
-@media (min-width: 1025px) {
-  form#addEventForm #repetitionDetails-container .repetitionDetail-wrapper, form#addVenueForm #repetitionDetails-container .repetitionDetail-wrapper, form#editVenueForm #repetitionDetails-container .repetitionDetail-wrapper, #editEventForm #repetitionDetails-container .repetitionDetail-wrapper {
-    margin-left: 33.33333%;
-  }
-}
-form#addEventForm #repetitionDetails-container .repetitionDetail-wrapper > div, form#addVenueForm #repetitionDetails-container .repetitionDetail-wrapper > div, form#editVenueForm #repetitionDetails-container .repetitionDetail-wrapper > div, #editEventForm #repetitionDetails-container .repetitionDetail-wrapper > div {
-  display: inline-block;
-}
-form#addEventForm #repetitionDetails-container .repetitionDetail-wrapper > div:first-of-type, form#addVenueForm #repetitionDetails-container .repetitionDetail-wrapper > div:first-of-type, form#editVenueForm #repetitionDetails-container .repetitionDetail-wrapper > div:first-of-type, #editEventForm #repetitionDetails-container .repetitionDetail-wrapper > div:first-of-type {
-  display: block;
-}
-form#addEventForm #repetitionDetails-container .repetitionDetail-wrapper > div:first-of-type > select, form#addVenueForm #repetitionDetails-container .repetitionDetail-wrapper > div:first-of-type > select, form#editVenueForm #repetitionDetails-container .repetitionDetail-wrapper > div:first-of-type > select, #editEventForm #repetitionDetails-container .repetitionDetail-wrapper > div:first-of-type > select {
-  float: none;
-  margin-bottom: 0px;
-}
-form#addEventForm #repetitionDetails-container .repetitionDetail-wrapper > div.repetitionSpacing-wrapper > input, form#addVenueForm #repetitionDetails-container .repetitionDetail-wrapper > div.repetitionSpacing-wrapper > input, form#editVenueForm #repetitionDetails-container .repetitionDetail-wrapper > div.repetitionSpacing-wrapper > input, #editEventForm #repetitionDetails-container .repetitionDetail-wrapper > div.repetitionSpacing-wrapper > input {
-  width: 30px;
-  float: none;
-  display: inline-block;
-}
-form#addEventForm #repetitionDetails-container .repetitionDetail-wrapper > div:last-of-type select, form#addVenueForm #repetitionDetails-container .repetitionDetail-wrapper > div:last-of-type select, form#editVenueForm #repetitionDetails-container .repetitionDetail-wrapper > div:last-of-type select, form#addEventForm #repetitionDetails-container .repetitionDetail-wrapper > div:last-of-type div, form#addVenueForm #repetitionDetails-container .repetitionDetail-wrapper > div:last-of-type div, form#editVenueForm #repetitionDetails-container .repetitionDetail-wrapper > div:last-of-type div, #editEventForm #repetitionDetails-container .repetitionDetail-wrapper > div:last-of-type select, #editEventForm #repetitionDetails-container .repetitionDetail-wrapper > div:last-of-type div {
-  float: none;
-  display: inline-block;
-}
-form#addEventForm #repetitionDetails-container .repetitionDetail-wrapper > div:last-of-type > a.deleteRepetitionButton, form#addVenueForm #repetitionDetails-container .repetitionDetail-wrapper > div:last-of-type > a.deleteRepetitionButton, form#editVenueForm #repetitionDetails-container .repetitionDetail-wrapper > div:last-of-type > a.deleteRepetitionButton, #editEventForm #repetitionDetails-container .repetitionDetail-wrapper > div:last-of-type > a.deleteRepetitionButton {
+a.deleteRepetitionButton {
   bottom: 0px;
   display: none;
   margin: 0px;
@@ -8695,35 +8636,89 @@ form#addEventForm #repetitionDetails-container .repetitionDetail-wrapper > div:l
   width: 30px;
   border: none;
 }
-form#addEventForm #repetitionDetails-container .repetitionDetail-wrapper select, form#addVenueForm #repetitionDetails-container .repetitionDetail-wrapper select, form#editVenueForm #repetitionDetails-container .repetitionDetail-wrapper select, #editEventForm #repetitionDetails-container .repetitionDetail-wrapper select {
-  width: auto;
-}
-form#addEventForm #costDetails-container, form#addVenueForm #costDetails-container, form#editVenueForm #costDetails-container, #editEventForm #costDetails-container {
+
+a.addRepetitionButton {
+  bottom: 15px;
   display: none;
+  margin: 0px;
+  position: absolute;
+  border: none;
+  right: -25px;
 }
-form#addEventForm #costDetails-container > div#costDetails-rhsWrapper, form#addVenueForm #costDetails-container > div#costDetails-rhsWrapper, form#editVenueForm #costDetails-container > div#costDetails-rhsWrapper, #editEventForm #costDetails-container > div#costDetails-rhsWrapper {
+
+@media (min-width: 1025px) {
+  form#addEventForm button, form#addVenueForm button, form#editVenueForm button, form#addPersonForm button, form#editPersonForm button, form#addEventForm a.btn, form#addVenueForm a.btn, form#editVenueForm a.btn, form#addPersonForm a.btn, form#editPersonForm a.btn, #editEventForm button, #editEventForm a.btn {
+    margin-left: 33.33333%;
+  }
+}
+form#addEventForm #repetitionDetails-container, form#addVenueForm #repetitionDetails-container, form#editVenueForm #repetitionDetails-container, form#addPersonForm #repetitionDetails-container, form#editPersonForm #repetitionDetails-container, #editEventForm #repetitionDetails-container {
+  position: relative;
+}
+form#addEventForm #repetitionDetails-container > label, form#addVenueForm #repetitionDetails-container > label, form#editVenueForm #repetitionDetails-container > label, form#addPersonForm #repetitionDetails-container > label, form#editPersonForm #repetitionDetails-container > label, #editEventForm #repetitionDetails-container > label {
+  position: absolute;
+}
+form#addEventForm #repetitionDetails-container > label.required:after, form#addVenueForm #repetitionDetails-container > label.required:after, form#editVenueForm #repetitionDetails-container > label.required:after, form#addPersonForm #repetitionDetails-container > label.required:after, form#editPersonForm #repetitionDetails-container > label.required:after, #editEventForm #repetitionDetails-container > label.required:after {
+  position: relative;
+  top: -2px;
+  right: -3px;
+}
+form#addEventForm #repetitionDetails-container .repetitionDetail-wrapper, form#addVenueForm #repetitionDetails-container .repetitionDetail-wrapper, form#editVenueForm #repetitionDetails-container .repetitionDetail-wrapper, form#addPersonForm #repetitionDetails-container .repetitionDetail-wrapper, form#editPersonForm #repetitionDetails-container .repetitionDetail-wrapper, #editEventForm #repetitionDetails-container .repetitionDetail-wrapper {
+  margin-bottom: 15px;
+  position: relative;
+}
+@media (min-width: 1025px) {
+  form#addEventForm #repetitionDetails-container .repetitionDetail-wrapper, form#addVenueForm #repetitionDetails-container .repetitionDetail-wrapper, form#editVenueForm #repetitionDetails-container .repetitionDetail-wrapper, form#addPersonForm #repetitionDetails-container .repetitionDetail-wrapper, form#editPersonForm #repetitionDetails-container .repetitionDetail-wrapper, #editEventForm #repetitionDetails-container .repetitionDetail-wrapper {
+    margin-left: 33.33333%;
+  }
+}
+form#addEventForm #repetitionDetails-container .repetitionDetail-wrapper > div, form#addVenueForm #repetitionDetails-container .repetitionDetail-wrapper > div, form#editVenueForm #repetitionDetails-container .repetitionDetail-wrapper > div, form#addPersonForm #repetitionDetails-container .repetitionDetail-wrapper > div, form#editPersonForm #repetitionDetails-container .repetitionDetail-wrapper > div, #editEventForm #repetitionDetails-container .repetitionDetail-wrapper > div {
   display: inline-block;
-  width: 75%;
 }
-form#addEventForm #costDetails-container > div#costDetails-rhsWrapper > div, form#addVenueForm #costDetails-container > div#costDetails-rhsWrapper > div, form#editVenueForm #costDetails-container > div#costDetails-rhsWrapper > div, #editEventForm #costDetails-container > div#costDetails-rhsWrapper > div {
-  padding-top: 5px;
-  padding-bottom: 5px;
+form#addEventForm #repetitionDetails-container .repetitionDetail-wrapper > div:first-of-type, form#addVenueForm #repetitionDetails-container .repetitionDetail-wrapper > div:first-of-type, form#editVenueForm #repetitionDetails-container .repetitionDetail-wrapper > div:first-of-type, form#addPersonForm #repetitionDetails-container .repetitionDetail-wrapper > div:first-of-type, form#editPersonForm #repetitionDetails-container .repetitionDetail-wrapper > div:first-of-type, #editEventForm #repetitionDetails-container .repetitionDetail-wrapper > div:first-of-type {
+  display: block;
 }
-form#addEventForm #costDetails-container > div#costDetails-rhsWrapper > div:first-of-type, form#addVenueForm #costDetails-container > div#costDetails-rhsWrapper > div:first-of-type, form#editVenueForm #costDetails-container > div#costDetails-rhsWrapper > div:first-of-type, #editEventForm #costDetails-container > div#costDetails-rhsWrapper > div:first-of-type {
-  padding-top: 0px;
+form#addEventForm #repetitionDetails-container .repetitionDetail-wrapper > div:first-of-type > select, form#addVenueForm #repetitionDetails-container .repetitionDetail-wrapper > div:first-of-type > select, form#editVenueForm #repetitionDetails-container .repetitionDetail-wrapper > div:first-of-type > select, form#addPersonForm #repetitionDetails-container .repetitionDetail-wrapper > div:first-of-type > select, form#editPersonForm #repetitionDetails-container .repetitionDetail-wrapper > div:first-of-type > select, #editEventForm #repetitionDetails-container .repetitionDetail-wrapper > div:first-of-type > select {
+  float: none;
+  margin-bottom: 0px;
 }
-form#addEventForm #costDetails-container > div#costDetails-rhsWrapper > div > input, form#addVenueForm #costDetails-container > div#costDetails-rhsWrapper > div > input, form#editVenueForm #costDetails-container > div#costDetails-rhsWrapper > div > input, #editEventForm #costDetails-container > div#costDetails-rhsWrapper > div > input {
+form#addEventForm #repetitionDetails-container .repetitionDetail-wrapper > div.repetitionSpacing-wrapper > input, form#addVenueForm #repetitionDetails-container .repetitionDetail-wrapper > div.repetitionSpacing-wrapper > input, form#editVenueForm #repetitionDetails-container .repetitionDetail-wrapper > div.repetitionSpacing-wrapper > input, form#addPersonForm #repetitionDetails-container .repetitionDetail-wrapper > div.repetitionSpacing-wrapper > input, form#editPersonForm #repetitionDetails-container .repetitionDetail-wrapper > div.repetitionSpacing-wrapper > input, #editEventForm #repetitionDetails-container .repetitionDetail-wrapper > div.repetitionSpacing-wrapper > input {
+  width: 30px;
   float: none;
   display: inline-block;
 }
-form#addEventForm #costDetails-container > div > input:first-of-type, form#addVenueForm #costDetails-container > div > input:first-of-type, form#editVenueForm #costDetails-container > div > input:first-of-type, #editEventForm #costDetails-container > div > input:first-of-type {
+form#addEventForm #repetitionDetails-container .repetitionDetail-wrapper > div:last-of-type select, form#addVenueForm #repetitionDetails-container .repetitionDetail-wrapper > div:last-of-type select, form#editVenueForm #repetitionDetails-container .repetitionDetail-wrapper > div:last-of-type select, form#addPersonForm #repetitionDetails-container .repetitionDetail-wrapper > div:last-of-type select, form#editPersonForm #repetitionDetails-container .repetitionDetail-wrapper > div:last-of-type select, form#addEventForm #repetitionDetails-container .repetitionDetail-wrapper > div:last-of-type div, form#addVenueForm #repetitionDetails-container .repetitionDetail-wrapper > div:last-of-type div, form#editVenueForm #repetitionDetails-container .repetitionDetail-wrapper > div:last-of-type div, form#addPersonForm #repetitionDetails-container .repetitionDetail-wrapper > div:last-of-type div, form#editPersonForm #repetitionDetails-container .repetitionDetail-wrapper > div:last-of-type div, #editEventForm #repetitionDetails-container .repetitionDetail-wrapper > div:last-of-type select, #editEventForm #repetitionDetails-container .repetitionDetail-wrapper > div:last-of-type div {
+  float: none;
+  display: inline-block;
+}
+form#addEventForm #repetitionDetails-container .repetitionDetail-wrapper select, form#addVenueForm #repetitionDetails-container .repetitionDetail-wrapper select, form#editVenueForm #repetitionDetails-container .repetitionDetail-wrapper select, form#addPersonForm #repetitionDetails-container .repetitionDetail-wrapper select, form#editPersonForm #repetitionDetails-container .repetitionDetail-wrapper select, #editEventForm #repetitionDetails-container .repetitionDetail-wrapper select {
+  width: auto;
+}
+form#addEventForm .costDetails-container, form#addVenueForm .costDetails-container, form#editVenueForm .costDetails-container, form#addPersonForm .costDetails-container, form#editPersonForm .costDetails-container, #editEventForm .costDetails-container {
+  display: none;
+}
+form#addEventForm .costDetails-container > div.costDetails-rhsWrapper, form#addVenueForm .costDetails-container > div.costDetails-rhsWrapper, form#editVenueForm .costDetails-container > div.costDetails-rhsWrapper, form#addPersonForm .costDetails-container > div.costDetails-rhsWrapper, form#editPersonForm .costDetails-container > div.costDetails-rhsWrapper, #editEventForm .costDetails-container > div.costDetails-rhsWrapper {
+  display: inline-block;
+  width: 75%;
+}
+form#addEventForm .costDetails-container > div.costDetails-rhsWrapper > div, form#addVenueForm .costDetails-container > div.costDetails-rhsWrapper > div, form#editVenueForm .costDetails-container > div.costDetails-rhsWrapper > div, form#addPersonForm .costDetails-container > div.costDetails-rhsWrapper > div, form#editPersonForm .costDetails-container > div.costDetails-rhsWrapper > div, #editEventForm .costDetails-container > div.costDetails-rhsWrapper > div {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+form#addEventForm .costDetails-container > div.costDetails-rhsWrapper > div:first-of-type, form#addVenueForm .costDetails-container > div.costDetails-rhsWrapper > div:first-of-type, form#editVenueForm .costDetails-container > div.costDetails-rhsWrapper > div:first-of-type, form#addPersonForm .costDetails-container > div.costDetails-rhsWrapper > div:first-of-type, form#editPersonForm .costDetails-container > div.costDetails-rhsWrapper > div:first-of-type, #editEventForm .costDetails-container > div.costDetails-rhsWrapper > div:first-of-type {
+  padding-top: 0px;
+}
+form#addEventForm .costDetails-container > div.costDetails-rhsWrapper > div > input, form#addVenueForm .costDetails-container > div.costDetails-rhsWrapper > div > input, form#editVenueForm .costDetails-container > div.costDetails-rhsWrapper > div > input, form#addPersonForm .costDetails-container > div.costDetails-rhsWrapper > div > input, form#editPersonForm .costDetails-container > div.costDetails-rhsWrapper > div > input, #editEventForm .costDetails-container > div.costDetails-rhsWrapper > div > input {
+  float: none;
+  display: inline-block;
+}
+form#addEventForm .costDetails-container > div > input:first-of-type, form#addVenueForm .costDetails-container > div > input:first-of-type, form#editVenueForm .costDetails-container > div > input:first-of-type, form#addPersonForm .costDetails-container > div > input:first-of-type, form#editPersonForm .costDetails-container > div > input:first-of-type, #editEventForm .costDetails-container > div > input:first-of-type {
   width: 300px;
 }
-form#addEventForm #costDetails-container > div > input:last-of-type, form#addVenueForm #costDetails-container > div > input:last-of-type, form#editVenueForm #costDetails-container > div > input:last-of-type, #editEventForm #costDetails-container > div > input:last-of-type {
+form#addEventForm .costDetails-container > div > input:last-of-type, form#addVenueForm .costDetails-container > div > input:last-of-type, form#editVenueForm .costDetails-container > div > input:last-of-type, form#addPersonForm .costDetails-container > div > input:last-of-type, form#editPersonForm .costDetails-container > div > input:last-of-type, #editEventForm .costDetails-container > div > input:last-of-type {
   width: 125px;
 }
 
-form#addEventForm #repetitionDetails-container > .repetitionDetail-wrapper .repetitionParameter, form#addVenueForm #repetitionDetails-container > .repetitionDetail-wrapper .repetitionParameter, form#editVenueForm #repetitionDetails-container > .repetitionDetail-wrapper .repetitionParameter {
+form#addEventForm #repetitionDetails-container > .repetitionDetail-wrapper .repetitionParameter, form#addVenueForm #repetitionDetails-container > .repetitionDetail-wrapper .repetitionParameter, form#editVenueForm #repetitionDetails-container > .repetitionDetail-wrapper .repetitionParameter, form#addPersonForm #repetitionDetails-container > .repetitionDetail-wrapper .repetitionParameter, form#editPersonForm #repetitionDetails-container > .repetitionDetail-wrapper .repetitionParameter {
   margin-bottom: 10px;
 }
 

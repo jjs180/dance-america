@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1-DEV, created on 2015-02-17 02:43:57
+<?php /* Smarty version Smarty-3.1-DEV, created on 2015-02-19 05:11:02
          compiled from "/Users/cara/Sites/dance_america/module/Events/view/events/events/add.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:2100203503545e4966a6b876-04099459%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'f74904d996220b0ef1c5f49f51e6431129c5b231' => 
     array (
       0 => '/Users/cara/Sites/dance_america/module/Events/view/events/events/add.tpl',
-      1 => 1424137241,
+      1 => 1424318229,
       2 => 'file',
     ),
   ),
@@ -125,9 +125,9 @@ $_smarty_tpl->tpl_vars['param']->_loop = true;
 		<label for="addEventForm-endDate" class='required'>End Date</label>
 		<input type='datetime' class='NWDatePicker' id="addEventForm-endDate" name="addEventForm[end_date]" data-nwDatePicker-options="{ format:'%Y-%m-%d', startView:'years' }" data-validators='required'/>
 	</div>
-	<div class='hidden'>
+	<div class='hidden costDetails-container'>
 		<label for="addEventForm-cost">Cost of Event</label>
-		<div id='costDetails-rhsWrapper'>
+		<div class='costDetails-rhsWrapper'>
 			<div>
 				<input type="text" name="addEventForm[costs][0][person_type]" class='person-type' placeholder='Type (eg members, non-members, etc)' /> pay $ <input type="text" name="addEventForm[costs][0][amount]" placeholder='Amount (USD)' data-validators='validate-numeric' />
 			</div>

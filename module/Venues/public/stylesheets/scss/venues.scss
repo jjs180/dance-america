@@ -21,6 +21,8 @@ ul.venueInformation-list, ul.eventInformation-list {
 	> div, ul {
 	  display:	inline-block;
 	  max-width:	65%;
+	  list-style:	none;
+	  padding: 0px;
 	  > ul { display: block; }
 	}
 	> label { vertical-align: top; }
@@ -33,7 +35,12 @@ ul.venueInformation-list, ul.eventInformation-list {
 	img { width: 100%; }
 	> div#button-wrapper {
 		margin-top: $margin-large;
-		#editVenue-button { @include btn-style-negative; }
+		a:first-of-type {
+			float:left;
+		}
+		a:last-of-type {
+			float:right;
+		}
 	}
 }
 

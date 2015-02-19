@@ -1,5 +1,5 @@
 <h1>Please review the venue information below</h1>
-<ul id='venueInformation-list'>
+<ul class='venueInformation-list'>
 	<li>
 		<label>Name of the Venue:</label><div>{$venueModel.name}</div>
 	</li>
@@ -33,11 +33,11 @@
 	<div><img src="{$url}" /></div>
 	<div id='button-wrapper'>
 		{if isset($venueModel.id)}
-			<a class='new btn' href="{url 'venues/approve' ['venueId' => $venueModel.id]}">The venue information looks correct</a>
-			<a id='editVenue-button' class='btn' href="{url 'venues/edit' ['venueId' => $venueModel.id]}">I need to change some details about the venue</a>
+			<a class='btn negative' href="{url 'venues/edit' ['venueId' => $venueModel.id]}">Edit</a>
+			<a class='new btn' href="{url 'venues/approve' ['venueId' => $venueModel.id]}">Continue</a>
 		{else}
-			<a class='new btn' href="{url 'venues/approve'}">The venue information looks correct</a>
-			<a id='editVenue-button' class='btn' href="{url 'venues/edit'}">I need to change some details about the venue</a>
+			<a class='btn negative' href="{url 'venues/edit'}">Edit</a>
+			<a class='new btn' href="{url 'venues/approve'}">Continue</a>
 		{/if}
 	</div>
 </div>

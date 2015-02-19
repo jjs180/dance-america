@@ -17,6 +17,8 @@ class AddVenueForm extends \NovumWare\Zend\Form\Form
 		$postalCode = new Element\Text('postal_code');
 		$url = new Element\Url('url');
 		$description = new Element\Text('description');
+		$minimumAge = new Element\Text('minimum_age');
+		$specialNotes = new Element\Text('special_notes');
 		$contactEmail = new Element\Email('contact_email');
 		$type = new Element\Text('type');
 
@@ -30,6 +32,7 @@ class AddVenueForm extends \NovumWare\Zend\Form\Form
 				->add($postalCode)
 				->add($url)
 				->add($description)
+				->add($specialNotes)
 				->add($contactEmail)
 				->add($type);
 	}
@@ -68,9 +71,16 @@ class AddVenueForm extends \NovumWare\Zend\Form\Form
 			$url	->setAllowEmpty(true);
 			$url	->setRequired(false);
 
+			$specialNotes = new Input('special_notes');
+			$specialNotes	->setAllowEmpty(true);
+			$specialNotes	->setRequired(false);
+
 			$description = new Input('description');
 			$description	->setAllowEmpty(true);
 			$description	->setRequired(false);
+
+			$minimumAge	= new Input('minimum_age');
+			$minimumAge	->setRequired(true);
 
 			$contactEmail = new Input('contact_email');
 			$contactEmail	->setAllowEmpty(true);
@@ -91,6 +101,8 @@ class AddVenueForm extends \NovumWare\Zend\Form\Form
 						->add($postalCode)
 						->add($url)
 						->add($description)
+						->add($specialNotes)
+						->add($minimumAge)
 						->add($contactEmail)
 						->add($type);
 

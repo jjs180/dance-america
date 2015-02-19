@@ -11,7 +11,24 @@
 }
 
 //#eventWillRepeat-wrapper, .repetitionDetails-wrapper { display: none; }
+a.deleteRepetitionButton {
+  bottom:		0px;
+  display:	none;
+  margin:		0px;
+  position:	absolute;
+  right:		0px;
+  width:		30px;
+  border: 	none;
+}
 
+a.addRepetitionButton {
+  bottom:		15px;
+  display:	none;
+  margin:		0px;
+  position:	absolute;
+  border: 	none;
+  right:		-25px;
+}
 form#addEventForm, #editEventForm {
 	button, a.btn { @include column-desktop-offset(4); }
 	#repetitionDetails-container {
@@ -21,14 +38,6 @@ form#addEventForm, #editEventForm {
 			position:relative;
 			top: -2px;
 			right: -3px;
-		}
-		> a.addRepetitionButton {
-			bottom:		15px;
-			display:	none;
-			margin:		0px;
-			position:	absolute;
-		  	border: 	none;
-			right:		-25px;
 		}
 		.repetitionDetail-wrapper {
 			@include		column-desktop-offset(4);
@@ -54,24 +63,16 @@ form#addEventForm, #editEventForm {
 					float:		none;
 					display: 	inline-block;
 				}
-				> a.deleteRepetitionButton {
-					bottom:		0px;
-					display:	none;
-					margin:		0px;
-					position:	absolute;
-					right:		0px;
-					width:		30px;
-				  	border: 	none;
-				}
 			}
+
 			select { width: auto; }
 		}
 //		#eventWillStop-wrapper { margin-top: $margin; }
 	}
 
-	#costDetails-container {
+	.costDetails-container {
 		display: none;
-		> div#costDetails-rhsWrapper {
+		> div.costDetails-rhsWrapper {
 			display:	inline-block;
 			width:		75%;
 			> div {

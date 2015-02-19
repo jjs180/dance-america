@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1-DEV, created on 2015-02-16 21:20:32
+<?php /* Smarty version Smarty-3.1-DEV, created on 2015-02-17 03:03:35
          compiled from "/Users/cara/Sites/dance_america/module/Application/view/application/index/index.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:1230976164544a6d85b56296-69825588%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '2f2e1f8f8964ac4e68b0524c43c5eae4003f802b' => 
     array (
       0 => '/Users/cara/Sites/dance_america/module/Application/view/application/index/index.tpl',
-      1 => 1424118031,
+      1 => 1424123293,
       2 => 'file',
     ),
   ),
@@ -35,13 +35,13 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 		<div>
 			<label class='required' for="siteSearchForm-searchParam">What are you looking for?</label>
 			<select type="text" name="siteSearchForm[search_param]" data-validators="required" required>
-				<option <?php if ($_POST&&$_POST['siteSearchForm']['location']['state']=='CA'){?>selected='selected'<?php }?> value="">--</option>
+				<option value="">--</option>
 				<?php  $_smarty_tpl->tpl_vars['param'] = new Smarty_Variable; $_smarty_tpl->tpl_vars['param']->_loop = false;
  $_from = $_smarty_tpl->tpl_vars['siteSearchParams']->value; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array');}
 foreach ($_from as $_smarty_tpl->tpl_vars['param']->key => $_smarty_tpl->tpl_vars['param']->value){
 $_smarty_tpl->tpl_vars['param']->_loop = true;
 ?>
-				<option <?php if ($_POST&&$_POST['siteSearchForm']['location']['state']=='CA'){?>selected='selected'<?php }?> value="<?php echo $_smarty_tpl->tpl_vars['param']->value;?>
+				<option value="<?php echo $_smarty_tpl->tpl_vars['param']->value;?>
 " <?php if ($_POST&&$_POST['siteSearchForm']['search_param']==$_smarty_tpl->tpl_vars['param']->value){?>selected='selected'<?php }?>><?php echo $_smarty_tpl->tpl_vars['param']->value;?>
 </option>
 				<?php } ?>
@@ -50,7 +50,7 @@ $_smarty_tpl->tpl_vars['param']->_loop = true;
 		<div>
 			<label for="siteSearchForm-danceStyle">Dance Style</label>
 			<select name="siteSearchForm[dance_style]" id="siteSearchForm-danceStyle">
-				<option <?php if ($_POST&&$_POST['siteSearchForm']['location']['state']=='CA'){?>selected='selected'<?php }?> value="">--</option>
+				<option value="">--</option>
 				<?php  $_smarty_tpl->tpl_vars['danceStyle'] = new Smarty_Variable; $_smarty_tpl->tpl_vars['danceStyle']->_loop = false;
  $_from = $_smarty_tpl->tpl_vars['danceStyles']->value; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array');}
 foreach ($_from as $_smarty_tpl->tpl_vars['danceStyle']->key => $_smarty_tpl->tpl_vars['danceStyle']->value){
