@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1-DEV, created on 2015-02-19 06:06:57
+<?php /* Smarty version Smarty-3.1-DEV, created on 2015-02-19 06:12:04
          compiled from "/Users/cara/Sites/dance_america/module/Events/view/events/partials/_addEventScript.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:1546806517545e49672fb451-62933061%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'dafe7f02cf13cf921a94c71705e08d07831bee80' => 
     array (
       0 => '/Users/cara/Sites/dance_america/module/Events/view/events/partials/_addEventScript.tpl',
-      1 => 1424322415,
+      1 => 1424322654,
       2 => 'file',
     ),
   ),
@@ -166,8 +166,7 @@ $j('#addEventForm-willStop').change(function() {
 function changeDayOfWeek(index) {
 	var dayOfMonthSelection = $j('#daysOfMonth-select-'+index).val();
 	var dayOfWeekSelection = $j('#daysOfWeek-select-'+index).val();
-	var monthOfYearSelection = $j('#monthsOfYear-select-'+index).val();
-	
+
 	if (dayOfMonthSelection != '4' && dayOfMonthSelection != '3' && dayOfMonthSelection != '2' && dayOfMonthSelection !='1' && dayOfWeekSelection != 'day' && dayOfWeekSelection != '') {
 		$j('#daysOfMonth-select-'+index).val('last');
 	}
@@ -176,8 +175,7 @@ function changeDayOfWeek(index) {
 function changeDayOfMonth(index) {
 	var dayOfMonthSelection = $j('#daysOfMonth-select-'+index).val();
 	var dayOfWeekSelection = $j('#daysOfWeek-select-'+index).val();
-	var monthOfYearSelection = $j('#monthsOfYear-select-'+index).val();
-	
+
 	if (dayOfMonthSelection != '4' && dayOfMonthSelection != '3' && dayOfMonthSelection != '2' && dayOfMonthSelection !='1' && dayOfWeekSelection != 'day' && dayOfWeekSelection != '') {
 		$j('#daysOfWeek-select-'+index).val('day');
 	}

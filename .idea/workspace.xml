@@ -4,25 +4,10 @@
     <list default="true" id="1aaacee2-5aa3-469b-984a-93d50a749b12" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/maxnuf/maxnuf-smarty" afterPath="$PROJECT_DIR$/vendor/maxnuf/maxnuf-smarty" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/markisacat/novumware-module" afterPath="$PROJECT_DIR$/vendor/markisacat/novumware-module" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/Smarty/smarty_compile/22b6ac2953d7f63f51254bc608c0d966e7faf84a.file.results.tpl.php" afterPath="$PROJECT_DIR$/data/Smarty/smarty_compile/22b6ac2953d7f63f51254bc608c0d966e7faf84a.file.results.tpl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/Smarty/smarty_compile/2f2e1f8f8964ac4e68b0524c43c5eae4003f802b.file.index.tpl.php" afterPath="$PROJECT_DIR$/data/Smarty/smarty_compile/2f2e1f8f8964ac4e68b0524c43c5eae4003f802b.file.index.tpl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module/Venues/src/Venues/Form/AddVenueForm.php" afterPath="$PROJECT_DIR$/module/Venues/src/Venues/Form/AddVenueForm.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/Smarty/smarty_compile/6406208dd0c959e11acf1cdb9c14d76e2aeffa6f.file.review.tpl.php" afterPath="$PROJECT_DIR$/data/Smarty/smarty_compile/6406208dd0c959e11acf1cdb9c14d76e2aeffa6f.file.review.tpl.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module/Events/view/events/partials/_addEventScript.tpl" afterPath="$PROJECT_DIR$/module/Events/view/events/partials/_addEventScript.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module/Events/view/events/partials/_eventInformation.tpl" afterPath="$PROJECT_DIR$/module/Events/view/events/partials/_eventInformation.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module/Events/view/events/events/add.tpl" afterPath="$PROJECT_DIR$/module/Events/view/events/events/add.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/Smarty/smarty_compile/b2b3633e31e21c39e4c588c564cf455183006630.file.review.tpl.php" afterPath="$PROJECT_DIR$/data/Smarty/smarty_compile/b2b3633e31e21c39e4c588c564cf455183006630.file.review.tpl.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module/Events/view/events/partials/_editEventScript.tpl" afterPath="$PROJECT_DIR$/module/Events/view/events/partials/_editEventScript.tpl" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/Smarty/smarty_compile/dafe7f02cf13cf921a94c71705e08d07831bee80.file._addEventScript.tpl.php" afterPath="$PROJECT_DIR$/data/Smarty/smarty_compile/dafe7f02cf13cf921a94c71705e08d07831bee80.file._addEventScript.tpl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module/Events/public/stylesheets/scss/events.scss" afterPath="$PROJECT_DIR$/module/Events/public/stylesheets/scss/events.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/Smarty/smarty_compile/f74904d996220b0ef1c5f49f51e6431129c5b231.file.add.tpl.php" afterPath="$PROJECT_DIR$/data/Smarty/smarty_compile/f74904d996220b0ef1c5f49f51e6431129c5b231.file.add.tpl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/Smarty/smarty_compile/f8c8808104c6e8279e4115c7e73a4c9fdb327c32.file.review.tpl.php" afterPath="$PROJECT_DIR$/data/Smarty/smarty_compile/f8c8808104c6e8279e4115c7e73a4c9fdb327c32.file.review.tpl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module/People/public/stylesheets/scss/people.scss" afterPath="$PROJECT_DIR$/module/People/public/stylesheets/scss/people.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module/DanceStyles/view/people/people/review.tpl" afterPath="$PROJECT_DIR$/module/DanceStyles/view/people/people/review.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module/Events/view/events/events/review.tpl" afterPath="$PROJECT_DIR$/module/Events/view/events/events/review.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module/People/view/people/people/review.tpl" afterPath="$PROJECT_DIR$/module/People/view/people/people/review.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module/Venues/view/venues/venues/review.tpl" afterPath="$PROJECT_DIR$/module/Venues/view/venues/venues/review.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/stylesheets/css/styles.css" afterPath="$PROJECT_DIR$/public/stylesheets/css/styles.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/stylesheets/scss/styles.scss" afterPath="$PROJECT_DIR$/public/stylesheets/scss/styles.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module/Venues/public/stylesheets/scss/venues.scss" afterPath="$PROJECT_DIR$/module/Venues/public/stylesheets/scss/venues.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="dance_america.iws" />
@@ -47,78 +32,7 @@
     <favorites_list name="dance_america" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="add.tpl" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/module/Events/view/events/events/add.tpl">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-4.647059" vertical-offset="768" max-vertical-offset="2100">
-              <caret line="67" column="55" selection-start-line="67" selection-start-column="49" selection-end-line="67" selection-end-column="55" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_addEventScript.tpl" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/module/Events/view/events/partials/_addEventScript.tpl">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.89411765" vertical-offset="145" max-vertical-offset="2625">
-              <caret line="35" column="86" selection-start-line="35" selection-start-column="86" selection-end-line="35" selection-end-column="86" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="venues.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/module/Venues/public/stylesheets/scss/venues.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="2100">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="people.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/module/People/public/stylesheets/scss/people.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.6122449" vertical-offset="0" max-vertical-offset="180">
-              <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="layout.tpl" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/module/Application/view/layout/layout.tpl">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="240">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="styles.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/stylesheets/scss/styles.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.0612245" vertical-offset="0" max-vertical-offset="825">
-              <caret line="10" column="33" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="33" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="events.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/module/Events/public/stylesheets/scss/events.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.0131578" vertical-offset="371" max-vertical-offset="1800">
-              <caret line="40" column="9" selection-start-line="40" selection-start-column="9" selection-end-line="40" selection-end-column="9" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -162,7 +76,6 @@
         <option value="$PROJECT_DIR$/module/Events/src/Events/Controller/EventsController.php" />
         <option value="$PROJECT_DIR$/module/Events/view/events/events/edit.tpl" />
         <option value="$PROJECT_DIR$/module/Events/view/events/partials/_edit-event-repetition-detail-no-existing-repetitions.tpl" />
-        <option value="$PROJECT_DIR$/module/Events/view/events/partials/_editEventScript.tpl" />
         <option value="$PROJECT_DIR$/module/Events/view/events/partials/_eventInformation.tpl" />
         <option value="$PROJECT_DIR$/data/Smarty/smarty_compile/6406208dd0c959e11acf1cdb9c14d76e2aeffa6f.file.review.tpl.php" />
         <option value="$PROJECT_DIR$/data/Smarty/smarty_compile/b2b3633e31e21c39e4c588c564cf455183006630.file.review.tpl.php" />
@@ -177,6 +90,7 @@
         <option value="$PROJECT_DIR$/module/Events/view/events/events/add.tpl" />
         <option value="$PROJECT_DIR$/module/Events/public/stylesheets/scss/events.scss" />
         <option value="$PROJECT_DIR$/module/Events/view/events/partials/_addEventScript.tpl" />
+        <option value="$PROJECT_DIR$/module/Events/view/events/partials/_editEventScript.tpl" />
       </list>
     </option>
   </component>
@@ -706,12 +620,11 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="4" y="22" width="1276" height="778" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32722145" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -721,12 +634,13 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32722145" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39915374" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
     <layout-to-restore>
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -745,9 +659,9 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18495297" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -983,13 +897,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/module/Events/view/events/partials/_editEventScript.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.2380953" vertical-offset="825" max-vertical-offset="2475">
-          <caret line="107" column="42" selection-start-line="107" selection-start-column="42" selection-end-line="107" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/module/Events/view/events/partials/_edit-event-repetition-detail-no-existing-repetitions.tpl">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.3652968" vertical-offset="0" max-vertical-offset="657">
@@ -1001,7 +908,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.3607306" vertical-offset="183" max-vertical-offset="900">
           <caret line="28" column="40" selection-start-line="28" selection-start-column="40" selection-end-line="28" selection-end-column="40" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1009,7 +915,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.70776254" vertical-offset="195" max-vertical-offset="1905">
           <caret line="44" column="20" selection-start-line="44" selection-start-column="20" selection-end-line="44" selection-end-column="20" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1017,7 +922,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.15981735" vertical-offset="0" max-vertical-offset="657">
           <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1025,7 +929,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.1826484" vertical-offset="0" max-vertical-offset="657">
           <caret line="8" column="93" selection-start-line="8" selection-start-column="93" selection-end-line="8" selection-end-column="93" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1033,7 +936,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.5890411" vertical-offset="153" max-vertical-offset="810">
           <caret line="37" column="194" selection-start-line="37" selection-start-column="194" selection-end-line="37" selection-end-column="194" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1041,7 +943,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.5890411" vertical-offset="153" max-vertical-offset="810">
           <caret line="37" column="194" selection-start-line="37" selection-start-column="194" selection-end-line="37" selection-end-column="194" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1049,7 +950,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.25114155" vertical-offset="0" max-vertical-offset="657">
           <caret line="11" column="96" selection-start-line="11" selection-start-column="96" selection-end-line="11" selection-end-column="96" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1057,7 +957,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.31764707" vertical-offset="0" max-vertical-offset="425">
           <caret line="9" column="26" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="34" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1065,7 +964,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="1.3764706" vertical-offset="0" max-vertical-offset="735">
           <caret line="39" column="73" selection-start-line="39" selection-start-column="73" selection-end-line="39" selection-end-column="73" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1073,6 +971,43 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.6" vertical-offset="0" max-vertical-offset="1770">
           <caret line="19" column="20" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/Application/view/layout/partials/_head.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="449">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/Application/view/layout/partials/_header.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="449">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/Events/view/events/partials/_editEventScript.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.72602737" vertical-offset="1083" max-vertical-offset="2535">
+          <caret line="104" column="12" selection-start-line="104" selection-start-column="12" selection-end-line="104" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/Events/view/events/partials/_addEventScript.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.06849315" vertical-offset="480" max-vertical-offset="2595">
+          <caret line="35" column="86" selection-start-line="34" selection-start-column="4" selection-end-line="35" selection-end-column="86" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/Events/view/events/events/add.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3607306" vertical-offset="768" max-vertical-offset="2100">
+          <caret line="67" column="55" selection-start-line="67" selection-start-column="49" selection-end-line="67" selection-end-column="55" />
           <folding />
         </state>
       </provider>
@@ -1087,24 +1022,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/module/People/public/stylesheets/scss/people.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.6122449" vertical-offset="0" max-vertical-offset="180">
+        <state vertical-scroll-proportion="0.0456621" vertical-offset="0" max-vertical-offset="657">
           <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module/Application/view/layout/partials/_head.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="449">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module/Application/view/layout/partials/_header.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="449">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1119,7 +1038,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/stylesheets/scss/styles.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.0612245" vertical-offset="0" max-vertical-offset="825">
+        <state vertical-scroll-proportion="0.0" vertical-offset="150" max-vertical-offset="825">
           <caret line="10" column="33" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="33" />
           <folding />
         </state>
@@ -1127,24 +1046,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/module/Events/public/stylesheets/scss/events.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.0131578" vertical-offset="371" max-vertical-offset="1800">
+        <state vertical-scroll-proportion="0.34855404" vertical-offset="371" max-vertical-offset="1800">
           <caret line="40" column="9" selection-start-line="40" selection-start-column="9" selection-end-line="40" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module/Events/view/events/events/add.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.647059" vertical-offset="768" max-vertical-offset="2100">
-          <caret line="67" column="55" selection-start-line="67" selection-start-column="49" selection-end-line="67" selection-end-column="55" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module/Events/view/events/partials/_addEventScript.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.89411765" vertical-offset="145" max-vertical-offset="2625">
-          <caret line="35" column="86" selection-start-line="35" selection-start-column="86" selection-end-line="35" selection-end-column="86" />
           <folding />
         </state>
       </provider>

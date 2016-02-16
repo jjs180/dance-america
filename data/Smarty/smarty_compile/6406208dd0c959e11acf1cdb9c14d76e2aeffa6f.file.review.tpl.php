@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1-DEV, created on 2015-02-16 22:10:36
+<?php /* Smarty version Smarty-3.1-DEV, created on 2015-02-19 06:12:05
          compiled from "/Users/cara/Sites/dance_america/module/Events/view/events/events/review.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:8796998454e25cb9c332b7-16704991%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '6406208dd0c959e11acf1cdb9c14d76e2aeffa6f' => 
     array (
       0 => '/Users/cara/Sites/dance_america/module/Events/view/events/events/review.tpl',
-      1 => 1424121035,
+      1 => 1424140175,
       2 => 'file',
     ),
   ),
@@ -35,15 +35,15 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 ' /></div>
 	<div id='button-wrapper'>
 		<?php if ($_smarty_tpl->tpl_vars['eventModel']->value['id']&&$_smarty_tpl->tpl_vars['eventModel']->value['status']!='suspended'){?>
+			<a class='btn negative' href="<?php echo $_smarty_tpl->smarty->registered_objects['zf'][0]->url('events/edit',array('eventId'=>$_smarty_tpl->tpl_vars['eventModel']->value['id'])); ?>">Go back</a>
 			<a class='new btn' href="<?php echo $_smarty_tpl->smarty->registered_objects['zf'][0]->url('events/approve',array('eventId'=>$_smarty_tpl->tpl_vars['eventModel']->value['id'])); ?>">Continue</a>
-			<a id='editVenue-button' class='btn' href="<?php echo $_smarty_tpl->smarty->registered_objects['zf'][0]->url('events/edit',array('eventId'=>$_smarty_tpl->tpl_vars['eventModel']->value['id'])); ?>">Go back</a>
 		<?php }elseif($_smarty_tpl->tpl_vars['eventModel']->value['status']=='suspended'){?>
-			<a class='btn positive' href="<?php echo $_smarty_tpl->smarty->registered_objects['zf'][0]->url('events/renew',array('eventId'=>$_smarty_tpl->tpl_vars['eventModel']->value['id'])); ?>x<strong></strong>">Renew event</a>
 			<a class='btn' href="<?php echo $_smarty_tpl->smarty->registered_objects['zf'][0]->url('events/edit',array('eventId'=>$_smarty_tpl->tpl_vars['eventModel']->value['id'])); ?>">Go back</a>
 			<a class='btn negative' href="<?php echo $_smarty_tpl->smarty->registered_objects['zf'][0]->url('events/archive',array('eventId'=>$_smarty_tpl->tpl_vars['eventModel']->value['id'])); ?>">Remove event from site</a>
+			<a class='btn positive' href="<?php echo $_smarty_tpl->smarty->registered_objects['zf'][0]->url('events/renew',array('eventId'=>$_smarty_tpl->tpl_vars['eventModel']->value['id'])); ?>">Renew event</a>
 		<?php }else{ ?>
+			<a class='btn' href="<?php echo $_smarty_tpl->smarty->registered_objects['zf'][0]->url('events/edit'); ?>">Go back</a>
 			<a class='new btn' href="<?php echo $_smarty_tpl->smarty->registered_objects['zf'][0]->url('events/approve'); ?>">Continue</a>
-			<a id='editVenue-button' class='btn' href="<?php echo $_smarty_tpl->smarty->registered_objects['zf'][0]->url('events/edit'); ?>">Go back</a>
 		<?php }?>
 	</div>
 </div>

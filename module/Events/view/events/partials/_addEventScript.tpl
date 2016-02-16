@@ -145,8 +145,7 @@ $j('#addEventForm-willStop').change(function() {
 function changeDayOfWeek(index) {
 	var dayOfMonthSelection = $j('#daysOfMonth-select-'+index).val();
 	var dayOfWeekSelection = $j('#daysOfWeek-select-'+index).val();
-	var monthOfYearSelection = $j('#monthsOfYear-select-'+index).val();
-	
+
 	if (dayOfMonthSelection != '4' && dayOfMonthSelection != '3' && dayOfMonthSelection != '2' && dayOfMonthSelection !='1' && dayOfWeekSelection != 'day' && dayOfWeekSelection != '') {
 		$j('#daysOfMonth-select-'+index).val('last');
 	}
@@ -155,8 +154,7 @@ function changeDayOfWeek(index) {
 function changeDayOfMonth(index) {
 	var dayOfMonthSelection = $j('#daysOfMonth-select-'+index).val();
 	var dayOfWeekSelection = $j('#daysOfWeek-select-'+index).val();
-	var monthOfYearSelection = $j('#monthsOfYear-select-'+index).val();
-	
+
 	if (dayOfMonthSelection != '4' && dayOfMonthSelection != '3' && dayOfMonthSelection != '2' && dayOfMonthSelection !='1' && dayOfWeekSelection != 'day' && dayOfWeekSelection != '') {
 		$j('#daysOfWeek-select-'+index).val('day');
 	}
